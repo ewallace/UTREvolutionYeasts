@@ -1,0 +1,539 @@
+---
+title: "Code for 5'UTRs of Ssd1"
+author: "Edward Wallace"
+date: "10th August 2019"
+output: html_document
+---
+
+This code retrieves 5'UTRs of orthologous genes in budding yeasts, using Ortholog groups in budding yeast from the 332 genomes paper: Tempo and Mode of Genome Evolution in the Budding Yeast Subphylum, https://doi.org/10.1016/j.cell.2018.10.023 
+
+It is focused on 5'UTRs for Saccharomyces, Nakaseomyces, and Kazachstania, for genes that are bound by Ssd1 in **Saccharomyces cerevisiae**.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+source("OrthoGroupScripts.R")
+```
+
+```{r load_seq_ids_index}
+# setwd("~/Repos/UTREvolutionYeasts/src/")
+seq_ids_index <- read_tsv("../data_processed/allids_genes_343taxa.txt",
+                          comment="#")
+```
+
+```{r load_Saccharomyces_gtf_fasta,dependson="load_seq_ids_index"}
+Saccharomyces_spp <- c("Saccharomyces_cerevisiae",
+                       "Saccharomyces_paradoxus",
+                       "Saccharomyces_mikatae",
+                       "Saccharomyces_kudriavzevii",
+                       "Saccharomyces_arboricola",
+                       "Saccharomyces_uvarum",
+                       "Saccharomyces_eubayanus")
+
+Saccharomyces_noncer <- Saccharomyces_spp[-1]
+
+Nakaseomyces <- c("Nakaseomyces_nivariensis",
+                       "Nakaseomyces_delphensis",
+                       "Nakaseomyces_bracarensis",
+                       "Candida_glabrata",
+                       "Nakaseomyces_bacillisporus",
+                       "Nakaseomyces_castellii")
+
+Kazachstania <- .species_concordance %>% 
+    filter(str_detect(species_id,"Kazachstan")) %>% 
+    .$species_id
+
+Tetrapisispora <- .species_concordance %>% 
+    filter(str_detect(species_id,"Tetrapis") | 
+             str_detect(species_id,"Vanderwalt")  |
+             str_detect(species_id,"Yueomyces")) %>% 
+    .$species_id
+
+Naumovozyma <- .species_concordance %>% 
+    filter(str_detect(species_id,"Naumovozyma")) %>% 
+    .$species_id
+
+Pgk1_Sacmore <- get_ortho_group("YAL038W",
+                                species_list = c(Saccharomyces_spp,
+                                                 Nakaseomyces)
+                                )
+Nakaseomyces_gtf <- get_gtflist(Nakaseomyces)
+Sacc_noncer_gtf  <- get_gtflist(Saccharomyces_noncer)
+Kazachstania_gtf  <- get_gtflist(Kazachstania)
+Tetrapisispora_gtf  <- get_gtflist(Tetrapisispora)
+
+Nakaseomyces_fasta <- get_fastalist(Nakaseomyces)
+Sacc_noncer_fasta  <- get_fastalist(Saccharomyces_noncer)
+Kazachstania_fasta <- get_fastalist(Kazachstania)
+Tetrapisispora_fasta <- get_fastalist(Tetrapisispora)
+
+```
+
+
+
+```{r test_get_seqs,dependson=c("load_Sacc_gtf_fasta","get_5UTRish")}
+
+get_one_upstream_seq(seq_id_line=Pgk1_Sacmore %>% 
+                         filter(species=="Candida_glabrata") %>%
+                         head(n=1),
+                     fastalist=Nakaseomyces_fasta,
+                     gtflist=Nakaseomyces_gtf) 
+
+get_one_upstream_seq(seq_id_line=Pgk1_Sacmore %>% 
+                         filter(species=="Nakaseomyces_delphensis") %>%
+                         head(n=1),
+                     fastalist=Nakaseomyces_fasta,
+                     gtflist=Nakaseomyces_gtf)
+
+Pgk1_Naka_seqs <- get_upstream_seqs(Pgk1_Sacmore %>% 
+                         filter(species %in% Nakaseomyces),
+                     fastalist=Nakaseomyces_fasta,
+                     gtflist=Nakaseomyces_gtf)
+
+Pgk1_Sacc_seqs <- get_upstream_seqs(Pgk1_Sacmore %>% 
+                         filter(species %in% Saccharomyces_noncer),
+                     fastalist=Sacc_noncer_fasta,
+                     gtflist=Sacc_noncer_gtf)
+
+```
+
+
+```{r get_TOS6_5UTRs,dependson=c("load_Sacc_gtf_fasta","get_5UTRish")}
+# Tos6_Sacspp <- get_ortho_group("YNL300W",species_list = Saccharomyces_spp)
+# Tos6_Sacc_200u <- 
+#     get_upstream_seqs(Tos6_Sacspp %>% 
+#                           filter(species %in% Saccharomyces_noncer),
+#                       fastalist=Sacc_noncer_fasta,
+#                       gtflist=Sacc_noncer_gtf,
+#                       upstream=200,downstream=0)
+# writeXStringSet(Tos6_Sacc_200u,"../results/ortho_UTR_groups/Sacc_noncer/Tos6_Saccharomyces_200upstream.fa")
+
+Tos6_Sacc_200upseqs <- 
+    get_ortho_upseqs("YNL300W",
+                     species_list = Saccharomyces_noncer,                      
+                     fastalist=Sacc_noncer_fasta,
+                     gtflist=Sacc_noncer_gtf,
+                     upstream=200,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Tos6_Saccharomyces_200upstream.fa")
+
+# Tos6 does not have annotated orthologs in Nakaseomyces
+# Tos6_Naka_200upseqs <- 
+#     get_ortho_upseqs("YNL300W",
+#                      species_list = Nakaseomyces,                      
+#                      fastalist=Nakaseomyces_fasta,
+#                      gtflist=Nakaseomyces_gtf,
+#                      upstream=200,downstream=0,
+#                      fname_out="../results/ortho_UTR_groups/Sacc_noncer/Tos6_Nakaseomyces_200upstream.fa")
+
+Tos1_Sacc_200upseqs <- 
+    get_ortho_upseqs("YBR162C",
+                     species_list = Saccharomyces_noncer,                      
+                     fastalist=Sacc_noncer_fasta,
+                     gtflist=Sacc_noncer_gtf,
+                     upstream=200,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Tos1_Saccharomyces_200upstream.fa")
+
+Tos1_Naka_200upseqs <- 
+    get_ortho_upseqs("YBR162C",
+                     species_list = Nakaseomyces,                      
+                     fastalist=Nakaseomyces_fasta,
+                     gtflist=Nakaseomyces_gtf,
+                     upstream=200,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Tos1_Nakaseomyces_200upstream.fa")
+
+Cts1_Sacc_200upseqs <- 
+    get_ortho_upseqs("YLR286C",
+                     species_list = Saccharomyces_noncer,                      
+                     fastalist=Sacc_noncer_fasta,
+                     gtflist=Sacc_noncer_gtf,
+                     upstream=200,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Cts1_Saccharomyces_200upstream.fa")
+
+Cts1_Naka_200upseqs <- 
+    get_ortho_upseqs("YLR286C",
+                     species_list = Nakaseomyces,                      
+                     fastalist=Nakaseomyces_fasta,
+                     gtflist=Nakaseomyces_gtf,
+                     upstream=200,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Cts1_Nakaseomyces_200upstream.fa")
+
+
+Sun4Sim1_Sacc_500upseqs <- 
+    get_ortho_upseqs("YNL066W",
+                     species_list = Saccharomyces_noncer,                      
+                     fastalist=Sacc_noncer_fasta,
+                     gtflist=Sacc_noncer_gtf,
+                     upstream=500,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Sun4Sim1_Saccharomyces_500upstream.fa")
+
+Sun4Sim1_Sacc_700upseqs <- 
+    get_ortho_upseqs("YNL066W",
+                     species_list = Saccharomyces_noncer,                      
+                     fastalist=Sacc_noncer_fasta,
+                     gtflist=Sacc_noncer_gtf,
+                     upstream=700,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Sun4Sim1_Saccharomyces_700upstream.fa")
+
+Sun4Sim1_Naka_700upseqs <- 
+    get_ortho_upseqs("YNL066W",
+                     species_list = Nakaseomyces,                      
+                     fastalist=Nakaseomyces_fasta,
+                     gtflist=Nakaseomyces_gtf,
+                     upstream=700,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Sun4Sim1_Nakaseomyces_700upstream.fa")
+
+Uth1Nca3_Sacc_200upseqs <- 
+    get_ortho_upseqs("YKR042W",
+                     species_list = Saccharomyces_noncer,                      
+                     fastalist=Sacc_noncer_fasta,
+                     gtflist=Sacc_noncer_gtf,
+                     upstream=200,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Uth1Nca3_Saccharomyces_200upstream.fa")
+
+Uth1Nca3_Naka_200upseqs <-
+    get_ortho_upseqs("YKR042W",
+                     species_list = Nakaseomyces,
+                     fastalist=Nakaseomyces_fasta,
+                     gtflist=Nakaseomyces_gtf,
+                     upstream=200,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Uth1Nca3_Nakaseomyces_200upstream.fa")
+
+Ccw12Ccw22_Sacc_200upseqs <-
+    get_ortho_upseqs("YLR110C",
+                     species_list = Saccharomyces_noncer,                      
+                     fastalist=Sacc_noncer_fasta,
+                     gtflist=Sacc_noncer_gtf,
+                     upstream=200,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Ccw12Ccw22_Saccharomyces_200upstream.fa")
+
+Ccw12Ccw22_Naka_200upseqs <-
+    get_ortho_upseqs("YLR110C",
+                     species_list = Nakaseomyces,
+                     fastalist=Nakaseomyces_fasta,
+                     gtflist=Nakaseomyces_gtf,
+                     upstream=200,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Ccw12Ccw22_Nakaseomyces_200upstream.fa")
+
+Dse2_Sacc_200upseqs <-
+    get_ortho_upseqs("YHR143W",
+                     species_list = Saccharomyces_noncer,                      
+                     fastalist=Sacc_noncer_fasta,
+                     gtflist=Sacc_noncer_gtf,
+                     upstream=200,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Dse2_Saccharomyces_200upstream.fa")
+
+# Dse2_Naka_200upseqs <-
+#     get_ortho_upseqs("YHR143W",
+#                      species_list = Nakaseomyces,
+#                      fastalist=Nakaseomyces_fasta,
+#                      gtflist=Nakaseomyces_gtf,
+#                      upstream=200,downstream=0,
+#                      fname_out="../results/ortho_UTR_groups/Sacc_noncer/Dse2_Nakaseomyces_200upstream.fa")
+
+Scw4Scw10_Sacc_200upseqs <-
+    get_ortho_upseqs("YGR279C",
+                     species_list = Saccharomyces_noncer,                      
+                     fastalist=Sacc_noncer_fasta,
+                     gtflist=Sacc_noncer_gtf,
+                     upstream=200,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Scw4Scw10_Saccharomyces_200upstream.fa")
+
+Scw4Scw10_Naka_200upseqs <-
+    get_ortho_upseqs("YGR279C",
+                     species_list = Nakaseomyces,
+                     fastalist=Nakaseomyces_fasta,
+                     gtflist=Nakaseomyces_gtf,
+                     upstream=200,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Scw4Scw10_Nakaseomyces_200upstream.fa")
+
+Lre1Hlr1_Sacc_200upseqs <-
+    get_ortho_upseqs("YDR528W",
+                     species_list = Saccharomyces_noncer,                      
+                     fastalist=Sacc_noncer_fasta,
+                     gtflist=Sacc_noncer_gtf,
+                     upstream=200,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Lre1Hlr1_Saccharomyces_200upstream.fa")
+
+# Lre1Hlr1_Naka_200upseqs <-
+#     get_ortho_upseqs("YDR528W",
+#                      species_list = Nakaseomyces,
+#                      fastalist=Nakaseomyces_fasta,
+#                      gtflist=Nakaseomyces_gtf,
+#                      upstream=200,downstream=0,
+#                      fname_out="../results/ortho_UTR_groups/Sacc_noncer/Lre1Hlr1_Nakaseomyces_200upstream.fa")
+
+Cln2Cln1_Sacc_200upseqs <-
+    get_ortho_upseqs("YPL256C",
+                     species_list = Saccharomyces_noncer,                      
+                     fastalist=Sacc_noncer_fasta,
+                     gtflist=Sacc_noncer_gtf,
+                     upstream=200,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Cln2Cln1_Saccharomyces_200upstream.fa")
+
+Cln2Cln1_Naka_200upseqs <-
+    get_ortho_upseqs("YPL256C",
+                     species_list = Nakaseomyces,
+                     fastalist=Nakaseomyces_fasta,
+                     gtflist=Nakaseomyces_gtf,
+                     upstream=200,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Cln2Cln1_Nakaseomyces_200upstream.fa")
+
+Ssd1_Sacc_500upseqs <-
+    get_ortho_upseqs("YDR293C",
+                     species_list = Saccharomyces_noncer,                      
+                     fastalist=Sacc_noncer_fasta,
+                     gtflist=Sacc_noncer_gtf,
+                     upstream=500,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Ssd1_Saccharomyces_500upstream.fa")
+
+Ssd1_Naka_500upseqs <-
+    get_ortho_upseqs("YDR293C",
+                     species_list = Nakaseomyces,
+                     fastalist=Nakaseomyces_fasta,
+                     gtflist=Nakaseomyces_gtf,
+                     upstream=500,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Ssd1_Nakaseomyces_500upstream.fa")
+```
+
+```{r get_Kaza_5UTRs,dependson=c("load_Sacc_gtf_fasta","get_5UTRish")}
+
+# Tos6 does not have annotated orthologs in Nakaseomyces
+Tos6_Kaza_200upseqs <- 
+    get_ortho_upseqs("YNL300W",
+                     species_list = Kazachstania,                      
+                     fastalist=Kazachstania_fasta,
+                     gtflist=Kazachstania_gtf,
+                     upstream=200,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Tos6_Kazachstania_200upstream.fa")
+
+Tos1_Kaza_200upseqs <- 
+    get_ortho_upseqs("YBR162C",
+                     species_list = Kazachstania,                      
+                     fastalist=Kazachstania_fasta,
+                     gtflist=Kazachstania_gtf,
+                     upstream=200,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Tos1_Kazachstania_200upstream.fa")
+
+Cts1_Kaza_200upseqs <- 
+    get_ortho_upseqs("YLR286C",
+                     species_list = Kazachstania,                      
+                     fastalist=Kazachstania_fasta,
+                     gtflist=Kazachstania_gtf,
+                     upstream=200,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Cts1_Kazachstania_200upstream.fa")
+
+
+Sun4Sim1_Kaza_700upseqs <- 
+    get_ortho_upseqs("YNL066W",
+                     species_list = Kazachstania,                      
+                     fastalist=Kazachstania_fasta,
+                     gtflist=Kazachstania_gtf,
+                     upstream=700,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Sun4Sim1_Kazachstania_700upstream.fa")
+
+
+Uth1Nca3_Kaza_200upseqs <-
+    get_ortho_upseqs("YKR042W",
+                     species_list = Kazachstania,
+                     fastalist=Kazachstania_fasta,
+                     gtflist=Kazachstania_gtf,
+                     upstream=200,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Uth1Nca3_Kazachstania_200upstream.fa")
+
+
+Ccw12Ccw22_Kaza_200upseqs <-
+    get_ortho_upseqs("YLR110C",
+                     species_list = Kazachstania,
+                     fastalist=Kazachstania_fasta,
+                     gtflist=Kazachstania_gtf,
+                     upstream=200,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Ccw12Ccw22_Kazachstania_200upstream.fa")
+
+# Dse2_Kaza_200upseqs <-
+#     get_ortho_upseqs("YHR143W",
+#                      species_list = Kazachstania,
+#                      fastalist=Kazachstania_fasta,
+#                      gtflist=Kazachstania_gtf,
+#                      upstream=200,downstream=0,
+#                      fname_out="../results/ortho_UTR_groups/Sacc_noncer/Dse2_Kazachstania_200upstream.fa")
+
+Scw4Scw10_Kaza_200upseqs <-
+    get_ortho_upseqs("YGR279C",
+                     species_list = Kazachstania,
+                     fastalist=Kazachstania_fasta,
+                     gtflist=Kazachstania_gtf,
+                     upstream=200,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Scw4Scw10_Kazachstania_200upstream.fa")
+
+# Lre1Hlr1_Kaza_200upseqs <-
+#     get_ortho_upseqs("YDR528W",
+#                      species_list = Kazachstania,
+#                      fastalist=Kazachstania_fasta,
+#                      gtflist=Kazachstania_gtf,
+#                      upstream=200,downstream=0,
+#                      fname_out="../results/ortho_UTR_groups/Sacc_noncer/Lre1Hlr1_Kazachstania_200upstream.fa")
+
+Cln2Cln1_Kaza_200upseqs <-
+    get_ortho_upseqs("YPL256C",
+                     species_list = Kazachstania,
+                     fastalist=Kazachstania_fasta,
+                     gtflist=Kazachstania_gtf,
+                     upstream=200,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Cln2Cln1_Kazachstania_200upstream.fa")
+
+Ssd1_Kaza_500upseqs <-
+    get_ortho_upseqs("YDR293C",
+                     species_list = Kazachstania,
+                     fastalist=Kazachstania_fasta,
+                     gtflist=Kazachstania_gtf,
+                     upstream=500,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Ssd1_Kazachstania_500upstream.fa")
+```
+
+```{r get_Tetrapisispora_5UTRs,dependson=c("load_Sacc_gtf_fasta","get_5UTRish")}
+
+# Tos6 does not have annotated orthologs in Tetrapisispora
+# Tos6_Tetrapisispora_200upseqs <- 
+#     get_ortho_upseqs("YNL300W",
+#                      species_list = Tetrapisispora,                      
+#                      fastalist=Tetrapisispora_fasta,
+#                      gtflist=Tetrapisispora_gtf,
+#                      upstream=200,downstream=0,
+#                      fname_out="../results/ortho_UTR_groups/Sacc_noncer/Tos6_Tetrapisispora_200upstream.fa")
+
+Tos1_Tetrapisispora_200upseqs <- 
+    get_ortho_upseqs("YBR162C",
+                     species_list = Tetrapisispora,                      
+                     fastalist=Tetrapisispora_fasta,
+                     gtflist=Tetrapisispora_gtf,
+                     upstream=200,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Tos1_Tetrapisispora_200upstream.fa")
+
+Cts1_Tetrapisispora_200upseqs <- 
+    get_ortho_upseqs("YLR286C",
+                     species_list = Tetrapisispora,                      
+                     fastalist=Tetrapisispora_fasta,
+                     gtflist=Tetrapisispora_gtf,
+                     upstream=200,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Cts1_Tetrapisispora_200upstream.fa")
+
+
+Sun4Sim1_Tetrapisispora_700upseqs <- 
+    get_ortho_upseqs("YNL066W",
+                     species_list = Tetrapisispora,                      
+                     fastalist=Tetrapisispora_fasta,
+                     gtflist=Tetrapisispora_gtf,
+                     upstream=700,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Sun4Sim1_Tetrapisispora_700upstream.fa")
+
+
+Uth1Nca3_Tetrapisispora_200upseqs <-
+    get_ortho_upseqs("YKR042W",
+                     species_list = Tetrapisispora,
+                     fastalist=Tetrapisispora_fasta,
+                     gtflist=Tetrapisispora_gtf,
+                     upstream=200,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Uth1Nca3_Tetrapisispora_200upstream.fa")
+
+
+Ccw12Ccw22_Tetrapisispora_200upseqs <-
+    get_ortho_upseqs("YLR110C",
+                     species_list = Tetrapisispora,
+                     fastalist=Tetrapisispora_fasta,
+                     gtflist=Tetrapisispora_gtf,
+                     upstream=200,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Ccw12Ccw22_Tetrapisispora_200upstream.fa")
+
+# Dse2_Tetrapisispora_200upseqs <-
+#     get_ortho_upseqs("YHR143W",
+#                      species_list = Tetrapisispora,
+#                      fastalist=Tetrapisispora_fasta,
+#                      gtflist=Tetrapisispora_gtf,
+#                      upstream=200,downstream=0,
+#                      fname_out="../results/ortho_UTR_groups/Sacc_noncer/Dse2_Tetrapisispora_200upstream.fa")
+
+Scw4Scw10_Tetrapisispora_200upseqs <-
+    get_ortho_upseqs("YGR279C",
+                     species_list = Tetrapisispora,
+                     fastalist=Tetrapisispora_fasta,
+                     gtflist=Tetrapisispora_gtf,
+                     upstream=200,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Scw4Scw10_Tetrapisispora_200upstream.fa")
+
+# Lre1Hlr1_Tetrapisispora_200upseqs <-
+#     get_ortho_upseqs("YDR528W",
+#                      species_list = Tetrapisispora,
+#                      fastalist=Tetrapisispora_fasta,
+#                      gtflist=Tetrapisispora_gtf,
+#                      upstream=200,downstream=0,
+#                      fname_out="../results/ortho_UTR_groups/Sacc_noncer/Lre1Hlr1_Tetrapisispora_200upstream.fa")
+
+Cln2Cln1_Tetrapisispora_200upseqs <-
+    get_ortho_upseqs("YPL256C",
+                     species_list = Tetrapisispora,
+                     fastalist=Tetrapisispora_fasta,
+                     gtflist=Tetrapisispora_gtf,
+                     upstream=200,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Cln2Cln1_Tetrapisispora_200upstream.fa")
+
+Ssd1_Tetrapisispora_500upseqs <-
+    get_ortho_upseqs("YDR293C",
+                     species_list = Tetrapisispora,
+                     fastalist=Tetrapisispora_fasta,
+                     gtflist=Tetrapisispora_gtf,
+                     upstream=500,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Ssd1_Tetrapisispora_500upstream.fa")
+```
+
+```{r Hsp26_5UTRs}
+Hsp26_Sacc_200upseqs <- 
+    get_ortho_upseqs("YBR072W",
+                     species_list = Saccharomyces_noncer,                      
+                     fastalist=Sacc_noncer_fasta,
+                     gtflist=Sacc_noncer_gtf,
+                     upstream=200,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Hsp26_Saccharomyces_200upstream.fa")
+
+Hsp26_Naka_200upseqs <- 
+    get_ortho_upseqs("YBR072W",
+                     species_list = Nakaseomyces,                      
+                     fastalist=Nakaseomyces_fasta,
+                     gtflist=Nakaseomyces_gtf,
+                     upstream=200,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Hsp26_Nakaseomyces_200upstream.fa")
+
+Hsp26_Kaza_200upseqs <- 
+    get_ortho_upseqs("YBR072W",
+                     species_list = Kazachstania,                      
+                     fastalist=Kazachstania_fasta,
+                     gtflist=Kazachstania_gtf,
+                     upstream=200,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Hsp26_Kazachstania_200upstream.fa")
+
+```
+
+```{r Hsp150_5UTRs}
+Hsp150_Sacc_200upseqs <- 
+    get_ortho_upseqs("YJL159W",
+                     species_list = Saccharomyces_noncer,                      
+                     fastalist=Sacc_noncer_fasta,
+                     gtflist=Sacc_noncer_gtf,
+                     upstream=200,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Hsp150_Saccharomyces_200upstream.fa")
+
+Hsp150_Naka_200upseqs <- 
+    get_ortho_upseqs("YJL159W",
+                     species_list = Nakaseomyces,                      
+                     fastalist=Nakaseomyces_fasta,
+                     gtflist=Nakaseomyces_gtf,
+                     upstream=200,downstream=0,
+                     fname_out="../results/ortho_UTR_groups/Sacc_noncer/Hsp150_Nakaseomyces_200upstream.fa")
+
+# Hsp150_Kaza_200upseqs <- 
+#     get_ortho_upseqs("YJL159W",
+#                      species_list = Kazachstania,                      
+#                      fastalist=Kazachstania_fasta,
+#                      gtflist=Kazachstania_gtf,
+#                      upstream=200,downstream=0,
+#                      fname_out="../results/ortho_UTR_groups/Sacc_noncer/Hsp150_Kazachstania_200upstream.fa")
+```
+

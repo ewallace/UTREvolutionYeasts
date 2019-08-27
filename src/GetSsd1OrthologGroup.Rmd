@@ -1,0 +1,257 @@
+---
+title: "Ortholog groups in fungi from 332 genomes paper"
+author: "Edward Wallace"
+date: "10th August 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(Biostrings)
+library(GenomicFeatures)
+library(BSgenome)
+library(tidyverse)
+```
+
+## Pseudocode
+
+### Load data
+
+This chunk makes a concordance sequence name and information file, "../data_processed/allids_genes_343taxa.txt". It takes about 15 mins to run on a laptop so is precompiled.
+
+```{r process_seq_ids_index,eval=FALSE}
+# setwd("~/Repos/UTREvolutionYeasts/src/")
+seq_ids_index_ortho <- read_lines("../data/figshare_5854692/orthomcl_output/orthomcl_SeqIDs_index.txt") %>%
+    str_replace_all(": ","\t")  %>%
+    read_tsv(col_names = c("ortho_id","species_plus_id")) %>%
+    separate(species_plus_id,c("species","s_id"),remove=FALSE,sep = "@")
+
+# seq_ids_index_343 <- read_lines("../data/figshare_5854692/orthomcl_output/343taxa_protein_IDs_index.txt") %>% 
+#     str_replace_all(" ","\t") %>%
+#     str_replace_all("CDS=1-","") %>%
+#     str_replace_all("gene=","") %>%
+#     read_tsv(col_names = c("BADmRNA", "gene_id","CDSlength","species_plus_id"),
+#              col_types = "ccic") %>%
+#     select( c("species_plus_id", "gene_id","CDSlength"))
+
+seq_ids_index_343 <- read_tsv("../data/figshare_5854692/orthomcl_output/343taxa_protein_IDs_index.txt",
+                              col_names = c("fasta_header", "species_plus_id","gene_id"),
+                              col_types = "ccc") %>% 
+    mutate(gene_id=gene_id %>% 
+               str_remove("gene=") %>% 
+               str_remove(" CDS=1-\\d+"))
+
+# test_line <- read_lines("../data/figshare_5854692/orthomcl_output/orthomcl_clusters.txt",n_max=1)
+# test_lines10 <- read_lines("../data/figshare_5854692/orthomcl_output/orthomcl_clusters.txt",n_max=10)
+read_one_orthogroup <- function(OGline) {
+    OG <- str_extract(OGline,"OG[0-9]+")
+    OGids <- OGline %>%
+        str_remove("OG[0-9]+: ") %>% 
+        str_split(" ") %>%
+        .[[1]]
+    tibble(ortho_group=OG, ortho_id=OGids)
+}
+# read_one_orthogroup(test_line)
+
+# read_orthogroups <- function(OGfile,n_max=-1) {
+#     OGlines <- read_lines(OGfile,n_max=n_max)
+#     #OGsplit <- str_split(OGline,": ")[[1]]
+#     OGnames <- str_extract(OGlines,"OG[0-9]+")
+#     OGids <- OGlines %>%
+#         str_remove("OG[0-9]+: ") %>% 
+#         str_split(" ")
+#     names(OGids) <- OGnames
+#     return(OGids)
+# }
+# 
+# ortho_groups <- read_orthogroups("../data/figshare_5854692/orthomcl_output/orthomcl_clusters.txt")
+
+read_orthogroups_tidy <- function(OGfile,n_max=-1) {
+    OGlines <- read_lines(OGfile,n_max=n_max)
+    plyr::ldply(OGlines,read_one_orthogroup)
+}
+
+ortho_groups_df <- read_orthogroups_tidy("../data/figshare_5854692/orthomcl_output/orthomcl_clusters.txt")
+
+seq_ids_index <- left_join(seq_ids_index_ortho,seq_ids_index_343,by="species_plus_id") %>%
+    left_join(ortho_groups_df,by="ortho_id") %>%
+    select(species_plus_id,species,s_id,gene_id,ortho_id,ortho_group)
+
+# missing:
+# fasta_header: first column of orthomcl_SeqIDs_index.txt, full header from fasta file
+
+write_file("# allids_genes_343taxa.txt
+# This file contains a concordance of different gene_ids used in files:
+# orthomcl_clusters.txt, orthomcl_SeqIDs_index.txt, and 343taxa_protein_IDs_index.txt
+# from Shen, Xing-Xing (2018): Tempo and mode of genome evolution in the budding yeast subphylum. 
+# figshare dataset: https://doi.org/10.6084/m9.figshare.5854692.v1
+# 
+# Data processed by Edward Wallace, Edward.Wallace@ed.ac.uk, 15 August 2019
+# 
+# Tab-delimited text file with columns as below
+# species_plus_id: species name and with-species sequence id, from 
+# species: species name in form Genus_species
+# s_id: sequence id used in paper, in some cases this is systematic ORF id e.g. YAL005C
+# gene_id: gene id from orthomcl_SeqIDs_index.txt, corresponding to fasta entry
+# ortho_id: gene id used by orthomcl, as in orthomcl_SeqIDs_index.txt, format nn_nnn
+# ortho_group: number of orthomcl ortholog group, from orthomcl_clusters.txt
+#\n",
+path="../data_processed/allids_genes_343taxa.txt")
+write_tsv(seq_ids_index,"../data_processed/allids_genes_343taxa.txt",
+          append=TRUE,col_names=TRUE)
+
+```
+
+```{r load_seq_ids_index}
+# setwd("~/Repos/UTREvolutionYeasts/src/")
+seq_ids_index <- read_tsv("../data_processed/allids_genes_343taxa.txt",
+                          comment="#")
+```
+
+
+
+### Extract the fasta file of all members of the ortholog group
+
+```{r load_fasta}
+ortho_seqs <- readAAStringSet("../data/figshare_5854692/orthomcl_output/343taxa_proteins.fasta")
+```
+
+```{r Ssd1_ortho_group_seqs,dependson=c("load_fasta","find_one_genegroup")}
+Ssd1_group <- get_ortho_group("YDR293C")
+Ssd1_ortho_seqs <- get_orthoid_seqs(Ssd1_group$ortho_id)
+writeXStringSet(Ssd1_ortho_seqs,"../results/orthomcl_groups/Ssd1_ortho_seqs.fasta")
+```
+
+The Ssd1 ortholog group consists of 
+
+```{r lengths_Ssd1_ortho_group,dependson="Ssd1_ortho_group_seqs",fig.width=4,fig.height=1.5}
+qplot(x= width(Ssd1_ortho_seqs), geom="density",kernel="rectangular",adjust=0.5) +
+    theme_bw() +
+    labs(x="homolog sequence length",y="density")
+
+writeXStringSet(Ssd1_ortho_seqs %>%
+                    .[(width(.) <= 800 & width(.) >= 400 )] ,
+                "../results/orthomcl_groups/Ssd1_ortho_seqs_short.fasta")
+
+writeXStringSet(Ssd1_ortho_seqs %>%
+                    .[(width(.) >= 1000 & width(.) <= 1600  )] ,
+                "../results/orthomcl_groups/Ssd1_ortho_seqs_long.fasta")
+```
+
+Further inspection showed that the "long" group contains Ssd1 and homologs. The "short" group howevever is a sugar transporter in the MFS superfamily, and so its arrival in the same ortholog group is spurious. Presumably there are some structural motifs that aligned.
+
+```{r select_Ssd1_ortho_group,dependson="Ssd1_ortho_group_seqs"}
+favourite_SaccharomycesToSaccharomycopsis <- 
+    c("Saccharomyces_cerevisiae",
+      "Saccharomyces_kudriavzevii",
+      "Saccharomyces_uvarum",
+      "Candida_glabrata",
+      "Candida_castellii",
+      "Kazachstania_africana",
+      "Kazachstania_naganishii",
+      "Naumovozyma_dairenensis",
+      "Naumovozyma_castellii",
+      "Tetrapisispora_phaffii",
+      "Vanderwaltozyma_polyspora",
+      "Tetrapisispora_blattae",
+      "Torulaspora_delbrueckii",
+      "Zygosaccharomyces_bailii",
+      "Zygosaccharomyces_rouxii",
+      "Lachancea_thermotolerans",
+      "Lachancea_fermentati",
+      "Lachancea_kluyveri",
+      "Lachancea_waltii",
+      "Eremothecium_gossypii",
+      "Kluyveromyces_lactis",
+      "Kluyveromyces_aestuarii",
+      "Hanseniaspora_clermontiae",
+      "Kloeckera_hatyaiensis",
+      "Hanseniaspora_vinae",
+      "Cyberlindnera_jadinii",
+      "Cyberlindnera_americana",
+      "Candida_freychusii",
+      "Wickerhamomyces_hampshirensis",
+      "Phaffomyces_thermotolerans",
+      "Barnettozyma_hawaiiensis",
+      "Wickerhamomyces_bovis",
+      "Wickerhamomyces_anomalus",
+      "Starmera_amethionina",
+      "Candida_ponderosae",
+      "Saccharomycopsis_malanga",
+      "Ascoidea_asiatica")
+
+favourite_CUGSer1 <- 
+    c("Candida_albicans",
+                       "Candida_tropicalis",
+                       "Lodderomyces_elongisporus"
+                       "Candida_parapsilosis",
+                       "Scheffersomyces_stipitis",
+                       "Clavispora_lusitaniae",
+                       "Candida_auris",
+                       "Hyphopichia_burtonii",
+                       "Spathaspora_passalidarum",
+                       "Candida_hawaiiana",
+                       "Meyerozyma_guilliermondii",
+                       "Kodamaea_laetipori",
+                       "Priceomyces_haplophilus",
+                       "Debaryomyces_hansenii",
+                       "Candida_tenuis", # "Yamadozyma_tenuis"
+                       "Candida_schatavii",
+                       "Cephaloascus_fragrans",
+                       "Babjeviella_inositovora")
+
+favourite_Pichiaciae_and_CUGAla <- 
+    c("Pachysolen_tannophilus",
+      "Peterozyma_toletana",
+      "Citeromyces_hawaiiensis",
+      "Komagataella_pastoris",
+      "Ogataea_naganishii",
+      "Kuraishia_ogatae",
+      "Ogataea_polymorpha",
+      "Ogataea_populiabae",
+      "Ogataea_methanolica",
+      "Ambrosiozyma_monospora",
+      "Brettanomyces_anomalus",
+      "Kregervanrija_delftensis",
+      "Saturnispora_saitoi",
+      "Pichia_membranifaciens")
+
+favourite_basal_Saccharomycetes <- c("Alloascoidea_hylecoeti",
+                                     "Sporopachydermia_quercuum",
+                                     "Arxula_adeninivorans",
+                                     "Blastobotrys_mokoenaii",
+                                     "Sugiyamaella_lignohabitans",
+                                     "Middelhovenomyces_tepae",
+                                     "Candida_salmanticensis",
+                                     "Dipodascus_albidus",
+                                     "Yarrowia_lipolytica",
+                                     "Candida_hispaniensis",
+                                     "Tortispora_caseinolytica",
+                                     "Trigonopsis_vinaria",
+                                     "Lipomyces_starkeyi",
+                                     "Lipomyces_suomiensis")
+
+outgroup_fungi <- c("Schizosaccharomyces_pombe",
+                    "Saitoella_complicata",
+                    "Botrytis_cinerea",
+                    "Sclerotinia_sclerotiorum",
+                    "Stagonospora_nodorum",
+                    "Arthrobotrys_oligospora",
+                    "Xylona_heveae",
+                    "Aspergillus_nidulans",
+                    "Coccidioides_immitis",
+                    "Neurospora_crassa",
+                    "Fusarium_graminearum")
+```
+
+
+```{r Dis3_ortho_group_seqs,dependson=c("load_fasta","find_one_genegroup")}
+Dis3_group <- get_ortho_group("YOL021C")
+Dis3_ortho_seqs <- get_orthoid_seqs(Dis3_group$ortho_id)
+writeXStringSet(Dis3_ortho_seqs,"../results/orthomcl_groups/Dis3_ortho_seqs.fasta")
+```
+
+We wanted to find Dis3L2 sequences with the active site similar to pombe Dis3L2, but not yet successful.
+
+Then, externally, compute alignment and trees.
+
