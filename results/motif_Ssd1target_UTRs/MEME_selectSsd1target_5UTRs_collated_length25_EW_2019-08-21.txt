@@ -1,0 +1,1577 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org/.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= selectSsd1target_5UTRs_collated.fa
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+YLR110C                  1.0000    200  YDR134C                  1.0000    200  
+Saccharomyces_arboricola 1.0000    200  Saccharomyces_arboricola 1.0000    200  
+Saccharomyces_eubayanus@ 1.0000    200  Saccharomyces_eubayanus@ 1.0000    200  
+Saccharomyces_kudriavzev 1.0000    200  Saccharomyces_kudriavzev 1.0000    200  
+Saccharomyces_mikatae@Se 1.0000    200  Saccharomyces_mikatae@Se 1.0000    200  
+Saccharomyces_paradoxus@ 1.0000    200  Saccharomyces_paradoxus@ 1.0000    200  
+Saccharomyces_uvarum@Seq 1.0000    200  Saccharomyces_uvarum@Seq 1.0000    200  
+YPL256C                  1.0000    200  YMR199W                  1.0000    200  
+Saccharomyces_arboricola 1.0000    200  Saccharomyces_arboricola 1.0000    200  
+Saccharomyces_eubayanus@ 1.0000    200  Saccharomyces_eubayanus@ 1.0000    200  
+Saccharomyces_kudriavzev 1.0000    200  Saccharomyces_kudriavzev 1.0000    200  
+Saccharomyces_mikatae@Se 1.0000    200  Saccharomyces_mikatae@Se 1.0000    200  
+Saccharomyces_paradoxus@ 1.0000    200  Saccharomyces_paradoxus@ 1.0000    200  
+Saccharomyces_uvarum@Seq 1.0000    200  Saccharomyces_uvarum@Seq 1.0000    200  
+YLR286C                  1.0000    200  Saccharomyces_arboricola 1.0000    200  
+Saccharomyces_eubayanus@ 1.0000    200  Saccharomyces_kudriavzev 1.0000    200  
+Saccharomyces_mikatae@Se 1.0000    200  Saccharomyces_paradoxus@ 1.0000    200  
+Saccharomyces_uvarum@Seq 1.0000    200  YHR143W                  1.0000    200  
+Saccharomyces_eubayanus@ 1.0000    200  Saccharomyces_kudriavzev 1.0000    200  
+Saccharomyces_mikatae@Se 1.0000    200  Saccharomyces_paradoxus@ 1.0000    200  
+YBR072W                  1.0000    200  Saccharomyces_arboricola 1.0000    200  
+Saccharomyces_eubayanus@ 1.0000    200  Saccharomyces_kudriavzev 1.0000    200  
+Saccharomyces_mikatae@Se 1.0000    200  Saccharomyces_paradoxus@ 1.0000    200  
+Saccharomyces_uvarum@Seq 1.0000    200  YKL163W                  1.0000    200  
+YJL159W                  1.0000    200  Saccharomyces_arboricola 1.0000    200  
+Saccharomyces_arboricola 1.0000    200  Saccharomyces_eubayanus@ 1.0000    200  
+Saccharomyces_eubayanus@ 1.0000    200  Saccharomyces_kudriavzev 1.0000    200  
+Saccharomyces_kudriavzev 1.0000    200  Saccharomyces_kudriavzev 1.0000    200  
+Saccharomyces_mikatae@Se 1.0000    200  Saccharomyces_mikatae@Se 1.0000    200  
+Saccharomyces_mikatae@Se 1.0000    200  Saccharomyces_paradoxus@ 1.0000    200  
+Saccharomyces_paradoxus@ 1.0000    200  Saccharomyces_paradoxus@ 1.0000    200  
+Saccharomyces_uvarum@Seq 1.0000    200  Saccharomyces_uvarum@Seq 1.0000    200  
+Saccharomyces_uvarum@Seq 1.0000    200  YDR528W                  1.0000    200  
+YCL051W                  1.0000    200  Saccharomyces_arboricola 1.0000    200  
+Saccharomyces_eubayanus@ 1.0000    200  Saccharomyces_kudriavzev 1.0000    200  
+Saccharomyces_mikatae@Se 1.0000    200  Saccharomyces_paradoxus@ 1.0000    200  
+Saccharomyces_uvarum@Seq 1.0000    200  YGR279C                  1.0000    200  
+YMR305C                  1.0000    200  Saccharomyces_arboricola 1.0000    200  
+Saccharomyces_arboricola 1.0000    200  Saccharomyces_eubayanus@ 1.0000    200  
+Saccharomyces_eubayanus@ 1.0000    200  Saccharomyces_kudriavzev 1.0000    200  
+Saccharomyces_kudriavzev 1.0000    200  Saccharomyces_mikatae@Se 1.0000    200  
+Saccharomyces_mikatae@Se 1.0000    200  Saccharomyces_paradoxus@ 1.0000    200  
+Saccharomyces_uvarum@Seq 1.0000    200  Saccharomyces_uvarum@Seq 1.0000    200  
+YDR293C                  1.0000    500  Saccharomyces_arboricola 1.0000    500  
+Saccharomyces_eubayanus@ 1.0000    500  Saccharomyces_kudriavzev 1.0000    500  
+Saccharomyces_mikatae@Se 1.0000    500  Saccharomyces_paradoxus@ 1.0000    500  
+Saccharomyces_uvarum@Seq 1.0000    500  YIL123W                  1.0000    700  
+YNL066W                  1.0000    700  Saccharomyces_arboricola 1.0000    700  
+Saccharomyces_arboricola 1.0000    700  Saccharomyces_eubayanus@ 1.0000    700  
+Saccharomyces_eubayanus@ 1.0000    700  Saccharomyces_kudriavzev 1.0000    700  
+Saccharomyces_kudriavzev 1.0000    700  Saccharomyces_mikatae@Se 1.0000    700  
+Saccharomyces_mikatae@Se 1.0000    700  Saccharomyces_paradoxus@ 1.0000    700  
+Saccharomyces_paradoxus@ 1.0000    700  Saccharomyces_uvarum@Seq 1.0000    700  
+Saccharomyces_uvarum@Seq 1.0000    700  YBR162C                  1.0000    200  
+Saccharomyces_arboricola 1.0000    200  Saccharomyces_eubayanus@ 1.0000    200  
+Saccharomyces_kudriavzev 1.0000    200  Saccharomyces_mikatae@Se 1.0000    200  
+Saccharomyces_paradoxus@ 1.0000    200  Saccharomyces_uvarum@Seq 1.0000    200  
+YNL300W                  1.0000    200  Saccharomyces_arboricola 1.0000    200  
+Saccharomyces_eubayanus@ 1.0000    200  Saccharomyces_kudriavzev 1.0000    200  
+Saccharomyces_mikatae@Se 1.0000    200  Saccharomyces_paradoxus@ 1.0000    200  
+Saccharomyces_uvarum@Seq 1.0000    200  YKR042W                  1.0000    200  
+YJL116C                  1.0000    200  Saccharomyces_arboricola 1.0000    200  
+Saccharomyces_arboricola 1.0000    200  Saccharomyces_eubayanus@ 1.0000    200  
+Saccharomyces_eubayanus@ 1.0000    200  Saccharomyces_kudriavzev 1.0000    200  
+Saccharomyces_kudriavzev 1.0000    200  Saccharomyces_mikatae@Se 1.0000    200  
+Saccharomyces_mikatae@Se 1.0000    200  Saccharomyces_paradoxus@ 1.0000    200  
+Saccharomyces_paradoxus@ 1.0000    200  Saccharomyces_uvarum@Seq 1.0000    200  
+Saccharomyces_uvarum@Seq 1.0000    200  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme selectSsd1target_5UTRs_collated.fa -dna -oc . -nostatus -time 18000 -mod anr -nmotifs 3 -minw 10 -maxw 25 -objfun classic -markov_order 1 
+
+model:  mod=           anr    nmotifs=         3    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=           10    maxw=           25
+nsites: minsites=        2    maxsites=      675    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=           36100    N=             135
+sample: seed=            0    hsfrac=          0
+        searchsize=  36100    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.32 C 0.211 G 0.12 T 0.35 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.32 C 0.21 G 0.12 T 0.35 
+Background model order: 1
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AHHHAHHWHYWKTCAYTCCTTTAAW MEME-1	width =  25  sites = 193  llr = 1942  E-value = 1.5e-243
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AHHHAHHWHYWKTCAYTCCTTTAAW MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  73346423325:2:7:::2::2665
+pos.-specific     C  13432322351:1a13:a61:1212
+probability       G  :1:1111:1::4::1:::1::::11
+matrix            T  2332124534466:16a:19a8222
+
+         bits    3.1                          
+                 2.8                          
+                 2.4                          
+                 2.1              *   *       
+Relative         1.8              *   *       
+Entropy          1.5              *  **  *    
+(14.5 bits)      1.2              *  **  *    
+                 0.9            * *  ** **    
+                 0.6            * * *******   
+                 0.3 * * *    *************** 
+                 0.0 -------------------------
+
+Multilevel           ACCAAATTTCATTCATTCCTTTAAA
+consensus            TAAC CAACTTGA  C      CTT
+sequence              TTT TC A               C
+                                              
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AHHHAHHWHYWKTCAYTCCTTTAAW MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                      Site         
+-------------             ----- ---------            -------------------------
+Saccharomyces_paradoxus@    136  7.21e-10 TTTGAATATA ACCAACTACTAGTCCTTCCTTTAAA CTAAATTTTA
+Saccharomyces_mikatae@Se    136  7.21e-10 TTTGAATATA ACCAACTACTAGTCCTTCCTTTAAA GTAAATTATA
+YKR042W                     136  7.21e-10 TTTGAATATA ACCAACTACTAGTCCTTCCTTTAAA CAAAAATTTA
+YIL123W                     150  1.33e-09 GTTTAGTGCT ACCCAACTACTTACATTCCTTTAAA AACCACAATA
+Saccharomyces_uvarum@Seq    142  2.37e-09 TTTGAATATA ACCAACTATTAGTCCTTCCTTTAAA CTAAAATTAA
+Saccharomyces_kudriavzev    136  2.37e-09 TTTGAATATA ACCAACTATTAGTCCTTCCTTTAAA CTAAATTATA
+Saccharomyces_eubayanus@    142  2.37e-09 TTTGAATATA ACCAACTATTAGTCCTTCCTTTAAA CTAAATTAAA
+Saccharomyces_arboricola    141  2.37e-09 GAATATAATA ACCAACTATTAGTCCTTCCTTTAAA CTAAATTATA
+Saccharomyces_kudriavzev     95  1.86e-08 TTATCAAAAG AGCTAACCACAGTCACTCCTTAAAA TCTTTTGTCA
+Saccharomyces_mikatae@Se     19  2.95e-08 ACAGAATATA ACCAACTAGCCGTCATTCATTTAAA AAAAGAAAAA
+Saccharomyces_uvarum@Seq    155  4.57e-08 GTTTAGTGCT ATCCAACTACTTACATTCCTTTACA AATACCAAAC
+Saccharomyces_eubayanus@    147  4.57e-08 GTTTAGTGCT ATCCAACTACTTACATTCCTTTACA AATTCCAAAC
+Saccharomyces_paradoxus@     55  4.57e-08 CGGGTTTGTA AGCTAACTCCAGTCATTCCTTACTA TATTTTATTG
+Saccharomyces_mikatae@Se     51  4.57e-08 TGGGATTAAA AGCTAACTCCAGTCATTCCTTACTA TATTCTATTG
+Saccharomyces_kudriavzev     42  4.57e-08 TAGAACTTTA AGCTAACTCCAGTCATTCCTTACTA TATTTTGTTA
+Saccharomyces_uvarum@Seq     89  5.66e-08 ACCAATTTTA TCCAACTTCTAGTCACTCCTTCAAA TAGAACGTCT
+Saccharomyces_eubayanus@     87  5.66e-08 ACCAATTTAA TCCAACTTCTAGTCACTCCTTCAAA TAGAACGCCT
+Saccharomyces_paradoxus@    300  5.66e-08 AAGAAACTTT TCCAACTATTTTTCACTCCTTTAAG CCTTTTTTTA
+YNL066W                     289  6.98e-08 AAAGAACTCT TCCAACTAATTTTCACTCCTTTAAG CATTTTTTTT
+Saccharomyces_uvarum@Seq     91  1.05e-07 GAAACTTTCC AACTATTTACAGTCCTTCCTTTACA AAATAAGCTA
+Saccharomyces_mikatae@Se     76  1.05e-07 CGAAATTTCC AACTATTTACAGTCCCTCCTTTACA AATTATCTAG
+Saccharomyces_eubayanus@     83  1.05e-07 GAAACTTTCC AACTATTTACAGTCCTTCCTTTACA AAATAAGCTA
+Saccharomyces_arboricola     53  1.05e-07 GACACTTTCC AACTATTTACAGTCCTTCCTTTACA AAAATTAACT
+Saccharomyces_uvarum@Seq     22  1.05e-07 ATTCTATAAT ATTGAAAATCTTTCACTCCTTTAAG ACTCAATATC
+Saccharomyces_eubayanus@     22  1.05e-07 TTTTTATATT ATTGAAAATCTTTCACTCCTTTAAG ACTCAATATC
+Saccharomyces_paradoxus@     81  1.27e-07 CTCGAATTCC AACTATTTACAGTCCTTCCTTTATA AAATTAACTA
+YIL123W                      86  1.27e-07 CTCGAATTCC AACTATTTACAGTCCTTCCTTTATA AAAATTAACT
+Saccharomyces_mikatae@Se    103  1.27e-07 TCTTCAATAG AGCTAACCACAGTCATTCCTTAATA CCTTTTACCA
+YHR143W                     111  1.27e-07 TCTTCAGTAG AGCTAACCACAGTCATTCCTTAATA TTTTTTAACA
+Saccharomyces_paradoxus@    143  1.55e-07 GTTTAGTGCT ATCCAACTACTTACATTCCTTTGAA AACTACCATA
+Saccharomyces_mikatae@Se    138  1.55e-07 GTTTAGTGCT ATCCAACTACTTACATTCCTTTGAA TATTACTAAT
+Saccharomyces_paradoxus@     86  1.87e-07 ACTTAACCTA TCCAACTTCTAGTCACTCCTTCAAT AGAACATCTT
+Saccharomyces_mikatae@Se     91  1.87e-07 AAGCTACTTA TCCAACTTCTAGTCACTCCTTCAAT AGAACACCTT
+Saccharomyces_arboricola     86  1.87e-07 AGCCAACTAA TCCAACTTCTAGTCACTCCTTCAAT AGAGCACCTT
+YBR162C                      94  1.87e-07 ACCTAACTTA TCCAACTTCTAGTCACTCCTTCAAT AGAACGTCTT
+YHR143W                      62  1.87e-07 TCGGGTTTTA AGCTAACTCTAGTCATTCCTTACTA CATTTTATTG
+Saccharomyces_eubayanus@     55  2.25e-07 ACAGATTATA ACCAACTGACTGTCGCTCATTTAAA AAAAAAACAA
+Saccharomyces_mikatae@Se    238  2.70e-07 TTTACCGTTA TCCAACTATTTTTCACTCCTTTTAA ATCAACAAAA
+YDR528W                       6  2.70e-07      TTATA ACCAACTAATCGTCATTCATTTCAA AAAAAAAAAA
+Saccharomyces_kudriavzev    160  3.84e-07 GACTAATTTA ATCCAACTTTTTACCTTCCTTTAAC ACAATATCAA
+Saccharomyces_kudriavzev     88  3.84e-07 AGCCAACTTA TCCAACTTTTAGTCACTCCTTCAAT AGAACCACTT
+Saccharomyces_paradoxus@     10  3.84e-07  AAGATTATA ACCAACTAGTCGTCATTCATTTCAA AAAAATAAAG
+Saccharomyces_eubayanus@     92  3.84e-07 TCTTTTGTAG TGCTAACTCCAGTCATTCCTTACTA CCTTTTATTC
+Saccharomyces_mikatae@Se    279  4.56e-07 AAAAAGAATC TCCAACTACTTTCCACTCCTTTCAC TTTTTTTACT
+Saccharomyces_mikatae@Se     63  4.56e-07 GTAGCCCAAA ATAACAACCCTGTCACTCCTTTGAA CATTATATCT
+Saccharomyces_kudriavzev    163  4.56e-07 AACCCAAGAA AATAATCTTCTGTCATTCGCTTAAA CAATATATCA
+Saccharomyces_arboricola    154  5.40e-07 ACTAAATTTT AACCAACTTTTTACCTTCCTTTAAT ATCAATCAAT
+YNL300W                     159  5.40e-07 GCTAATTTTA AACCAACTTTTTACCTTCCTTTAAT ATCAATATCA
+Saccharomyces_eubayanus@     40  5.40e-07 CACAATTTTA AGCTAGCCCCAGTCATTCCTTACTA TATTTTATTA
+YLR286C                      60  5.40e-07 TAACATAAAA AAAATAAACCTGTCATTCCTTTGAA CCTTTTTATA
+Saccharomyces_uvarum@Seq    163  5.40e-07 ACCCCAAGAA ATTAATCTTCTGTCATTCGCTTAAA CACTATATCA
+Saccharomyces_paradoxus@    163  5.40e-07 ATACCAAGAA ATTAATCTTCTGTCATTCGCTTAAA CACTATATCA
+Saccharomyces_mikatae@Se    163  5.40e-07 AAACCAAGAA ATTAATCTTCTGTCATTCGCTTAAA CACTATATCA
+Saccharomyces_eubayanus@    163  5.40e-07 ACCCCAAGAA ATTAATCTTCTGTCATTCGCTTAAA CACTATATCA
+Saccharomyces_arboricola    163  5.40e-07 ATACCAAGAA ATTAATCTTCTGTCATTCGCTTAAA TACTACATCA
+YLR110C                     163  5.40e-07 ATACCAAGAA ATTAATCTTCTGTCATTCGCTTAAA CACTATATCA
+Saccharomyces_uvarum@Seq    244  6.38e-07 TTTATTACTA TCCAACTACTTTACACTCCTTTTAA ACAGAAAACT
+Saccharomyces_eubayanus@    203  6.38e-07 TTTATTACTA TCCAACTACTTTACACTCCTTTTAA AAAAGTAAAC
+Saccharomyces_arboricola    118  6.38e-07 GTTTCCTGCT ATCCAACTACTTACATTCCTTTGCA AATATCCAAT
+Saccharomyces_uvarum@Seq     42  8.81e-07 ACAGATTATA ACCAACTGACCGTCGCTCATTTAAA AACCTCCTCC
+Saccharomyces_paradoxus@     23  8.81e-07 TTTTTATACC ATTGAAGATCTTTCACTCATTTAAG ACTCAATAAC
+Saccharomyces_kudriavzev     12  8.81e-07 TTTCTATACC ATTGAAGATCTTTCACTCATTTAAG ACTCAACATC
+Saccharomyces_arboricola     27  8.81e-07 TTTTTATACC ATTGAAGATCTTTCACTCATTTAAG ACTCAATAAC
+YLR286C                      19  8.81e-07 TTTTCATAAC ATTGAAGATCTTTCACTCATTTAAG ACTCAATAAC
+Saccharomyces_kudriavzev    145  1.03e-06 GTTTAGTGCT ATCCAACTATTTACATTCCTTTCCG ACTTACAAAT
+Saccharomyces_arboricola    257  1.03e-06 CTTACCAATA TCCAACTACTTTACGCTCCTTTCAA CCCAAAAGAA
+Saccharomyces_paradoxus@     63  1.40e-06 ATAACCCAAA TTAACAAACCTGTCACTCCTTTGAA CATTATATAC
+YLR286C                     100  1.62e-06 TTATATCCAA AAATAATAACTGTCGCTCGTTTCAC AACCTACCTT
+Saccharomyces_eubayanus@    116  1.88e-06 GCTAATAAAA ATCCAACTGCATTCTTTCCTTAACA TTGTCTTCGA
+Saccharomyces_kudriavzev    239  1.88e-06 AAATAATCTT CCCAACTATTTTCCACTCCTTTAGA AATTCTACCA
+Saccharomyces_kudriavzev    197  1.88e-06 TTTACCATTA TCCAACTACTATACGCTCCTTTTAA ACCAAAAAAA
+Saccharomyces_kudriavzev     13  1.88e-06 ACAGATTATA ATCAACTTGCGGTCATTCATTTCAG AATAATAAAG
+Saccharomyces_paradoxus@    107  2.50e-06 TCTTCAATAG AGCTAACCACAGTCATTCCTTATTT TTTCTAGTCC
+Saccharomyces_mikatae@Se      6  2.87e-06      TAATA AACTGCATACTTACACTCCTTTTAT CGGCAACTAA
+Saccharomyces_paradoxus@    102  2.87e-06 ATATACTTAA AAATAATAACTGTCGCTCATTTCAC ACCCTCCTTT
+Saccharomyces_eubayanus@     62  2.87e-06 ATATCTCAAA ATAGTAAACATTTCACTCCTTTAAG GCCTTATACC
+Saccharomyces_uvarum@Seq    121  3.28e-06 TTTTCTCTAT AGACGGTACCTTACTTTCCTTTAAA TTCAGATTTT
+Saccharomyces_eubayanus@    135  3.28e-06 GTCTCTCTAT AGACGGTACCTTACTTTCCTTTAAA TTCAGATTTT
+Saccharomyces_mikatae@Se    100  3.28e-06 TTATATCTAA AAATAATAACCGTCACTCGTTTTAC AACCTACTTT
+Saccharomyces_mikatae@Se    159  3.75e-06 GCTGATTTTA AAACAACTAATTACCTTCCTTTAAT ACCAATATCA
+Saccharomyces_paradoxus@    255  3.75e-06 TTTACCGTTA TCCAACTACTTTACACTCCTTTTTC GATCAAAGAA
+Saccharomyces_eubayanus@     97  3.75e-06 TATCTCCAAC ACCGCCTACAAGCCATTCCTTTTTT TTTTTGACAA
+YNL300W                     115  4.28e-06 GTCCATAGAA AACCAACTGCATTCCTTCCTTATCC CTGCCTTCGG
+Saccharomyces_arboricola    119  4.87e-06 GTCTCTTTAT AGACGGTACCTTACTTTCCTTTAAC ATCAAAAGTT
+Saccharomyces_paradoxus@    159  4.87e-06 GCTGATTTTA GACCAACTTTTTACCTTCCTTTAAC ATTAATATCA
+Saccharomyces_arboricola     13  4.87e-06 TACAGATTAC AACCAACTAACTTCACTCACTTAAA AAAAGAAAGA
+Saccharomyces_kudriavzev     99  4.87e-06 ATCTTCAAGA GTAAAATACCTGTCGCTCCTTTTAT AACCTACTCT
+Saccharomyces_kudriavzev     57  5.52e-06 GCAACATAAT ATACAAGCCCTGCCTCTCCTTTGAA ACTTTATATC
+Saccharomyces_kudriavzev    106  5.52e-06 TGCTAGATTC TATAGCTACCATTCATTCGCTTAAC CACACCATAA
+Saccharomyces_eubayanus@     66  6.25e-06 CATAATAGCA ACACGAATACATACATTCATTTCGA GCCTCTCGTC
+Saccharomyces_kudriavzev     92  6.25e-06 TTCTCGCAAC ATCGCTCACAAGTCGTTCCTTTTTA GACCAACTCC
+Saccharomyces_mikatae@Se    158  6.25e-06 CAAGAATAAC AAACATCTTCTTTCGTTCGCTTCAA AATAACAACA
+YDR134C                     158  6.25e-06 CAAGGATAAC AAACATCTTCTTTCGTTCGCTTCAA AATAACTACA
+Saccharomyces_paradoxus@    123  7.07e-06 GTCTCTTCAT AGACGGTACCTTACTTTCCTTTAAT ATTAAAACTT
+Saccharomyces_paradoxus@      8  7.07e-06    ATTAATA AACTGCACATTTACACTCCTTTCAT CGGTAACTAA
+YJL116C                     123  7.07e-06 GTCTCCTCAT AGACGGTACCTTACTTTCCTTTAAT ATTATAATAC
+Saccharomyces_arboricola     97  7.07e-06 ATACTTCGAA AAATAAAAACATTCACTCATTTTAT AACTTACTCT
+Saccharomyces_arboricola    659  7.97e-06 AAAGCACTTT ACTAACTAATATCCAATCCTTTAAT CTCCTCGCAG
+Saccharomyces_uvarum@Seq     91  7.97e-06 TATCTGCGAC ACCGCTTACAAGCCATTCCTTTTTT TTTTTTTTGA
+YHR143W                     163  7.97e-06 CTTTCACAGA GTAGAAATAAAGCCACTCCTTTAAC AAATTACAAA
+Saccharomyces_uvarum@Seq     62  7.97e-06 ATATCTCAAA ATAGTAAGCCTTTCACTCCTTTAGG AACTTATACC
+Saccharomyces_uvarum@Seq     52  1.01e-05 TAAAATAGCA AGAAGAATACATACATTCATTTCGA GCCTCTCGTC
+Saccharomyces_uvarum@Seq    115  1.01e-05 GCTCGCAAAA CACCAACTGCATCCTTTCCTTTACA CTGTCTTCGA
+YNL066W                     246  1.01e-05 TTTACCATTA TCCAACTACTCTACACTCCTTTTTC GCCGAAGAAA
+Saccharomyces_mikatae@Se     23  1.01e-05 TTTTTATGCC ATTGAAGATCTTTCACTCATTCAAG ACTCAGTAGC
+YKR042W                      68  1.13e-05 GACCACACAA TTTCCAGTGTATTCATTCCTTAAAC TTCGTTTATT
+Saccharomyces_uvarum@Seq    118  1.13e-05 TATTCAACTA AATCCAACTAAGTCACTCTTTTAAA AATCTACTAT
+Saccharomyces_eubayanus@    119  1.13e-05 TATTCAACTA AATCCAACTAAGTCACTCTTTTAAA CTCTACAATC
+Saccharomyces_arboricola     57  1.13e-05 TTAAGACTCA ATAACAAATCTGTCACTCTTTTGAA ACTTCATACT
+Saccharomyces_uvarum@Seq    160  1.26e-05 CAAAACTTTG AACCAACTTTTTACTTTCCTTAATA TCAATACCAA
+Saccharomyces_uvarum@Seq    158  1.26e-05 CAAGAATAAC AAACATTATCTTTCATTCGCTTCGC AATAACAACA
+Saccharomyces_paradoxus@    158  1.26e-05 CAAGGATAAC AAACATCTTCTTTCGTTCGCTTCAT AATAACAACA
+Saccharomyces_eubayanus@    158  1.26e-05 CAAGAATAAC AAACATTATCTTTCACTCGCTTCGC AATAACAACA
+Saccharomyces_arboricola    302  1.41e-05 AATTTATTTT ACGGACTGTTTTCCACTCCTTTAAA AATACACTAT
+Saccharomyces_kudriavzev     25  1.41e-05 AGAGCGTACA TCACATTTTCTTCCATTCCTTTTGT CAATCATATA
+Saccharomyces_kudriavzev    102  1.57e-05 TCTTTCATTT ATTTTTATTCATTCATTCATTTAAT TTGAATATAA
+Saccharomyces_paradoxus@    663  1.57e-05 AAGACACTCT ACTAACTAATATCCAATCCTTTATC TCCTTGCAGA
+Saccharomyces_mikatae@Se    662  1.57e-05 AAAACACTTT ACTAACTAATATCCAATCCTTTATC TCTTCGCAGA
+Saccharomyces_uvarum@Seq    215  1.74e-05 CTATTGCCTG AAAAAAAATAGTTCATTCCTTTATT ACTATCCAAC
+Saccharomyces_kudriavzev     82  1.74e-05 GAAATTTTCC AACTACTTACAATCCTTCCTTAAAA AATTAACTAG
+YDR293C                      23  1.74e-05 AGAAAGGTAA GAAGTTTTTCTGTCATTCCTTTTAG AATATTTGCT
+Saccharomyces_arboricola      4  1.94e-05        ACT AACTGCACACCTACACTCCTTTCCT CAGAAACTAA
+Saccharomyces_eubayanus@    241  2.15e-05 AGTAAACCAT TCCAACTATTCCACACTCCTTTAAG AATTGATTAT
+YIL123W                     665  2.15e-05 AAAACACTTT ACTAACTAATATCCAATCCTTTATT TTTTTGCAGA
+Saccharomyces_uvarum@Seq    281  2.37e-05 AGAAAACTAT TCCAACTATTTCACGCTCCTTTAAG AATTGATTAT
+YHR143W                       2  2.37e-05          A TTCCAACTAAAGCCACTCCCTCAAG CGTTATTATT
+YKR042W                       3  2.62e-05         TT AAACCGCAATTTACGCTCCTTTCAT CGGTAACTAA
+Saccharomyces_mikatae@Se    122  2.62e-05 TATCTAATCA AATCCAACTAAGTCATTCTTTTACA ACTACAATCG
+YGR279C                     123  2.62e-05 TATCTAACTA AATCCAACTAAGTCATTCTTTTACA TCTACAATCG
+Saccharomyces_mikatae@Se    106  2.62e-05 GCTAGACTCT ATAGCTACCCATTCATTCGCTTATC ACATCATAAT
+YJL116C                      54  2.89e-05 GCCAGTAGCA AAAAGAATATATCCATTCATTTCGA GCTTTTTCGT
+Saccharomyces_paradoxus@     18  2.89e-05 TAGAGAGGTA AGAATTTTCCTGTCATTCTCTTTAA AATATTTGCT
+Saccharomyces_kudriavzev    121  2.89e-05 TATCTAACTA ATTCCAACTAAGTCATTCTTTTACA CCTACAATCG
+Saccharomyces_arboricola     50  3.17e-05 ATAGTAGCAT TAAGGAGTATATTCATTCATTTCGA GCTTCTCACC
+Saccharomyces_arboricola    110  3.17e-05 GTCCAAAAAA AACCAACTGCTTTCCCTCATTATTG TTGTCTTCAA
+Saccharomyces_eubayanus@    174  3.17e-05 TATTGCCTGA AAAAGAAATAGTTCATTCCTTTATT ACTATCCAAC
+YCL051W                     115  3.17e-05 TAAAGATACA TTCCAACTATTTACATTCATTTTTA TTTCTAAAAG
+Saccharomyces_paradoxus@     69  3.49e-05 GACCACACAA TCTCTAGTGTATTCATTCCTTAACT TTCATTTATT
+Saccharomyces_eubayanus@    160  3.49e-05 ACAAATTCTG AACCAACTTATTACATTCTTTAATA CCAATATCAC
+Saccharomyces_uvarum@Seq    111  3.49e-05 GCTAAATTCT ATAGCTACCAATTCATTCGCTTAAC CACATCATAA
+Saccharomyces_uvarum@Seq    663  3.82e-05 AAGTCACTCT ACTAACTAATATCCGATCCTTTATC CTCCATAGAA
+Saccharomyces_eubayanus@    663  3.82e-05 AAGTCACTCT ACTAACTAATATCCGATCCTTTATC CTCCATAGAA
+YJL159W                     104  3.82e-05 ACGACAATCA ATTTCGATTATGTCCTTCCTTTTAC CTCAAAGCTC
+Saccharomyces_eubayanus@    103  3.82e-05 TACCTCCAAA AAAATCAGCCTTTCACTCATTTTAT AACCTCTTCT
+Saccharomyces_mikatae@Se     68  4.18e-05 GACCGCACAA CCTCTAGTGTATTCATTCCTTAACC TTCATTTATT
+Saccharomyces_mikatae@Se     54  4.18e-05 CATAGTAGCA AAAAGAATATATCCATTCATTTCGG GCTTCTCCGT
+Saccharomyces_eubayanus@     73  4.18e-05 GACCGCACAT CCTCTAGTGTATTCATTCCTTAACC TTCGTTATTT
+YPL256C                     163  4.18e-05 GAAAATCTTT TCTTTTTTCCATTCATTCATTAAAT TTAACGACAG
+Saccharomyces_kudriavzev    160  4.18e-05 TAAGAATAAC AAACGCCTTCTTTCTTTCGCTTTAC AATAACAATA
+Saccharomyces_uvarum@Seq     99  4.99e-05 GTTGAACATT CCAACTGTCACGTCCTTCCTTTATT GATATTTGTT
+Saccharomyces_eubayanus@    103  4.99e-05 GTCGAACATC CCAACTGTCACGTCCTTCCTTTATT AATATTTGTT
+Saccharomyces_arboricola    163  4.99e-05 GAAATATTTT TTCTTTTCCTATTCATTCCTTACAT TCAACTATCA
+Saccharomyces_arboricola    117  5.91e-05 TATCTAACTA AATCCAACTAAGTCGCTCTTTTACA AGTACAATCA
+YPL256C                     106  5.91e-05 GCTAGACTCT ATAGCTGCCAATTCATTCGCTTACC ACATCATAAT
+Saccharomyces_uvarum@Seq     71  6.96e-05 GACCGCACAA CCTTTAGTGTATTCATTCCTTAACC TTCGTTATTT
+Saccharomyces_mikatae@Se    122  6.96e-05 GTCTCTCTAT AGACGGTACCTCACTTTCCTTTAAT ATTAAAATAT
+Saccharomyces_mikatae@Se    115  6.96e-05 GTCCGTAAAA AACCAACTGCATTCTTTCTTTACTG CTATCTTCGG
+Saccharomyces_paradoxus@    163  6.96e-05 GAAAATCTTT TCTTTTTCCCATTCATTCATTAAAT TTTACCACCG
+Saccharomyces_paradoxus@    111  7.54e-05 AGTTGAACAT CCAACTGTCACGTCTTTCCTTTAGC TAATTTCTGT
+Saccharomyces_mikatae@Se    111  7.54e-05 AATTGAGCAT CCAACTGTCACGTCTTTCCTTTATC AATCTTAGTT
+Saccharomyces_paradoxus@    106  7.54e-05 GCTAGACTCT ATAGCTACCAATTCATTCGCTTAGC ACATCATAAT
+Saccharomyces_eubayanus@    106  7.54e-05 GCTAAATTCT ATAGCTACCAATTCATTCGCTTATC CACGTCATAA
+Saccharomyces_kudriavzev     51  8.15e-05 TCTCGCAGTT GCATAAATATATCCATTCATTTCGA GCGTCTCGCC
+Saccharomyces_arboricola     70  8.15e-05 GACCACACGA TCTCTAGTGTATACACTCCTTAATT TTCATTTGTT
+Saccharomyces_kudriavzev    662  8.15e-05 AAAACACCTT ACTAACTAATATCCAATCCTTACTC TCCCCGCAGA
+Saccharomyces_eubayanus@    146  8.15e-05 TCTTTCAAAG AGTTAAAACAAACCGCTCCTTTAAA TTAATTATTT
+Saccharomyces_arboricola    106  8.15e-05 GCTAGAGTCT ATAGCTACCACTTCATTCGCTTAAC CACATTATAA
+Saccharomyces_paradoxus@    115  8.80e-05 GTCCATAAAA CACCAACTGCATTCCTTCTTTACCA CTACCTTCGG
+YMR305C                     111  8.80e-05 AGCTGAACAT CCAACTGTCACGTCTCTCCTTTACT ATTACTGTTC
+Saccharomyces_kudriavzev     70  9.49e-05 GACCGCACAA TCTCTAGTGTATTCATTCCTTATCT TTCATTTATT
+Saccharomyces_eubayanus@    105  9.49e-05 ACCTTCGTTA TTTTCTATTCATTCATTCATTTCTT TATTTGAATA
+Saccharomyces_kudriavzev    148  1.10e-04 CTCTTTCATA GATTTGACAAAGCCACTCCTTTAAA TTTACTATTT
+Saccharomyces_paradoxus@    102  1.18e-04 CTTTCATTTA TTTTTTATTCATTCATTCATTTTAT TTGAATATAA
+Saccharomyces_kudriavzev    120  1.27e-04 GTCTCTTTAC AGACGGTGCCTCACTCTCCTTTAAC GTCAAAATAT
+Saccharomyces_eubayanus@     12  1.36e-04 CAGACTATCA AACTGCAAATCTACGCTCATTTCCC CTGCAACTAA
+Saccharomyces_arboricola     95  1.36e-04 CTCCTTAATT TTCATTTGTTTTTCATTCATTTATT TATTTTCATT
+Saccharomyces_paradoxus@    226  1.36e-04 AGCATAAAAG AGAAAGAATAGTTCATTCTTTTACC GTTATCCAAC
+Saccharomyces_mikatae@Se    163  1.36e-04 GAAAATATTT TCTTTTTCCCATTCATTCACTAAAC TTTACCACCG
+Saccharomyces_mikatae@Se    101  1.45e-04 CCTTCATTTA TTTTTTATTCATTCATTCATTTTTA TTTGAATATA
+YKR042W                     101  1.45e-04 ACTTCGTTTA TTTTTTATTCATTCATTCATTTTTA TTTGAATATA
+Saccharomyces_paradoxus@     53  1.55e-04 CACGGTAGCA AAGAGAATATATCCATTCATTTCGA ACTTCTTCGC
+Saccharomyces_kudriavzev     13  1.55e-04 CAGACTAATA AGCTGCACAATCACACTCCTTTCCT CGGCAACTAA
+Saccharomyces_uvarum@Seq    163  1.55e-04 ACAAAAGATA CCCTTTTCTTTTCCACTCCTTACAT TTTACTATTG
+Saccharomyces_uvarum@Seq    107  1.76e-04 TCGTTATTTT CTATTTATTCATTCATTCATTTTTA TTTGAATATA
+Saccharomyces_eubayanus@    396  1.88e-04 GCATAACATT TGCCCCGTTTCGACTTTCCTTCTAC CCCATTATTA
+Saccharomyces_kudriavzev    112  1.88e-04 ATTGAACAAT CCAACTGTTACGTCCTTCATTTATT AACTGTTGTT
+Saccharomyces_arboricola    158  1.99e-04 CAGGAATAAC TAATATCTTCTTTCAATCGCTTTAC TATAACAACA
+Saccharomyces_uvarum@Seq    141  2.12e-04 TAAGATATAT AATAGAATATATTCAATCTCTTCAA ACAGCAAAAT
+Saccharomyces_uvarum@Seq    170  2.25e-04 CTTTAAACTA AAATTAAACTATACCCTCTTTTGAA CACACA    
+Saccharomyces_uvarum@Seq    394  2.25e-04 GCATAACATT TGCCCCGTTTCGACTTTCCTTCTAT CATCATTATT
+Saccharomyces_mikatae@Se    158  2.25e-04 TTTTCATAGA TTAGAAACAAAACCACTCCTTTAAT TTATTACTCA
+YKL163W                      10  2.52e-04  ATCTCCAGG ATTATCCCTACTCCATTCATTACAA CATGCGCCAA
+Saccharomyces_kudriavzev    654  4.02e-04 ATTTTTTTTT ACTAACTTCTATACTTCCCTTTTCT TATTGTTGTG
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AHHHAHHWHYWKTCAYTCCTTTAAW MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Saccharomyces_paradoxus@          0.00012  7_[+1]_36_[+1]_8_[+1]_9_[+1]_40
+Saccharomyces_mikatae@Se          0.00014  5_[+1]_37_[+1]_8_[+1]_10_[+1]_40
+YKR042W                           0.00014  2_[+1]_40_[+1]_8_[+1]_10_[+1]_40
+YIL123W                           2.1e-05  85_[+1]_39_[+1]_490_[+1]_11
+Saccharomyces_uvarum@Seq          0.00018  70_[+1]_11_[+1]_10_[+1]_3_[+1]_6
+Saccharomyces_kudriavzev          0.00015  12_[+1]_32_[+1]_7_[+1]_9_[+1]_40
+Saccharomyces_eubayanus@          0.00014  11_[+1]_36_[+1]_7_[+1]_12_[+1]_34
+Saccharomyces_arboricola          0.00014  3_[+1]_41_[+1]_[+1]_21_[+1]_35
+Saccharomyces_kudriavzev          0.00011  41_[+1]_28_[+1]_28_[+1]_28
+Saccharomyces_mikatae@Se          2.9e-08  18_[+1]_157
+Saccharomyces_uvarum@Seq          3.8e-05  90_[+1]_39_[+1]_483_[+1]_13
+Saccharomyces_eubayanus@          3.8e-05  82_[+1]_39_[+1]_491_[+1]_13
+Saccharomyces_paradoxus@          2.5e-06  54_[+1]_27_[+1]_69
+Saccharomyces_mikatae@Se          0.00022  50_[+1]_27_[+1]_30_[+1]_18
+Saccharomyces_uvarum@Seq          5.7e-08  88_[+1]_87
+Saccharomyces_eubayanus@          5.7e-08  86_[+1]_89
+Saccharomyces_paradoxus@          0.00014  225_[+1]_4_[+1]_20_[+1]_376
+YNL066W                             1e-05  245_[+1]_18_[+1]_387
+Saccharomyces_mikatae@Se          1.6e-05  75_[+1]_37_[+1]_499_[+1]_14
+Saccharomyces_arboricola            8e-06  52_[+1]_40_[+1]_516_[+1]_17
+Saccharomyces_uvarum@Seq            8e-06  21_[+1]_15_[+1]_114
+Saccharomyces_eubayanus@          3.8e-05  21_[+1]_15_[+1]_16_[+1]_73
+Saccharomyces_paradoxus@          1.6e-05  80_[+1]_37_[+1]_495_[+1]_13
+YHR143W                           2.4e-05  1_[+1]_35_[+1]_24_[+1]_27_[+1]_13
+Saccharomyces_paradoxus@          1.9e-07  85_[+1]_90
+Saccharomyces_mikatae@Se          1.9e-07  90_[+1]_85
+Saccharomyces_arboricola          1.9e-07  85_[+1]_90
+YBR162C                           1.9e-07  93_[+1]_82
+Saccharomyces_eubayanus@          2.2e-07  54_[+1]_121
+Saccharomyces_mikatae@Se          2.7e-07  237_[+1]_16_[+1]_397
+YDR528W                           2.7e-07  5_[+1]_170
+Saccharomyces_kudriavzev          3.8e-07  159_[+1]_16
+Saccharomyces_kudriavzev          3.8e-07  87_[+1]_88
+Saccharomyces_paradoxus@          3.8e-07  9_[+1]_166
+Saccharomyces_eubayanus@          8.1e-05  39_[+1]_27_[+1]_29_[+1]_30
+Saccharomyces_mikatae@Se            1e-05  22_[+1]_15_[+1]_12_[+1]_76
+Saccharomyces_kudriavzev          4.6e-07  162_[+1]_13
+Saccharomyces_arboricola          3.2e-05  109_[+1]_19_[+1]_22
+YNL300W                           4.3e-06  114_[+1]_19_[+1]_17
+YLR286C                           8.8e-07  18_[+1]_16_[+1]_15_[+1]_76
+Saccharomyces_uvarum@Seq          5.4e-07  162_[+1]_13
+Saccharomyces_paradoxus@          5.4e-07  162_[+1]_13
+Saccharomyces_mikatae@Se          5.4e-07  162_[+1]_13
+Saccharomyces_eubayanus@          5.4e-07  162_[+1]_13
+Saccharomyces_arboricola          5.4e-07  162_[+1]_13
+YLR110C                           5.4e-07  162_[+1]_13
+Saccharomyces_uvarum@Seq          1.7e-05  214_[+1]_4_[+1]_12_[+1]_395
+Saccharomyces_eubayanus@          3.2e-05  173_[+1]_4_[+1]_13_[+1]_435
+Saccharomyces_uvarum@Seq          8.8e-07  41_[+1]_134
+Saccharomyces_paradoxus@          2.9e-06  22_[+1]_15_[+1]_14_[+1]_74
+Saccharomyces_kudriavzev          5.5e-06  11_[+1]_20_[+1]_17_[+1]_77
+Saccharomyces_arboricola          7.1e-06  26_[+1]_5_[+1]_15_[+1]_79
+Saccharomyces_kudriavzev          8.1e-05  81_[+1]_38_[+1]_492_[+1]_14
+Saccharomyces_arboricola          1.4e-05  256_[+1]_20_[+1]_374
+Saccharomyces_eubayanus@          3.5e-05  115_[+1]_19_[+1]_16
+Saccharomyces_kudriavzev           0.0004  196_[+1]_17_[+1]_390_[+1]_22
+Saccharomyces_kudriavzev          1.9e-06  12_[+1]_163
+Saccharomyces_uvarum@Seq            1e-05  51_[+1]_44_[+1]_55
+Saccharomyces_eubayanus@          3.3e-06  65_[+1]_44_[+1]_41
+Saccharomyces_mikatae@Se            7e-05  114_[+1]_19_[+1]_17
+Saccharomyces_eubayanus@          0.00019  96_[+1]_274_[+1]_80
+Saccharomyces_arboricola          3.2e-05  49_[+1]_44_[+1]_57
+Saccharomyces_paradoxus@          8.8e-05  114_[+1]_19_[+1]_17
+Saccharomyces_arboricola          4.9e-06  12_[+1]_163
+Saccharomyces_kudriavzev          5.5e-06  105_[+1]_70
+Saccharomyces_kudriavzev          6.3e-06  91_[+1]_384
+Saccharomyces_mikatae@Se          6.3e-06  157_[+1]_18
+YDR134C                           6.3e-06  157_[+1]_18
+Saccharomyces_paradoxus@          0.00015  52_[+1]_45_[+1]_53
+YJL116C                           2.9e-05  53_[+1]_44_[+1]_53
+Saccharomyces_uvarum@Seq          0.00022  90_[+1]_278_[+1]_82
+Saccharomyces_uvarum@Seq          1.3e-05  114_[+1]_20_[+1]_16
+Saccharomyces_uvarum@Seq          1.1e-05  117_[+1]_58
+Saccharomyces_eubayanus@          1.1e-05  118_[+1]_57
+Saccharomyces_uvarum@Seq          1.3e-05  157_[+1]_18
+Saccharomyces_paradoxus@          1.3e-05  157_[+1]_18
+Saccharomyces_eubayanus@          1.3e-05  157_[+1]_18
+Saccharomyces_kudriavzev          0.00019  24_[+1]_62_[+1]_64
+YDR293C                           1.7e-05  22_[+1]_453
+Saccharomyces_mikatae@Se          2.6e-05  121_[+1]_54
+YGR279C                           2.6e-05  122_[+1]_53
+Saccharomyces_mikatae@Se          0.00014  105_[+1]_32_[+1]_13
+Saccharomyces_paradoxus@          2.9e-05  17_[+1]_458
+Saccharomyces_kudriavzev          2.9e-05  120_[+1]_55
+YCL051W                           3.2e-05  114_[+1]_61
+Saccharomyces_uvarum@Seq          0.00015  110_[+1]_27_[+1]_13
+YJL159W                           3.8e-05  103_[+1]_72
+Saccharomyces_mikatae@Se            7e-05  53_[+1]_43_[+1]_54
+YPL256C                           4.2e-05  105_[+1]_32_[+1]_13
+Saccharomyces_kudriavzev          4.2e-05  159_[+1]_16
+Saccharomyces_uvarum@Seq            5e-05  98_[+1]_77
+Saccharomyces_eubayanus@            5e-05  102_[+1]_73
+Saccharomyces_arboricola            5e-05  105_[+1]_32_[+1]_13
+Saccharomyces_arboricola          5.9e-05  116_[+1]_59
+Saccharomyces_paradoxus@            7e-05  105_[+1]_32_[+1]_13
+Saccharomyces_paradoxus@          7.5e-05  110_[+1]_65
+Saccharomyces_mikatae@Se          7.5e-05  110_[+1]_65
+Saccharomyces_eubayanus@          7.5e-05  105_[+1]_70
+Saccharomyces_kudriavzev          0.00013  50_[+1]_44_[+1]_56
+YMR305C                           8.8e-05  110_[+1]_65
+Saccharomyces_arboricola           0.0002  157_[+1]_18
+Saccharomyces_uvarum@Seq          0.00021  140_[+1]_35
+YKL163W                           0.00025  9_[+1]_166
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AHHHAHHWHYWKTCAYTCCTTTAAW MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AHHHAHHWHYWKTCAYTCCTTTAAW width=25 seqs=193
+Saccharomyces_paradoxus@ (  136) ACCAACTACTAGTCCTTCCTTTAAA  1 
+Saccharomyces_mikatae@Se (  136) ACCAACTACTAGTCCTTCCTTTAAA  1 
+YKR042W                  (  136) ACCAACTACTAGTCCTTCCTTTAAA  1 
+YIL123W                  (  150) ACCCAACTACTTACATTCCTTTAAA  1 
+Saccharomyces_uvarum@Seq (  142) ACCAACTATTAGTCCTTCCTTTAAA  1 
+Saccharomyces_kudriavzev (  136) ACCAACTATTAGTCCTTCCTTTAAA  1 
+Saccharomyces_eubayanus@ (  142) ACCAACTATTAGTCCTTCCTTTAAA  1 
+Saccharomyces_arboricola (  141) ACCAACTATTAGTCCTTCCTTTAAA  1 
+Saccharomyces_kudriavzev (   95) AGCTAACCACAGTCACTCCTTAAAA  1 
+Saccharomyces_mikatae@Se (   19) ACCAACTAGCCGTCATTCATTTAAA  1 
+Saccharomyces_uvarum@Seq (  155) ATCCAACTACTTACATTCCTTTACA  1 
+Saccharomyces_eubayanus@ (  147) ATCCAACTACTTACATTCCTTTACA  1 
+Saccharomyces_paradoxus@ (   55) AGCTAACTCCAGTCATTCCTTACTA  1 
+Saccharomyces_mikatae@Se (   51) AGCTAACTCCAGTCATTCCTTACTA  1 
+Saccharomyces_kudriavzev (   42) AGCTAACTCCAGTCATTCCTTACTA  1 
+Saccharomyces_uvarum@Seq (   89) TCCAACTTCTAGTCACTCCTTCAAA  1 
+Saccharomyces_eubayanus@ (   87) TCCAACTTCTAGTCACTCCTTCAAA  1 
+Saccharomyces_paradoxus@ (  300) TCCAACTATTTTTCACTCCTTTAAG  1 
+YNL066W                  (  289) TCCAACTAATTTTCACTCCTTTAAG  1 
+Saccharomyces_uvarum@Seq (   91) AACTATTTACAGTCCTTCCTTTACA  1 
+Saccharomyces_mikatae@Se (   76) AACTATTTACAGTCCCTCCTTTACA  1 
+Saccharomyces_eubayanus@ (   83) AACTATTTACAGTCCTTCCTTTACA  1 
+Saccharomyces_arboricola (   53) AACTATTTACAGTCCTTCCTTTACA  1 
+Saccharomyces_uvarum@Seq (   22) ATTGAAAATCTTTCACTCCTTTAAG  1 
+Saccharomyces_eubayanus@ (   22) ATTGAAAATCTTTCACTCCTTTAAG  1 
+Saccharomyces_paradoxus@ (   81) AACTATTTACAGTCCTTCCTTTATA  1 
+YIL123W                  (   86) AACTATTTACAGTCCTTCCTTTATA  1 
+Saccharomyces_mikatae@Se (  103) AGCTAACCACAGTCATTCCTTAATA  1 
+YHR143W                  (  111) AGCTAACCACAGTCATTCCTTAATA  1 
+Saccharomyces_paradoxus@ (  143) ATCCAACTACTTACATTCCTTTGAA  1 
+Saccharomyces_mikatae@Se (  138) ATCCAACTACTTACATTCCTTTGAA  1 
+Saccharomyces_paradoxus@ (   86) TCCAACTTCTAGTCACTCCTTCAAT  1 
+Saccharomyces_mikatae@Se (   91) TCCAACTTCTAGTCACTCCTTCAAT  1 
+Saccharomyces_arboricola (   86) TCCAACTTCTAGTCACTCCTTCAAT  1 
+YBR162C                  (   94) TCCAACTTCTAGTCACTCCTTCAAT  1 
+YHR143W                  (   62) AGCTAACTCTAGTCATTCCTTACTA  1 
+Saccharomyces_eubayanus@ (   55) ACCAACTGACTGTCGCTCATTTAAA  1 
+Saccharomyces_mikatae@Se (  238) TCCAACTATTTTTCACTCCTTTTAA  1 
+YDR528W                  (    6) ACCAACTAATCGTCATTCATTTCAA  1 
+Saccharomyces_kudriavzev (  160) ATCCAACTTTTTACCTTCCTTTAAC  1 
+Saccharomyces_kudriavzev (   88) TCCAACTTTTAGTCACTCCTTCAAT  1 
+Saccharomyces_paradoxus@ (   10) ACCAACTAGTCGTCATTCATTTCAA  1 
+Saccharomyces_eubayanus@ (   92) TGCTAACTCCAGTCATTCCTTACTA  1 
+Saccharomyces_mikatae@Se (  279) TCCAACTACTTTCCACTCCTTTCAC  1 
+Saccharomyces_mikatae@Se (   63) ATAACAACCCTGTCACTCCTTTGAA  1 
+Saccharomyces_kudriavzev (  163) AATAATCTTCTGTCATTCGCTTAAA  1 
+Saccharomyces_arboricola (  154) AACCAACTTTTTACCTTCCTTTAAT  1 
+YNL300W                  (  159) AACCAACTTTTTACCTTCCTTTAAT  1 
+Saccharomyces_eubayanus@ (   40) AGCTAGCCCCAGTCATTCCTTACTA  1 
+YLR286C                  (   60) AAAATAAACCTGTCATTCCTTTGAA  1 
+Saccharomyces_uvarum@Seq (  163) ATTAATCTTCTGTCATTCGCTTAAA  1 
+Saccharomyces_paradoxus@ (  163) ATTAATCTTCTGTCATTCGCTTAAA  1 
+Saccharomyces_mikatae@Se (  163) ATTAATCTTCTGTCATTCGCTTAAA  1 
+Saccharomyces_eubayanus@ (  163) ATTAATCTTCTGTCATTCGCTTAAA  1 
+Saccharomyces_arboricola (  163) ATTAATCTTCTGTCATTCGCTTAAA  1 
+YLR110C                  (  163) ATTAATCTTCTGTCATTCGCTTAAA  1 
+Saccharomyces_uvarum@Seq (  244) TCCAACTACTTTACACTCCTTTTAA  1 
+Saccharomyces_eubayanus@ (  203) TCCAACTACTTTACACTCCTTTTAA  1 
+Saccharomyces_arboricola (  118) ATCCAACTACTTACATTCCTTTGCA  1 
+Saccharomyces_uvarum@Seq (   42) ACCAACTGACCGTCGCTCATTTAAA  1 
+Saccharomyces_paradoxus@ (   23) ATTGAAGATCTTTCACTCATTTAAG  1 
+Saccharomyces_kudriavzev (   12) ATTGAAGATCTTTCACTCATTTAAG  1 
+Saccharomyces_arboricola (   27) ATTGAAGATCTTTCACTCATTTAAG  1 
+YLR286C                  (   19) ATTGAAGATCTTTCACTCATTTAAG  1 
+Saccharomyces_kudriavzev (  145) ATCCAACTATTTACATTCCTTTCCG  1 
+Saccharomyces_arboricola (  257) TCCAACTACTTTACGCTCCTTTCAA  1 
+Saccharomyces_paradoxus@ (   63) TTAACAAACCTGTCACTCCTTTGAA  1 
+YLR286C                  (  100) AAATAATAACTGTCGCTCGTTTCAC  1 
+Saccharomyces_eubayanus@ (  116) ATCCAACTGCATTCTTTCCTTAACA  1 
+Saccharomyces_kudriavzev (  239) CCCAACTATTTTCCACTCCTTTAGA  1 
+Saccharomyces_kudriavzev (  197) TCCAACTACTATACGCTCCTTTTAA  1 
+Saccharomyces_kudriavzev (   13) ATCAACTTGCGGTCATTCATTTCAG  1 
+Saccharomyces_paradoxus@ (  107) AGCTAACCACAGTCATTCCTTATTT  1 
+Saccharomyces_mikatae@Se (    6) AACTGCATACTTACACTCCTTTTAT  1 
+Saccharomyces_paradoxus@ (  102) AAATAATAACTGTCGCTCATTTCAC  1 
+Saccharomyces_eubayanus@ (   62) ATAGTAAACATTTCACTCCTTTAAG  1 
+Saccharomyces_uvarum@Seq (  121) AGACGGTACCTTACTTTCCTTTAAA  1 
+Saccharomyces_eubayanus@ (  135) AGACGGTACCTTACTTTCCTTTAAA  1 
+Saccharomyces_mikatae@Se (  100) AAATAATAACCGTCACTCGTTTTAC  1 
+Saccharomyces_mikatae@Se (  159) AAACAACTAATTACCTTCCTTTAAT  1 
+Saccharomyces_paradoxus@ (  255) TCCAACTACTTTACACTCCTTTTTC  1 
+Saccharomyces_eubayanus@ (   97) ACCGCCTACAAGCCATTCCTTTTTT  1 
+YNL300W                  (  115) AACCAACTGCATTCCTTCCTTATCC  1 
+Saccharomyces_arboricola (  119) AGACGGTACCTTACTTTCCTTTAAC  1 
+Saccharomyces_paradoxus@ (  159) GACCAACTTTTTACCTTCCTTTAAC  1 
+Saccharomyces_arboricola (   13) AACCAACTAACTTCACTCACTTAAA  1 
+Saccharomyces_kudriavzev (   99) GTAAAATACCTGTCGCTCCTTTTAT  1 
+Saccharomyces_kudriavzev (   57) ATACAAGCCCTGCCTCTCCTTTGAA  1 
+Saccharomyces_kudriavzev (  106) TATAGCTACCATTCATTCGCTTAAC  1 
+Saccharomyces_eubayanus@ (   66) ACACGAATACATACATTCATTTCGA  1 
+Saccharomyces_kudriavzev (   92) ATCGCTCACAAGTCGTTCCTTTTTA  1 
+Saccharomyces_mikatae@Se (  158) AAACATCTTCTTTCGTTCGCTTCAA  1 
+YDR134C                  (  158) AAACATCTTCTTTCGTTCGCTTCAA  1 
+Saccharomyces_paradoxus@ (  123) AGACGGTACCTTACTTTCCTTTAAT  1 
+Saccharomyces_paradoxus@ (    8) AACTGCACATTTACACTCCTTTCAT  1 
+YJL116C                  (  123) AGACGGTACCTTACTTTCCTTTAAT  1 
+Saccharomyces_arboricola (   97) AAATAAAAACATTCACTCATTTTAT  1 
+Saccharomyces_arboricola (  659) ACTAACTAATATCCAATCCTTTAAT  1 
+Saccharomyces_uvarum@Seq (   91) ACCGCTTACAAGCCATTCCTTTTTT  1 
+YHR143W                  (  163) GTAGAAATAAAGCCACTCCTTTAAC  1 
+Saccharomyces_uvarum@Seq (   62) ATAGTAAGCCTTTCACTCCTTTAGG  1 
+Saccharomyces_uvarum@Seq (   52) AGAAGAATACATACATTCATTTCGA  1 
+Saccharomyces_uvarum@Seq (  115) CACCAACTGCATCCTTTCCTTTACA  1 
+YNL066W                  (  246) TCCAACTACTCTACACTCCTTTTTC  1 
+Saccharomyces_mikatae@Se (   23) ATTGAAGATCTTTCACTCATTCAAG  1 
+YKR042W                  (   68) TTTCCAGTGTATTCATTCCTTAAAC  1 
+Saccharomyces_uvarum@Seq (  118) AATCCAACTAAGTCACTCTTTTAAA  1 
+Saccharomyces_eubayanus@ (  119) AATCCAACTAAGTCACTCTTTTAAA  1 
+Saccharomyces_arboricola (   57) ATAACAAATCTGTCACTCTTTTGAA  1 
+Saccharomyces_uvarum@Seq (  160) AACCAACTTTTTACTTTCCTTAATA  1 
+Saccharomyces_uvarum@Seq (  158) AAACATTATCTTTCATTCGCTTCGC  1 
+Saccharomyces_paradoxus@ (  158) AAACATCTTCTTTCGTTCGCTTCAT  1 
+Saccharomyces_eubayanus@ (  158) AAACATTATCTTTCACTCGCTTCGC  1 
+Saccharomyces_arboricola (  302) ACGGACTGTTTTCCACTCCTTTAAA  1 
+Saccharomyces_kudriavzev (   25) TCACATTTTCTTCCATTCCTTTTGT  1 
+Saccharomyces_kudriavzev (  102) ATTTTTATTCATTCATTCATTTAAT  1 
+Saccharomyces_paradoxus@ (  663) ACTAACTAATATCCAATCCTTTATC  1 
+Saccharomyces_mikatae@Se (  662) ACTAACTAATATCCAATCCTTTATC  1 
+Saccharomyces_uvarum@Seq (  215) AAAAAAAATAGTTCATTCCTTTATT  1 
+Saccharomyces_kudriavzev (   82) AACTACTTACAATCCTTCCTTAAAA  1 
+YDR293C                  (   23) GAAGTTTTTCTGTCATTCCTTTTAG  1 
+Saccharomyces_arboricola (    4) AACTGCACACCTACACTCCTTTCCT  1 
+Saccharomyces_eubayanus@ (  241) TCCAACTATTCCACACTCCTTTAAG  1 
+YIL123W                  (  665) ACTAACTAATATCCAATCCTTTATT  1 
+Saccharomyces_uvarum@Seq (  281) TCCAACTATTTCACGCTCCTTTAAG  1 
+YHR143W                  (    2) TTCCAACTAAAGCCACTCCCTCAAG  1 
+YKR042W                  (    3) AAACCGCAATTTACGCTCCTTTCAT  1 
+Saccharomyces_mikatae@Se (  122) AATCCAACTAAGTCATTCTTTTACA  1 
+YGR279C                  (  123) AATCCAACTAAGTCATTCTTTTACA  1 
+Saccharomyces_mikatae@Se (  106) ATAGCTACCCATTCATTCGCTTATC  1 
+YJL116C                  (   54) AAAAGAATATATCCATTCATTTCGA  1 
+Saccharomyces_paradoxus@ (   18) AGAATTTTCCTGTCATTCTCTTTAA  1 
+Saccharomyces_kudriavzev (  121) ATTCCAACTAAGTCATTCTTTTACA  1 
+Saccharomyces_arboricola (   50) TAAGGAGTATATTCATTCATTTCGA  1 
+Saccharomyces_arboricola (  110) AACCAACTGCTTTCCCTCATTATTG  1 
+Saccharomyces_eubayanus@ (  174) AAAAGAAATAGTTCATTCCTTTATT  1 
+YCL051W                  (  115) TTCCAACTATTTACATTCATTTTTA  1 
+Saccharomyces_paradoxus@ (   69) TCTCTAGTGTATTCATTCCTTAACT  1 
+Saccharomyces_eubayanus@ (  160) AACCAACTTATTACATTCTTTAATA  1 
+Saccharomyces_uvarum@Seq (  111) ATAGCTACCAATTCATTCGCTTAAC  1 
+Saccharomyces_uvarum@Seq (  663) ACTAACTAATATCCGATCCTTTATC  1 
+Saccharomyces_eubayanus@ (  663) ACTAACTAATATCCGATCCTTTATC  1 
+YJL159W                  (  104) ATTTCGATTATGTCCTTCCTTTTAC  1 
+Saccharomyces_eubayanus@ (  103) AAAATCAGCCTTTCACTCATTTTAT  1 
+Saccharomyces_mikatae@Se (   68) CCTCTAGTGTATTCATTCCTTAACC  1 
+Saccharomyces_mikatae@Se (   54) AAAAGAATATATCCATTCATTTCGG  1 
+Saccharomyces_eubayanus@ (   73) CCTCTAGTGTATTCATTCCTTAACC  1 
+YPL256C                  (  163) TCTTTTTTCCATTCATTCATTAAAT  1 
+Saccharomyces_kudriavzev (  160) AAACGCCTTCTTTCTTTCGCTTTAC  1 
+Saccharomyces_uvarum@Seq (   99) CCAACTGTCACGTCCTTCCTTTATT  1 
+Saccharomyces_eubayanus@ (  103) CCAACTGTCACGTCCTTCCTTTATT  1 
+Saccharomyces_arboricola (  163) TTCTTTTCCTATTCATTCCTTACAT  1 
+Saccharomyces_arboricola (  117) AATCCAACTAAGTCGCTCTTTTACA  1 
+YPL256C                  (  106) ATAGCTGCCAATTCATTCGCTTACC  1 
+Saccharomyces_uvarum@Seq (   71) CCTTTAGTGTATTCATTCCTTAACC  1 
+Saccharomyces_mikatae@Se (  122) AGACGGTACCTCACTTTCCTTTAAT  1 
+Saccharomyces_mikatae@Se (  115) AACCAACTGCATTCTTTCTTTACTG  1 
+Saccharomyces_paradoxus@ (  163) TCTTTTTCCCATTCATTCATTAAAT  1 
+Saccharomyces_paradoxus@ (  111) CCAACTGTCACGTCTTTCCTTTAGC  1 
+Saccharomyces_mikatae@Se (  111) CCAACTGTCACGTCTTTCCTTTATC  1 
+Saccharomyces_paradoxus@ (  106) ATAGCTACCAATTCATTCGCTTAGC  1 
+Saccharomyces_eubayanus@ (  106) ATAGCTACCAATTCATTCGCTTATC  1 
+Saccharomyces_kudriavzev (   51) GCATAAATATATCCATTCATTTCGA  1 
+Saccharomyces_arboricola (   70) TCTCTAGTGTATACACTCCTTAATT  1 
+Saccharomyces_kudriavzev (  662) ACTAACTAATATCCAATCCTTACTC  1 
+Saccharomyces_eubayanus@ (  146) AGTTAAAACAAACCGCTCCTTTAAA  1 
+Saccharomyces_arboricola (  106) ATAGCTACCACTTCATTCGCTTAAC  1 
+Saccharomyces_paradoxus@ (  115) CACCAACTGCATTCCTTCTTTACCA  1 
+YMR305C                  (  111) CCAACTGTCACGTCTCTCCTTTACT  1 
+Saccharomyces_kudriavzev (   70) TCTCTAGTGTATTCATTCCTTATCT  1 
+Saccharomyces_eubayanus@ (  105) TTTTCTATTCATTCATTCATTTCTT  1 
+Saccharomyces_kudriavzev (  148) GATTTGACAAAGCCACTCCTTTAAA  1 
+Saccharomyces_paradoxus@ (  102) TTTTTTATTCATTCATTCATTTTAT  1 
+Saccharomyces_kudriavzev (  120) AGACGGTGCCTCACTCTCCTTTAAC  1 
+Saccharomyces_eubayanus@ (   12) AACTGCAAATCTACGCTCATTTCCC  1 
+Saccharomyces_arboricola (   95) TTCATTTGTTTTTCATTCATTTATT  1 
+Saccharomyces_paradoxus@ (  226) AGAAAGAATAGTTCATTCTTTTACC  1 
+Saccharomyces_mikatae@Se (  163) TCTTTTTCCCATTCATTCACTAAAC  1 
+Saccharomyces_mikatae@Se (  101) TTTTTTATTCATTCATTCATTTTTA  1 
+YKR042W                  (  101) TTTTTTATTCATTCATTCATTTTTA  1 
+Saccharomyces_paradoxus@ (   53) AAGAGAATATATCCATTCATTTCGA  1 
+Saccharomyces_kudriavzev (   13) AGCTGCACAATCACACTCCTTTCCT  1 
+Saccharomyces_uvarum@Seq (  163) CCCTTTTCTTTTCCACTCCTTACAT  1 
+Saccharomyces_uvarum@Seq (  107) CTATTTATTCATTCATTCATTTTTA  1 
+Saccharomyces_eubayanus@ (  396) TGCCCCGTTTCGACTTTCCTTCTAC  1 
+Saccharomyces_kudriavzev (  112) CCAACTGTTACGTCCTTCATTTATT  1 
+Saccharomyces_arboricola (  158) TAATATCTTCTTTCAATCGCTTTAC  1 
+Saccharomyces_uvarum@Seq (  141) AATAGAATATATTCAATCTCTTCAA  1 
+Saccharomyces_uvarum@Seq (  170) AAATTAAACTATACCCTCTTTTGAA  1 
+Saccharomyces_uvarum@Seq (  394) TGCCCCGTTTCGACTTTCCTTCTAT  1 
+Saccharomyces_mikatae@Se (  158) TTAGAAACAAAACCACTCCTTTAAT  1 
+YKL163W                  (   10) ATTATCCCTACTCCATTCATTACAA  1 
+Saccharomyces_kudriavzev (  654) ACTAACTTCTATACTTCCCTTTTCT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AHHHAHHWHYWKTCAYTCCTTTAAW MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 25 n= 32859 bayes= 7.06609 E= 1.5e-243 
+   107   -154   -195    -65 
+   -19     63      5    -38 
+   -11    107   -353    -46 
+    22     41     -1    -62 
+    90    -44     -7   -138 
+    34     44    -95    -49 
+   -36     24     -1     13 
+     7    -49   -172     45 
+   -19     56    -53    -10 
+   -82    115  -1424      1 
+    58   -102   -253     19 
+  -436   -302    170     70 
+   -52    -64  -1424     88 
+ -1424    225  -1424  -1424 
+   106    -59    -36   -183 
+  -278     70  -1424     81 
+ -1424   -534  -1424    151 
+ -1424    225  -1424  -1424 
+   -74    155     -1   -227 
+ -1424    -64  -1424    131 
+ -1424  -1424  -1424    151 
+   -95   -188  -1424    115 
+    87     -6   -136   -108 
+    83    -54    -72    -72 
+    51     -6    -21    -55 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AHHHAHHWHYWKTCAYTCCTTTAAW MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 25 nsites= 193 E= 1.5e-243 
+ 0.673575  0.072539  0.031088  0.222798 
+ 0.279793  0.326425  0.124352  0.269430 
+ 0.295337  0.440415  0.010363  0.253886 
+ 0.373057  0.279793  0.119171  0.227979 
+ 0.595855  0.155440  0.113990  0.134715 
+ 0.404145  0.284974  0.062176  0.248705 
+ 0.248705  0.248705  0.119171  0.383420 
+ 0.336788  0.150259  0.036269  0.476684 
+ 0.279793  0.310881  0.082902  0.326425 
+ 0.181347  0.466321  0.000000  0.352332 
+ 0.476684  0.103627  0.020725  0.398964 
+ 0.015544  0.025907  0.388601  0.569948 
+ 0.222798  0.134715  0.000000  0.642487 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.668394  0.139896  0.093264  0.098446 
+ 0.046632  0.341969  0.000000  0.611399 
+ 0.000000  0.005181  0.000000  0.994819 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.191710  0.616580  0.119171  0.072539 
+ 0.000000  0.134715  0.000000  0.865285 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.165803  0.056995  0.000000  0.777202 
+ 0.585492  0.202073  0.046632  0.165803 
+ 0.569948  0.145078  0.072539  0.212435 
+ 0.455959  0.202073  0.103627  0.238342 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AHHHAHHWHYWKTCAYTCCTTTAAW MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AT][CAT][CAT][ACT]A[ACT][TAC][TA][TCA][CT][AT][TG][TA]CA[TC]TCCTTT[AC][AT][ATC]
+--------------------------------------------------------------------------------
+
+
+
+
+Time 70.71 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF CBTYSAARTATATAAASWRKDSHTG MEME-2	width =  25  sites =  32  llr = 534  E-value = 1.6e-066
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif CBTYSAARTATATAAASWRKDSHTG MEME-2 Description
+--------------------------------------------------------------------------------
+Simplified        A  2::1:973:8:a2aa7:53:313:2
+pos.-specific     C  54:54:::2:::::::42221631:
+probability       G  23215127:::::::34:5443:17
+matrix            T  13831:1:81a:8:::23:42:482
+
+         bits    3.1                          
+                 2.8                          
+                 2.4                          
+                 2.1                          
+Relative         1.8                          
+Entropy          1.5        *  ** **         *
+(24.1 bits)      1.2   * ** *  ** ***     *  *
+                 0.9   * ** ********** *  *  *
+                 0.6  ** ************* ** * **
+                 0.3 ***************** *******
+                 0.0 -------------------------
+
+Multilevel           CCTCGAAGTATATAAACAGGGCTTG
+consensus             TGTC GA       GGTATAGC  
+sequence              G               CC T A  
+                                              
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CBTYSAARTATATAAASWRKDSHTG MEME-2 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                      Site         
+-------------             ----- ---------            -------------------------
+Saccharomyces_mikatae@Se     60  9.72e-12 CTTTGGCCTC CGTTCAAGTATATAAAGCCGGCATG CTTGGTAATC
+Saccharomyces_uvarum@Seq     59  1.38e-11 CTCCAGCTCC CGTTCAAGTATATAAGGTCGGCATG GTCGATTGTC
+Saccharomyces_paradoxus@     60  1.63e-11 CCTTGGCCTC CGTTCAAGTATATAAAGTCGGCATG CTTGATTATC
+Saccharomyces_kudriavzev     62  1.63e-11 TCTTTGTTTC CGTTCAAGTATATAAAGTCGGCATG CTTGATTATC
+YLR110C                      61  1.63e-11 CCTTTGCCTC CGTTCAAGTATATAAAGTCGGCATG CTTGATAATC
+Saccharomyces_eubayanus@     60  1.67e-10 CTTTGGCTCC CTTTCAAGTATATAAACTCGGCATG GTCGATTGTC
+Saccharomyces_paradoxus@     44  1.93e-10 TTTAGTAATC TCTCGAAGTATATAAACCGTCGCTG TGTCATGCTT
+YDR134C                      50  1.93e-10 TTTAGTCATC TCTCGAAGTATATAAACCGTTGCTG GATCGTGGTT
+Saccharomyces_mikatae@Se     48  2.55e-10 TTTAATCATC TCTCGAAGTATATAAACCGTTGTTG TGTCTTACTA
+Saccharomyces_arboricola     63  1.06e-09 TGGAGCAAAT CCTCGAGATATAAAAGGAATGCTCG AACCTAATTA
+Saccharomyces_kudriavzev     52  1.72e-09 TTAGCCACCT CTTACAAGTATATAAACCGTCGTTG TGTCTTTCTT
+YJL159W                      62  2.43e-09 TGGTAGGAAT CCTCGAGATATAAAAGGAACACTTG AAGTCTAACG
+Saccharomyces_arboricola     52  3.79e-09 TTAGTCACCT CTGACAGGTATATAAACTGTTGTTG TCTCTCTCAT
+Saccharomyces_arboricola     59  4.23e-09 CTTTAGTCTC AGTTCAAGTATATAAAGTCGGGATA TTCAATTATC
+Saccharomyces_mikatae@Se     55  6.47e-09 GTCTCTTTCA TCTCGAAACATATAAATAGGACATG TACCAAGCTT
+Saccharomyces_eubayanus@     34  6.47e-09 CATTTCCACC ATTCCAAGCATATAAATAGGACTGG CATTTTAACA
+Saccharomyces_paradoxus@     61  1.08e-08 TGATGTGAAT CCTCGAGATATAAAAGGAACAGTCG AAGTCAAACA
+Saccharomyces_uvarum@Seq     48  1.59e-08 TTACTCACCT CTGGGGAGTATATAAACCGTTGTTA TTCTCTCTCT
+Saccharomyces_kudriavzev     66  1.92e-08 TGGAGTGAAT CCTCGAGATATAAAAGGAATACTTA AACCTAATCA
+Saccharomyces_uvarum@Seq     57  2.77e-08 GAAAGCGAAT CCTCGAGATATAAAAGCAAAGCTCG AACTTAATCA
+Saccharomyces_eubayanus@     49  2.77e-08 TTACTTACTT CTGGTGAGTATATAAACCGTTCTTG TTCTCTCTCT
+Saccharomyces_arboricola     52  3.03e-08 AAATCGCACC GCGCGATGTTTATAAACAATGCCTT TTCCAGATCT
+Saccharomyces_paradoxus@     17  4.29e-08 AAACTGCAGC GGGCGAAGTTTATAAGCAATGACTT TTCCAGATCT
+YNL066W                      17  4.67e-08 AACCTGCACA GCGCGAAGTTTATAAACAATGACTT TTCCAGATCT
+Saccharomyces_arboricola     30  5.08e-08 CTTTTCCGCC ATTGCAAACATATAAATAGGACCGG AATTATAGCA
+Saccharomyces_uvarum@Seq     31  5.52e-08 CATTTCCACC ATTACAAGCATATAAATAGGACTCG TGCTAGAACA
+Saccharomyces_mikatae@Se     61  7.06e-08 TGGAGTGAAT CCTCGAGATATAAAAGGAACTCTGA AAGCCAAATA
+Saccharomyces_eubayanus@     19  1.52e-07 ATATTAAAAT CGTAGATATATATAAGGTGCTGCGA CTGCCCTTGG
+Saccharomyces_kudriavzev     11  3.46e-07 TAGAAATTAA GCTTGGTGTATATATAGGGCCGCTG TATATGCCCT
+Saccharomyces_uvarum@Seq     38  5.34e-07 AAACCGCACC GCGTGATGTTTATAAACTATGACTT TTCCAGATCT
+Saccharomyces_kudriavzev     42  5.34e-07 CGTTTCCTTT ATTGAAAATGTATAAATAGGACCTG AACTGTACCA
+Saccharomyces_paradoxus@     41  9.42e-07 TTCCTCCCTT ATTCTAAACATATAAATAGGCCATT TATCAGACAG
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CBTYSAARTATATAAASWRKDSHTG MEME-2 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Saccharomyces_mikatae@Se          9.7e-12  59_[+2]_116
+Saccharomyces_uvarum@Seq          1.4e-11  58_[+2]_117
+Saccharomyces_paradoxus@          1.6e-11  59_[+2]_116
+Saccharomyces_kudriavzev          1.6e-11  61_[+2]_114
+YLR110C                           1.6e-11  60_[+2]_115
+Saccharomyces_eubayanus@          1.7e-10  59_[+2]_116
+Saccharomyces_paradoxus@          1.9e-10  43_[+2]_132
+YDR134C                           1.9e-10  49_[+2]_126
+Saccharomyces_mikatae@Se          2.5e-10  47_[+2]_128
+Saccharomyces_arboricola          1.1e-09  62_[+2]_113
+Saccharomyces_kudriavzev          1.7e-09  51_[+2]_124
+YJL159W                           2.4e-09  61_[+2]_114
+Saccharomyces_arboricola          3.8e-09  51_[+2]_124
+Saccharomyces_arboricola          4.2e-09  58_[+2]_117
+Saccharomyces_mikatae@Se          6.5e-09  54_[+2]_121
+Saccharomyces_eubayanus@          6.5e-09  33_[+2]_142
+Saccharomyces_paradoxus@          1.1e-08  60_[+2]_115
+Saccharomyces_uvarum@Seq          1.6e-08  47_[+2]_128
+Saccharomyces_kudriavzev          1.9e-08  65_[+2]_110
+Saccharomyces_uvarum@Seq          2.8e-08  56_[+2]_119
+Saccharomyces_eubayanus@          2.8e-08  48_[+2]_127
+Saccharomyces_arboricola            3e-08  51_[+2]_624
+Saccharomyces_paradoxus@          4.3e-08  16_[+2]_659
+YNL066W                           4.7e-08  16_[+2]_659
+Saccharomyces_arboricola          5.1e-08  29_[+2]_146
+Saccharomyces_uvarum@Seq          5.5e-08  30_[+2]_145
+Saccharomyces_mikatae@Se          7.1e-08  60_[+2]_115
+Saccharomyces_eubayanus@          1.5e-07  18_[+2]_157
+Saccharomyces_kudriavzev          3.5e-07  10_[+2]_165
+Saccharomyces_uvarum@Seq          5.3e-07  37_[+2]_638
+Saccharomyces_kudriavzev          5.3e-07  41_[+2]_134
+Saccharomyces_paradoxus@          9.4e-07  40_[+2]_135
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CBTYSAARTATATAAASWRKDSHTG MEME-2 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF CBTYSAARTATATAAASWRKDSHTG width=25 seqs=32
+Saccharomyces_mikatae@Se (   60) CGTTCAAGTATATAAAGCCGGCATG  1 
+Saccharomyces_uvarum@Seq (   59) CGTTCAAGTATATAAGGTCGGCATG  1 
+Saccharomyces_paradoxus@ (   60) CGTTCAAGTATATAAAGTCGGCATG  1 
+Saccharomyces_kudriavzev (   62) CGTTCAAGTATATAAAGTCGGCATG  1 
+YLR110C                  (   61) CGTTCAAGTATATAAAGTCGGCATG  1 
+Saccharomyces_eubayanus@ (   60) CTTTCAAGTATATAAACTCGGCATG  1 
+Saccharomyces_paradoxus@ (   44) TCTCGAAGTATATAAACCGTCGCTG  1 
+YDR134C                  (   50) TCTCGAAGTATATAAACCGTTGCTG  1 
+Saccharomyces_mikatae@Se (   48) TCTCGAAGTATATAAACCGTTGTTG  1 
+Saccharomyces_arboricola (   63) CCTCGAGATATAAAAGGAATGCTCG  1 
+Saccharomyces_kudriavzev (   52) CTTACAAGTATATAAACCGTCGTTG  1 
+YJL159W                  (   62) CCTCGAGATATAAAAGGAACACTTG  1 
+Saccharomyces_arboricola (   52) CTGACAGGTATATAAACTGTTGTTG  1 
+Saccharomyces_arboricola (   59) AGTTCAAGTATATAAAGTCGGGATA  1 
+Saccharomyces_mikatae@Se (   55) TCTCGAAACATATAAATAGGACATG  1 
+Saccharomyces_eubayanus@ (   34) ATTCCAAGCATATAAATAGGACTGG  1 
+Saccharomyces_paradoxus@ (   61) CCTCGAGATATAAAAGGAACAGTCG  1 
+Saccharomyces_uvarum@Seq (   48) CTGGGGAGTATATAAACCGTTGTTA  1 
+Saccharomyces_kudriavzev (   66) CCTCGAGATATAAAAGGAATACTTA  1 
+Saccharomyces_uvarum@Seq (   57) CCTCGAGATATAAAAGCAAAGCTCG  1 
+Saccharomyces_eubayanus@ (   49) CTGGTGAGTATATAAACCGTTCTTG  1 
+Saccharomyces_arboricola (   52) GCGCGATGTTTATAAACAATGCCTT  1 
+Saccharomyces_paradoxus@ (   17) GGGCGAAGTTTATAAGCAATGACTT  1 
+YNL066W                  (   17) GCGCGAAGTTTATAAACAATGACTT  1 
+Saccharomyces_arboricola (   30) ATTGCAAACATATAAATAGGACCGG  1 
+Saccharomyces_uvarum@Seq (   31) ATTACAAGCATATAAATAGGACTCG  1 
+Saccharomyces_mikatae@Se (   61) CCTCGAGATATAAAAGGAACTCTGA  1 
+Saccharomyces_eubayanus@ (   19) CGTAGATATATATAAGGTGCTGCGA  1 
+Saccharomyces_kudriavzev (   11) GCTTGGTGTATATATAGGGCCGCTG  1 
+Saccharomyces_uvarum@Seq (   38) GCGTGATGTTTATAAACTATGACTT  1 
+Saccharomyces_kudriavzev (   42) ATTGAAAATGTATAAATAGGACCTG  1 
+Saccharomyces_paradoxus@ (   41) ATTCTAAACATATAAATAGGCCATT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CBTYSAARTATATAAASWRKDSHTG MEME-2 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 25 n= 32859 bayes= 10.7401 E= 1.6e-066 
+   -77    134     38   -148 
+ -1164    106    106    -16 
+ -1164  -1164     87    116 
+  -135    115      6    -31 
+  -335     83    215   -248 
+   150  -1164    -35  -1164 
+   104  -1164     87   -148 
+    10  -1164    245  -1164 
+ -1164    -43  -1164    127 
+   140  -1164   -194   -148 
+ -1164  -1164  -1164    151 
+   164  -1164  -1164  -1164 
+   -77  -1164  -1164    122 
+   164  -1164  -1164  -1164 
+   160  -1164  -1164   -348 
+   117  -1164    123  -1164 
+ -1164     95    176    -90 
+    55      6   -194    -31 
+    -3      6    197  -1164 
+  -335    -43    176     22 
+   -36    -75    176    -68 
+  -177    150    138  -1164 
+   -19     57  -1164     22 
+ -1164    -75      6    110 
+  -103  -1164    252   -116 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CBTYSAARTATATAAASWRKDSHTG MEME-2 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 25 nsites= 32 E= 1.6e-066 
+ 0.187500  0.531250  0.156250  0.125000 
+ 0.000000  0.437500  0.250000  0.312500 
+ 0.000000  0.000000  0.218750  0.781250 
+ 0.125000  0.468750  0.125000  0.281250 
+ 0.031250  0.375000  0.531250  0.062500 
+ 0.906250  0.000000  0.093750  0.000000 
+ 0.656250  0.000000  0.218750  0.125000 
+ 0.343750  0.000000  0.656250  0.000000 
+ 0.000000  0.156250  0.000000  0.843750 
+ 0.843750  0.000000  0.031250  0.125000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.187500  0.000000  0.000000  0.812500 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.968750  0.000000  0.000000  0.031250 
+ 0.718750  0.000000  0.281250  0.000000 
+ 0.000000  0.406250  0.406250  0.187500 
+ 0.468750  0.218750  0.031250  0.281250 
+ 0.312500  0.218750  0.468750  0.000000 
+ 0.031250  0.156250  0.406250  0.406250 
+ 0.250000  0.125000  0.406250  0.218750 
+ 0.093750  0.593750  0.312500  0.000000 
+ 0.281250  0.312500  0.000000  0.406250 
+ 0.000000  0.125000  0.125000  0.750000 
+ 0.156250  0.000000  0.687500  0.156250 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CBTYSAARTATATAAASWRKDSHTG MEME-2 regular expression
+--------------------------------------------------------------------------------
+C[CTG][TG][CT][GC]A[AG][GA]TATATAA[AG][CG][ATC][GAC][GT][GAT][CG][TCA]TG
+--------------------------------------------------------------------------------
+
+
+
+
+Time 115.84 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AAHAAAARWARNRWWCRAAMAAAMA MEME-3	width =  25  sites =  80  llr = 871  E-value = 4.1e-066
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AAHAAAARWARNRWWCRAAMAAAMA MEME-3 Description
+--------------------------------------------------------------------------------
+Simplified        A  9748768259325552776578868
+pos.-specific     C  ::3::2:21::311:5:113:2:3:
+probability       G  1:212224::534:224:313:2::
+matrix            T  :22121:231221431:31:1::12
+
+         bits    3.1                          
+                 2.8                          
+                 2.4                          
+                 2.1                          
+Relative         1.8                          
+Entropy          1.5                          
+(15.7 bits)      1.2       *  *      *        
+                 0.9 *     *  **     *   *** *
+                 0.6 ** ** *  ** *   *  ******
+                 0.3 ** **********************
+                 0.0 -------------------------
+
+Multilevel           AAAAAAAGAAGGAAACAAAAAAAAA
+consensus             TC    AT ACGTTGGTGCG  C 
+sequence               T       TT   A         
+                                              
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAHAAAARWARNRWWCRAAMAAAMA MEME-3 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                      Site         
+-------------             ----- ---------            -------------------------
+Saccharomyces_eubayanus@    169  3.70e-10 CTTTTCAAAC AACAAAACAAGCAAACAAAAAAACA GAATAAC   
+Saccharomyces_uvarum@Seq      8  5.86e-09    AGATCCC AAAAAAGGAATGGTTGGTGAAAAAA ATATTAGACT
+Saccharomyces_paradoxus@     13  5.86e-09 AAAGATCCTA AAAAAAGGAATGGTTGGTGAAAAAA TTATTAAATT
+Saccharomyces_mikatae@Se     14  5.86e-09 GAAAGATCCT AAAAAAGGAATGGTTGGTGAAAAAA TATTAGATTA
+Saccharomyces_arboricola     12  5.86e-09 TAAGTTCCTG AAAAAAGGAATGGTTGGTGAAAAAA AAATTACTAG
+Saccharomyces_kudriavzev    364  1.64e-08 CACGAAGAAG AAGAAGACAAGGGTTCATAAACACA CAGCATTTGC
+Saccharomyces_mikatae@Se     16  2.27e-08 TTTGTAACAT AACGGCAGAAAGGAATGAGAGAAAA TTTTCCATTC
+Saccharomyces_eubayanus@    364  3.11e-08 TTGCACGAAG AAGAAGACAAGGGTTCATAAACGCA TAACATTTGC
+Saccharomyces_arboricola    160  3.11e-08 TCTATAAGCA AAAAAAAACAACAAACAAGCAAACA AACAAAAAAA
+Saccharomyces_paradoxus@     17  5.73e-08 CTTGCAACAT AACGGCAGAAAGAAATGAGAGAAAA ATTTGCATCC
+Saccharomyces_arboricola     17  6.64e-08 CATAATAACG GTAAAAAGAAGTGAAGGAAAAAAAT TTGCATCCTT
+YJL159W                      14  8.88e-08 GAAAGATCCT AAAAAAGGAATGGTTGGTGAAAAAT TTATTAGCTT
+YIL123W                     112  1.18e-07 TCCTTTATAA AAATTAACTAGCGAGCAAGAAAACA TTTGTTTAGT
+Saccharomyces_eubayanus@    619  1.56e-07 GGACTTGTGT AAGTGGAGCAGTGTGCAAAGAAAAA TAGAAAACCA
+Saccharomyces_mikatae@Se    366  1.78e-07 TGCCTGCACA GAGAAGAGAAGGGTTCGTAAACATA TAATACTCAA
+Saccharomyces_arboricola    364  2.04e-07 CTACGCGAAG AAGAAGACAAGGGTTCATAAGCATA TAACACTTGC
+Saccharomyces_mikatae@Se     42  2.33e-07 GGCAACTAAG AAGAAAAAAAAAGTACGACCGCACA ACCTCTAGTG
+YLR110C                      18  2.66e-07 CTTCCAACAT AACGGCAGAAAGAAATGTGAGAAAA TTTTGCATCC
+Saccharomyces_paradoxus@    431  3.03e-07 TTATCACATT AATATAGCAAAGGAAGGCAAAAAAA ACTTTTCAGC
+YKR042W                      42  3.91e-07 AACTAAGAAG AAAAAAAAAAAAGTACGACCACACA ATTTCCAGTG
+Saccharomyces_paradoxus@    164  3.91e-07 AATAACAGGT ATAAAAAAAAGCAAACAAACTAACA GAACAACCAA
+Saccharomyces_paradoxus@    367  4.44e-07 CTGCACGAAG AAGAAGACAAGGGTTCATAAACGTA TAATATCTGC
+Saccharomyces_kudriavzev     42  5.03e-07 TTTTCTTGTC ATAAAAAGAAATCCAGAAACAAAAA AATCCAAACC
+Saccharomyces_kudriavzev     19  5.69e-07 GAAAGATCGT AAAAAAGAAATGGTTGGTGAAAAAT TATTAGACTA
+Saccharomyces_arboricola     42  6.42e-07 CTTTTTGTTC ATAAAAAGAAAACCAGAAACAAAAA CTCAAACCAA
+Saccharomyces_arboricola    630  6.42e-07 CAATACTCCA AAAAAAAATAGATAAGAAAAAAGCA CTTTACTAAC
+Saccharomyces_eubayanus@     11  7.24e-07 CCTGTCGCAT AATAACGGTAGCAAGGAATGGAGAA AAATTTTCTT
+Saccharomyces_arboricola     79  8.16e-07 TCCTTTACAA AAATTAACTAGCCAACAAGAAAACA TTCCGTTTCC
+Saccharomyces_uvarum@Seq     10  9.18e-07  TCGCCTAAT AACGGCAACAAGGAATGAGAGAGAA AAATTTTCTT
+Saccharomyces_eubayanus@     47  1.03e-06 CTGCAACTAA GAAAAAACAAAAGTACGACCGCACA TCCTCTAGTG
+YDR293C                     366  1.30e-06 CTGCACGAAG AATAAGACAAGGGTTCATAAACGTA TAGTATTTGC
+Saccharomyces_kudriavzev     19  1.45e-06 GTTGCATCAT AACGGCAGAAAGGAATGAATAAAAA TTTTCCGTTC
+Saccharomyces_paradoxus@    620  2.02e-06 GGTTTTGTGT AAGGATAGCAATATTCAAAGAAAAA TAAAAGAAAA
+Saccharomyces_paradoxus@    106  2.02e-06 TTCCTTTATA AAATTAACTAGCAAGCAAGAAAACT CTGTTTAGTG
+Saccharomyces_uvarum@Seq     45  2.51e-06 TCTGAAACTC AGAAAAACAAAAGTACGACCGCACA ACCTTTAGTG
+Saccharomyces_mikatae@Se    633  2.79e-06 AATACAAGAC CCAAAAAGAAGTATAGAAAAAAACA CTTTACTAAC
+Saccharomyces_mikatae@Se    163  2.79e-06 TAAATTGTTG AAAAGCAGTATCAATAACGCAAGAA AAGTGTCCCG
+YDR528W                      34  2.79e-06 ATTTCAAAAA AAAAAAAAAAGGAAGAATTAGAGCT CTTCCACAAT
+Saccharomyces_kudriavzev    591  3.10e-06 AATGCCGAGT GATAGCATTAGCGCACAACCGAGAA CAGGACAAAC
+Saccharomyces_uvarum@Seq     42  3.44e-06 TTCGTTATTC AATAAGAGATATCTGGAAACAAAAA ACTCAACCCC
+Saccharomyces_paradoxus@     43  3.81e-06 CGGTAACTAA GAAGAAAAAAAAGTACGACCACACA ATCTCTAGTG
+Saccharomyces_arboricola    175  3.81e-06 ACAAGAACTT AACAGGAAAATTGAAAGAAAAAGGA T         
+Saccharomyces_paradoxus@    133  4.22e-06 CGCTTAGCAC ATCATAATTTGCATACAAAAGAAAA TCTTTTCTTT
+Saccharomyces_mikatae@Se    133  4.22e-06 CGCTTATCAC ATCATAATTTGCATACAAAAGAAAA TATTTTCTTT
+YPL256C                     133  4.22e-06 CGCTTACCAC ATCATAATTTGCATACAAAAGAAAA TCTTTTCTTT
+Saccharomyces_kudriavzev    623  5.15e-06 GGTTTTGCAG AAGTGAAGCAGTACTCAAAGAAAAT AGGAAAAACA
+Saccharomyces_uvarum@Seq    168  5.15e-06 CTCTTCAAAC AGCAAAATAAGCAAACAAAAACAAC AAAATAAC  
+Saccharomyces_arboricola    175  5.15e-06 CTATTTCTTT AAGAAAATAAGGAATAAATAGAGAC C         
+Saccharomyces_eubayanus@     41  6.27e-06 ATCGTTATTC AATAAGAGAAATTCGAAAACAAAAA CTCGACCCCA
+Saccharomyces_kudriavzev    165  6.27e-06 AGATTGCTAG AAAAGTAATATTAAACGTAGGAAAA GTTCATCAAC
+Saccharomyces_eubayanus@    117  6.27e-06 TAATATACAA AATAAAAACATCAAGAAAACAAACT CAATACACAA
+Saccharomyces_paradoxus@    503  6.91e-06 GAACTTTCAG ATCTACATTAGGAAGAAACAGAAAA TAGCCACTAA
+YBR072W                     164  7.60e-06 TAAAACAGGT ATCCAAAAAAGCAAACAAACAAACT AAACAAATTA
+Saccharomyces_arboricola     40  8.36e-06 CACTTAAAAA AAGAAAGAAAGGAAATATTAAAGCT CTCTATTTGA
+Saccharomyces_uvarum@Seq    118  8.36e-06 CTAATATCAA AATAAAATCATCAAGAAAACAAACT CAATACACTA
+Saccharomyces_uvarum@Seq    116  9.18e-06 TTCCTTTACA AAATAAGCTAGCAAACAAGAATACA TTCTGTTTAG
+Saccharomyces_kudriavzev    164  9.18e-06 AATCATCATA ACAAACAGCAAACAACAAACAAACA AAATAAATTA
+Saccharomyces_uvarum@Seq      6  1.10e-05      CAAAG TACAAGAAAGGTCAGCGAGAGAAAA CCGCACCGCG
+Saccharomyces_uvarum@Seq    161  1.21e-05 AAAAAAAAAG AATAATAGTATTAAACGCTAAAAAA AACTGACCAT
+Saccharomyces_paradoxus@    161  1.32e-05 CCTTCATAAA AATATCAGAAAGCTTAACAGGAAAA TTGAAACGAA
+Saccharomyces_eubayanus@    134  1.32e-05 GCTTATCCAC GTCATAATTTGCATACAAAAGAAAA ACTTTTCTTT
+YIL123W                     619  1.58e-05 GGTTTTGTGT AAGAAAAGCAATACTTGAGGTAAAA CAAGAGAAAA
+Saccharomyces_arboricola     40  1.72e-05 AGAAACTAAG AAAAAGAAAAGAACTAGCACGACCA CACGATCTCT
+Saccharomyces_kudriavzev    525  1.72e-05 TTGGTAGGAA AGAAAAAATAGCCATAATACACACA TCACGACCTG
+Saccharomyces_kudriavzev    151  2.05e-05 ATACACCAGT ATTAGAATTAAAGTTCAAAAAAAGA ATCCTCCACA
+YIL123W                     502  2.43e-05 GAAGTTTCAG ATCTACATTAGGAAGAACCAGAAAA TAGCCATTAA
+Saccharomyces_mikatae@Se    115  2.43e-05 ACAATATAAG AACAAAATCATCAAGAAAACAAATT TAATACTCTG
+Saccharomyces_eubayanus@    162  2.64e-05 GTTAAAAAAA AATATTAGTATTAAACGTTAGAAAA AGTGATCATC
+Saccharomyces_kudriavzev    110  2.64e-05 TCAATAAGAC AACAATAGTAGCAATTAAGTAACAA TAGCAATTAT
+Saccharomyces_paradoxus@    104  2.86e-05 ATCTTATTTA AACAGTACTATCAAGAAAAATAACA GCTGTTTCCC
+Saccharomyces_kudriavzev     44  3.65e-05 TCCTCGGCAA CTAAGAAAAAAAGTACGACCGCACA ATCTCTAGTG
+Saccharomyces_paradoxus@    157  3.65e-05 TTACAATAGC AAGGAAAGAAATTCTCGTACAACAA GTACTGCTTT
+Saccharomyces_mikatae@Se    505  3.95e-05 CCTTAGGATC TATATTGGGAGGAAAGAAAAAAGAA CCAATAATGC
+Saccharomyces_mikatae@Se     47  4.62e-05 TTCTTAGTTC ATAAAAAGAGATCCAGATCCAAAAA ACTCAAACCA
+Saccharomyces_paradoxus@    161  4.62e-05 TTTCAAATTG TTAAAAGGTAGTATTAACACAAGAA AAATTTTCAT
+YMR199W                     119  4.99e-05 TAACGACGAT AACAATAATAGCAATTAAATAAAAT AGCACTACCA
+Saccharomyces_uvarum@Seq    165  6.74e-05 TTCTCAACAC ATTGATATTAAAATAAAAAAAAACA CTAATAATAG
+Saccharomyces_arboricola    162  7.26e-05 AGTATTACAG AAGGTAATAATATTAGACGCAAGAA AAAATCAATC
+YNL066W                     565  8.39e-05 GACTTCTCGA GATATAGCCATTGTAGAAACTAAAA CAATATTGAT
+Saccharomyces_arboricola    134  9.01e-05 GCTTAACCAC ATTATAATTTGCATACAAAGAAATA TTTTTTCTTT
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAHAAAARWARNRWWCRAAMAAAMA MEME-3 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Saccharomyces_eubayanus@          3.7e-10  168_[+3]_7
+Saccharomyces_uvarum@Seq          5.9e-09  7_[+3]_168
+Saccharomyces_paradoxus@          5.9e-09  12_[+3]_163
+Saccharomyces_mikatae@Se          5.9e-09  13_[+3]_162
+Saccharomyces_arboricola          5.9e-09  11_[+3]_164
+Saccharomyces_kudriavzev          1.6e-08  363_[+3]_112
+Saccharomyces_mikatae@Se          2.3e-08  15_[+3]_160
+Saccharomyces_eubayanus@          3.1e-08  363_[+3]_112
+Saccharomyces_arboricola          3.1e-08  159_[+3]_16
+Saccharomyces_paradoxus@          5.7e-08  16_[+3]_159
+Saccharomyces_arboricola          6.6e-08  16_[+3]_159
+YJL159W                           8.9e-08  13_[+3]_162
+YIL123W                           2.4e-05  111_[+3]_365_[+3]_92_[+3]_57
+Saccharomyces_eubayanus@          1.6e-07  618_[+3]_57
+Saccharomyces_mikatae@Se          1.8e-07  365_[+3]_110
+Saccharomyces_arboricola            2e-07  363_[+3]_112
+Saccharomyces_mikatae@Se          2.3e-07  41_[+3]_134
+YLR110C                           2.7e-07  17_[+3]_158
+Saccharomyces_paradoxus@            3e-07  366_[+3]_39_[+3]_45
+YKR042W                           3.9e-07  41_[+3]_134
+Saccharomyces_paradoxus@          3.9e-07  163_[+3]_12
+Saccharomyces_kudriavzev            5e-07  41_[+3]_134
+Saccharomyces_kudriavzev          5.7e-07  18_[+3]_157
+Saccharomyces_arboricola          3.8e-06  41_[+3]_108_[+3]_1
+Saccharomyces_arboricola          6.4e-07  78_[+3]_526_[+3]_46
+Saccharomyces_eubayanus@          7.2e-07  10_[+3]_165
+Saccharomyces_uvarum@Seq          9.2e-07  9_[+3]_166
+Saccharomyces_eubayanus@            1e-06  46_[+3]_129
+YDR293C                           1.3e-06  365_[+3]_110
+Saccharomyces_kudriavzev          1.5e-06  18_[+3]_157
+Saccharomyces_paradoxus@            2e-06  105_[+3]_372_[+3]_92_[+3]_56
+Saccharomyces_uvarum@Seq          2.5e-06  44_[+3]_131
+Saccharomyces_mikatae@Se            4e-05  504_[+3]_103_[+3]_43
+Saccharomyces_mikatae@Se          2.8e-06  162_[+3]_13
+YDR528W                           2.8e-06  33_[+3]_142
+Saccharomyces_kudriavzev          3.1e-06  590_[+3]_85
+Saccharomyces_uvarum@Seq          3.4e-06  41_[+3]_134
+Saccharomyces_paradoxus@          3.8e-06  42_[+3]_133
+Saccharomyces_paradoxus@          4.2e-06  132_[+3]_43
+Saccharomyces_mikatae@Se          4.2e-06  132_[+3]_43
+YPL256C                           4.2e-06  132_[+3]_43
+Saccharomyces_kudriavzev          1.7e-05  524_[+3]_73_[+3]_53
+Saccharomyces_uvarum@Seq          5.2e-06  167_[+3]_8
+Saccharomyces_arboricola          5.2e-06  174_[+3]_1
+Saccharomyces_eubayanus@          6.3e-06  40_[+3]_135
+Saccharomyces_kudriavzev          6.3e-06  164_[+3]_11
+Saccharomyces_eubayanus@          6.3e-06  116_[+3]_59
+YBR072W                           7.6e-06  163_[+3]_12
+Saccharomyces_arboricola          8.4e-06  39_[+3]_136
+Saccharomyces_uvarum@Seq          8.4e-06  117_[+3]_58
+Saccharomyces_uvarum@Seq          9.2e-06  115_[+3]_560
+Saccharomyces_kudriavzev          9.2e-06  163_[+3]_12
+Saccharomyces_uvarum@Seq          1.1e-05  5_[+3]_670
+Saccharomyces_uvarum@Seq          1.2e-05  160_[+3]_15
+Saccharomyces_paradoxus@          1.3e-05  160_[+3]_15
+Saccharomyces_eubayanus@          1.3e-05  133_[+3]_42
+Saccharomyces_arboricola          1.7e-05  39_[+3]_136
+Saccharomyces_kudriavzev            2e-05  150_[+3]_25
+Saccharomyces_mikatae@Se          2.4e-05  114_[+3]_61
+Saccharomyces_eubayanus@          2.6e-05  161_[+3]_14
+Saccharomyces_kudriavzev          2.6e-05  109_[+3]_66
+Saccharomyces_paradoxus@          2.9e-05  103_[+3]_572
+Saccharomyces_kudriavzev          3.7e-05  43_[+3]_132
+Saccharomyces_paradoxus@          3.7e-05  156_[+3]_19
+Saccharomyces_mikatae@Se          4.6e-05  46_[+3]_129
+Saccharomyces_paradoxus@          4.6e-05  160_[+3]_15
+YMR199W                             5e-05  118_[+3]_57
+Saccharomyces_uvarum@Seq          6.7e-05  164_[+3]_11
+Saccharomyces_arboricola          7.3e-05  161_[+3]_14
+YNL066W                           8.4e-05  564_[+3]_111
+Saccharomyces_arboricola            9e-05  133_[+3]_42
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAHAAAARWARNRWWCRAAMAAAMA MEME-3 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AAHAAAARWARNRWWCRAAMAAAMA width=25 seqs=80
+Saccharomyces_eubayanus@ (  169) AACAAAACAAGCAAACAAAAAAACA  1 
+Saccharomyces_uvarum@Seq (    8) AAAAAAGGAATGGTTGGTGAAAAAA  1 
+Saccharomyces_paradoxus@ (   13) AAAAAAGGAATGGTTGGTGAAAAAA  1 
+Saccharomyces_mikatae@Se (   14) AAAAAAGGAATGGTTGGTGAAAAAA  1 
+Saccharomyces_arboricola (   12) AAAAAAGGAATGGTTGGTGAAAAAA  1 
+Saccharomyces_kudriavzev (  364) AAGAAGACAAGGGTTCATAAACACA  1 
+Saccharomyces_mikatae@Se (   16) AACGGCAGAAAGGAATGAGAGAAAA  1 
+Saccharomyces_eubayanus@ (  364) AAGAAGACAAGGGTTCATAAACGCA  1 
+Saccharomyces_arboricola (  160) AAAAAAAACAACAAACAAGCAAACA  1 
+Saccharomyces_paradoxus@ (   17) AACGGCAGAAAGAAATGAGAGAAAA  1 
+Saccharomyces_arboricola (   17) GTAAAAAGAAGTGAAGGAAAAAAAT  1 
+YJL159W                  (   14) AAAAAAGGAATGGTTGGTGAAAAAT  1 
+YIL123W                  (  112) AAATTAACTAGCGAGCAAGAAAACA  1 
+Saccharomyces_eubayanus@ (  619) AAGTGGAGCAGTGTGCAAAGAAAAA  1 
+Saccharomyces_mikatae@Se (  366) GAGAAGAGAAGGGTTCGTAAACATA  1 
+Saccharomyces_arboricola (  364) AAGAAGACAAGGGTTCATAAGCATA  1 
+Saccharomyces_mikatae@Se (   42) AAGAAAAAAAAAGTACGACCGCACA  1 
+YLR110C                  (   18) AACGGCAGAAAGAAATGTGAGAAAA  1 
+Saccharomyces_paradoxus@ (  431) AATATAGCAAAGGAAGGCAAAAAAA  1 
+YKR042W                  (   42) AAAAAAAAAAAAGTACGACCACACA  1 
+Saccharomyces_paradoxus@ (  164) ATAAAAAAAAGCAAACAAACTAACA  1 
+Saccharomyces_paradoxus@ (  367) AAGAAGACAAGGGTTCATAAACGTA  1 
+Saccharomyces_kudriavzev (   42) ATAAAAAGAAATCCAGAAACAAAAA  1 
+Saccharomyces_kudriavzev (   19) AAAAAAGAAATGGTTGGTGAAAAAT  1 
+Saccharomyces_arboricola (   42) ATAAAAAGAAAACCAGAAACAAAAA  1 
+Saccharomyces_arboricola (  630) AAAAAAAATAGATAAGAAAAAAGCA  1 
+Saccharomyces_eubayanus@ (   11) AATAACGGTAGCAAGGAATGGAGAA  1 
+Saccharomyces_arboricola (   79) AAATTAACTAGCCAACAAGAAAACA  1 
+Saccharomyces_uvarum@Seq (   10) AACGGCAACAAGGAATGAGAGAGAA  1 
+Saccharomyces_eubayanus@ (   47) GAAAAAACAAAAGTACGACCGCACA  1 
+YDR293C                  (  366) AATAAGACAAGGGTTCATAAACGTA  1 
+Saccharomyces_kudriavzev (   19) AACGGCAGAAAGGAATGAATAAAAA  1 
+Saccharomyces_paradoxus@ (  620) AAGGATAGCAATATTCAAAGAAAAA  1 
+Saccharomyces_paradoxus@ (  106) AAATTAACTAGCAAGCAAGAAAACT  1 
+Saccharomyces_uvarum@Seq (   45) AGAAAAACAAAAGTACGACCGCACA  1 
+Saccharomyces_mikatae@Se (  633) CCAAAAAGAAGTATAGAAAAAAACA  1 
+Saccharomyces_mikatae@Se (  163) AAAAGCAGTATCAATAACGCAAGAA  1 
+YDR528W                  (   34) AAAAAAAAAAGGAAGAATTAGAGCT  1 
+Saccharomyces_kudriavzev (  591) GATAGCATTAGCGCACAACCGAGAA  1 
+Saccharomyces_uvarum@Seq (   42) AATAAGAGATATCTGGAAACAAAAA  1 
+Saccharomyces_paradoxus@ (   43) GAAGAAAAAAAAGTACGACCACACA  1 
+Saccharomyces_arboricola (  175) AACAGGAAAATTGAAAGAAAAAGGA  1 
+Saccharomyces_paradoxus@ (  133) ATCATAATTTGCATACAAAAGAAAA  1 
+Saccharomyces_mikatae@Se (  133) ATCATAATTTGCATACAAAAGAAAA  1 
+YPL256C                  (  133) ATCATAATTTGCATACAAAAGAAAA  1 
+Saccharomyces_kudriavzev (  623) AAGTGAAGCAGTACTCAAAGAAAAT  1 
+Saccharomyces_uvarum@Seq (  168) AGCAAAATAAGCAAACAAAAACAAC  1 
+Saccharomyces_arboricola (  175) AAGAAAATAAGGAATAAATAGAGAC  1 
+Saccharomyces_eubayanus@ (   41) AATAAGAGAAATTCGAAAACAAAAA  1 
+Saccharomyces_kudriavzev (  165) AAAAGTAATATTAAACGTAGGAAAA  1 
+Saccharomyces_eubayanus@ (  117) AATAAAAACATCAAGAAAACAAACT  1 
+Saccharomyces_paradoxus@ (  503) ATCTACATTAGGAAGAAACAGAAAA  1 
+YBR072W                  (  164) ATCCAAAAAAGCAAACAAACAAACT  1 
+Saccharomyces_arboricola (   40) AAGAAAGAAAGGAAATATTAAAGCT  1 
+Saccharomyces_uvarum@Seq (  118) AATAAAATCATCAAGAAAACAAACT  1 
+Saccharomyces_uvarum@Seq (  116) AAATAAGCTAGCAAACAAGAATACA  1 
+Saccharomyces_kudriavzev (  164) ACAAACAGCAAACAACAAACAAACA  1 
+Saccharomyces_uvarum@Seq (    6) TACAAGAAAGGTCAGCGAGAGAAAA  1 
+Saccharomyces_uvarum@Seq (  161) AATAATAGTATTAAACGCTAAAAAA  1 
+Saccharomyces_paradoxus@ (  161) AATATCAGAAAGCTTAACAGGAAAA  1 
+Saccharomyces_eubayanus@ (  134) GTCATAATTTGCATACAAAAGAAAA  1 
+YIL123W                  (  619) AAGAAAAGCAATACTTGAGGTAAAA  1 
+Saccharomyces_arboricola (   40) AAAAAGAAAAGAACTAGCACGACCA  1 
+Saccharomyces_kudriavzev (  525) AGAAAAAATAGCCATAATACACACA  1 
+Saccharomyces_kudriavzev (  151) ATTAGAATTAAAGTTCAAAAAAAGA  1 
+YIL123W                  (  502) ATCTACATTAGGAAGAACCAGAAAA  1 
+Saccharomyces_mikatae@Se (  115) AACAAAATCATCAAGAAAACAAATT  1 
+Saccharomyces_eubayanus@ (  162) AATATTAGTATTAAACGTTAGAAAA  1 
+Saccharomyces_kudriavzev (  110) AACAATAGTAGCAATTAAGTAACAA  1 
+Saccharomyces_paradoxus@ (  104) AACAGTACTATCAAGAAAAATAACA  1 
+Saccharomyces_kudriavzev (   44) CTAAGAAAAAAAGTACGACCGCACA  1 
+Saccharomyces_paradoxus@ (  157) AAGGAAAGAAATTCTCGTACAACAA  1 
+Saccharomyces_mikatae@Se (  505) TATATTGGGAGGAAAGAAAAAAGAA  1 
+Saccharomyces_mikatae@Se (   47) ATAAAAAGAGATCCAGATCCAAAAA  1 
+Saccharomyces_paradoxus@ (  161) TTAAAAGGTAGTATTAACACAAGAA  1 
+YMR199W                  (  119) AACAATAATAGCAATTAAATAAAAT  1 
+Saccharomyces_uvarum@Seq (  165) ATTGATATTAAAATAAAAAAAAACA  1 
+Saccharomyces_arboricola (  162) AAGGTAATAATATTAGACGCAAGAA  1 
+YNL066W                  (  565) GATATAGCCATTGTAGAAACTAAAA  1 
+Saccharomyces_arboricola (  134) ATTATAATTTGCATACAAAGAAATA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAHAAAARWARNRWWCRAAMAAAMA MEME-3 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 25 n= 32859 bayes= 8.93066 E= 4.1e-066 
+   141   -307    -45   -322 
+   118   -307   -168    -72 
+    23     25     55    -81 
+   125   -407      6   -181 
+   102  -1297     55   -100 
+    88    -49     32   -164 
+   139  -1297     44  -1297 
+   -43    -17    169    -90 
+    75    -61   -326    -16 
+   149  -1297   -226   -222 
+    -3  -1297    199    -72 
+   -98     51    138    -64 
+    57    -90    160   -281 
+    57    -90  -1297     24 
+    68  -1297     55    -16 
+   -68    114     91   -164 
+   102  -1297    155  -1297 
+   102   -107  -1297    -48 
+    78    -75    106   -222 
+    75     63    -26   -322 
+   102  -1297    132   -281 
+   135    -27  -1297   -480 
+   128   -249     65  -1297 
+    81     68   -226   -222 
+   137   -307  -1297   -122 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAHAAAARWARNRWWCRAAMAAAMA MEME-3 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 25 nsites= 80 E= 4.1e-066 
+ 0.850000  0.025000  0.087500  0.037500 
+ 0.725000  0.025000  0.037500  0.212500 
+ 0.375000  0.250000  0.175000  0.200000 
+ 0.762500  0.012500  0.125000  0.100000 
+ 0.650000  0.000000  0.175000  0.175000 
+ 0.587500  0.150000  0.150000  0.112500 
+ 0.837500  0.000000  0.162500  0.000000 
+ 0.237500  0.187500  0.387500  0.187500 
+ 0.537500  0.137500  0.012500  0.312500 
+ 0.900000  0.000000  0.025000  0.075000 
+ 0.312500  0.000000  0.475000  0.212500 
+ 0.162500  0.300000  0.312500  0.225000 
+ 0.475000  0.112500  0.362500  0.050000 
+ 0.475000  0.112500  0.000000  0.412500 
+ 0.512500  0.000000  0.175000  0.312500 
+ 0.200000  0.462500  0.225000  0.112500 
+ 0.650000  0.000000  0.350000  0.000000 
+ 0.650000  0.100000  0.000000  0.250000 
+ 0.550000  0.125000  0.250000  0.075000 
+ 0.537500  0.325000  0.100000  0.037500 
+ 0.650000  0.000000  0.300000  0.050000 
+ 0.812500  0.175000  0.000000  0.012500 
+ 0.775000  0.037500  0.187500  0.000000 
+ 0.562500  0.337500  0.025000  0.075000 
+ 0.825000  0.025000  0.000000  0.150000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAHAAAARWARNRWWCRAAMAAAMA MEME-3 regular expression
+--------------------------------------------------------------------------------
+A[AT][ACT]AAAA[GA][AT]A[GAT][GCT][AG][AT][AT][CGA][AG][AT][AG][AC][AG]AA[AC]A
+--------------------------------------------------------------------------------
+
+
+
+
+Time 159.14 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+YLR110C                          1.02e-14  17_[+3(2.66e-07)]_18_[+2(1.63e-11)]_\
+    77_[+1(5.40e-07)]_13
+YDR134C                          1.17e-10  49_[+2(1.93e-10)]_83_[+1(6.25e-06)]_\
+    18
+Saccharomyces_arboricola         5.29e-13  16_[+3(6.64e-08)]_17_[+2(4.23e-09)]_\
+    79_[+1(5.40e-07)]_13
+Saccharomyces_arboricola         2.54e-06  51_[+2(3.79e-09)]_124
+Saccharomyces_eubayanus@         2.13e-09  48_[+2(2.77e-08)]_62_[+3(3.10e-06)]_\
+    40
+Saccharomyces_eubayanus@         2.39e-13  10_[+3(7.24e-07)]_24_[+2(1.67e-10)]_\
+    78_[+1(5.40e-07)]_13
+Saccharomyces_kudriavzev         9.20e-08  51_[+2(1.72e-09)]_83_[+1(4.18e-05)]_\
+    16
+Saccharomyces_kudriavzev         4.35e-14  18_[+3(1.45e-06)]_18_[+2(1.63e-11)]_\
+    76_[+1(4.56e-07)]_13
+Saccharomyces_mikatae@Se         1.51e-10  47_[+2(2.55e-10)]_85_[+1(6.25e-06)]_\
+    18
+Saccharomyces_mikatae@Se         5.97e-16  15_[+3(2.27e-08)]_19_[+2(9.72e-12)]_\
+    78_[+1(5.40e-07)]_13
+Saccharomyces_paradoxus@         2.37e-15  16_[+3(5.73e-08)]_18_[+2(1.63e-11)]_\
+    78_[+1(5.40e-07)]_13
+Saccharomyces_paradoxus@         2.94e-09  43_[+2(1.93e-10)]_89_[+1(1.26e-05)]_\
+    18
+Saccharomyces_uvarum@Seq         2.17e-08  47_[+2(1.59e-08)]_85_[+1(1.26e-05)]_\
+    18
+Saccharomyces_uvarum@Seq         2.81e-14  9_[+3(9.18e-07)]_24_[+2(1.38e-11)]_\
+    79_[+1(5.40e-07)]_13
+YPL256C                          4.28e-04  105_[+1(5.91e-05)]_2_[+3(4.22e-06)]_\
+    5_[+1(4.18e-05)]_13
+YMR199W                          2.37e-02  118_[+3(4.99e-05)]_57
+Saccharomyces_arboricola         4.00e-03  105_[+1(8.15e-05)]_3_[+3(9.01e-05)]_\
+    4_[+1(4.99e-05)]_13
+Saccharomyces_arboricola         3.82e-03  174_[+3(5.15e-06)]_1
+Saccharomyces_eubayanus@         1.40e-03  105_[+1(7.54e-05)]_3_[+3(1.32e-05)]_\
+    42
+Saccharomyces_eubayanus@         5.63e-01  200
+Saccharomyces_kudriavzev         1.74e-03  105_[+1(5.52e-06)]_70
+Saccharomyces_kudriavzev         1.53e-02  109_[+3(2.64e-05)]_66
+Saccharomyces_mikatae@Se         7.74e-01  200
+Saccharomyces_mikatae@Se         5.76e-05  105_[+1(2.62e-05)]_2_[+3(4.22e-06)]_\
+    43
+Saccharomyces_paradoxus@         6.62e-04  105_[+1(7.54e-05)]_2_[+3(4.22e-06)]_\
+    5_[+1(6.96e-05)]_13
+Saccharomyces_paradoxus@         5.98e-01  200
+Saccharomyces_uvarum@Seq         2.05e-01  200
+Saccharomyces_uvarum@Seq         3.00e-02  110_[+1(3.49e-05)]_65
+YLR286C                          7.09e-04  18_[+1(8.81e-07)]_16_[+1(5.40e-07)]_\
+    15_[+1(1.62e-06)]_76
+Saccharomyces_arboricola         5.22e-04  26_[+1(8.81e-07)]_5_[+1(1.13e-05)]_\
+    15_[+1(7.07e-06)]_79
+Saccharomyces_eubayanus@         6.01e-05  21_[+1(1.05e-07)]_15_[+1(2.87e-06)]_\
+    16_[+1(3.82e-05)]_73
+Saccharomyces_kudriavzev         5.84e-04  11_[+1(8.81e-07)]_20_[+1(5.52e-06)]_\
+    17_[+1(4.87e-06)]_77
+Saccharomyces_mikatae@Se         5.50e-04  22_[+1(1.01e-05)]_15_[+1(4.56e-07)]_\
+    12_[+1(3.28e-06)]_76
+Saccharomyces_paradoxus@         4.26e-05  22_[+1(8.81e-07)]_15_[+1(1.40e-06)]_\
+    14_[+1(2.87e-06)]_74
+Saccharomyces_uvarum@Seq         2.74e-05  21_[+1(1.05e-07)]_15_[+1(7.97e-06)]_\
+    78_[+3(6.74e-05)]_11
+YHR143W                          5.83e-04  1_[+1(2.37e-05)]_35_[+1(1.87e-07)]_\
+    24_[+1(1.27e-07)]_27_[+1(7.97e-06)]_13
+Saccharomyces_eubayanus@         8.24e-04  39_[+1(5.40e-07)]_27_[+1(3.84e-07)]_\
+    29_[+1(8.15e-05)]_30
+Saccharomyces_kudriavzev         2.48e-04  41_[+1(4.57e-08)]_28_[+1(1.86e-08)]_\
+    81
+Saccharomyces_mikatae@Se         1.69e-04  50_[+1(4.57e-08)]_27_[+1(1.27e-07)]_\
+    73
+Saccharomyces_paradoxus@         1.45e-04  54_[+1(4.57e-08)]_27_[+1(2.50e-06)]_\
+    69
+YBR072W                          1.28e-03  163_[+3(7.60e-06)]_12
+Saccharomyces_arboricola         1.06e-08  29_[+2(5.08e-08)]_105_\
+    [+3(3.11e-08)]_16
+Saccharomyces_eubayanus@         1.30e-11  33_[+2(6.47e-09)]_110_\
+    [+3(3.70e-10)]_7
+Saccharomyces_kudriavzev         3.02e-06  41_[+2(5.34e-07)]_97_[+3(9.18e-06)]_\
+    12
+Saccharomyces_mikatae@Se         6.76e-06  54_[+2(6.47e-09)]_121
+Saccharomyces_paradoxus@         4.65e-07  40_[+2(9.42e-07)]_98_[+3(3.91e-07)]_\
+    12
+Saccharomyces_uvarum@Seq         8.44e-08  30_[+2(5.52e-08)]_112_\
+    [+3(5.15e-06)]_8
+YKL163W                          1.79e-01  200
+YJL159W                          2.26e-11  13_[+3(8.88e-08)]_23_[+2(2.43e-09)]_\
+    17_[+1(3.82e-05)]_72
+Saccharomyces_arboricola         3.65e-11  11_[+3(5.86e-09)]_26_[+2(1.06e-09)]_\
+    113
+Saccharomyces_arboricola         6.63e-02  200
+Saccharomyces_eubayanus@         5.82e-01  200
+Saccharomyces_eubayanus@         5.41e-03  116_[+3(6.27e-06)]_59
+Saccharomyces_kudriavzev         4.85e-02  155_[+3(9.01e-05)]_20
+Saccharomyces_kudriavzev         8.58e-08  18_[+3(5.69e-07)]_22_[+2(1.92e-08)]_\
+    110
+Saccharomyces_kudriavzev         2.19e-02  150_[+3(2.05e-05)]_25
+Saccharomyces_mikatae@Se         4.60e-01  200
+Saccharomyces_mikatae@Se         1.72e-09  13_[+3(5.86e-09)]_22_[+2(7.06e-08)]_\
+    115
+Saccharomyces_mikatae@Se         3.17e-03  114_[+3(2.43e-05)]_61
+Saccharomyces_paradoxus@         1.97e-02  156_[+3(3.65e-05)]_19
+Saccharomyces_paradoxus@         6.01e-11  12_[+3(5.86e-09)]_23_[+2(1.08e-08)]_\
+    115
+Saccharomyces_paradoxus@         1.40e-01  200
+Saccharomyces_uvarum@Seq         9.28e-10  7_[+3(5.86e-09)]_24_[+2(2.77e-08)]_\
+    119
+Saccharomyces_uvarum@Seq         7.44e-01  200
+Saccharomyces_uvarum@Seq         3.16e-02  117_[+3(8.36e-06)]_58
+YDR528W                          2.42e-06  5_[+1(2.70e-07)]_3_[+3(2.79e-06)]_\
+    142
+YCL051W                          8.92e-02  114_[+1(3.17e-05)]_61
+Saccharomyces_arboricola         1.20e-04  12_[+1(4.87e-06)]_2_[+3(8.36e-06)]_\
+    136
+Saccharomyces_eubayanus@         1.13e-03  54_[+1(2.25e-07)]_121
+Saccharomyces_kudriavzev         2.52e-03  12_[+1(1.88e-06)]_163
+Saccharomyces_mikatae@Se         1.25e-05  18_[+1(2.95e-08)]_157
+Saccharomyces_paradoxus@         1.51e-06  9_[+1(3.84e-07)]_166
+Saccharomyces_uvarum@Seq         5.83e-03  41_[+1(8.81e-07)]_134
+YGR279C                          3.76e-02  122_[+1(2.62e-05)]_53
+YMR305C                          1.18e-02  110_[+1(8.80e-05)]_65
+Saccharomyces_arboricola         4.68e-02  161_[+3(7.26e-05)]_14
+Saccharomyces_arboricola         1.46e-02  116_[+1(5.91e-05)]_59
+Saccharomyces_eubayanus@         8.33e-04  102_[+1(4.99e-05)]_34_\
+    [+3(2.64e-05)]_14
+Saccharomyces_eubayanus@         2.68e-02  118_[+1(1.13e-05)]_57
+Saccharomyces_kudriavzev         7.21e-02  120_[+1(2.89e-05)]_55
+Saccharomyces_kudriavzev         2.53e-04  24_[+1(1.41e-05)]_115_\
+    [+3(6.27e-06)]_11
+Saccharomyces_mikatae@Se         7.76e-02  121_[+1(2.62e-05)]_54
+Saccharomyces_mikatae@Se         5.13e-04  110_[+1(7.54e-05)]_27_\
+    [+3(2.79e-06)]_13
+Saccharomyces_paradoxus@         2.78e-03  110_[+1(7.54e-05)]_25_\
+    [+3(4.62e-05)]_15
+Saccharomyces_uvarum@Seq         6.49e-04  98_[+1(4.99e-05)]_37_[+3(1.21e-05)]_\
+    15
+Saccharomyces_uvarum@Seq         7.24e-03  117_[+1(1.13e-05)]_58
+YDR293C                          2.89e-04  22_[+1(1.74e-05)]_318_\
+    [+3(1.30e-06)]_110
+Saccharomyces_arboricola         2.84e-03  363_[+3(2.04e-07)]_112
+Saccharomyces_eubayanus@         4.48e-06  96_[+1(3.75e-06)]_242_\
+    [+3(3.11e-08)]_112
+Saccharomyces_kudriavzev         3.95e-06  91_[+1(6.25e-06)]_247_\
+    [+3(1.64e-08)]_112
+Saccharomyces_mikatae@Se         7.62e-04  365_[+3(1.78e-07)]_110
+Saccharomyces_paradoxus@         1.27e-04  17_[+1(2.89e-05)]_324_\
+    [+3(4.44e-07)]_39_[+3(3.03e-07)]_45
+Saccharomyces_uvarum@Seq         2.45e-02  90_[+1(7.97e-06)]_385
+YIL123W                          1.69e-08  85_[+1(1.27e-07)]_1_[+3(1.18e-07)]_\
+    13_[+1(1.33e-09)]_327_[+3(2.43e-05)]_92_[+3(1.58e-05)]_21_[+1(2.15e-05)]_\
+    11
+YNL066W                          2.41e-08  16_[+2(4.67e-08)]_204_\
+    [+1(1.01e-05)]_18_[+1(6.98e-08)]_251_[+3(8.39e-05)]_111
+Saccharomyces_arboricola         5.15e-06  52_[+1(1.05e-07)]_1_[+3(8.16e-07)]_\
+    14_[+1(6.38e-07)]_487_[+3(6.42e-07)]_4_[+1(7.97e-06)]_17
+Saccharomyces_arboricola         1.24e-06  51_[+2(3.03e-08)]_180_\
+    [+1(1.03e-06)]_20_[+1(1.41e-05)]_374
+Saccharomyces_eubayanus@         4.40e-07  82_[+1(1.05e-07)]_39_[+1(4.57e-08)]_\
+    447_[+3(1.56e-07)]_19_[+1(3.82e-05)]_13
+Saccharomyces_eubayanus@         8.03e-03  173_[+1(3.17e-05)]_4_[+1(6.38e-07)]_\
+    13_[+1(2.15e-05)]_435
+Saccharomyces_kudriavzev         9.23e-05  81_[+1(1.74e-05)]_38_[+1(1.03e-06)]_\
+    355_[+3(1.72e-05)]_73_[+3(5.15e-06)]_14_[+1(8.15e-05)]_14
+Saccharomyces_kudriavzev         2.54e-04  196_[+1(1.88e-06)]_17_\
+    [+1(1.88e-06)]_327_[+3(3.10e-06)]_85
+Saccharomyces_mikatae@Se         1.10e-05  75_[+1(1.05e-07)]_37_[+1(1.55e-07)]_\
+    342_[+3(3.95e-05)]_103_[+3(2.79e-06)]_4_[+1(1.57e-05)]_14
+Saccharomyces_mikatae@Se         1.37e-03  237_[+1(2.70e-07)]_16_\
+    [+1(4.56e-07)]_397
+Saccharomyces_paradoxus@         6.97e-09  16_[+2(4.29e-08)]_62_[+3(2.86e-05)]_\
+    126_[+1(3.75e-06)]_20_[+1(5.66e-08)]_376
+Saccharomyces_paradoxus@         1.69e-05  80_[+1(1.27e-07)]_[+3(2.02e-06)]_12_\
+    [+1(1.55e-07)]_335_[+3(6.91e-06)]_92_[+3(2.02e-06)]_18_[+1(1.57e-05)]_13
+Saccharomyces_uvarum@Seq         1.14e-05  90_[+1(1.05e-07)]_[+3(9.18e-06)]_14_\
+    [+1(4.57e-08)]_483_[+1(3.82e-05)]_13
+Saccharomyces_uvarum@Seq         2.70e-07  5_[+3(1.10e-05)]_7_[+2(5.34e-07)]_\
+    152_[+1(1.74e-05)]_4_[+1(6.38e-07)]_12_[+1(2.37e-05)]_395
+YBR162C                          4.95e-04  93_[+1(1.87e-07)]_82
+Saccharomyces_arboricola         1.81e-07  41_[+3(6.42e-07)]_19_[+1(1.87e-07)]_\
+    64_[+3(3.81e-06)]_1
+Saccharomyces_eubayanus@         1.84e-06  40_[+3(6.27e-06)]_21_[+1(5.66e-08)]_\
+    89
+Saccharomyces_kudriavzev         4.28e-07  41_[+3(5.03e-07)]_21_[+1(3.84e-07)]_\
+    88
+Saccharomyces_mikatae@Se         6.57e-06  46_[+3(4.62e-05)]_19_[+1(1.87e-07)]_\
+    85
+Saccharomyces_paradoxus@         3.33e-06  85_[+1(1.87e-07)]_50_[+3(1.32e-05)]_\
+    15
+Saccharomyces_uvarum@Seq         2.72e-07  41_[+3(3.44e-06)]_22_[+1(5.66e-08)]_\
+    87
+YNL300W                          4.75e-05  114_[+1(4.28e-06)]_19_\
+    [+1(5.40e-07)]_17
+Saccharomyces_arboricola         7.66e-06  15_[+2(3.50e-05)]_69_[+1(3.17e-05)]_\
+    19_[+1(5.40e-07)]_22
+Saccharomyces_eubayanus@         7.49e-07  18_[+2(1.52e-07)]_72_[+1(1.88e-06)]_\
+    19_[+1(3.49e-05)]_16
+Saccharomyces_kudriavzev         8.01e-07  10_[+2(3.46e-07)]_124_\
+    [+1(3.84e-07)]_16
+Saccharomyces_mikatae@Se         6.11e-04  114_[+1(6.96e-05)]_19_\
+    [+1(3.75e-06)]_17
+Saccharomyces_paradoxus@         2.60e-03  114_[+1(8.80e-05)]_19_\
+    [+1(4.87e-06)]_17
+Saccharomyces_uvarum@Seq         1.06e-03  9_[+2(7.83e-05)]_80_[+1(1.01e-05)]_\
+    20_[+1(1.26e-05)]_16
+YKR042W                          2.24e-09  2_[+1(2.62e-05)]_14_[+3(3.91e-07)]_\
+    1_[+1(1.13e-05)]_43_[+1(7.21e-10)]_40
+YJL116C                          1.94e-02  53_[+1(2.89e-05)]_44_[+1(7.07e-06)]_\
+    53
+Saccharomyces_arboricola         2.14e-07  3_[+1(1.94e-05)]_11_[+3(1.72e-05)]_\
+    5_[+1(8.15e-05)]_46_[+1(2.37e-09)]_35
+Saccharomyces_arboricola         1.74e-02  49_[+1(3.17e-05)]_44_[+1(4.87e-06)]_\
+    57
+Saccharomyces_eubayanus@         1.67e-08  46_[+3(1.03e-06)]_1_[+1(4.18e-05)]_\
+    7_[+1(9.49e-05)]_12_[+1(2.37e-09)]_34
+Saccharomyces_eubayanus@         4.82e-03  65_[+1(6.25e-06)]_44_[+1(3.28e-06)]_\
+    41
+Saccharomyces_kudriavzev         5.11e-07  43_[+3(3.65e-05)]_1_[+1(9.49e-05)]_\
+    7_[+1(1.57e-05)]_9_[+1(2.37e-09)]_40
+Saccharomyces_kudriavzev         2.31e-03  50_[+1(8.15e-05)]_68_[+2(3.50e-05)]_\
+    32
+Saccharomyces_mikatae@Se         7.14e-02  53_[+1(4.18e-05)]_43_[+1(6.96e-05)]_\
+    54
+Saccharomyces_mikatae@Se         1.39e-09  5_[+1(2.87e-06)]_11_[+3(2.33e-07)]_\
+    1_[+1(4.18e-05)]_43_[+1(7.21e-10)]_40
+Saccharomyces_paradoxus@         8.92e-09  7_[+1(7.07e-06)]_10_[+3(3.81e-06)]_\
+    1_[+1(3.49e-05)]_42_[+1(7.21e-10)]_40
+Saccharomyces_paradoxus@         1.77e-02  122_[+1(7.07e-06)]_53
+Saccharomyces_uvarum@Seq         2.91e-08  44_[+3(2.51e-06)]_1_[+1(6.96e-05)]_\
+    46_[+1(2.37e-09)]_34
+Saccharomyces_uvarum@Seq         1.31e-03  51_[+1(1.01e-05)]_44_[+1(3.28e-06)]_\
+    55
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (3) found.
+********************************************************************************
+
+CPU: ip-172-31-14-0
+
+********************************************************************************

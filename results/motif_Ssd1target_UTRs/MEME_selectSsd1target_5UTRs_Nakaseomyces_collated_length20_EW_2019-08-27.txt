@@ -1,0 +1,1201 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org/.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= sequences.fa
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Candida_glabrata@Seq_714 1.0000    200  Candida_glabrata@Seq_271 1.0000    200  
+Nakaseomyces_bacillispor 1.0000    200  Nakaseomyces_bacillispor 1.0000    200  
+Nakaseomyces_bracarensis 1.0000    200  Nakaseomyces_bracarensis 1.0000    200  
+Nakaseomyces_castellii@S 1.0000    200  Nakaseomyces_castellii@S 1.0000    200  
+Nakaseomyces_delphensis@ 1.0000    200  Nakaseomyces_delphensis@ 1.0000    200  
+Nakaseomyces_nivariensis 1.0000    200  Nakaseomyces_nivariensis 1.0000    200  
+Candida_glabrata@Seq_181 1.0000    200  Candida_glabrata@Seq_396 1.0000    200  
+Nakaseomyces_bacillispor 1.0000    200  Nakaseomyces_bracarensis 1.0000    200  
+Nakaseomyces_bracarensis 1.0000    200  Nakaseomyces_castellii@S 1.0000    200  
+Nakaseomyces_delphensis@ 1.0000    200  Nakaseomyces_delphensis@ 1.0000    200  
+Nakaseomyces_nivariensis 1.0000    200  Nakaseomyces_nivariensis 1.0000    200  
+Candida_glabrata@Seq_818 1.0000    200  Nakaseomyces_bacillispor 1.0000    200  
+Nakaseomyces_bracarensis 1.0000    200  Nakaseomyces_castellii@S 1.0000    200  
+Nakaseomyces_delphensis@ 1.0000    200  Nakaseomyces_nivariensis 1.0000    200  
+Nakaseomyces_bacillispor 1.0000    200  Nakaseomyces_bracarensis 1.0000    200  
+Nakaseomyces_delphensis@ 1.0000    200  Nakaseomyces_nivariensis 1.0000    200  
+Candida_glabrata@Seq_138 1.0000    200  Candida_glabrata@Seq_139 1.0000    200  
+Candida_glabrata@Seq_149 1.0000    200  Nakaseomyces_bacillispor 1.0000    200  
+Nakaseomyces_bracarensis 1.0000    200  Nakaseomyces_bracarensis 1.0000    200  
+Nakaseomyces_castellii@S 1.0000    200  Nakaseomyces_delphensis@ 1.0000    200  
+Nakaseomyces_delphensis@ 1.0000    200  Nakaseomyces_delphensis@ 1.0000    200  
+Nakaseomyces_nivariensis 1.0000    200  Candida_glabrata@Seq_199 1.0000    200  
+Candida_glabrata@Seq_203 1.0000    200  Nakaseomyces_bacillispor 1.0000    200  
+Nakaseomyces_bacillispor 1.0000    200  Nakaseomyces_bracarensis 1.0000    200  
+Nakaseomyces_bracarensis 1.0000    200  Nakaseomyces_castellii@S 1.0000    200  
+Nakaseomyces_castellii@S 1.0000    200  Nakaseomyces_delphensis@ 1.0000    200  
+Nakaseomyces_delphensis@ 1.0000    200  Nakaseomyces_nivariensis 1.0000    200  
+Nakaseomyces_nivariensis 1.0000    200  Candida_glabrata@Seq_200 1.0000    500  
+Nakaseomyces_bacillispor 1.0000    500  Nakaseomyces_bracarensis 1.0000    500  
+Nakaseomyces_castellii@S 1.0000    500  Nakaseomyces_delphensis@ 1.0000    500  
+Nakaseomyces_nivariensis 1.0000    500  Candida_glabrata@Seq_116 1.0000    700  
+Candida_glabrata@Seq_189 1.0000    700  Nakaseomyces_bacillispor 1.0000    700  
+Nakaseomyces_bacillispor 1.0000    700  Nakaseomyces_bracarensis 1.0000    700  
+Nakaseomyces_bracarensis 1.0000    700  Nakaseomyces_castellii@S 1.0000    700  
+Nakaseomyces_castellii@S 1.0000    700  Nakaseomyces_delphensis@ 1.0000    700  
+Nakaseomyces_delphensis@ 1.0000    700  Nakaseomyces_nivariensis 1.0000    700  
+Nakaseomyces_nivariensis 1.0000    700  Candida_glabrata@Seq_961 1.0000    200  
+Nakaseomyces_bacillispor 1.0000    200  Nakaseomyces_bracarensis 1.0000    200  
+Nakaseomyces_castellii@S 1.0000    200  Nakaseomyces_delphensis@ 1.0000    200  
+Nakaseomyces_nivariensis 1.0000    200  Candida_glabrata@Seq_268 1.0000    200  
+Candida_glabrata@Seq_287 1.0000    200  Nakaseomyces_bacillispor 1.0000    200  
+Nakaseomyces_bacillispor 1.0000    200  Nakaseomyces_bracarensis 1.0000    200  
+Nakaseomyces_bracarensis 1.0000    200  Nakaseomyces_castellii@S 1.0000    200  
+Nakaseomyces_delphensis@ 1.0000    200  Nakaseomyces_delphensis@ 1.0000    200  
+Nakaseomyces_nivariensis 1.0000    200  Nakaseomyces_nivariensis 1.0000    200  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme sequences.fa -dna -oc . -nostatus -time 18000 -mod anr -nmotifs 3 -minw 8 -maxw 20 -objfun classic -markov_order 1 
+
+model:  mod=           anr    nmotifs=         3    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=      450    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=           25800    N=              90
+sample: seed=            0    hsfrac=          0
+        searchsize=  25800    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.359 C 0.174 G 0.128 T 0.339 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.359 C 0.174 G 0.128 T 0.339 
+Background model order: 1
+********************************************************************************
+
+
+********************************************************************************
+MOTIF HWAWHHHHWTHCATTCMTTT MEME-1	width =  20  sites = 126  llr = 1172  E-value = 4.8e-109
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif HWAWHHHHWTHCATTCMTTT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  35544233414:7:::3::3
+pos.-specific     C  322224321:2a12:a51:1
+probability       G  1:::::::12::1:::2:::
+matrix            T  33244444474:28a:19a7
+
+         bits    3.0                     
+                 2.7            *   *    
+                 2.4            *   *    
+                 2.1            *   *    
+Relative         1.8            *   *    
+Entropy          1.5            *  **  * 
+(13.4 bits)      1.2            *  ** ** 
+                 0.9            * *** ** 
+                 0.6          * * *** ***
+                 0.3  *   **  ***********
+                 0.0 --------------------
+
+Multilevel           CAAAATTTTTTCATTCCTTT
+consensus            TTTTTCAAAGA  C  A  A
+sequence             AC  CACC  C         
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif HWAWHHHHWTHCATTCMTTT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+Candida_glabrata@Seq_268    120  8.06e-09 AAAACTATTT CCAACTTTTTACATTCCTTT TATTGTTGAA
+Nakaseomyces_nivariensis    136  1.93e-08 TAAAAAAATC CCAACTTATTACATTCCTTT GATAATAATT
+Nakaseomyces_delphensis@    136  3.90e-08 ATTTAACTTT CCAACTATTTACATTCCTTT TTTTTATTTG
+Nakaseomyces_castellii@S    573  3.90e-08 CTAGCACAAT CCAACTATTTACATTCCTTT CTGAATTCGC
+Nakaseomyces_bacillispor    540  3.90e-08 CTCTAACTTT CCAACTATTTACATTCCTTT TTTATCTTAA
+Nakaseomyces_nivariensis     89  7.40e-08 GTTTTAACAA TAAAACTATTACATTCCTTT CATTTTTAGT
+Candida_glabrata@Seq_268    165  1.01e-07 AAAAAAAACT AAAAACCAATCCATTCCTTT TACTAAATTA
+Nakaseomyces_castellii@S     76  1.37e-07 ACCTTTAACG TCCAACTCAGTCATTCCTTT CTCTCCAAGC
+Nakaseomyces_nivariensis     83  1.37e-07 ATCAATTTTA TCCAACTTAGTCATTCCTTT TTAATCTCAC
+Nakaseomyces_delphensis@    117  1.37e-07 ATCAATATTA TCCAACTTAGTCATTCCTTT TAATCTCGAA
+Nakaseomyces_bracarensis    113  1.37e-07 ATCAATATTA TCCAACTTAGTCATTCCTTT TTAATCTCGA
+Candida_glabrata@Seq_199     84  1.37e-07 AAGAGTACAT TCCAACTTAGTCATTCCTTT AAACACTATA
+Nakaseomyces_delphensis@    151  2.39e-07 ATCTGTGAAA CCATTCACATTCATTCCTTA TTTTAACAAT
+Nakaseomyces_bracarensis     88  3.08e-07 TTTTTTATTT CCAACTTATTACATTCCTTA AACAAAAATT
+Nakaseomyces_delphensis@     93  3.95e-07 AAAAACTAAT CCAACTTTTTACTTTCCTTT AATCCCGTCA
+Nakaseomyces_nivariensis    163  5.04e-07 TATTAAATTT CCCCACCCTTACATTCATTT AATTAAAAAA
+Nakaseomyces_castellii@S    163  6.37e-07 ACCAAATAGG CATATCTCCTCCATTCGTTT GTTAGTCGCA
+Candida_glabrata@Seq_396    119  6.37e-07 ACAATACTGG CTTAATTTTTACATTCCTTT TTACATTGAC
+Nakaseomyces_delphensis@     61  7.96e-07 AAGAACTCAT CAGTTCAATTACATTCCTTT TTTGAAATAC
+Nakaseomyces_nivariensis    154  9.87e-07 ACCAAGAAAT CAATCTTCTGTCATTCGCTT TTAATTAACA
+Nakaseomyces_bracarensis    149  9.87e-07 TCCAAGAAAT CAATCTTCTGTCATTCGCTT TTATTAAAAA
+Nakaseomyces_castellii@S    138  1.21e-06 TGTTCTACTC CTAACTTGTTACATTCCTTT GAAACAGCTA
+Nakaseomyces_castellii@S    642  1.21e-06 AGTCTCCATT CCAACTTTTGTCACTCATTT ACTGCAATCA
+Candida_glabrata@Seq_818     40  1.48e-06 TTCTATAATC TTAAACAAGTCCATTCCTTT AAACTTGTCA
+Nakaseomyces_nivariensis     63  1.80e-06 AAAGGACCAT AAATCCATCTACATTCGTTT TAACAATAAA
+Candida_glabrata@Seq_287     41  2.62e-06 AAAGATATAA TTAAATCAATTCACTCCTTT TATTGTTATA
+Nakaseomyces_bacillispor    645  2.62e-06 AACCTCAATC CAACTATTTTACATTCCTTA ATTATCTAGT
+Nakaseomyces_nivariensis    112  2.62e-06 TATTAGGATA TTACTCTCATTCATTCCTTA CTCAATTATC
+Candida_glabrata@Seq_396     62  2.62e-06 GTGACAAGGA AAATTTCTTTACATTCATTT TTAATATCAA
+Nakaseomyces_bracarensis    148  3.13e-06 TTAATTAAAC AAAACTTTTTCCGCTCCTTT TTTAAAGATT
+Nakaseomyces_bracarensis     20  3.13e-06 CAGAACTCCT TAGTTCAATTACATTCCTTT TATAATAATT
+Nakaseomyces_bacillispor     80  3.13e-06 AGTTATTTTA CTTTTTCTAGTCGTTCCTTT CAGTCAGTTA
+Nakaseomyces_bacillispor     62  3.13e-06 GCAACTAACT CCAACTTTTACCACTCCTTT TTTAAAGTCT
+Nakaseomyces_castellii@S    169  3.13e-06 GAAAGAAGAC CAAACCATATACACTCGCTT TCAATTACAA
+Nakaseomyces_delphensis@    117  3.71e-06 AAAGGACTAT TATATCCATTACATTCATTT TATTATCTGT
+Nakaseomyces_delphensis@    158  3.71e-06 CCCAAGAAAC TAATCTTCTGTCATTCGCTT TTTATTCCAA
+Nakaseomyces_nivariensis    169  4.38e-06 AATAATTTAC CCAAACTTTTACACTCTTTT TTTAAAAAAG
+Nakaseomyces_delphensis@    158  4.38e-06 CTTTTAAAAA AAAAACTAATCCCTTCCTTT TTTGAAACAA
+Nakaseomyces_bracarensis     64  5.15e-06 AAAAAGAACA AAAAACTATTACACTCATTT TAAATTCTAT
+Candida_glabrata@Seq_287    159  6.03e-06 TTTTTTTAAC TTAAACTAATACGCTCCTTT ATTCGCTACA
+Nakaseomyces_nivariensis    168  6.03e-06 ATTTTATTAC CAACTAAATTACGTTCCTTT TTTTTTTAAA
+Nakaseomyces_bacillispor    157  6.03e-06 GTCCATAAGA AAAACTTTATACATTCGCTT CTTTTTCACC
+Nakaseomyces_bacillispor     50  7.02e-06 ATCTAAGAAC CCAACTTTTTACTCTCCTTA AGTTATTTTA
+Nakaseomyces_nivariensis     94  8.14e-06 TTGATTATCC AACTATTATTACTTTCCTTT TCGATTCTTT
+Nakaseomyces_bracarensis     79  8.14e-06 GTTGAATTCC AACTATCAATACTTTCCTTT TTAAAAACTA
+Nakaseomyces_bracarensis    141  8.14e-06 TGATTCCAAC TAAATTACGTTCTTTCCTTT TTCACTATAA
+Nakaseomyces_delphensis@    143  8.14e-06 TTCCCTTTCA TAAATCATATTCATTCATTA CAACTTATAC
+Nakaseomyces_bacillispor    127  8.14e-06 TTGATCTTAG CTATACATTAACATTCGTTT GCATCCTTAT
+Candida_glabrata@Seq_271    167  8.14e-06 ACTAGAAACA AATAACCCTTACATTCGCTT AATACTAATC
+Nakaseomyces_nivariensis     66  9.39e-06 TAGAACTCAT TAGTTCATTTACATTCCTTA TTATAAATTT
+Nakaseomyces_nivariensis    139  9.39e-06 AAAAAAAAAA CAATATTCATTCATTCATTC AACTAAAAAT
+Nakaseomyces_bacillispor    159  1.08e-05 AAAATCTCTT TTCTTCAACTACACTCCTTT GAATCACACT
+Nakaseomyces_bracarensis     69  1.24e-05 CTAGGACCAT AAATCCAAATTCATTCTTTT AAAATATAAT
+Candida_glabrata@Seq_287    119  1.41e-05 AAAAAAAAAT AAATCAATAGTCATTCATTT CTATCCTGTT
+Nakaseomyces_nivariensis    123  1.41e-05 TTTAGTGAGA TTATTCACGTTCCTTCCTTT CAATAATTAT
+Nakaseomyces_castellii@S    142  1.41e-05 CTTTTCACGG AAATTCAAGTTCACTCATTT GCTTCTTCCC
+Nakaseomyces_bacillispor     25  1.60e-05 ACTGCAGTTA TCTATACCATCCATTCATTT TGTTGAATAC
+Nakaseomyces_castellii@S    137  1.60e-05 AGCTATAAAC CAACTTTTCGTCACTCCTTC CACCTATTCT
+Nakaseomyces_nivariensis    408  1.60e-05 TATTTGTATT TCTTTACTATCCATTCATTT AAAAAGTGAT
+Nakaseomyces_nivariensis    142  1.60e-05 AAAAAAACTC CAACTGCCAGTCATTCATTT TATTACCAAC
+Nakaseomyces_bacillispor    103  1.60e-05 TACCAAGCAA GAAGTTCTGTCCATTCCTTT TGAATCCATT
+Candida_glabrata@Seq_818     88  1.60e-05 ATTGAAAACT TTCTACACGTCCATTCGTTA ATATTTTAAT
+Nakaseomyces_bracarensis     20  1.60e-05 AGTGAAACAA AAAACTATTTACATTCATTA TTATATCTCT
+Nakaseomyces_delphensis@    128  1.81e-05 TACTAAAATC CAACTACAAGTCATTCATTA CTTTTAAAAA
+Candida_glabrata@Seq_396    146  1.81e-05 TTTTTACATT GACATTTTTTACTTTCGTTT ACTAATCAAC
+Nakaseomyces_bracarensis    131  2.05e-05 AATTTTAAAG AACTTATTTGCCGCTCCTTT GCTATACGAA
+Nakaseomyces_bacillispor    176  2.30e-05 TCTCATTTTA TCTTAACATTACTTTCCTTT TCAAG     
+Nakaseomyces_bracarensis    155  2.30e-05 TACAGTGAAA TAATTCACGTTCCTTCCTTA AAAATACAAT
+Nakaseomyces_delphensis@    151  2.58e-05 TTATTTGTAC CAACTAATCTACACTCCTTA TTAAAAAAAA
+Candida_glabrata@Seq_268     57  2.58e-05 TTTTATAAAT CTATTTTATTACTTTCCTTC CTTTTATTGA
+Nakaseomyces_bracarensis    161  2.58e-05 TCTTTCCTTT TTCACTATAAACATTCCTTT TTATTACTAT
+Nakaseomyces_bacillispor     88  2.89e-05 CTATATTAAT ATTTCTCATTTCACTCATTT ATTTTTTTAG
+Nakaseomyces_bacillispor    367  2.89e-05 ATGTGTTTTC TTTTTCTTTTTCTTTCCCTT TTCTTTGTTT
+Nakaseomyces_delphensis@     29  2.89e-05 TATGGGTATA CACCCTAACTACATTCATTA TATTCAATTA
+Nakaseomyces_delphensis@    164  2.89e-05 AAACCAAACT AAAAAAACTTACATTCGCTT TTCAATATAA
+Nakaseomyces_bacillispor    287  3.21e-05 TACATATTAG CATCCCCGGTCCATTCATTA TCTCGAACTT
+Nakaseomyces_bracarensis     76  3.21e-05 TCTGAATATC CAACTACCAGTCATTCATTC AAAAAGGTTG
+Nakaseomyces_castellii@S     94  3.21e-05 TGAGAAAACC AACTTCTAATTCGTTCATTA ATTAACAGAG
+Candida_glabrata@Seq_714    156  3.21e-05 CAAGAACATT AATCTTCTGTCCATTCGCTT TTAACTAAAC
+Nakaseomyces_nivariensis     47  3.57e-05 AAAATAAACT ATTAACCAAGTCATTCATTA TCTTTGTTTT
+Nakaseomyces_delphensis@    158  3.57e-05 TAATAACTTT CTTTTATCCTTCGCTCCTTT TAAATTTTTC
+Nakaseomyces_bracarensis     30  3.57e-05 GAAAAAAAAA ATTAACCAAGTCATTCATTA CTTTCTTTTT
+Nakaseomyces_bacillispor     33  3.57e-05 GAAATTCAAC TAACTTTTATTCGTTCATTA CTATCCAAAA
+Nakaseomyces_bracarensis    171  4.37e-05 TCTAACCAAC AAAAACTTACACATTCGCTT CTATTAAAAA
+Nakaseomyces_bacillispor    161  4.37e-05 AAAAGAATAC CAACTTTTTTACTTTCGCTA ATTTCAACAA
+Nakaseomyces_nivariensis    151  4.81e-05 AAAAAAAAAT ACTTTAATTGCCGCTCCTTT AAATTAAAAA
+Nakaseomyces_nivariensis    345  5.29e-05 TAAAAGGAGT TTTAAACATTTCATTCCTTC AATAACAGCA
+Candida_glabrata@Seq_200    248  5.29e-05 TGTCTCTAAG CAAGATCCCTTCTTTCCTTA CAACCAACCC
+Candida_glabrata@Seq_203    137  5.29e-05 AAGATAAATC CAACTACAAGTCATTCTTTA AATTAACTAA
+Candida_glabrata@Seq_203      7  5.29e-05     ACAAAT TTTTTTCTTTTCCTTCCTTA TCCTGTCTTA
+Nakaseomyces_nivariensis    101  5.29e-05 ATGAGAAAAT GTTTTTTTTCCCATTCCTTT ATTTATTTTT
+Nakaseomyces_bacillispor    126  5.79e-05 TTCCTTTTGA ATCCATTAAGTCATTCATTA ATAAACTCCT
+Candida_glabrata@Seq_818    134  5.79e-05 GTGGTCCGTT CCTTTACTACCCATTCATTT ATTCCGTTTC
+Nakaseomyces_bracarensis     70  5.79e-05 AAAAAGAATT GATTATACCTACATTCGTTA CTATAAATTT
+Nakaseomyces_bacillispor     94  6.33e-05 CAACGGATAA TAAAACCAGACCATTCTTTT GAATAAATAC
+Nakaseomyces_delphensis@    366  6.90e-05 AACAAATAAA TATTTTCAAATCGTTCGTTT AATCAAAAGG
+Candida_glabrata@Seq_200    326  6.90e-05 CCATTGGACG CCCCTTTGCGCCATTCGTTC TCCCAAATTT
+Nakaseomyces_delphensis@    111  7.51e-05 AGAGCATTAA TACTGCCAAGTCATTCATTA GCTTTTTTAT
+Candida_glabrata@Seq_181    135  7.51e-05 AACCTCATAT CCTTACCATTACAATCATTT ATACAGTTGA
+Nakaseomyces_castellii@S    178  7.51e-05 AGAACTATCC AACTGCTCATTCACTCGTTA ATA       
+Nakaseomyces_nivariensis    282  8.16e-05 GACGATAGGA ACTTACATTTTCTTTCTTTT TTTATTTGTT
+Nakaseomyces_bracarensis    151  8.16e-05 AAATATAAAA AAGAAATAAACCATTCCTTT TATAATAATA
+Nakaseomyces_bracarensis    196  8.83e-05 AGACCATTAA TACTAACTTTTCTTTCTTTT TTTTTGTCAT
+Nakaseomyces_bacillispor    163  8.83e-05 TATTGATTTT TACAAATTATTCACTCGCTA GAATATTTTT
+Nakaseomyces_delphensis@    402  9.54e-05 AAGGTAAAAA GTATTTCCATCCTTTCTTTT TTTCTTCTTC
+Nakaseomyces_nivariensis    168  9.54e-05 ACTAAAAAAA ACTAAAACTTACACTCGCTT TCTATAATAA
+Nakaseomyces_castellii@S     69  1.03e-04 GAACCCGCCA GTAACTCTCGTCGCTCCTTC TACGCTAATC
+Nakaseomyces_bacillispor     20  1.03e-04 TTTATTCAAG GAGTACTAAACCTTTCCTTT TATTCTAGCT
+Nakaseomyces_bacillispor    122  1.03e-04 AACCAAGTCA TTCAAATATTACTTTCGTTA AACTGATTAA
+Nakaseomyces_nivariensis     14  1.19e-04 ATTATTCTGG TTACTAAAAGTCTTTCATTT TTGAAAATAA
+Nakaseomyces_nivariensis     21  1.19e-04 ATACTATTAA GAAAACTTTCACACTCATTA TTACTTTCTT
+Nakaseomyces_delphensis@    105  1.19e-04 GCTGGTACAA TTACCTATATTCGCTCTTTT ATTAATTTAT
+Candida_glabrata@Seq_268     30  1.28e-04 CCAACTAATA ATCTAGATTTCCCTTCCTTT TATAAATCTA
+Nakaseomyces_bacillispor    435  1.37e-04 CAAGAAATAT ATTTCCAGAGACATTCACTT GGATTTAGTT
+Nakaseomyces_bracarensis    165  1.56e-04 AATAATAAAA TAATAATAAACCTTTCATTT TTTTGTAGAT
+Nakaseomyces_delphensis@    110  1.76e-04 TTTTTAAGAA CAAAAATATAACAATCCTTT TATTTTTTGT
+Nakaseomyces_bracarensis     75  1.87e-04 CAACAAAAAA ATTTTCTTTACCTCTCCTTA TATATAAGGA
+Nakaseomyces_nivariensis     94  1.87e-04 GGATTCATTT CAAATTTGTTTCCTTCTCTT TCTATTTAAT
+Nakaseomyces_nivariensis     73  1.98e-04 GAAATATTAT TTATTATACCACATTCGTTA ACATACACAA
+Nakaseomyces_nivariensis     86  2.09e-04 TGAAAGAGAA CCATCTACGATCTCTCTTTT TTTATAATAG
+Nakaseomyces_castellii@S    113  2.09e-04 AGCCGCACAA TAAAATATCTCCATGCATTT CAATTTGTCC
+Nakaseomyces_delphensis@    265  2.21e-04 ACTGAATAAA ATATAAAATATCGTTCATTT GTTATATATG
+Nakaseomyces_castellii@S    146  2.33e-04 AAGTGCTACT GAGTAGCCGTCCATTCATTA GTAAATCGAA
+Nakaseomyces_bacillispor    112  3.40e-04 TCGTTTGTGT ATCGATTCATTCACTCACTA ATTGTTGTTT
+Candida_glabrata@Seq_203     61  4.14e-04 AACTAAGTTA CATATTTTGTTCTCTCTCTC CTTAATTCTT
+Nakaseomyces_castellii@S     31  4.45e-04 GTAAATATAT ATATATATATACCATCATTT GTGCTCCATA
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif HWAWHHHHWTHCATTCMTTT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Candida_glabrata@Seq_268          0.00013  29_[+1]_7_[+1]_43_[+1]_25_[+1]_16
+Nakaseomyces_nivariensis          4.4e-06  65_[+1]_50_[+1]_13_[+1]_12
+Nakaseomyces_delphensis@          9.5e-05  92_[+1]_23_[+1]_210_[+1]_16_[+1]_279
+Nakaseomyces_castellii@S          1.2e-06  572_[+1]_49_[+1]_39
+Nakaseomyces_bacillispor          2.9e-05  366_[+1]_153_[+1]_85_[+1]_36
+Nakaseomyces_nivariensis          1.4e-05  62_[+1]_6_[+1]_14_[+1]_58
+Nakaseomyces_castellii@S          1.2e-06  75_[+1]_42_[+1]_43
+Nakaseomyces_nivariensis          1.4e-07  82_[+1]_98
+Nakaseomyces_delphensis@          1.4e-07  116_[+1]_64
+Nakaseomyces_bracarensis          1.4e-07  112_[+1]_68
+Candida_glabrata@Seq_199          1.4e-07  83_[+1]_97
+Nakaseomyces_delphensis@          3.7e-06  116_[+1]_14_[+1]_30
+Nakaseomyces_bracarensis          3.1e-06  19_[+1]_48_[+1]_40_[+1]_33
+Nakaseomyces_nivariensis          2.6e-06  111_[+1]_31_[+1]_18
+Nakaseomyces_castellii@S          6.4e-07  162_[+1]_18
+Candida_glabrata@Seq_396          1.8e-05  61_[+1]_37_[+1]_7_[+1]_35
+Nakaseomyces_delphensis@          0.00018  60_[+1]_29_[+1]_21_[+1]_30
+Nakaseomyces_nivariensis          0.00019  93_[+1]_40_[+1]_27
+Nakaseomyces_bracarensis          9.9e-07  148_[+1]_32
+Candida_glabrata@Seq_818          5.8e-05  39_[+1]_28_[+1]_26_[+1]_47
+Candida_glabrata@Seq_287          1.4e-05  40_[+1]_58_[+1]_20_[+1]_22
+Nakaseomyces_bacillispor          1.1e-05  49_[+1]_10_[+1]_59_[+1]_22
+Nakaseomyces_bacillispor          0.00034  61_[+1]_30_[+1]_69
+Nakaseomyces_castellii@S          3.1e-06  168_[+1]_12
+Nakaseomyces_delphensis@          3.7e-06  157_[+1]_23
+Nakaseomyces_delphensis@          4.4e-06  127_[+1]_10_[+1]_23
+Nakaseomyces_bracarensis          0.00016  63_[+1]_81_[+1]_16
+Nakaseomyces_nivariensis          0.00021  85_[+1]_36_[+1]_6_[+1]_13
+Nakaseomyces_bacillispor            6e-06  156_[+1]_24
+Nakaseomyces_nivariensis          0.00012  13_[+1]_13_[+1]_27_[+1]_37_[+1]_30
+Nakaseomyces_bracarensis          3.6e-05  29_[+1]_29_[+1]_32_[+1]_50
+Nakaseomyces_bracarensis          2.6e-05  75_[+1]_45_[+1]_[+1]_20
+Nakaseomyces_delphensis@          2.9e-05  28_[+1]_94_[+1]_38
+Nakaseomyces_bacillispor          8.1e-06  126_[+1]_54
+Candida_glabrata@Seq_271          8.1e-06  166_[+1]_14
+Nakaseomyces_nivariensis          0.00012  20_[+1]_32_[+1]_46_[+1]_42
+Nakaseomyces_bracarensis          1.2e-05  68_[+1]_66_[+1]_26
+Nakaseomyces_castellii@S          0.00045  30_[+1]_43_[+1]_28_[+1]_39
+Nakaseomyces_bacillispor          2.3e-05  24_[+1]_43_[+1]_68_[+1]_5
+Nakaseomyces_castellii@S           0.0001  68_[+1]_48_[+1]_44
+Nakaseomyces_nivariensis          8.2e-05  281_[+1]_106_[+1]_273
+Nakaseomyces_bacillispor           0.0001  19_[+1]_63_[+1]_3_[+1]_55
+Nakaseomyces_bracarensis          8.2e-05  19_[+1]_30_[+1]_61_[+1]_30
+Nakaseomyces_delphensis@          2.9e-05  163_[+1]_17
+Nakaseomyces_bacillispor          0.00014  286_[+1]_128_[+1]_46
+Candida_glabrata@Seq_714          3.2e-05  155_[+1]_25
+Nakaseomyces_delphensis@          3.6e-05  110_[+1]_27_[+1]_23
+Nakaseomyces_bacillispor          3.6e-05  32_[+1]_148
+Nakaseomyces_bracarensis          4.4e-05  170_[+1]_10
+Nakaseomyces_bacillispor          4.4e-05  160_[+1]_20
+Nakaseomyces_nivariensis          5.3e-05  344_[+1]_136
+Candida_glabrata@Seq_200          5.3e-05  247_[+1]_58_[+1]_155
+Candida_glabrata@Seq_203          0.00041  6_[+1]_34_[+1]_56_[+1]_44
+Nakaseomyces_nivariensis          5.3e-05  100_[+1]_47_[+1]_13
+Nakaseomyces_bacillispor          6.3e-05  93_[+1]_49_[+1]_18
+Candida_glabrata@Seq_181          7.5e-05  134_[+1]_46
+Nakaseomyces_castellii@S          7.5e-05  177_[+1]_3
+Nakaseomyces_bracarensis          8.8e-05  195_[+1]_485
+Nakaseomyces_bacillispor           0.0001  121_[+1]_59
+Nakaseomyces_delphensis@          0.00012  104_[+1]_76
+Nakaseomyces_bracarensis          0.00019  74_[+1]_106
+Nakaseomyces_castellii@S          0.00021  112_[+1]_68
+Nakaseomyces_delphensis@          0.00022  264_[+1]_216
+Nakaseomyces_castellii@S          0.00023  145_[+1]_535
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif HWAWHHHHWTHCATTCMTTT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF HWAWHHHHWTHCATTCMTTT width=20 seqs=126
+Candida_glabrata@Seq_268 (  120) CCAACTTTTTACATTCCTTT  1 
+Nakaseomyces_nivariensis (  136) CCAACTTATTACATTCCTTT  1 
+Nakaseomyces_delphensis@ (  136) CCAACTATTTACATTCCTTT  1 
+Nakaseomyces_castellii@S (  573) CCAACTATTTACATTCCTTT  1 
+Nakaseomyces_bacillispor (  540) CCAACTATTTACATTCCTTT  1 
+Nakaseomyces_nivariensis (   89) TAAAACTATTACATTCCTTT  1 
+Candida_glabrata@Seq_268 (  165) AAAAACCAATCCATTCCTTT  1 
+Nakaseomyces_castellii@S (   76) TCCAACTCAGTCATTCCTTT  1 
+Nakaseomyces_nivariensis (   83) TCCAACTTAGTCATTCCTTT  1 
+Nakaseomyces_delphensis@ (  117) TCCAACTTAGTCATTCCTTT  1 
+Nakaseomyces_bracarensis (  113) TCCAACTTAGTCATTCCTTT  1 
+Candida_glabrata@Seq_199 (   84) TCCAACTTAGTCATTCCTTT  1 
+Nakaseomyces_delphensis@ (  151) CCATTCACATTCATTCCTTA  1 
+Nakaseomyces_bracarensis (   88) CCAACTTATTACATTCCTTA  1 
+Nakaseomyces_delphensis@ (   93) CCAACTTTTTACTTTCCTTT  1 
+Nakaseomyces_nivariensis (  163) CCCCACCCTTACATTCATTT  1 
+Nakaseomyces_castellii@S (  163) CATATCTCCTCCATTCGTTT  1 
+Candida_glabrata@Seq_396 (  119) CTTAATTTTTACATTCCTTT  1 
+Nakaseomyces_delphensis@ (   61) CAGTTCAATTACATTCCTTT  1 
+Nakaseomyces_nivariensis (  154) CAATCTTCTGTCATTCGCTT  1 
+Nakaseomyces_bracarensis (  149) CAATCTTCTGTCATTCGCTT  1 
+Nakaseomyces_castellii@S (  138) CTAACTTGTTACATTCCTTT  1 
+Nakaseomyces_castellii@S (  642) CCAACTTTTGTCACTCATTT  1 
+Candida_glabrata@Seq_818 (   40) TTAAACAAGTCCATTCCTTT  1 
+Nakaseomyces_nivariensis (   63) AAATCCATCTACATTCGTTT  1 
+Candida_glabrata@Seq_287 (   41) TTAAATCAATTCACTCCTTT  1 
+Nakaseomyces_bacillispor (  645) CAACTATTTTACATTCCTTA  1 
+Nakaseomyces_nivariensis (  112) TTACTCTCATTCATTCCTTA  1 
+Candida_glabrata@Seq_396 (   62) AAATTTCTTTACATTCATTT  1 
+Nakaseomyces_bracarensis (  148) AAAACTTTTTCCGCTCCTTT  1 
+Nakaseomyces_bracarensis (   20) TAGTTCAATTACATTCCTTT  1 
+Nakaseomyces_bacillispor (   80) CTTTTTCTAGTCGTTCCTTT  1 
+Nakaseomyces_bacillispor (   62) CCAACTTTTACCACTCCTTT  1 
+Nakaseomyces_castellii@S (  169) CAAACCATATACACTCGCTT  1 
+Nakaseomyces_delphensis@ (  117) TATATCCATTACATTCATTT  1 
+Nakaseomyces_delphensis@ (  158) TAATCTTCTGTCATTCGCTT  1 
+Nakaseomyces_nivariensis (  169) CCAAACTTTTACACTCTTTT  1 
+Nakaseomyces_delphensis@ (  158) AAAAACTAATCCCTTCCTTT  1 
+Nakaseomyces_bracarensis (   64) AAAAACTATTACACTCATTT  1 
+Candida_glabrata@Seq_287 (  159) TTAAACTAATACGCTCCTTT  1 
+Nakaseomyces_nivariensis (  168) CAACTAAATTACGTTCCTTT  1 
+Nakaseomyces_bacillispor (  157) AAAACTTTATACATTCGCTT  1 
+Nakaseomyces_bacillispor (   50) CCAACTTTTTACTCTCCTTA  1 
+Nakaseomyces_nivariensis (   94) AACTATTATTACTTTCCTTT  1 
+Nakaseomyces_bracarensis (   79) AACTATCAATACTTTCCTTT  1 
+Nakaseomyces_bracarensis (  141) TAAATTACGTTCTTTCCTTT  1 
+Nakaseomyces_delphensis@ (  143) TAAATCATATTCATTCATTA  1 
+Nakaseomyces_bacillispor (  127) CTATACATTAACATTCGTTT  1 
+Candida_glabrata@Seq_271 (  167) AATAACCCTTACATTCGCTT  1 
+Nakaseomyces_nivariensis (   66) TAGTTCATTTACATTCCTTA  1 
+Nakaseomyces_nivariensis (  139) CAATATTCATTCATTCATTC  1 
+Nakaseomyces_bacillispor (  159) TTCTTCAACTACACTCCTTT  1 
+Nakaseomyces_bracarensis (   69) AAATCCAAATTCATTCTTTT  1 
+Candida_glabrata@Seq_287 (  119) AAATCAATAGTCATTCATTT  1 
+Nakaseomyces_nivariensis (  123) TTATTCACGTTCCTTCCTTT  1 
+Nakaseomyces_castellii@S (  142) AAATTCAAGTTCACTCATTT  1 
+Nakaseomyces_bacillispor (   25) TCTATACCATCCATTCATTT  1 
+Nakaseomyces_castellii@S (  137) CAACTTTTCGTCACTCCTTC  1 
+Nakaseomyces_nivariensis (  408) TCTTTACTATCCATTCATTT  1 
+Nakaseomyces_nivariensis (  142) CAACTGCCAGTCATTCATTT  1 
+Nakaseomyces_bacillispor (  103) GAAGTTCTGTCCATTCCTTT  1 
+Candida_glabrata@Seq_818 (   88) TTCTACACGTCCATTCGTTA  1 
+Nakaseomyces_bracarensis (   20) AAAACTATTTACATTCATTA  1 
+Nakaseomyces_delphensis@ (  128) CAACTACAAGTCATTCATTA  1 
+Candida_glabrata@Seq_396 (  146) GACATTTTTTACTTTCGTTT  1 
+Nakaseomyces_bracarensis (  131) AACTTATTTGCCGCTCCTTT  1 
+Nakaseomyces_bacillispor (  176) TCTTAACATTACTTTCCTTT  1 
+Nakaseomyces_bracarensis (  155) TAATTCACGTTCCTTCCTTA  1 
+Nakaseomyces_delphensis@ (  151) CAACTAATCTACACTCCTTA  1 
+Candida_glabrata@Seq_268 (   57) CTATTTTATTACTTTCCTTC  1 
+Nakaseomyces_bracarensis (  161) TTCACTATAAACATTCCTTT  1 
+Nakaseomyces_bacillispor (   88) ATTTCTCATTTCACTCATTT  1 
+Nakaseomyces_bacillispor (  367) TTTTTCTTTTTCTTTCCCTT  1 
+Nakaseomyces_delphensis@ (   29) CACCCTAACTACATTCATTA  1 
+Nakaseomyces_delphensis@ (  164) AAAAAAACTTACATTCGCTT  1 
+Nakaseomyces_bacillispor (  287) CATCCCCGGTCCATTCATTA  1 
+Nakaseomyces_bracarensis (   76) CAACTACCAGTCATTCATTC  1 
+Nakaseomyces_castellii@S (   94) AACTTCTAATTCGTTCATTA  1 
+Candida_glabrata@Seq_714 (  156) AATCTTCTGTCCATTCGCTT  1 
+Nakaseomyces_nivariensis (   47) ATTAACCAAGTCATTCATTA  1 
+Nakaseomyces_delphensis@ (  158) CTTTTATCCTTCGCTCCTTT  1 
+Nakaseomyces_bracarensis (   30) ATTAACCAAGTCATTCATTA  1 
+Nakaseomyces_bacillispor (   33) TAACTTTTATTCGTTCATTA  1 
+Nakaseomyces_bracarensis (  171) AAAAACTTACACATTCGCTT  1 
+Nakaseomyces_bacillispor (  161) CAACTTTTTTACTTTCGCTA  1 
+Nakaseomyces_nivariensis (  151) ACTTTAATTGCCGCTCCTTT  1 
+Nakaseomyces_nivariensis (  345) TTTAAACATTTCATTCCTTC  1 
+Candida_glabrata@Seq_200 (  248) CAAGATCCCTTCTTTCCTTA  1 
+Candida_glabrata@Seq_203 (  137) CAACTACAAGTCATTCTTTA  1 
+Candida_glabrata@Seq_203 (    7) TTTTTTCTTTTCCTTCCTTA  1 
+Nakaseomyces_nivariensis (  101) GTTTTTTTTCCCATTCCTTT  1 
+Nakaseomyces_bacillispor (  126) ATCCATTAAGTCATTCATTA  1 
+Candida_glabrata@Seq_818 (  134) CCTTTACTACCCATTCATTT  1 
+Nakaseomyces_bracarensis (   70) GATTATACCTACATTCGTTA  1 
+Nakaseomyces_bacillispor (   94) TAAAACCAGACCATTCTTTT  1 
+Nakaseomyces_delphensis@ (  366) TATTTTCAAATCGTTCGTTT  1 
+Candida_glabrata@Seq_200 (  326) CCCCTTTGCGCCATTCGTTC  1 
+Nakaseomyces_delphensis@ (  111) TACTGCCAAGTCATTCATTA  1 
+Candida_glabrata@Seq_181 (  135) CCTTACCATTACAATCATTT  1 
+Nakaseomyces_castellii@S (  178) AACTGCTCATTCACTCGTTA  1 
+Nakaseomyces_nivariensis (  282) ACTTACATTTTCTTTCTTTT  1 
+Nakaseomyces_bracarensis (  151) AAGAAATAAACCATTCCTTT  1 
+Nakaseomyces_bracarensis (  196) TACTAACTTTTCTTTCTTTT  1 
+Nakaseomyces_bacillispor (  163) TACAAATTATTCACTCGCTA  1 
+Nakaseomyces_delphensis@ (  402) GTATTTCCATCCTTTCTTTT  1 
+Nakaseomyces_nivariensis (  168) ACTAAAACTTACACTCGCTT  1 
+Nakaseomyces_castellii@S (   69) GTAACTCTCGTCGCTCCTTC  1 
+Nakaseomyces_bacillispor (   20) GAGTACTAAACCTTTCCTTT  1 
+Nakaseomyces_bacillispor (  122) TTCAAATATTACTTTCGTTA  1 
+Nakaseomyces_nivariensis (   14) TTACTAAAAGTCTTTCATTT  1 
+Nakaseomyces_nivariensis (   21) GAAAACTTTCACACTCATTA  1 
+Nakaseomyces_delphensis@ (  105) TTACCTATATTCGCTCTTTT  1 
+Candida_glabrata@Seq_268 (   30) ATCTAGATTTCCCTTCCTTT  1 
+Nakaseomyces_bacillispor (  435) ATTTCCAGAGACATTCACTT  1 
+Nakaseomyces_bracarensis (  165) TAATAATAAACCTTTCATTT  1 
+Nakaseomyces_delphensis@ (  110) CAAAAATATAACAATCCTTT  1 
+Nakaseomyces_bracarensis (   75) ATTTTCTTTACCTCTCCTTA  1 
+Nakaseomyces_nivariensis (   94) CAAATTTGTTTCCTTCTCTT  1 
+Nakaseomyces_nivariensis (   73) TTATTATACCACATTCGTTA  1 
+Nakaseomyces_nivariensis (   86) CCATCTACGATCTCTCTTTT  1 
+Nakaseomyces_castellii@S (  113) TAAAATATCTCCATGCATTT  1 
+Nakaseomyces_delphensis@ (  265) ATATAAAATATCGTTCATTT  1 
+Nakaseomyces_castellii@S (  146) GAGTAGCCGTCCATTCATTA  1 
+Nakaseomyces_bacillispor (  112) ATCGATTCATTCACTCACTA  1 
+Candida_glabrata@Seq_203 (   61) CATATTTTGTTCTCTCTCTC  1 
+Nakaseomyces_castellii@S (   31) ATATATATATACCATCATTT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif HWAWHHHHWTHCATTCMTTT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 24090 bayes= 9.30594 E= 4.8e-109 
+   -41    100    -85    -13 
+    50     35  -1362    -33 
+    59     13   -143    -61 
+    23    -21   -243     26 
+     9     40   -302     14 
+   -80    107   -243     26 
+   -25     59  -1362     37 
+   -14     30   -169     31 
+     3    -76    -32     34 
+  -191   -213     68     96 
+    12     24  -1362     26 
+ -1362    252  -1362  -1362 
+    91   -165    -32   -102 
+  -391     30  -1362    117 
+ -1362  -1362   -401    155 
+ -1362    252  -1362  -1362 
+   -37    138     51   -196 
+ -1362    -37  -1362    135 
+ -1362  -1362  -1362    156 
+   -45   -146  -1362     99 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif HWAWHHHHWTHCATTCMTTT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 126 E= 4.8e-109 
+ 0.269841  0.349206  0.071429  0.309524 
+ 0.507937  0.222222  0.000000  0.269841 
+ 0.539683  0.190476  0.047619  0.222222 
+ 0.420635  0.150794  0.023810  0.404762 
+ 0.380952  0.230159  0.015873  0.373016 
+ 0.206349  0.365079  0.023810  0.404762 
+ 0.301587  0.261905  0.000000  0.436508 
+ 0.325397  0.214286  0.039683  0.420635 
+ 0.365079  0.103175  0.103175  0.428571 
+ 0.095238  0.039683  0.206349  0.658730 
+ 0.388889  0.206349  0.000000  0.404762 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.674603  0.055556  0.103175  0.166667 
+ 0.023810  0.214286  0.000000  0.761905 
+ 0.000000  0.000000  0.007937  0.992063 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.277778  0.452381  0.182540  0.087302 
+ 0.000000  0.134921  0.000000  0.865079 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.261905  0.063492  0.000000  0.674603 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif HWAWHHHHWTHCATTCMTTT MEME-1 regular expression
+--------------------------------------------------------------------------------
+[CTA][ATC][AT][AT][ATC][TCA][TAC][TAC][TA][TG][TAC]CA[TC]TC[CA]TT[TA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time 54.81 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF KAAAAAAAAAA MEME-2	width =  11  sites =  76  llr = 630  E-value = 1.6e-020
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif KAAAAAAAAAA MEME-2 Description
+--------------------------------------------------------------------------------
+Simplified        A  1aa87a99999
+pos.-specific     C  1::12::::::
+probability       G  5::1::1111:
+matrix            T  4:::::::::1
+
+         bits    3.0            
+                 2.7            
+                 2.4            
+                 2.1            
+Relative         1.8            
+Entropy          1.5  **  *     
+(12.0 bits)      1.2  **  ****  
+                 0.9  **********
+                 0.6 ***********
+                 0.3 ***********
+                 0.0 -----------
+
+Multilevel           GAAAAAAAAAA
+consensus            T   C      
+sequence                        
+                                
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KAAAAAAAAAA MEME-2 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value               Site  
+-------------             ----- ---------            -----------
+Nakaseomyces_nivariensis    138  4.55e-06 TAAAAAAGAA GAAAAAAAAAA ATACTTTAAT
+Candida_glabrata@Seq_961    124  4.55e-06 ACAAAGCCCA GAAAAAAAAAA AAGGATTCTT
+Nakaseomyces_nivariensis    316  4.55e-06 TTAAGATAGA GAAAAAAAAAA AAGGGTTATA
+Nakaseomyces_nivariensis    139  4.55e-06 TCTTCATTTT GAAAAAAAAAA TACAATAACA
+Nakaseomyces_delphensis@    180  4.55e-06 TTATCTTTGA GAAAAAAAAAA ATCAAGAAAA
+Nakaseomyces_delphensis@    158  4.55e-06 AATTGAAATA GAAAAAAAAAA AACAAGATAA
+Candida_glabrata@Seq_139     29  4.55e-06 TGAAGAAACT GAAAAAAAAAA AAAATGGATG
+Candida_glabrata@Seq_138     39  4.55e-06 AGATAATGTT GAAAAAAAAAA ACTATAAAAG
+Candida_glabrata@Seq_271     58  4.55e-06 CAGAGAAAAG GAAAAAAAAAA CTATATAAAG
+Nakaseomyces_delphensis@     16  6.76e-06 TGACTTGTAA GAAACAAAAAA AAAATAATAG
+Nakaseomyces_delphensis@    684  8.38e-06 ATCCCTTCCT GAAGAAAAAAA AAGAAT    
+Nakaseomyces_delphensis@    589  8.38e-06 TCTCCTTGAA GAAGAAAAAAA AGAAGTTGTA
+Candida_glabrata@Seq_271    128  8.38e-06 TTCCTATACA GAAGAAAAAAA GAACCATCGA
+Nakaseomyces_delphensis@    176  1.08e-05 ACTAAAACCT GAAAAAGAAAA ATCTACATAG
+Nakaseomyces_delphensis@    172  2.45e-05 CACTCCTTAT TAAAAAAAAAA CTAGTTTAAA
+Nakaseomyces_bracarensis    190  2.45e-05 TCAAAACAAT TAAAAAAAAAA           
+Nakaseomyces_bracarensis    670  2.45e-05 AAAATATATA TAAAAAAAAAA TTATAACTAT
+Candida_glabrata@Seq_189     10  2.45e-05  AAACGACGG GAAAAAAAGAA ATTTTTTCAC
+Nakaseomyces_bracarensis    481  2.45e-05 ATTCCAAAAC TAAAAAAAAAA ATAAGACAC 
+Nakaseomyces_delphensis@     76  2.45e-05 AAGTGAAAAT TAAAAAAAAAA AACTGATATA
+Nakaseomyces_delphensis@    180  2.45e-05 ATTTTAACAA TAAAAAAAAAA GTAACTGCCA
+Nakaseomyces_delphensis@    170  2.45e-05 TTGTATTATA TAAAAAAAAAA ATTCCTTTGA
+Nakaseomyces_bracarensis     51  2.45e-05 AATATAATAA GAAAAAAAGAA CAAAAAACTA
+Nakaseomyces_bracarensis     38  2.45e-05 TCTATCTTTC TAAAAAAAAAA AACTATATAA
+Nakaseomyces_bracarensis    448  2.75e-05 TAATTTATAA GAAACAGAAAA AAAATATAAA
+Nakaseomyces_castellii@S    572  3.57e-05 AATCATCCTA GAAACAAAGAA AGCACAACTT
+Candida_glabrata@Seq_199    182  3.57e-05 AAAGCAATTA GAAAAAAGAAA ATTATCAA  
+Candida_glabrata@Seq_149     38  3.57e-05 ACAAGAAAAC TAAACAAAAAA AAAATTGATA
+Nakaseomyces_delphensis@    131  3.57e-05 AAGAACGGAA TAAACAAAAAA AAGATCCCCA
+Nakaseomyces_bracarensis     42  3.57e-05 TTTCTTCCTT TAAACAAAAAA TTTCATATAT
+Nakaseomyces_nivariensis     52  4.16e-05 ACAAGGGATA GAAAAAAAAAT GGGTATATAA
+Nakaseomyces_bracarensis     20  4.16e-05 GGGGCCAAAT GAAAAAAAAAT TTTTCTTCCT
+Nakaseomyces_nivariensis     71  4.33e-05 ACTATTGGAA GAAGAAGAAAA ATTTTTTCTC
+Nakaseomyces_nivariensis     32  4.33e-05 ACTTTATTTT GAACCAAAAAA ACACATATCA
+Nakaseomyces_bracarensis    499  5.18e-05 TTCCAAAAGA GAAACAAAAAT ATTTCATCAC
+Nakaseomyces_nivariensis     18  5.18e-05 AATATAACAA GAAACAAAAAT AGATAGGATA
+Nakaseomyces_delphensis@     36  5.18e-05 GCGAAATCCC GAAACAAAAGA AATTATTTTT
+Nakaseomyces_delphensis@    428  5.37e-05 ACAGGAAAAA GAAAGAAAAAA TCTGTTTTCG
+Nakaseomyces_bacillispor    626  7.63e-05 TTCAAAATAC CAAAAAAAAAA CCTCAATCCA
+Nakaseomyces_nivariensis    103  7.63e-05 CTCTCTCTCT CAAAAAAAAAA GATAAAAAAT
+Candida_glabrata@Seq_139    164  7.63e-05 AATCAACCAA TAAAAAAAGAA ATTAACTTTA
+Nakaseomyces_delphensis@     73  7.63e-05 GTGAAATTGT TAAAAAAAGAA CAACAACTAA
+Nakaseomyces_nivariensis    128  7.63e-05 GTTTAAAATT CAAAAAAAAAA CAATATTCAT
+Candida_glabrata@Seq_271     29  7.63e-05 AGGGAAAGGA CAAAAAAAAAA TTTCTATCCA
+Candida_glabrata@Seq_961     21  9.15e-05 GGGATTCTTC AAAAAAAAAAA ACAGGAACAA
+Candida_glabrata@Seq_961     36  9.81e-05 AAAAAAACAG GAACAAAAGAA AGAACTGGAT
+Nakaseomyces_delphensis@    172  9.81e-05 TTATTACTTT TAACAAAAAAA CAACAACAAC
+Nakaseomyces_bacillispor    125  9.81e-05 TCTTATCTCA TAACAAAAAAA CCAGACAACA
+Nakaseomyces_delphensis@     48  1.02e-04 GTTTCAAGCT GAAACAAAACA AGACTTCAGA
+Nakaseomyces_delphensis@    515  1.16e-04 TCAGCTCCAC TAAACAAAGAA ATGGACTCTA
+Nakaseomyces_castellii@S    194  1.16e-04 CGCGAGTGCC TAAAAAAGAAA TATATAAACA
+Nakaseomyces_nivariensis    104  1.41e-04 TTAAATTTTT TAAAAAAAAAT CCATTTTTTC
+Nakaseomyces_bracarensis      4  1.41e-04        TAA TAAAAAAAAAT CTACAGAAAA
+Candida_glabrata@Seq_287    108  1.41e-04 GGATCAAAAA TAAAAAAAAAT AAATCAATAG
+Nakaseomyces_bracarensis    157  1.41e-04 ATATTTATTT TAAAAAAAAAT TAGATTTTAT
+Nakaseomyces_delphensis@    156  1.41e-04 TACAACATCA AAAACAAAAAA CAAGTAAACA
+Nakaseomyces_bracarensis    174  1.41e-04 TACACAAAAC AAAACAAAAAA AACTATTAAT
+Nakaseomyces_bracarensis     34  1.41e-04 AAAAAACAAA TAAAAAAAAAT TAATATAAAT
+Nakaseomyces_castellii@S    328  1.55e-04 AAAGCTCATA GAACAAAAAGA CCTCTTAGCC
+Nakaseomyces_delphensis@    190  1.63e-04 AAACTAGTTT AAAGAAAAAAA           
+Nakaseomyces_bacillispor    142  1.63e-04 TTATTATTAT AAAGAAAAAAA TCTCTTTTCT
+Nakaseomyces_delphensis@    384  1.63e-04 AAGCAAAGCA AAAGAAAAAAA GCTAGATATA
+Nakaseomyces_delphensis@     66  1.63e-04 AATAGAGAGA GAAACAGAAGA GTTAAAGGAA
+Nakaseomyces_nivariensis     21  1.63e-04 AGGGAAGGAA GGAGAAAAAAA TTTTTTTCCC
+Nakaseomyces_nivariensis    566  2.00e-04 TCTTTTTTCC TAAGAAAGAAA GTTGTATTAT
+Nakaseomyces_nivariensis    490  2.00e-04 ACAAATAAAT TAAAAAAAACA           
+Nakaseomyces_bacillispor    264  2.00e-04 TTATTTGTTT GAAGAAGAAGA ATTACATATT
+Nakaseomyces_nivariensis    169  2.30e-04 AAAAGCAAGG TAACAAGAAAA CTAAAAGAAA
+Nakaseomyces_nivariensis    187  2.30e-04 TTATCAGAAA GAAACAAGAAT ATA       
+Candida_glabrata@Seq_149     26  2.30e-04 AGTCTCGGGA TAACAAGAAAA CTAAACAAAA
+Nakaseomyces_nivariensis     54  2.30e-04 GTAGAATTAC TGAAAAAAAAA GGTATATAAG
+Nakaseomyces_nivariensis    186  2.55e-04 AAAACTAAAA GAAAGAAAAAT ACAA      
+Nakaseomyces_delphensis@     15  2.55e-04 TTGGAATAAA TAAACAAAACA GAGAGGCCCA
+Nakaseomyces_nivariensis    363  2.79e-04 GCAAAATTGC GAAAAAAAATA ATTTTTTCCT
+Nakaseomyces_bracarensis    186  2.79e-04 TAATATACTG AAAACAGAAAA AAAA      
+Nakaseomyces_delphensis@      1  3.07e-04          . AAAAAAAGAAA CAACTTATAT
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KAAAAAAAAAA MEME-2 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Nakaseomyces_nivariensis          4.6e-06  137_[+2]_52
+Candida_glabrata@Seq_961          9.8e-05  20_[+2]_4_[+2]_77_[+2]_66
+Nakaseomyces_nivariensis           0.0002  102_[+2]_202_[+2]_163_[+2]
+Nakaseomyces_nivariensis          0.00023  138_[+2]_37_[+2]_3
+Nakaseomyces_delphensis@          4.6e-06  179_[+2]_10
+Nakaseomyces_delphensis@          4.6e-06  157_[+2]_32
+Candida_glabrata@Seq_139          7.6e-05  28_[+2]_124_[+2]_26
+Candida_glabrata@Seq_138          4.6e-06  38_[+2]_151
+Candida_glabrata@Seq_271          7.6e-05  28_[+2]_18_[+2]_59_[+2]_62
+Nakaseomyces_delphensis@          2.4e-05  15_[+2]_49_[+2]_114
+Nakaseomyces_delphensis@          0.00012  514_[+2]_63_[+2]_84_[+2]_6
+Nakaseomyces_delphensis@          0.00016  175_[+2]_197_[+2]_106
+Nakaseomyces_delphensis@          0.00016  171_[+2]_7_[+2]
+Nakaseomyces_bracarensis          2.4e-05  189_[+2]
+Nakaseomyces_bracarensis          2.4e-05  669_[+2]_20
+Candida_glabrata@Seq_189          2.4e-05  9_[+2]_680
+Nakaseomyces_bracarensis          2.4e-05  447_[+2]_22_[+2]_9
+Nakaseomyces_delphensis@          7.6e-05  72_[+2]_96_[+2]_10
+Nakaseomyces_delphensis@          0.00016  65_[+2]_93_[+2]_20
+Nakaseomyces_bracarensis          2.4e-05  50_[+2]_139
+Nakaseomyces_bracarensis          2.4e-05  37_[+2]_152
+Nakaseomyces_castellii@S          3.6e-05  571_[+2]_118
+Candida_glabrata@Seq_199          3.6e-05  181_[+2]_8
+Candida_glabrata@Seq_149          0.00023  25_[+2]_1_[+2]_152
+Nakaseomyces_delphensis@          3.6e-05  130_[+2]_59
+Nakaseomyces_bracarensis          3.6e-05  19_[+2]_11_[+2]_148
+Nakaseomyces_nivariensis          4.2e-05  51_[+2]_138
+Nakaseomyces_nivariensis          0.00023  70_[+2]_87_[+2]_6_[+2]_4
+Nakaseomyces_nivariensis          4.3e-05  31_[+2]_158
+Nakaseomyces_bracarensis          5.2e-05  498_[+2]_191
+Nakaseomyces_nivariensis          5.2e-05  17_[+2]_172
+Nakaseomyces_delphensis@          5.2e-05  35_[+2]_154
+Nakaseomyces_delphensis@          5.4e-05  427_[+2]_262
+Nakaseomyces_bacillispor          7.6e-05  625_[+2]_64
+Nakaseomyces_nivariensis          7.6e-05  127_[+2]_62
+Nakaseomyces_delphensis@          9.8e-05  171_[+2]_18
+Nakaseomyces_bacillispor          9.8e-05  124_[+2]_65
+Nakaseomyces_delphensis@          0.00026  14_[+2]_22_[+2]_142
+Nakaseomyces_castellii@S          0.00012  193_[+2]_496
+Nakaseomyces_nivariensis          0.00014  103_[+2]_86
+Nakaseomyces_bracarensis          0.00014  3_[+2]_186
+Candida_glabrata@Seq_287          0.00014  107_[+2]_82
+Nakaseomyces_bracarensis          0.00014  156_[+2]_33
+Nakaseomyces_delphensis@          0.00014  155_[+2]_34
+Nakaseomyces_bracarensis          0.00014  173_[+2]_16
+Nakaseomyces_bracarensis          0.00014  33_[+2]_156
+Nakaseomyces_castellii@S          0.00015  327_[+2]_162
+Nakaseomyces_bacillispor          0.00016  141_[+2]_48
+Nakaseomyces_nivariensis          0.00016  20_[+2]_169
+Nakaseomyces_nivariensis           0.0002  565_[+2]_124
+Nakaseomyces_bacillispor           0.0002  263_[+2]_226
+Nakaseomyces_nivariensis          0.00023  53_[+2]_136
+Nakaseomyces_nivariensis          0.00028  362_[+2]_327
+Nakaseomyces_bracarensis          0.00028  185_[+2]_4
+Nakaseomyces_delphensis@          0.00031  [+2]_189
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KAAAAAAAAAA MEME-2 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF KAAAAAAAAAA width=11 seqs=76
+Nakaseomyces_nivariensis (  138) GAAAAAAAAAA  1 
+Candida_glabrata@Seq_961 (  124) GAAAAAAAAAA  1 
+Nakaseomyces_nivariensis (  316) GAAAAAAAAAA  1 
+Nakaseomyces_nivariensis (  139) GAAAAAAAAAA  1 
+Nakaseomyces_delphensis@ (  180) GAAAAAAAAAA  1 
+Nakaseomyces_delphensis@ (  158) GAAAAAAAAAA  1 
+Candida_glabrata@Seq_139 (   29) GAAAAAAAAAA  1 
+Candida_glabrata@Seq_138 (   39) GAAAAAAAAAA  1 
+Candida_glabrata@Seq_271 (   58) GAAAAAAAAAA  1 
+Nakaseomyces_delphensis@ (   16) GAAACAAAAAA  1 
+Nakaseomyces_delphensis@ (  684) GAAGAAAAAAA  1 
+Nakaseomyces_delphensis@ (  589) GAAGAAAAAAA  1 
+Candida_glabrata@Seq_271 (  128) GAAGAAAAAAA  1 
+Nakaseomyces_delphensis@ (  176) GAAAAAGAAAA  1 
+Nakaseomyces_delphensis@ (  172) TAAAAAAAAAA  1 
+Nakaseomyces_bracarensis (  190) TAAAAAAAAAA  1 
+Nakaseomyces_bracarensis (  670) TAAAAAAAAAA  1 
+Candida_glabrata@Seq_189 (   10) GAAAAAAAGAA  1 
+Nakaseomyces_bracarensis (  481) TAAAAAAAAAA  1 
+Nakaseomyces_delphensis@ (   76) TAAAAAAAAAA  1 
+Nakaseomyces_delphensis@ (  180) TAAAAAAAAAA  1 
+Nakaseomyces_delphensis@ (  170) TAAAAAAAAAA  1 
+Nakaseomyces_bracarensis (   51) GAAAAAAAGAA  1 
+Nakaseomyces_bracarensis (   38) TAAAAAAAAAA  1 
+Nakaseomyces_bracarensis (  448) GAAACAGAAAA  1 
+Nakaseomyces_castellii@S (  572) GAAACAAAGAA  1 
+Candida_glabrata@Seq_199 (  182) GAAAAAAGAAA  1 
+Candida_glabrata@Seq_149 (   38) TAAACAAAAAA  1 
+Nakaseomyces_delphensis@ (  131) TAAACAAAAAA  1 
+Nakaseomyces_bracarensis (   42) TAAACAAAAAA  1 
+Nakaseomyces_nivariensis (   52) GAAAAAAAAAT  1 
+Nakaseomyces_bracarensis (   20) GAAAAAAAAAT  1 
+Nakaseomyces_nivariensis (   71) GAAGAAGAAAA  1 
+Nakaseomyces_nivariensis (   32) GAACCAAAAAA  1 
+Nakaseomyces_bracarensis (  499) GAAACAAAAAT  1 
+Nakaseomyces_nivariensis (   18) GAAACAAAAAT  1 
+Nakaseomyces_delphensis@ (   36) GAAACAAAAGA  1 
+Nakaseomyces_delphensis@ (  428) GAAAGAAAAAA  1 
+Nakaseomyces_bacillispor (  626) CAAAAAAAAAA  1 
+Nakaseomyces_nivariensis (  103) CAAAAAAAAAA  1 
+Candida_glabrata@Seq_139 (  164) TAAAAAAAGAA  1 
+Nakaseomyces_delphensis@ (   73) TAAAAAAAGAA  1 
+Nakaseomyces_nivariensis (  128) CAAAAAAAAAA  1 
+Candida_glabrata@Seq_271 (   29) CAAAAAAAAAA  1 
+Candida_glabrata@Seq_961 (   21) AAAAAAAAAAA  1 
+Candida_glabrata@Seq_961 (   36) GAACAAAAGAA  1 
+Nakaseomyces_delphensis@ (  172) TAACAAAAAAA  1 
+Nakaseomyces_bacillispor (  125) TAACAAAAAAA  1 
+Nakaseomyces_delphensis@ (   48) GAAACAAAACA  1 
+Nakaseomyces_delphensis@ (  515) TAAACAAAGAA  1 
+Nakaseomyces_castellii@S (  194) TAAAAAAGAAA  1 
+Nakaseomyces_nivariensis (  104) TAAAAAAAAAT  1 
+Nakaseomyces_bracarensis (    4) TAAAAAAAAAT  1 
+Candida_glabrata@Seq_287 (  108) TAAAAAAAAAT  1 
+Nakaseomyces_bracarensis (  157) TAAAAAAAAAT  1 
+Nakaseomyces_delphensis@ (  156) AAAACAAAAAA  1 
+Nakaseomyces_bracarensis (  174) AAAACAAAAAA  1 
+Nakaseomyces_bracarensis (   34) TAAAAAAAAAT  1 
+Nakaseomyces_castellii@S (  328) GAACAAAAAGA  1 
+Nakaseomyces_delphensis@ (  190) AAAGAAAAAAA  1 
+Nakaseomyces_bacillispor (  142) AAAGAAAAAAA  1 
+Nakaseomyces_delphensis@ (  384) AAAGAAAAAAA  1 
+Nakaseomyces_delphensis@ (   66) GAAACAGAAGA  1 
+Nakaseomyces_nivariensis (   21) GGAGAAAAAAA  1 
+Nakaseomyces_nivariensis (  566) TAAGAAAGAAA  1 
+Nakaseomyces_nivariensis (  490) TAAAAAAAACA  1 
+Nakaseomyces_bacillispor (  264) GAAGAAGAAGA  1 
+Nakaseomyces_nivariensis (  169) TAACAAGAAAA  1 
+Nakaseomyces_nivariensis (  187) GAAACAAGAAT  1 
+Candida_glabrata@Seq_149 (   26) TAACAAGAAAA  1 
+Nakaseomyces_nivariensis (   54) TGAAAAAAAAA  1 
+Nakaseomyces_nivariensis (  186) GAAAGAAAAAT  1 
+Nakaseomyces_delphensis@ (   15) TAAACAAAACA  1 
+Nakaseomyces_nivariensis (  363) GAAAAAAAATA  1 
+Nakaseomyces_bracarensis (  186) AAAACAGAAAA  1 
+Nakaseomyces_delphensis@ (    1) AAAAAAAGAAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KAAAAAAAAAA MEME-2 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 11 n= 24900 bayes= 9.251 E= 1.6e-020 
+  -177   -173    188     12 
+   144  -1289   -229  -1289 
+   148  -1289  -1289  -1289 
+   111    -92      4  -1289 
+   104     44   -229  -1289 
+   148  -1289  -1289  -1289 
+   132  -1289    -29  -1289 
+   138  -1289    -96  -1289 
+   134  -1289    -48  -1289 
+   132   -214   -129   -468 
+   125  -1289  -1289   -123 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KAAAAAAAAAA MEME-2 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 11 nsites= 76 E= 1.6e-020 
+ 0.105263  0.052632  0.473684  0.368421 
+ 0.973684  0.000000  0.026316  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.776316  0.092105  0.131579  0.000000 
+ 0.736842  0.236842  0.026316  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.894737  0.000000  0.105263  0.000000 
+ 0.934211  0.000000  0.065789  0.000000 
+ 0.907895  0.000000  0.092105  0.000000 
+ 0.894737  0.039474  0.052632  0.013158 
+ 0.855263  0.000000  0.000000  0.144737 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KAAAAAAAAAA MEME-2 regular expression
+--------------------------------------------------------------------------------
+[GT]AAA[AC]AAAAAA
+--------------------------------------------------------------------------------
+
+
+
+
+Time 94.53 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF GGTATATAARGAGRDS MEME-3	width =  16  sites =  26  llr = 315  E-value = 8.6e-017
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif GGTATATAARGAGRDS MEME-3 Description
+--------------------------------------------------------------------------------
+Simplified        A  23:a:a:a95:6243:
+pos.-specific     C  2:::::::1:212225
+probability       G  57:::::::5824443
+matrix            T  2:a:a:a::::12:22
+
+         bits    3.0                 
+                 2.7                 
+                 2.4                 
+                 2.1           *     
+Relative         1.8           *     
+Entropy          1.5  ***  **  *     
+(17.5 bits)      1.2  ******* **    *
+                 0.9  **********  * *
+                 0.6 ***********  * *
+                 0.3 ****************
+                 0.0 ----------------
+
+Multilevel           GGTATATAAAGAGGGC
+consensus             A       GC  AAG
+sequence                             
+                                     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGTATATAARGAGRDS MEME-3 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site    
+-------------             ----- ---------            ----------------
+Nakaseomyces_bracarensis     72  2.62e-10 TCAAAAAAAA GGTATATAAGGAGAGC ATACTTTCAG
+Nakaseomyces_nivariensis     65  3.71e-10 GAAAAAAAAA GGTATATAAGGAGGCC TGAGTTCTTG
+Nakaseomyces_nivariensis     61  1.53e-08 ACAAAAATTT GGTATATAAGGAGGCT TAATTTCGGA
+Nakaseomyces_nivariensis     64  1.97e-08 AAAAAAAATG GGTATATAAGGATGTC GTTTACATTT
+Nakaseomyces_delphensis@     59  3.03e-08 GGGAGGAAAA TGTATATAAGGAAGGC CAATGTCCCT
+Nakaseomyces_delphensis@     61  4.50e-08 ATTTTTTTTG GGTATATAAAGATCGC ATTTTCCCGT
+Nakaseomyces_castellii@S     95  9.70e-08 CACTGGCAAA GGTATATAAAGGCGTG TGATCGGGAG
+Nakaseomyces_castellii@S     96  1.48e-07 GTCCACAAAA TGTATATAAGCAGAGG TATTTTACAG
+Candida_glabrata@Seq_714     70  1.48e-07 GAAAAATTTG GATATATAAGGAGCTG TTTATTTCAA
+Nakaseomyces_delphensis@     86  2.29e-07 GAAAAGTTTG TGTATATAAAGGAGGC GTTGTGTCTG
+Nakaseomyces_bracarensis     56  3.26e-07 CAAAAAATTT CATATATAAGGAGACC CAGTTCTGAT
+Nakaseomyces_castellii@S    266  5.82e-07 ATTTTTGACA GATATATAAAGGCGAG GGTGGCGAAA
+Nakaseomyces_castellii@S    272  1.32e-06 AAGCATCAGA GATATATACGCTGGGC AACTGGTTCA
+Nakaseomyces_bracarensis    203  1.71e-06 GGGCTTCTAT TGTATATAAAGCTAGG GGAACTAGAG
+Nakaseomyces_delphensis@     75  1.88e-06 CAGATTTGTC GGTATATATAGTGGCC CCCCAGGTGA
+Nakaseomyces_bacillispor     29  2.72e-06 CTTTTTAATC TATATATAAAGAGATC AAGTTTCTAA
+Nakaseomyces_bacillispor     52  3.86e-06 CATTTTTTTT CATATATAAGCAGGAT GTATTCTTAT
+Nakaseomyces_bacillispor    379  4.52e-06 ATATCGCTGC GGTAAATACGGAAAGC ACTAAGTGGA
+Candida_glabrata@Seq_200    396  4.52e-06 TCCCGTCCAA AGTATTTAAGCAGCGC ACCCTGGGCT
+Nakaseomyces_nivariensis     21  6.06e-06 GAAAGTGATC CGTATATAAACAACAG AGTAGCTTCT
+Nakaseomyces_delphensis@     17  6.97e-06 TGAACTCAAA AGTATATAAACACAAG CCGCTGCATG
+Candida_glabrata@Seq_139     77  6.97e-06 CGGTAGAAAA AGTATATAAAGCTAAG GTTTTCTTTC
+Nakaseomyces_castellii@S     46  9.28e-06 CGGGCTTTAC CATATATAAGGGCAAT AATTACAAGC
+Nakaseomyces_delphensis@     67  1.15e-05 ATAATTCTTG CATATATAAAGCCCGT CCCCCAGCCA
+Candida_glabrata@Seq_189     72  1.40e-05 TTTCCATTTT GGTATACAAAGTAAAC AATTACTTTT
+Nakaseomyces_bracarensis     50  1.49e-05 AAAAAAAAAA ACTATATAAAGATGTC GTTTACGTAT
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGTATATAARGAGRDS MEME-3 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Nakaseomyces_bracarensis          2.6e-10  71_[+3]_113
+Nakaseomyces_nivariensis          3.7e-10  64_[+3]_120
+Nakaseomyces_nivariensis          1.5e-08  60_[+3]_124
+Nakaseomyces_nivariensis            2e-08  63_[+3]_121
+Nakaseomyces_delphensis@            3e-08  58_[+3]_126
+Nakaseomyces_delphensis@          4.5e-08  60_[+3]_124
+Nakaseomyces_castellii@S          9.7e-08  94_[+3]_90
+Nakaseomyces_castellii@S          1.5e-07  95_[+3]_89
+Candida_glabrata@Seq_714          1.5e-07  69_[+3]_115
+Nakaseomyces_delphensis@          2.3e-07  85_[+3]_99
+Nakaseomyces_bracarensis          3.3e-07  55_[+3]_129
+Nakaseomyces_castellii@S          5.8e-07  265_[+3]_219
+Nakaseomyces_castellii@S          1.3e-06  271_[+3]_413
+Nakaseomyces_bracarensis          1.7e-06  202_[+3]_282
+Nakaseomyces_delphensis@          1.9e-06  74_[+3]_110
+Nakaseomyces_bacillispor          2.7e-06  28_[+3]_156
+Nakaseomyces_bacillispor          3.9e-06  51_[+3]_133
+Nakaseomyces_bacillispor          4.5e-06  378_[+3]_306
+Candida_glabrata@Seq_200          4.5e-06  395_[+3]_89
+Nakaseomyces_nivariensis          6.1e-06  20_[+3]_164
+Nakaseomyces_delphensis@            7e-06  16_[+3]_168
+Candida_glabrata@Seq_139            7e-06  76_[+3]_108
+Nakaseomyces_castellii@S          9.3e-06  45_[+3]_639
+Nakaseomyces_delphensis@          1.1e-05  66_[+3]_118
+Candida_glabrata@Seq_189          1.4e-05  71_[+3]_613
+Nakaseomyces_bracarensis          1.5e-05  49_[+3]_135
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGTATATAARGAGRDS MEME-3 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF GGTATATAARGAGRDS width=16 seqs=26
+Nakaseomyces_bracarensis (   72) GGTATATAAGGAGAGC  1 
+Nakaseomyces_nivariensis (   65) GGTATATAAGGAGGCC  1 
+Nakaseomyces_nivariensis (   61) GGTATATAAGGAGGCT  1 
+Nakaseomyces_nivariensis (   64) GGTATATAAGGATGTC  1 
+Nakaseomyces_delphensis@ (   59) TGTATATAAGGAAGGC  1 
+Nakaseomyces_delphensis@ (   61) GGTATATAAAGATCGC  1 
+Nakaseomyces_castellii@S (   95) GGTATATAAAGGCGTG  1 
+Nakaseomyces_castellii@S (   96) TGTATATAAGCAGAGG  1 
+Candida_glabrata@Seq_714 (   70) GATATATAAGGAGCTG  1 
+Nakaseomyces_delphensis@ (   86) TGTATATAAAGGAGGC  1 
+Nakaseomyces_bracarensis (   56) CATATATAAGGAGACC  1 
+Nakaseomyces_castellii@S (  266) GATATATAAAGGCGAG  1 
+Nakaseomyces_castellii@S (  272) GATATATACGCTGGGC  1 
+Nakaseomyces_bracarensis (  203) TGTATATAAAGCTAGG  1 
+Nakaseomyces_delphensis@ (   75) GGTATATATAGTGGCC  1 
+Nakaseomyces_bacillispor (   29) TATATATAAAGAGATC  1 
+Nakaseomyces_bacillispor (   52) CATATATAAGCAGGAT  1 
+Nakaseomyces_bacillispor (  379) GGTAAATACGGAAAGC  1 
+Candida_glabrata@Seq_200 (  396) AGTATTTAAGCAGCGC  1 
+Nakaseomyces_nivariensis (   21) CGTATATAAACAACAG  1 
+Nakaseomyces_delphensis@ (   17) AGTATATAAACACAAG  1 
+Candida_glabrata@Seq_139 (   77) AGTATATAAAGCTAAG  1 
+Nakaseomyces_castellii@S (   46) CATATATAAGGGCAAT  1 
+Nakaseomyces_delphensis@ (   67) CATATATAAAGCCCGT  1 
+Candida_glabrata@Seq_189 (   72) GGTATACAAAGTAAAC  1 
+Nakaseomyces_bracarensis (   50) ACTATATAAAGATGTC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGTATATAARGAGRDS MEME-3 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 16 n= 24450 bayes= 11.0408 E= 8.6e-017 
+  -122     14    185    -82 
+   -22   -218    235  -1134 
+ -1134  -1134  -1134    156 
+   148  -1134  -1134  -1134 
+  -322  -1134  -1134    151 
+   142  -1134  -1134   -313 
+ -1134   -218  -1134    151 
+   148  -1134  -1134  -1134 
+   130   -118  -1134   -313 
+    48  -1134    196  -1134 
+ -1134     41    258  -1134 
+    78    -59     26   -155 
+   -90     14    172    -82 
+    10     14    172  -1134 
+   -41    -18    158    -82 
+ -1134    163    126   -114 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGTATATAARGAGRDS MEME-3 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 16 nsites= 26 E= 8.6e-017 
+ 0.153846  0.192308  0.461538  0.192308 
+ 0.307692  0.038462  0.653846  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.038462  0.000000  0.000000  0.961538 
+ 0.961538  0.000000  0.000000  0.038462 
+ 0.000000  0.038462  0.000000  0.961538 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.884615  0.076923  0.000000  0.038462 
+ 0.500000  0.000000  0.500000  0.000000 
+ 0.000000  0.230769  0.769231  0.000000 
+ 0.615385  0.115385  0.153846  0.115385 
+ 0.192308  0.192308  0.423077  0.192308 
+ 0.384615  0.192308  0.423077  0.000000 
+ 0.269231  0.153846  0.384615  0.192308 
+ 0.000000  0.538462  0.307692  0.153846 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGTATATAARGAGRDS MEME-3 regular expression
+--------------------------------------------------------------------------------
+G[GA]TATATAA[AG][GC]AG[GA][GA][CG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time 132.18 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Candida_glabrata@Seq_714         9.32e-06  69_[+3(1.48e-07)]_70_[+1(3.21e-05)]_\
+    25
+Candida_glabrata@Seq_271         1.35e-06  28_[+2(7.63e-05)]_18_[+2(4.55e-06)]_\
+    59_[+2(8.38e-06)]_28_[+1(8.14e-06)]_14
+Nakaseomyces_bacillispor         2.62e-06  51_[+3(3.86e-06)]_57_[+2(9.81e-05)]_\
+    21_[+1(6.03e-06)]_24
+Nakaseomyces_bacillispor         2.01e-02  160_[+1(4.37e-05)]_20
+Nakaseomyces_bracarensis         1.47e-05  37_[+2(2.45e-05)]_1_[+3(1.49e-05)]_\
+    105_[+1(4.37e-05)]_10
+Nakaseomyces_bracarensis         2.16e-08  19_[+2(4.16e-05)]_11_[+2(3.57e-05)]_\
+    3_[+3(3.26e-07)]_77_[+1(9.87e-07)]_32
+Nakaseomyces_castellii@S         4.71e-03  168_[+1(3.13e-06)]_12
+Nakaseomyces_castellii@S         1.26e-05  95_[+3(1.48e-07)]_66_[+1(7.51e-05)]_\
+    3
+Nakaseomyces_delphensis@         1.09e-07  35_[+2(5.18e-05)]_14_[+3(4.50e-08)]_\
+    87_[+1(2.89e-05)]_17
+Nakaseomyces_delphensis@         5.26e-08  85_[+3(2.29e-07)]_29_[+2(3.57e-05)]_\
+    16_[+1(3.71e-06)]_23
+Nakaseomyces_nivariensis         5.17e-09  2_[+3(3.59e-05)]_42_[+3(1.53e-08)]_\
+    77_[+1(9.87e-07)]_27
+Nakaseomyces_nivariensis         7.27e-08  51_[+2(4.16e-05)]_1_[+3(1.97e-08)]_\
+    21_[+1(5.29e-05)]_47_[+1(9.54e-05)]_13
+Candida_glabrata@Seq_181         7.28e-03  134_[+1(7.51e-05)]_46
+Candida_glabrata@Seq_396         1.62e-03  61_[+1(2.62e-06)]_37_[+1(6.37e-07)]_\
+    7_[+1(1.81e-05)]_35
+Nakaseomyces_bacillispor         1.46e-02  126_[+1(8.14e-06)]_54
+Nakaseomyces_bracarensis         2.60e-04  12_[+2(6.76e-06)]_46_[+1(5.79e-05)]_\
+    61_[+1(8.16e-05)]_30
+Nakaseomyces_bracarensis         1.73e-04  50_[+2(2.45e-05)]_2_[+1(5.15e-06)]_\
+    117
+Nakaseomyces_castellii@S         5.55e-03  162_[+1(6.37e-07)]_18
+Nakaseomyces_delphensis@         3.63e-03  169_[+2(2.45e-05)]_20
+Nakaseomyces_delphensis@         1.71e-03  28_[+1(2.89e-05)]_94_[+1(8.14e-06)]_\
+    38
+Nakaseomyces_nivariensis         5.82e-05  17_[+2(5.18e-05)]_83_[+1(2.62e-06)]_\
+    31_[+1(5.04e-07)]_18
+Nakaseomyces_nivariensis         3.38e-04  127_[+2(7.63e-05)]_[+1(9.39e-06)]_\
+    42
+Candida_glabrata@Seq_818         4.05e-03  39_[+1(1.48e-06)]_28_[+1(1.60e-05)]_\
+    26_[+1(5.79e-05)]_47
+Nakaseomyces_bacillispor         7.94e-02  93_[+1(6.33e-05)]_49_[+1(8.83e-05)]_\
+    18
+Nakaseomyces_bracarensis         1.85e-02  68_[+1(1.24e-05)]_66_[+1(2.30e-05)]_\
+    26
+Nakaseomyces_castellii@S         1.89e-02  93_[+1(3.21e-05)]_28_[+1(1.41e-05)]_\
+    39
+Nakaseomyces_delphensis@         2.51e-05  72_[+2(7.63e-05)]_33_[+1(3.71e-06)]_\
+    14_[+1(2.39e-07)]_9_[+2(2.45e-05)]_10
+Nakaseomyces_nivariensis         1.52e-05  31_[+2(4.33e-05)]_20_[+1(1.80e-06)]_\
+    6_[+1(7.40e-08)]_14_[+1(1.41e-05)]_58
+Nakaseomyces_bacillispor         3.76e-01  200
+Nakaseomyces_bracarensis         1.58e-06  71_[+3(2.62e-10)]_113
+Nakaseomyces_delphensis@         8.02e-06  58_[+3(3.03e-08)]_97_[+2(9.81e-05)]_\
+    18
+Nakaseomyces_nivariensis         3.53e-07  64_[+3(3.71e-10)]_120
+Candida_glabrata@Seq_138         1.01e-02  38_[+2(4.55e-06)]_151
+Candida_glabrata@Seq_139         6.32e-05  28_[+2(4.55e-06)]_37_[+3(6.97e-06)]_\
+    71_[+2(7.63e-05)]_26
+Candida_glabrata@Seq_149         1.32e-02  37_[+2(3.57e-05)]_152
+Nakaseomyces_bacillispor         5.60e-04  28_[+3(2.72e-06)]_156
+Nakaseomyces_bracarensis         1.15e-02  200
+Nakaseomyces_bracarensis         1.62e-02  200
+Nakaseomyces_castellii@S         1.24e-03  94_[+3(9.70e-08)]_90
+Nakaseomyces_delphensis@         4.23e-04  66_[+3(1.15e-05)]_118
+Nakaseomyces_delphensis@         4.05e-03  157_[+2(4.55e-06)]_32
+Nakaseomyces_delphensis@         6.27e-04  15_[+2(6.76e-06)]_49_[+2(2.45e-05)]_\
+    114
+Nakaseomyces_nivariensis         2.01e-01  200
+Candida_glabrata@Seq_199         1.50e-05  83_[+1(1.37e-07)]_78_[+2(3.57e-05)]_\
+    8
+Candida_glabrata@Seq_203         6.35e-02  6_[+1(5.29e-05)]_110_[+1(5.29e-05)]_\
+    44
+Nakaseomyces_bacillispor         7.85e-03  102_[+1(1.60e-05)]_3_[+1(5.79e-05)]_\
+    55
+Nakaseomyces_bacillispor         1.59e-02  61_[+1(3.13e-06)]_119
+Nakaseomyces_bracarensis         1.49e-02  75_[+1(3.21e-05)]_45_[+1(8.14e-06)]_\
+    [+1(2.58e-05)]_20
+Nakaseomyces_bracarensis         6.71e-05  112_[+1(1.37e-07)]_68
+Nakaseomyces_castellii@S         1.96e-01  200
+Nakaseomyces_castellii@S         9.62e-01  200
+Nakaseomyces_delphensis@         5.99e-06  22_[+3(5.36e-05)]_89_[+1(1.81e-05)]_\
+    10_[+1(4.38e-06)]_23
+Nakaseomyces_delphensis@         2.88e-06  116_[+1(1.37e-07)]_43_\
+    [+2(4.55e-06)]_10
+Nakaseomyces_nivariensis         3.54e-06  82_[+1(1.37e-07)]_36_[+2(4.55e-06)]_\
+    51
+Nakaseomyces_nivariensis         9.80e-06  20_[+3(6.06e-06)]_105_\
+    [+1(1.60e-05)]_6_[+1(6.03e-06)]_13
+Candida_glabrata@Seq_200         1.87e-03  247_[+1(5.29e-05)]_58_\
+    [+1(6.90e-05)]_50_[+3(4.52e-06)]_89
+Nakaseomyces_bacillispor         2.60e-02  286_[+1(3.21e-05)]_194
+Nakaseomyces_bracarensis         2.62e-04  202_[+3(1.71e-06)]_229_\
+    [+2(2.75e-05)]_22_[+2(2.45e-05)]_9
+Nakaseomyces_castellii@S         1.43e-03  265_[+3(5.82e-07)]_219
+Nakaseomyces_delphensis@         4.40e-03  175_[+2(1.08e-05)]_314
+Nakaseomyces_nivariensis         2.55e-03  102_[+2(7.63e-05)]_202_\
+    [+2(4.55e-06)]_18_[+1(5.29e-05)]_136
+Candida_glabrata@Seq_116         8.61e-01  700
+Candida_glabrata@Seq_189         4.09e-03  9_[+2(2.45e-05)]_51_[+3(1.40e-05)]_\
+    613
+Nakaseomyces_bacillispor         1.17e-04  366_[+1(2.89e-05)]_153_\
+    [+1(3.90e-08)]_66_[+2(7.63e-05)]_8_[+1(2.62e-06)]_36
+Nakaseomyces_bacillispor         3.00e-02  378_[+3(4.52e-06)]_306
+Nakaseomyces_bracarensis         1.48e-01  669_[+2(2.45e-05)]_20
+Nakaseomyces_bracarensis         5.28e-02  195_[+1(8.83e-05)]_283_\
+    [+2(5.18e-05)]_191
+Nakaseomyces_castellii@S         1.56e-03  45_[+3(9.28e-06)]_510_\
+    [+2(3.57e-05)]_118
+Nakaseomyces_castellii@S         4.11e-07  157_[+3(1.15e-05)]_98_\
+    [+3(1.32e-06)]_285_[+1(3.90e-08)]_49_[+1(1.21e-06)]_39
+Nakaseomyces_delphensis@         2.37e-06  92_[+1(3.95e-07)]_23_[+1(3.90e-08)]_\
+    210_[+1(6.90e-05)]_16_[+1(9.54e-05)]_167_[+2(8.38e-06)]_84_[+2(8.38e-06)]_\
+    6
+Nakaseomyces_delphensis@         1.32e-01  427_[+2(5.37e-05)]_262
+Nakaseomyces_nivariensis         3.18e-01  700
+Nakaseomyces_nivariensis         3.81e-02  281_[+1(8.16e-05)]_106_\
+    [+1(1.60e-05)]_273
+Candida_glabrata@Seq_961         3.22e-04  19_[+2(7.63e-05)]_5_[+2(9.81e-05)]_\
+    22_[+3(3.42e-05)]_39_[+2(4.55e-06)]_66
+Nakaseomyces_bacillispor         1.04e-02  32_[+1(3.57e-05)]_148
+Nakaseomyces_bracarensis         1.80e-04  92_[+3(6.50e-06)]_92
+Nakaseomyces_castellii@S         3.62e-02  136_[+1(1.60e-05)]_44
+Nakaseomyces_delphensis@         5.40e-04  74_[+3(1.88e-06)]_110
+Nakaseomyces_nivariensis         6.87e-03  70_[+2(4.33e-05)]_119
+Candida_glabrata@Seq_268         8.74e-06  56_[+1(2.58e-05)]_43_[+1(8.06e-09)]_\
+    25_[+1(1.01e-07)]_16
+Candida_glabrata@Seq_287         7.26e-04  40_[+1(2.62e-06)]_58_[+1(1.41e-05)]_\
+    20_[+1(6.03e-06)]_22
+Nakaseomyces_bacillispor         1.15e-03  49_[+1(7.02e-06)]_10_[+1(3.13e-06)]_\
+    59_[+1(1.08e-05)]_22
+Nakaseomyces_bacillispor         1.94e-02  24_[+1(1.60e-05)]_43_[+1(2.89e-05)]_\
+    68_[+1(2.30e-05)]_5
+Nakaseomyces_bracarensis         1.63e-05  19_[+1(3.13e-06)]_48_[+1(3.08e-07)]_\
+    40_[+1(3.13e-06)]_22_[+2(2.45e-05)]
+Nakaseomyces_bracarensis         8.62e-05  19_[+2(4.55e-06)]_48_[+1(8.14e-06)]_\
+    32_[+1(2.05e-05)]_50
+Nakaseomyces_castellii@S         1.47e-03  75_[+1(1.37e-07)]_42_[+1(1.21e-06)]_\
+    43
+Nakaseomyces_delphensis@         7.71e-05  60_[+1(7.96e-07)]_70_[+1(2.58e-05)]_\
+    1_[+2(2.45e-05)]_18
+Nakaseomyces_delphensis@         1.45e-04  16_[+3(6.97e-06)]_78_[+1(7.51e-05)]_\
+    27_[+1(3.57e-05)]_23
+Nakaseomyces_nivariensis         1.08e-05  65_[+1(9.39e-06)]_50_[+1(1.93e-08)]_\
+    13_[+1(4.38e-06)]_12
+Nakaseomyces_nivariensis         1.35e-04  46_[+1(3.57e-05)]_27_[+1(8.14e-06)]_\
+    24_[+2(4.55e-06)]_2_[+1(4.81e-05)]_30
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (3) found.
+********************************************************************************
+
+CPU: ip-172-31-1-121
+
+********************************************************************************

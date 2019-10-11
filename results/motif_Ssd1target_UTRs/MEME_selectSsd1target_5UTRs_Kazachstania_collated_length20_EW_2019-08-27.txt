@@ -1,0 +1,1758 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org/.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= selectSsd1target_5UTRs_Kazachstania_collated.fa
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Kazachstania_africana@Se 1.0000    200  Kazachstania_africana@Se 1.0000    200  
+Kazachstania_naganishii@ 1.0000    200  Kazachstania_naganishii@ 1.0000    200  
+yHAB132_Kazachstania_mar 1.0000    200  yHAB132_Kazachstania_mar 1.0000    200  
+yHAB133_Kazachstania_uni 1.0000    200  yHAB133_Kazachstania_uni 1.0000    200  
+yHAB134_Kazachstania_tur 1.0000    200  yHAB134_Kazachstania_tur 1.0000    200  
+yHAB136_Kazachstania_bro 1.0000    200  yHAB136_Kazachstania_bro 1.0000    200  
+yHAB143_Kazachstania_sia 1.0000    200  yHAB143_Kazachstania_sia 1.0000    200  
+yHAB147_Kazachstania_tai 1.0000    200  yHAB147_Kazachstania_tai 1.0000    200  
+yHAB148_Kazachstania_int 1.0000    200  yHAB153_Kazachstania_ros 1.0000    200  
+yHAB153_Kazachstania_ros 1.0000    200  yHAB154_Kazachstania_tra 1.0000    200  
+yHAB155_Kazachstania_spe 1.0000    200  yHAB155_Kazachstania_spe 1.0000    200  
+yHAB158_Kazachstania_vit 1.0000    200  yHAB159_Kazachstania_sol 1.0000    200  
+yHAB159_Kazachstania_sol 1.0000    200  yHAB160_Kazachstania_kun 1.0000    200  
+yHAB160_Kazachstania_kun 1.0000    200  yHAB164_Kazachstania_aer 1.0000    200  
+yHAB164_Kazachstania_aer 1.0000    200  yHAB166_Kazachstania_yak 1.0000    200  
+yHAB166_Kazachstania_yak 1.0000    200  Kazachstania_africana@Se 1.0000    200  
+Kazachstania_naganishii@ 1.0000    200  yHAB132_Kazachstania_mar 1.0000    200  
+yHAB132_Kazachstania_mar 1.0000    200  yHAB133_Kazachstania_uni 1.0000    200  
+yHAB133_Kazachstania_uni 1.0000    200  yHAB134_Kazachstania_tur 1.0000    200  
+yHAB134_Kazachstania_tur 1.0000    200  yHAB136_Kazachstania_bro 1.0000    200  
+yHAB143_Kazachstania_sia 1.0000    200  yHAB143_Kazachstania_sia 1.0000    200  
+yHAB147_Kazachstania_tai 1.0000    200  yHAB148_Kazachstania_int 1.0000    200  
+yHAB153_Kazachstania_ros 1.0000    200  yHAB153_Kazachstania_ros 1.0000    200  
+yHAB154_Kazachstania_tra 1.0000    200  yHAB155_Kazachstania_spe 1.0000    200  
+yHAB158_Kazachstania_vit 1.0000    200  yHAB159_Kazachstania_sol 1.0000    200  
+yHAB159_Kazachstania_sol 1.0000    200  yHAB160_Kazachstania_kun 1.0000    200  
+yHAB160_Kazachstania_kun 1.0000    200  yHAB164_Kazachstania_aer 1.0000    200  
+yHAB164_Kazachstania_aer 1.0000    200  yHAB166_Kazachstania_yak 1.0000    200  
+Kazachstania_africana@Se 1.0000    200  Kazachstania_africana@Se 1.0000    200  
+Kazachstania_naganishii@ 1.0000    200  yHAB132_Kazachstania_mar 1.0000    200  
+yHAB133_Kazachstania_uni 1.0000    200  yHAB134_Kazachstania_tur 1.0000    200  
+yHAB136_Kazachstania_bro 1.0000    200  yHAB143_Kazachstania_sia 1.0000    200  
+yHAB147_Kazachstania_tai 1.0000    200  yHAB148_Kazachstania_int 1.0000    200  
+yHAB153_Kazachstania_ros 1.0000    200  yHAB154_Kazachstania_tra 1.0000    200  
+yHAB155_Kazachstania_spe 1.0000    200  yHAB158_Kazachstania_vit 1.0000    200  
+yHAB159_Kazachstania_sol 1.0000    200  yHAB160_Kazachstania_kun 1.0000    200  
+yHAB164_Kazachstania_aer 1.0000    200  yHAB166_Kazachstania_yak 1.0000    200  
+Kazachstania_africana@Se 1.0000    200  Kazachstania_naganishii@ 1.0000    200  
+yHAB132_Kazachstania_mar 1.0000    200  yHAB133_Kazachstania_uni 1.0000    200  
+yHAB134_Kazachstania_tur 1.0000    200  yHAB143_Kazachstania_sia 1.0000    200  
+yHAB147_Kazachstania_tai 1.0000    200  yHAB148_Kazachstania_int 1.0000    200  
+yHAB154_Kazachstania_tra 1.0000    200  yHAB155_Kazachstania_spe 1.0000    200  
+yHAB158_Kazachstania_vit 1.0000    200  yHAB159_Kazachstania_sol 1.0000    200  
+yHAB164_Kazachstania_aer 1.0000    200  yHAB166_Kazachstania_yak 1.0000    200  
+Kazachstania_africana@Se 1.0000    200  Kazachstania_africana@Se 1.0000    200  
+Kazachstania_naganishii@ 1.0000    200  Kazachstania_naganishii@ 1.0000    200  
+yHAB132_Kazachstania_mar 1.0000    200  yHAB132_Kazachstania_mar 1.0000    200  
+yHAB133_Kazachstania_uni 1.0000    200  yHAB133_Kazachstania_uni 1.0000    200  
+yHAB134_Kazachstania_tur 1.0000    200  yHAB134_Kazachstania_tur 1.0000    200  
+yHAB136_Kazachstania_bro 1.0000    200  yHAB136_Kazachstania_bro 1.0000    200  
+yHAB143_Kazachstania_sia 1.0000    200  yHAB143_Kazachstania_sia 1.0000    200  
+yHAB147_Kazachstania_tai 1.0000    200  yHAB147_Kazachstania_tai 1.0000    200  
+yHAB148_Kazachstania_int 1.0000    200  yHAB148_Kazachstania_int 1.0000    200  
+yHAB153_Kazachstania_ros 1.0000    200  yHAB153_Kazachstania_ros 1.0000    200  
+yHAB154_Kazachstania_tra 1.0000    200  yHAB154_Kazachstania_tra 1.0000    200  
+yHAB155_Kazachstania_spe 1.0000    200  yHAB155_Kazachstania_spe 1.0000    200  
+yHAB158_Kazachstania_vit 1.0000    200  yHAB158_Kazachstania_vit 1.0000    200  
+yHAB159_Kazachstania_sol 1.0000    200  yHAB159_Kazachstania_sol 1.0000    200  
+yHAB160_Kazachstania_kun 1.0000    200  yHAB160_Kazachstania_kun 1.0000    200  
+yHAB164_Kazachstania_aer 1.0000    200  yHAB164_Kazachstania_aer 1.0000    200  
+yHAB166_Kazachstania_yak 1.0000    200  yHAB166_Kazachstania_yak 1.0000    200  
+Kazachstania_africana@Se 1.0000    500  Kazachstania_naganishii@ 1.0000    500  
+yHAB132_Kazachstania_mar 1.0000    500  yHAB133_Kazachstania_uni 1.0000    500  
+yHAB134_Kazachstania_tur 1.0000    500  yHAB136_Kazachstania_bro 1.0000    500  
+yHAB143_Kazachstania_sia 1.0000    500  yHAB147_Kazachstania_tai 1.0000    500  
+yHAB148_Kazachstania_int 1.0000    500  yHAB153_Kazachstania_ros 1.0000    500  
+yHAB154_Kazachstania_tra 1.0000    500  yHAB155_Kazachstania_spe 1.0000    500  
+yHAB158_Kazachstania_vit 1.0000    500  yHAB159_Kazachstania_sol 1.0000    500  
+yHAB160_Kazachstania_kun 1.0000    500  yHAB164_Kazachstania_aer 1.0000    500  
+yHAB166_Kazachstania_yak 1.0000    500  Kazachstania_africana@Se 1.0000    700  
+Kazachstania_naganishii@ 1.0000    700  yHAB132_Kazachstania_mar 1.0000    700  
+yHAB133_Kazachstania_uni 1.0000    700  yHAB134_Kazachstania_tur 1.0000    700  
+yHAB136_Kazachstania_bro 1.0000    700  yHAB143_Kazachstania_sia 1.0000    700  
+yHAB147_Kazachstania_tai 1.0000    700  yHAB148_Kazachstania_int 1.0000    700  
+yHAB153_Kazachstania_ros 1.0000    700  yHAB153_Kazachstania_ros 1.0000    700  
+yHAB154_Kazachstania_tra 1.0000    700  yHAB155_Kazachstania_spe 1.0000    700  
+yHAB155_Kazachstania_spe 1.0000    700  yHAB158_Kazachstania_vit 1.0000    700  
+yHAB159_Kazachstania_sol 1.0000    700  yHAB160_Kazachstania_kun 1.0000    700  
+yHAB164_Kazachstania_aer 1.0000    700  yHAB166_Kazachstania_yak 1.0000    700  
+Kazachstania_africana@Se 1.0000    200  Kazachstania_naganishii@ 1.0000    200  
+yHAB132_Kazachstania_mar 1.0000    200  yHAB133_Kazachstania_uni 1.0000    200  
+yHAB134_Kazachstania_tur 1.0000    200  yHAB136_Kazachstania_bro 1.0000    200  
+yHAB143_Kazachstania_sia 1.0000    200  yHAB147_Kazachstania_tai 1.0000    200  
+yHAB148_Kazachstania_int 1.0000    200  yHAB153_Kazachstania_ros 1.0000    200  
+yHAB154_Kazachstania_tra 1.0000    200  yHAB155_Kazachstania_spe 1.0000    200  
+yHAB158_Kazachstania_vit 1.0000    200  yHAB159_Kazachstania_sol 1.0000    200  
+yHAB160_Kazachstania_kun 1.0000    200  yHAB164_Kazachstania_aer 1.0000    200  
+yHAB166_Kazachstania_yak 1.0000    200  yHAB132_Kazachstania_mar 1.0000    200  
+yHAB148_Kazachstania_int 1.0000    200  Kazachstania_africana@Se 1.0000    200  
+Kazachstania_africana@Se 1.0000    200  Kazachstania_naganishii@ 1.0000    200  
+Kazachstania_naganishii@ 1.0000    200  yHAB132_Kazachstania_mar 1.0000    200  
+yHAB132_Kazachstania_mar 1.0000    200  yHAB133_Kazachstania_uni 1.0000    200  
+yHAB133_Kazachstania_uni 1.0000    200  yHAB134_Kazachstania_tur 1.0000    200  
+yHAB134_Kazachstania_tur 1.0000    200  yHAB136_Kazachstania_bro 1.0000    200  
+yHAB136_Kazachstania_bro 1.0000    200  yHAB143_Kazachstania_sia 1.0000    200  
+yHAB143_Kazachstania_sia 1.0000    200  yHAB147_Kazachstania_tai 1.0000    200  
+yHAB147_Kazachstania_tai 1.0000    200  yHAB148_Kazachstania_int 1.0000    200  
+yHAB148_Kazachstania_int 1.0000    200  yHAB153_Kazachstania_ros 1.0000    200  
+yHAB153_Kazachstania_ros 1.0000    200  yHAB154_Kazachstania_tra 1.0000    200  
+yHAB154_Kazachstania_tra 1.0000    200  yHAB155_Kazachstania_spe 1.0000    200  
+yHAB155_Kazachstania_spe 1.0000    200  yHAB158_Kazachstania_vit 1.0000    200  
+yHAB158_Kazachstania_vit 1.0000    200  yHAB159_Kazachstania_sol 1.0000    200  
+yHAB159_Kazachstania_sol 1.0000    200  yHAB160_Kazachstania_kun 1.0000    200  
+yHAB160_Kazachstania_kun 1.0000    200  yHAB164_Kazachstania_aer 1.0000    200  
+yHAB164_Kazachstania_aer 1.0000    200  yHAB166_Kazachstania_yak 1.0000    200  
+yHAB166_Kazachstania_yak 1.0000    200  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme selectSsd1target_5UTRs_Kazachstania_collated.fa -dna -oc . -nostatus -time 18000 -mod anr -nmotifs 3 -minw 8 -maxw 20 -objfun classic -markov_order 1 
+
+model:  mod=           anr    nmotifs=         3    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=     1000    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=           56800    N=             211
+sample: seed=            0    hsfrac=          0
+        searchsize=  56800    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.33 C 0.188 G 0.114 T 0.369 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.33 C 0.188 G 0.114 T 0.369 
+Background model order: 1
+********************************************************************************
+
+
+********************************************************************************
+MOTIF HWAHWWHHWTTCATTCCTTT MEME-1	width =  20  sites = 260  llr = 2307  E-value = 1.5e-211
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif HWAHWWHHWTTCATTCCTTT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  456333235:2:7:::2::2
+pos.-specific     C  312322331:2a13:a52:1
+probability       G  ::::11:113::1:::2:::
+matrix            T  33234544476:17a:18a7
+
+         bits    3.1                     
+                 2.8                     
+                 2.5            *   *    
+                 2.2            *   *    
+Relative         1.9            *   *    
+Entropy          1.6            *  **    
+(12.8 bits)      1.3            *  **  * 
+                 0.9          * *  ** ** 
+                 0.6          * * ****** 
+                 0.3   *     ************
+                 0.0 --------------------
+
+Multilevel           AAAATTTTATTCATTCCTTT
+consensus            CTTCAACATGA  C     A
+sequence             T  T  AC  C         
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif HWAHWWHHWTTCATTCCTTT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+yHAB132_Kazachstania_mar    104  4.10e-10 GTCCAATATC CAACTACTAGTCATTCCTTT TTGCTAAGAA
+yHAB147_Kazachstania_tai    130  1.55e-09 CGTTGTATTC CAACTATCAGTCACTCCTTT CGAACAGCTA
+yHAB158_Kazachstania_vit    169  2.79e-09 CTCTTTAAAC CAACTTTTATTCATTCCTTT CTGTCCTAAA
+yHAB148_Kazachstania_int    122  1.31e-08 ACATCTTTGT TAACCTCCATTCATTCCTTT CACAATTGCC
+yHAB143_Kazachstania_sia    148  1.31e-08 GCTACTATTC CAACTATTTGTCATTCCTTT TAAAACTAAT
+yHAB164_Kazachstania_aer     74  2.07e-08 ACACCAAACC CAAACTCCATTCATTCGTTT ATACAGTTGG
+yHAB132_Kazachstania_mar    128  4.74e-08 TAGCACTTTC CAACTATTTTTCATTCCTTT ACTGAAACTA
+yHAB136_Kazachstania_bro     79  4.74e-08 ATATTCCTCC CAACTAACTGTCACTCCTTT AAAACCCATT
+yHAB166_Kazachstania_yak     86  4.74e-08 TTAATTAACT AACCTTTAAGTCATTCCTTT TCAATTAAAT
+yHAB148_Kazachstania_int    122  4.74e-08 AAATAGTCCT CACTATTCAGTCATTCCTTT CTATTATATC
+Kazachstania_africana@Se    128  1.00e-07 AAAAAAAGAC TAACTATCATTCATTCCTTT TTTTTCTTAT
+yHAB159_Kazachstania_sol     70  1.41e-07 ACAGCAAACC AAAACTTCATTCATTCGTTT ACCCAATTGG
+yHAB159_Kazachstania_sol     77  1.96e-07 ACGTATATCC AACTATCAAGTCATTCCTTT GATCTTACAA
+yHAB147_Kazachstania_tai     60  3.61e-07 AGTACTTTAT CCAACTTTATTCACTCCTTT AACAAATAAC
+yHAB154_Kazachstania_tra     81  3.61e-07 AGTAATAGTC AAACTATTTGTCGTTCCTTT AAATTTTCTT
+yHAB154_Kazachstania_tra     70  3.61e-07 TCAATTAACT AACTTTTAAGTCATTCCTTT CAAAATTAAA
+Kazachstania_africana@Se    167  3.61e-07 TATTAATTTT CCAACTTTTGTCACTCCTTT ACTAATCTGT
+yHAB166_Kazachstania_yak      8  4.79e-07    TATTTTC CAACTAATTGACATTCCTTT TTTCAAATAA
+yHAB164_Kazachstania_aer     64  4.79e-07 ACGTATATCC AACTAACAAGTCATTCCTTT GATCTTACAA
+yHAB143_Kazachstania_sia    101  4.79e-07 ACATATCTCT AACTATTAAGTCATTCCTTT TGATCTTTTA
+yHAB133_Kazachstania_uni     87  4.79e-07 ACGTATATCC AACTATTAAGTCATTCCTTT GATCTTATAA
+yHAB148_Kazachstania_int    166  4.79e-07 CCCAGTGTAT CAAACACCTTCCACTCGTTT ATTATCCTCT
+yHAB134_Kazachstania_tur    349  8.16e-07 CTATACCAAC TAAATTATATTCATTCCTTT TCATACAATC
+yHAB158_Kazachstania_vit    149  1.05e-06 AAGAATAAAT TAAAACCCTTCCATTCCTTT ACTTTTTGAT
+yHAB134_Kazachstania_tur    169  1.05e-06 AAAAAAACAA CAAATTCCTTTCATTCATTT ATTTATTTCA
+yHAB160_Kazachstania_kun    125  1.33e-06 TTCATATTGC CAACTAAAAGTCATTCCTTC CTAATTTTTA
+yHAB158_Kazachstania_vit     23  1.33e-06 TCTTACTTTC CAACTATTAGTCGTTCCTTC ATAACAATAG
+yHAB155_Kazachstania_spe    175  1.33e-06 ACCCAAAATC CAACTTTTATTCATTCTTTT TCTAAT    
+yHAB158_Kazachstania_vit    147  1.67e-06 AATTTATATC CAACTATAAGTCTTTCCTTT TATTTGATCT
+yHAB153_Kazachstania_ros    124  1.67e-06 TTTTAAGTTC CAACTATAAGTCTTTCCTTT ACACTTACTG
+yHAB153_Kazachstania_ros    149  1.67e-06 ACCATCGATT ACAGATCTATTCATTCCTTT ATTATAATTC
+yHAB153_Kazachstania_ros     10  2.09e-06  AGTTATCAT ATAACTTTGTCCATTCCTTT ACTTAATCAA
+yHAB136_Kazachstania_bro    650  2.09e-06 CTATCTTTTA CTAACACTTTACACTCCTTT ACCTTTTAAT
+Kazachstania_naganishii@    157  2.09e-06 CAAGAACAAT CTATCTTCAGTCACTCGCTT TACTCAAACC
+yHAB164_Kazachstania_aer    156  2.58e-06 TATTATACTC TAACTTTTAGTCCTTCCTTT CTATAAAAGC
+yHAB155_Kazachstania_spe    645  2.58e-06 CAAATACTAT CCAACTTTTTACATTCCTTT AATACTTATC
+yHAB153_Kazachstania_ros    669  2.58e-06 AAATTTTAAC TAAACTACTTCCACTCCTTT TTGATAATCA
+yHAB147_Kazachstania_tai     95  2.58e-06 GATACACTCT AACTATCAAGTCATTCCTTC GAATCGCGCT
+yHAB143_Kazachstania_sia    149  2.58e-06 CCACTCGTTA ATTCCTTCATTCGTTCCTTT GAAAAGCTAA
+yHAB134_Kazachstania_tur     93  2.58e-06 TAAAATTCTA ACACTTCAATTCATTCGTTA TTGAAGATAT
+yHAB164_Kazachstania_aer    130  2.58e-06 TGCTTCATAC CACTATCTGTCCATTCGTTT ATCCAATTCA
+yHAB159_Kazachstania_sol     77  3.17e-06 TAATTATACA ATAAAACTTTACACTCCTTT TTAAAGATAT
+yHAB158_Kazachstania_vit     65  3.17e-06 GTTTTTTTTT CTCAACCAAGTCGTTCCTTT CCTTTATATC
+yHAB143_Kazachstania_sia     71  3.17e-06 TTTACATATC CAACTACTAGTCCTTCCTTA TTAAAATTTT
+yHAB159_Kazachstania_sol    155  3.17e-06 TATTGCTTCA TTACATCCATCCATTCGTTA TCCCATCTTA
+yHAB143_Kazachstania_sia    145  3.17e-06 CCAAGAAATT AATCTTCTATCCATTCGCTT AAATAACTTT
+yHAB160_Kazachstania_kun      6  3.87e-06      CAACA AAATTAAAAGTCGTTCCTTT ATTTTTTCTT
+yHAB143_Kazachstania_sia    132  3.87e-06 TTTTAACCTT CTAACCATAGTCATTCCTTA ATATTTTTTC
+yHAB160_Kazachstania_kun    166  3.87e-06 GCACACTTTC TAACTACTATTCACTCATTT TTTAAAAAGT
+yHAB136_Kazachstania_bro    144  3.87e-06 GTTATTAACC AACTACTCTGTCGTTCCTTT AATATACAAT
+Kazachstania_naganishii@    112  3.87e-06 ACTATTATCC AACTATTTGTCCACTCCTTT GTACCAAGCT
+yHAB159_Kazachstania_sol     83  3.87e-06 CCAAATCTTC AATATATCTTTCATTCGTTT TTCTTTTACT
+yHAB154_Kazachstania_tra    119  4.69e-06 ATTGTTTATC CAACTAAAAGTCCTTCCTTT TTAATTAAAA
+yHAB132_Kazachstania_mar    120  4.69e-06 TCATTTAATC CAACTACAAGTCTTTCCTTA AATTTTTATA
+yHAB166_Kazachstania_yak     80  4.69e-06 AATAATAATC AAACTATTCGTCGTTCCTTT AATTTTTACT
+yHAB148_Kazachstania_int    103  5.65e-06 TAGGACAAGT CCAACTATTTACATTCCTTT CTTTAAGCCT
+yHAB148_Kazachstania_int    156  5.65e-06 CATCCAAAGA AAAACCCCTTCCACTCGTTA ACCACAAATA
+yHAB159_Kazachstania_sol     28  5.65e-06 CTTATCAATC CAACTATTAGTCCTTCCTTA TATCAATACC
+yHAB133_Kazachstania_uni     39  5.65e-06 ACTTTCAATC CAACTATTAGTCCTTCCTTA TAACAAATTT
+yHAB158_Kazachstania_vit    121  5.65e-06 CGAGCTTTTT CCAACTATTTACATTCCTTT TTTCTTTTAA
+Kazachstania_africana@Se     59  5.65e-06 CTAATCGATC CAACTTTTTTACGTTCCTTA CTAAAATACC
+yHAB132_Kazachstania_mar    165  5.65e-06 CCAAGAACTA TATCTTCTATTCATTCGCTT ATATATTAAT
+yHAB159_Kazachstania_sol    168  6.76e-06 ACCACAACTC TAACTGCTAGTCCCTCCTTT CAACCAACTA
+yHAB159_Kazachstania_sol    113  6.76e-06 ATATATTTTT ATCTATACTTCCACTCCTTT ATTATATTAT
+yHAB158_Kazachstania_vit    101  6.76e-06 TATCCAACTA GAAAAACCATACATTCCTTT TTCTTTAGTT
+yHAB155_Kazachstania_spe    158  6.76e-06 TTTTATTATC CAACTATCTGTCCTTCCTTA TTATTCGAAA
+yHAB136_Kazachstania_bro    148  6.76e-06 AAAATAATCT AACTATCAAGTCTTTCCTTT ATTACTGATC
+yHAB136_Kazachstania_bro     97  6.76e-06 AAACGGTTTT ATTACCATAGTCACTCCTTT ATTATCTTTT
+yHAB153_Kazachstania_ros    639  6.76e-06 TCAATTATTT CCAACTATTTACACTCCTTT AAATTTTAAC
+Kazachstania_africana@Se    162  6.76e-06 TAAGAATATT ACATCTTCTGTCATTCGCTT ATAAATAAAT
+Kazachstania_naganishii@    121  8.04e-06 GCAGTTATCC AACTATCAAGTCCTTCCTTT TGACCTTTTA
+yHAB147_Kazachstania_tai    122  8.04e-06 GAAATTTAAA AATAGATTTTTCATTCCTTT CCTTCTCCAA
+yHAB159_Kazachstania_sol     38  9.51e-06 CCTTTCATTC ATTCATTCATTCATTCATTT GTTATAACCT
+yHAB147_Kazachstania_tai    153  9.51e-06 CTGTTGATCC CAACTATAAGTCCTTCCTTA TTTTCAATAC
+yHAB134_Kazachstania_tur    150  9.51e-06 AAGATACTTA ATTTTAATTGTCATTCCTTT AACTACAGAA
+yHAB133_Kazachstania_uni     69  9.51e-06 GACTGATTGT ATTCTTTCATTCACTCATTT ATTTACAATT
+Kazachstania_africana@Se    154  9.51e-06 GAACTAAAAC TAACTACAATTCATTCTTTT CGTTCAAATA
+yHAB166_Kazachstania_yak    256  9.51e-06 AAGCTATATT CCAACTTTTTACGTTCCTTT ATTGTATGTT
+yHAB143_Kazachstania_sia    296  9.51e-06 ATTACTATTT CAAGTTAGTTTCATTCCTTT CTACTTTTAA
+yHAB148_Kazachstania_int    135  9.51e-06 GATTTTTTCC AACTATCAAGTCATTCTTTT GCTGTTATAT
+yHAB136_Kazachstania_bro    137  9.51e-06 ATACTAATCT AACTATCAAGTCATTCTTTT AAAACTTTAT
+yHAB133_Kazachstania_uni    129  9.51e-06 TCCGTTCTTT TAAATATATTACACTCCTTT TTAACAAAAT
+Kazachstania_naganishii@    115  9.51e-06 AACTATCTCC AACTAGTAAGTCGTTCCTTT GATACTTATC
+yHAB160_Kazachstania_kun    107  9.51e-06 TAACAAACTT ACCCTTTAAGTCACTCATTT AATTAATATT
+yHAB153_Kazachstania_ros    159  9.51e-06 GAAACATACA ATCTCTTCTGTCATTCGCTT ACTTTTAACA
+yHAB134_Kazachstania_tur     55  1.12e-05 TATTACTTCC AACTAATTAGTCTTTCCTTT AAACTTAATT
+yHAB155_Kazachstania_spe    100  1.12e-05 CACCTCAATT ATTTTATTTTCCATTCCTTT AACAAACAAT
+yHAB158_Kazachstania_vit    164  1.12e-05 GACAAACTAC TATCTGTCGTCCATTCCTTT TAGTATCGAT
+yHAB133_Kazachstania_uni    142  1.31e-05 ACAAAACTAC CAACTAATTGTCATTCACTT AACTCTTAGA
+yHAB164_Kazachstania_aer    154  1.31e-05 CCAAGAAAAT AATCTTCGATCCATTCGCTT AAATAACAAC
+yHAB159_Kazachstania_sol    153  1.31e-05 CCAAGAAAAT AATCTTCGATCCATTCGCTT AAATAACAAA
+yHAB133_Kazachstania_uni    154  1.31e-05 CCAAGAAATT AATCTTCGATCCATTCGCTT ATAACAAATA
+Kazachstania_africana@Se    170  1.53e-05 TTATTTGATC CAACTAAAAGTCTTTCCTTA ACGCTAATTC
+yHAB153_Kazachstania_ros    147  1.53e-05 CAGGCAAATC CAACTTATATTCACTCTTTA ATCTCATAAC
+yHAB147_Kazachstania_tai    128  1.53e-05 TCGCGCTGTT ATAGATCTATTCATTCGTTC ATTCACTCAT
+yHAB164_Kazachstania_aer     59  1.77e-05 AATTAAAAAC AATAACACTTACACTCCTTT TAAAGATAAG
+yHAB164_Kazachstania_aer     40  1.77e-05 CAAAAACAAC ACAACACATTTCATTCGTTA TATTTTTAAC
+yHAB134_Kazachstania_tur     95  1.77e-05 GTTCTTTTTC AAGAAACTTTACATTCCTTT TTTTAGAATT
+Kazachstania_africana@Se    110  1.77e-05 TATTCATTCA ATTATTTCCTTCACTCCTTT ACGCTTAATA
+yHAB153_Kazachstania_ros     94  1.77e-05 ATAGTCTGTC CAACTAATTTACTTTCCTTT AGACATACCT
+yHAB164_Kazachstania_aer    574  1.77e-05 AACCAGAAAA ATTTGTCTGTCCATTCCTTT AATATCTTCA
+yHAB143_Kazachstania_sia    590  1.77e-05 GACAAAAACA ATTTGTCTGTCCATTCCTTT ACTATCCTTT
+yHAB132_Kazachstania_mar     72  1.77e-05 TTTTATAACC AACTTTCGAGTCATTCTTTT CTAATTCGTA
+yHAB134_Kazachstania_tur    151  1.77e-05 ACTACTATTA TAAATTAATTACATTCGTTT CACACAAAAT
+Kazachstania_africana@Se     72  2.05e-05 CAACACTTTT TTAAACCAAGTCACTCATTT ACAATCAACT
+yHAB133_Kazachstania_uni    590  2.05e-05 AAATAATAAA TTCTGTCTGTCCATTCCTTT AATATCTTTT
+yHAB155_Kazachstania_spe    148  2.35e-05 AGAATTGTTG TATCGTTCATTCATTCATTT TCTTGTTAAC
+yHAB154_Kazachstania_tra    152  2.35e-05 CGAATATCCC ACATTTCAAGTCATTCATTA AAGCTTTATT
+yHAB148_Kazachstania_int    169  2.35e-05 TTGTACTACC AACTGTTTAGTCGCTCCTTC TATTAAACAA
+yHAB134_Kazachstania_tur    109  2.35e-05 TTTAAACCAA CTAAATTAAGTCATTCATTC ATTCATTCAT
+yHAB132_Kazachstania_mar    151  2.35e-05 TTCCTTTACT GAAACTACTTACACTCCTTT AAAAAAATTA
+yHAB154_Kazachstania_tra    242  2.35e-05 AAGCTATATT CCAACTGTTTACACTCCTTT ATTGTATGTT
+yHAB154_Kazachstania_tra    204  2.35e-05 AAACACTATT CCAACTATTTACACTCCTTA AGCTATCTAA
+yHAB155_Kazachstania_spe    436  2.35e-05 AAAGTTGATT TCAAAGTTTGTCATTCCTTA TTATATTGAT
+yHAB153_Kazachstania_ros    376  2.35e-05 ATTGCCGATC TTCTGTTCATTCATTCCTTA GAGTTCCACA
+yHAB136_Kazachstania_bro    146  2.35e-05 CCCCTGTGAG CTAGTATTATACATTCCCTT TGATCCCAAA
+yHAB160_Kazachstania_kun    179  2.35e-05 CTTCAATTGT ATAATTCCCTACATTCCTTA TT        
+yHAB154_Kazachstania_tra    167  2.35e-05 ATCAATCTTC CAAATAATTTACACTCGCTT ATAACTTTTT
+yHAB147_Kazachstania_tai    165  2.35e-05 CCCCAAGAAC TATTCTTCTGTCACTCGCTT AACTAATATT
+yHAB133_Kazachstania_uni    170  2.69e-05 ATATTTTCAC TTACTATTAGTCTTTCCTTA TTAATTTTAT
+yHAB158_Kazachstania_vit    548  2.69e-05 TTTCATTGGG CCATCTTCATCCGTTCATTT TACGAAAGAG
+yHAB155_Kazachstania_spe     35  2.69e-05 TCAAACTATT CCAACTATTTACATTCCTTC TTTTCCAAAT
+yHAB134_Kazachstania_tur     42  2.69e-05 AAAAAAATTA ATCAACTTAGTCACTCTTTT TAATATATCT
+Kazachstania_naganishii@    140  2.69e-05 GATAAACAGC AATCAGTCTTTCGTTCCCTT TACATAACAC
+yHAB166_Kazachstania_yak     94  3.07e-05 ATTGTTTATC CAACTGAAAGTCTCTCCTTA TTGAAAAAAA
+yHAB160_Kazachstania_kun    170  3.07e-05 AAAACTATCT AACTATCAAGTCATTCTTTA TTTTTCCAAA
+yHAB133_Kazachstania_uni    141  3.07e-05 ATTAAAATAT AATCTAACAGTCTTTCCTTA TTATTAAATA
+yHAB160_Kazachstania_kun    478  3.07e-05 TAACACCAAC TAAATCACATTCACTCTTTT GAAAATCAAT
+yHAB136_Kazachstania_bro    294  3.07e-05 AATAAAATAC CAACTACTACACATTCCTTT AAGAAACAAA
+yHAB164_Kazachstania_aer     94  3.07e-05 GATCTTACAA CTAACTACTTTCGTTCATTT CATATATTTA
+yHAB164_Kazachstania_aer    148  3.07e-05 TACAAACTAC CAACTAATTTTCATTCTTTA TTATTACCTC
+yHAB159_Kazachstania_sol    107  3.07e-05 GATCTTACAA CTAACTACTTTCGTTCATTT ATTATATATA
+yHAB158_Kazachstania_vit    147  3.07e-05 CAATTTAATT AATCTTCTGTCCATTCGCTA AATTTACTTT
+yHAB166_Kazachstania_yak    155  3.49e-05 ATTACTGTCT CACTTTTAAGTCCTTCCTTC AAACTTTTTT
+yHAB155_Kazachstania_spe    178  3.49e-05 TCTTGTTAAC TAACTAAGAGTCACTCCCTA AAA       
+yHAB153_Kazachstania_ros     84  3.49e-05 CCGCTCATTC ACCGCTCCATTCCTTCCTTT GTTTTTGTTC
+yHAB147_Kazachstania_tai    115  3.49e-05 GTACGCAACC AAGTACTATTCCATTCCTTT TTAATTATCT
+yHAB136_Kazachstania_bro    148  3.49e-05 AACAGCCGTT CCACTGTCATTCATTCTTTA TACCCAACTG
+yHAB132_Kazachstania_mar    130  3.49e-05 TTATTGAAAA TAACTAGTATCCATTCGTTA TATTATTTAT
+yHAB154_Kazachstania_tra    606  3.49e-05 AATTCAGTTT AACTTAATTTACGCTCCTTT TAATTCTTTT
+yHAB160_Kazachstania_kun    377  3.49e-05 ATTCTCCGAG TTATTTTTAGACTCTCCTTT TTTTTTTCAG
+yHAB159_Kazachstania_sol    149  3.49e-05 AAACTACTAC CAACTAATTTTCACTCTTTA CTCTAATTAG
+yHAB147_Kazachstania_tai    157  3.49e-05 AGAATCAAAC ATACTCAATTCCATTCATTT CAACCTCCAT
+yHAB147_Kazachstania_tai    153  3.49e-05 AGATTAATTA ATACATTCGTTCATTCTTTA CTACTATACA
+yHAB166_Kazachstania_yak    144  3.49e-05 AACACTAATA ACAAATCCTTACGTTCGTTA AACAAACACC
+yHAB147_Kazachstania_tai    164  3.49e-05 ATAACCAGAA ACAAACACTTCCATTCGCTT ACTCATATAA
+yHAB166_Kazachstania_yak    125  3.95e-05 AAAATCCTAA TTAAACTTGTCCACTCCTTA ATTACTGTCT
+yHAB160_Kazachstania_kun     89  3.95e-05 TACATAATAT TATAGTGTATTCATTCCTTT AAAAACAAAC
+yHAB147_Kazachstania_tai     35  3.95e-05 TAGGCAGCAA CTCTCTACATTCCTTCGTTT TAAAGAAAGA
+yHAB153_Kazachstania_ros    415  3.95e-05 AGACGGAATA CTTTATTAATACACTCCTTA CTAATATAGA
+yHAB160_Kazachstania_kun     73  3.95e-05 TATTAAAATA TTAAAATCGTCCATTCGTTA TATTTAACAA
+yHAB136_Kazachstania_bro    151  3.95e-05 AATAATCCAA AAAACTATATCCATTCATTC AAATAATATT
+yHAB158_Kazachstania_vit    176  3.95e-05 ACTCTCATTA CTTCCAACGTTCACTCGCTT CCGTT     
+yHAB133_Kazachstania_uni    107  3.95e-05 TCGAACTTTA CTTCTCACTTTCTCTCCTTT CTAATTGTTA
+yHAB160_Kazachstania_kun    143  4.45e-05 TCTAAAATCT AACTACCAAGTCTCTCCTTA ATTTTTCAAA
+yHAB155_Kazachstania_spe    109  4.45e-05 TATCACACAC TAAGTGTATTACATTCCTTT AAACTAAATT
+yHAB147_Kazachstania_tai     68  4.45e-05 GTAAGACAAC CTAACTTTATACACTCATTA CACTCTTTTT
+yHAB148_Kazachstania_int    110  4.45e-05 GTCTCGTACC TGAAACTAGTCCATTCCTTT AAAGAAAGAT
+yHAB134_Kazachstania_tur    126  4.45e-05 AATTATTAAA GAAGAGTTATCCATTCCTTT TAAATTTCAG
+yHAB159_Kazachstania_sol    551  4.45e-05 AACTAGAAAA AGTTGTCTGTCCATTCCTTT AATATCTTCA
+yHAB154_Kazachstania_tra     28  4.45e-05 GGAAAAAAAA AGATCGCTATTCATTCATTT AAAATTCATC
+yHAB134_Kazachstania_tur    148  4.45e-05 AAATAAAATC ATTTATTCTTCCATTCATTT CTTTCTAACT
+yHAB133_Kazachstania_uni     23  4.45e-05 AAGATTGTAT CTCTTTCAATCCATTCATTA TTATAGAAAA
+yHAB148_Kazachstania_int    165  4.45e-05 ACCAACCATT ATAGTTCCTGCCACTCGCTC CACTAAATTT
+yHAB164_Kazachstania_aer    102  5.00e-05 TTAATATATC TATAACACTTCCATTCCTTA ATTATATTTT
+yHAB133_Kazachstania_uni    152  5.00e-05 TATCTAATTC TGATAGTTATACACTCCTTT AATTTTATTA
+yHAB143_Kazachstania_sia     80  5.59e-05 TTTTGTTTGT GTACTCAATTACATTCCTTT AACAAAAAAA
+yHAB133_Kazachstania_uni     61  5.59e-05 TAAACAAACA TAAAACTTTTACACTCATTT AAAATTTATT
+Kazachstania_africana@Se    136  5.59e-05 TAAATTTTAC CTTCGTGTATTCATTCCTTC ATTTTTATTT
+yHAB164_Kazachstania_aer    161  5.59e-05 CAAGTTCTTA ATAGTTTTATTCATTCATTA ACCTTCCCCA
+yHAB143_Kazachstania_sia    173  5.59e-05 GTTCTCTAAC TTATATCTGTCCATTCTTTT ATAAAAAT  
+yHAB143_Kazachstania_sia     28  5.59e-05 ACTTCTTGTT TATTACCCTTTCTCTCCTTT ATCTCCCTTC
+yHAB155_Kazachstania_spe    178  5.59e-05 ATATTCTTTC TAATATTCTTTCGCTCTTTT TAA       
+yHAB155_Kazachstania_spe    169  5.59e-05 TATATCTTCT AATTTACATTACATTCGCTT AATATATTAA
+yHAB133_Kazachstania_uni    161  5.59e-05 ACCAAAACAC ATAATCTTTTTCACTCGCTC ACACAACTAA
+yHAB132_Kazachstania_mar     84  6.24e-05 TAAATCGAAA AAAAACTACTACGTTCCTTT TGTTTTTCAT
+Kazachstania_naganishii@     68  6.24e-05 ATCCTAGAAA TAACCGCCTTTCACTCTTTC AAGGTACTTA
+Kazachstania_naganishii@    590  6.24e-05 AAAAACAACA ACAACCTTCTCCATTCCCTT TCAAGCTAAA
+Kazachstania_africana@Se    170  6.24e-05 TAACAAACTA AACTAGTTATTCACTCGCTA ATAAAACAAT
+yHAB143_Kazachstania_sia    120  6.93e-05 AAATATTATT ACAATAAGTGTCACTCATTT ACTCTTTTTT
+yHAB133_Kazachstania_uni    129  6.93e-05 TTTATAATAC AGTACTAATTACATTCCTTT AATATCATTT
+yHAB132_Kazachstania_mar    167  6.93e-05 TTATTACATT CTTTTTTGATCCATTCATTT ATTAAAAAAA
+Kazachstania_africana@Se     87  6.93e-05 TACTAAAATA CCAACTATCTACGTTCCTTT ATCCCATTTT
+yHAB147_Kazachstania_tai    148  6.93e-05 TCATTCGTTC ATTCACTCATTCATTCTTTA TCGTGATCTA
+yHAB153_Kazachstania_ros    147  6.93e-05 AACTTCGCTA TACTATTTATCCATTCATTA ACCCCTTCCA
+yHAB147_Kazachstania_tai    119  7.68e-05 AATCCAATCC AACTTTCAAGTCCCTCTTTT CCGATCAATA
+yHAB133_Kazachstania_uni    110  7.68e-05 TCTTTTTTCC ATACTCAAAGACACTCACTT TACCAGAATA
+yHAB166_Kazachstania_yak    168  7.68e-05 ATAAATCTTC CAAATTAACTACATTCGCTT AAAAATTTTA
+yHAB134_Kazachstania_tur    153  7.68e-05 CATATATTAC ATCAAACAAGTCCTTCGCTT ACAAACTTTA
+yHAB164_Kazachstania_aer    164  8.48e-05 AATCTTTTTT ACTATTATTTCCTTTCCTTT TTTATCTGAT
+yHAB143_Kazachstania_sia     29  8.48e-05 GACAAACTAA CTTCATTCTTTCTCTCATTT ATTTTATTTT
+yHAB166_Kazachstania_yak    650  8.48e-05 CTCATTTATT ATTTTCCTTTACATTCATTT TAATCAATCG
+yHAB158_Kazachstania_vit    156  8.48e-05 AAAATATTGC TATAAAAACTTCATTCCTTT TCGATCGCTT
+yHAB154_Kazachstania_tra    120  9.33e-05 TAGTCTTTTT AAAAACTTGTCCACTCTTTA ATCGAATATC
+Kazachstania_naganishii@     81  9.33e-05 TCTCTTCGTT TCTTACCAAGTCCTTCCTTT TAGTTTTATA
+yHAB159_Kazachstania_sol    118  9.33e-05 TTTTATTCAA ATCTTTAAAGACACTCCCTC CAACTCAAAG
+yHAB154_Kazachstania_tra    636  9.33e-05 TAATTCTTTT ATTCAAATTTACATTCATTT TAATTTCAAT
+yHAB143_Kazachstania_sia    136  9.33e-05 TTTTAATATT TCAACTACTTTCGCTCATTT TTAAAAGGTT
+yHAB143_Kazachstania_sia    155  9.33e-05 AAGAAACCAT CAAGTCCCCGTCACTCGCTC AATCACACAC
+yHAB153_Kazachstania_ros    109  1.02e-04 AAATACCAAT AGTATCCCTTCCATTCTTTT GATACACCAA
+yHAB160_Kazachstania_kun    133  1.12e-04 AACACATTTT ATCTGTGTTTCCATTCCTTA GAAAGAAAAA
+yHAB153_Kazachstania_ros     74  1.12e-04 TCACATCTCC TTTTGTGAATTCACTCCTTT AAAACTAAAT
+yHAB143_Kazachstania_sia      5  1.12e-04       TTTT TTTTTCCTATCCTTTCGTTT TTTTATCTAA
+yHAB143_Kazachstania_sia    155  1.12e-04 TTTTTTTAAA TTTAATTATTTCGTTCCTTC AAACTTTATC
+yHAB136_Kazachstania_bro    218  1.12e-04 ATCTAAAATT CCAACTATTTACTTTCCTTA AACTTTTACT
+yHAB166_Kazachstania_yak     16  1.12e-04 ACGTTATTCA TTATTAATTTACATTCATTT CAAGCACTAA
+yHAB134_Kazachstania_tur    118  1.12e-04 CATTGGTGTA TTTCGAATAGTCACTCTTTT AGAAAATAAT
+Kazachstania_naganishii@     52  1.12e-04 CAACCCTCCC ATATCACACTTCGTTCCTTC TCTTCCTTCC
+yHAB133_Kazachstania_uni    365  1.22e-04 CTGCTGCTGC TGAATCAGATCCATTCCTTA TAAATATACA
+yHAB158_Kazachstania_vit    123  1.22e-04 CATTATACCT AACTATTAAGTCATTCTCTC GTTAGAAAAA
+yHAB159_Kazachstania_sol    150  1.22e-04 TATCTGAAAC TGATAGCCATACACTCATTT ACCTTTTAAT
+yHAB133_Kazachstania_uni    123  1.22e-04 TTTTCTCTCA TTCCACTTATACATTCGCTC AATCTATCTT
+Kazachstania_africana@Se     81  1.33e-04 TACAAGGCAA TTGTACTCATTCATTCATTT ATTCATTCAA
+yHAB166_Kazachstania_yak    117  1.33e-04 TTATTAGTTT TTCCTTTCTTTCTCTCTTTT TTTTACTCTC
+yHAB160_Kazachstania_kun    157  1.33e-04 CAGTATAACT AAACAAAACTTCATTCGCTC AATAAAACAA
+yHAB133_Kazachstania_uni    174  1.45e-04 TTAAATAAAC TAACTTTGATCCATTCTCTA AAAAACA   
+yHAB134_Kazachstania_tur    105  1.45e-04 ATTCAAGTTC CAACTTTTTTACTCTCTTTA AATTTACAAC
+yHAB154_Kazachstania_tra     91  1.45e-04 TTTTTTGCTC TTCTCTCTTTTCGCTCGCTA TAACTAACAA
+yHAB147_Kazachstania_tai    124  1.45e-04 TTTTAGTTGC AATTGTTCATTCATTCACTA GATTAATTAA
+yHAB143_Kazachstania_sia     93  1.45e-04 AAATATAACC AAGCAACTATCCCTTCATTT ACTGTCACCT
+yHAB143_Kazachstania_sia    220  1.57e-04 AAAACTCTTT TTTTTTTTTGTCTCTCCTTC TATCTCTAAT
+yHAB164_Kazachstania_aer    154  1.57e-04 TATCTTCAAC TGATAGTCATACACTCATTT ACTGTTTAAT
+yHAB136_Kazachstania_bro    166  1.57e-04 CCAAGAACAA TAAACTTCCTACACTCGCTA ACCCCAATAA
+yHAB136_Kazachstania_bro     14  1.69e-04 TCTTACTTTA TTTATATTTTACATTCTTTT TTAATTGATC
+yHAB134_Kazachstania_tur    150  1.69e-04 TCTCATTATA TTAAATTAATTCTCTCTTTT TTTTTAATAC
+yHAB164_Kazachstania_aer    124  1.82e-04 ATATAAAACC AACTTTTTATTCTCTCTCTT TTCCCCTATA
+yHAB159_Kazachstania_sol    147  1.82e-04 CAAATAAACT AACTTTTTATTCTCTCTCTT TTTCTCCCCT
+yHAB158_Kazachstania_vit     56  1.82e-04 GTCTGCTACT TTATCACTACACATTCCTTT CTAAGACTTA
+yHAB164_Kazachstania_aer     25  1.96e-04 TCTTTCTTTA TTTATTTATTTCTTTCCTTC AATAAATTAA
+yHAB136_Kazachstania_bro    118  1.96e-04 TTACAACCAA CCAAAACATTACGTTCATTC AACAGCCGTT
+Kazachstania_naganishii@    158  1.96e-04 TCAATTGGGT ATTATAAAAGTCTTTCATTT AAAAACAACA
+yHAB143_Kazachstania_sia    342  1.96e-04 AAAGCAAAAG AAGAATTGTTACTTTCCTTT TTGCTTTTTA
+yHAB158_Kazachstania_vit    120  1.96e-04 TAAGCAAATC GAATAAATATCCATTCATTA AGAATAAATT
+yHAB164_Kazachstania_aer     17  1.96e-04 GAAAGTTAAC ACTATTCTCGTCACTCTCTT TTAGACGGTT
+yHAB158_Kazachstania_vit    105  1.96e-04 TAGAATAGCA TCAAACTTTTCCTTTCGTTA ATCACAATCC
+yHAB134_Kazachstania_tur    121  1.96e-04 TATTGAAGAT ATCCAAATTTACTTTCGCTT ACTACTATTA
+yHAB132_Kazachstania_mar    450  2.10e-04 TGGCTGAAGT TTGCCACCGTTCTCTCCCTT TACAAAACAG
+yHAB164_Kazachstania_aer    156  2.25e-04 AACTCATATT CTACAACAAACCACTCGCTT AACCCCCAAA
+yHAB155_Kazachstania_spe     94  2.25e-04 AAACTTTCGA AATTATCTTGTCTTTCTTTC ATATCTCCTT
+yHAB147_Kazachstania_tai     87  2.40e-04 TTCGTCTTTA CCAATAACTGTCAGTCCCTT CTAATCCAAT
+yHAB166_Kazachstania_yak    627  2.40e-04 CTCACAGATC AATTTAAATTACGCTCATTT ATTATTTTCC
+yHAB159_Kazachstania_sol    359  2.40e-04 GTACTACATT TGAAGCGAATCCATTCCTTA TACAATTCAA
+yHAB132_Kazachstania_mar    132  2.40e-04 TTAATTCAGA TTAATTCTGTCCTTTCGCTC CTCTAACATT
+yHAB136_Kazachstania_bro    145  2.40e-04 ATCTTGTTTT ACTTTTACTTCCACTCTTTC CCATATAACC
+yHAB134_Kazachstania_tur    128  2.56e-04 TAGAATTTTT TAAATTCATTACTCTCATTA TATTAAATTA
+yHAB132_Kazachstania_mar    125  2.56e-04 TTATACAACC AACTGTTTATTCTTTCTCTT TTATTGAAAA
+Kazachstania_naganishii@    133  2.73e-04 TACCCTCAAA CAGGTGTTATTCATTCTTTA CTACATCTCT
+yHAB134_Kazachstania_tur    106  2.73e-04 CAAACAAAAT CTACATTTTTTCAATCATTT CTAGGATAAA
+yHAB153_Kazachstania_ros     77  2.73e-04 CGTCCCTTTC AGCAATTGATACACTCACTT TCCCTTCTAT
+yHAB155_Kazachstania_spe     40  2.90e-04 CAGGTTAATT ATTAACTTTATCACTCCTTT AAAGTTTTTA
+yHAB143_Kazachstania_sia    129  2.90e-04 TTCAATTAGA TAAAACCAACCCACTCGTTA ATTCCTTCAT
+yHAB134_Kazachstania_tur     78  3.07e-04 CTTTTGCTTT GTGCATTAATTCATTCATTA TTTTAAACCA
+yHAB164_Kazachstania_aer    357  3.25e-04 GTATTACACT TAAATCGGATCCATTCTTTA TACGATTCTA
+yHAB160_Kazachstania_kun    136  3.25e-04 CCAACTTGTA TCTCTACTAATCATTCCTTA GAAATAATTT
+yHAB154_Kazachstania_tra     97  3.25e-04 TTATCTTTCA TTAAATTATTCCGCTCACTA ATTTATCTTT
+yHAB159_Kazachstania_sol    234  3.44e-04 TGATACATTC CTCCCACTATCCACTGCTTA AAACTCGTAC
+yHAB160_Kazachstania_kun    156  3.44e-04 TGATTATTCT ATAAAACAGTCCAATCGTTT CACTACTATT
+yHAB159_Kazachstania_sol     85  3.44e-04 CCATCCCATT CTCAACTAATCCATTCCTCT CTTATTCCTC
+Kazachstania_naganishii@     81  4.25e-04 CTCTTCCTTC CTCCTGCTGTACACTCCCTG CACGTTGTCA
+yHAB164_Kazachstania_aer     90  4.92e-04 CTTATTCATA GAATATATCTACACTCATTA ATAAATATAA
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif HWAHWWHHWTTCATTCCTTT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+yHAB132_Kazachstania_mar          4.1e-10  103_[+1]_77
+yHAB147_Kazachstania_tai          1.6e-09  129_[+1]_51
+yHAB158_Kazachstania_vit          0.00012  122_[+1]_26_[+1]_12
+yHAB148_Kazachstania_int          2.4e-05  121_[+1]_27_[+1]_12
+yHAB143_Kazachstania_sia          1.3e-08  147_[+1]_33
+yHAB164_Kazachstania_aer           0.0002  16_[+1]_37_[+1]_60_[+1]_27
+yHAB132_Kazachstania_mar          2.4e-05  127_[+1]_3_[+1]_30
+yHAB136_Kazachstania_bro          4.7e-08  78_[+1]_102
+yHAB166_Kazachstania_yak          4.7e-08  85_[+1]_95
+yHAB148_Kazachstania_int          4.7e-08  121_[+1]_59
+Kazachstania_africana@Se            1e-07  127_[+1]_53
+yHAB159_Kazachstania_sol          0.00012  69_[+1]_60_[+1]_31
+yHAB159_Kazachstania_sol          3.1e-05  76_[+1]_10_[+1]_74
+yHAB147_Kazachstania_tai          3.6e-07  59_[+1]_121
+yHAB154_Kazachstania_tra          3.6e-07  80_[+1]_100
+yHAB154_Kazachstania_tra          3.6e-07  69_[+1]_111
+Kazachstania_africana@Se          3.6e-07  166_[+1]_14
+yHAB166_Kazachstania_yak          4.8e-07  7_[+1]_173
+yHAB164_Kazachstania_aer          5.6e-05  63_[+1]_10_[+1]_47_[+1]_20
+yHAB143_Kazachstania_sia          9.3e-05  27_[+1]_53_[+1]_15_[+1]_17_[+1]_8
+yHAB133_Kazachstania_uni          9.5e-06  86_[+1]_22_[+1]_52
+yHAB148_Kazachstania_int          4.8e-07  165_[+1]_15
+yHAB134_Kazachstania_tur          8.2e-07  348_[+1]_332
+yHAB158_Kazachstania_vit           0.0002  119_[+1]_9_[+1]_32
+yHAB134_Kazachstania_tur          0.00014  41_[+1]_43_[+1]_44_[+1]_12
+yHAB160_Kazachstania_kun          1.3e-06  124_[+1]_56
+yHAB158_Kazachstania_vit          1.3e-06  22_[+1]_158
+yHAB155_Kazachstania_spe          1.3e-06  174_[+1]_6
+yHAB158_Kazachstania_vit          6.8e-06  64_[+1]_16_[+1]_26_[+1]_34
+yHAB153_Kazachstania_ros          0.00011  9_[+1]_44_[+1]_30_[+1]_57
+yHAB153_Kazachstania_ros          1.7e-06  148_[+1]_32
+yHAB136_Kazachstania_bro          0.00011  217_[+1]_56_[+1]_336_[+1]_31
+Kazachstania_naganishii@          2.1e-06  156_[+1]_24
+yHAB164_Kazachstania_aer           0.0002  24_[+1]_14_[+1]_23_[+1]_34_[+1]_25
+yHAB155_Kazachstania_spe          2.6e-06  644_[+1]_36
+yHAB153_Kazachstania_ros          6.8e-06  638_[+1]_10_[+1]_12
+yHAB147_Kazachstania_tai          6.9e-05  94_[+1]_13_[+1]_[+1]_33
+yHAB143_Kazachstania_sia          0.00029  128_[+1]_[+1]_32
+yHAB134_Kazachstania_tur           0.0002  92_[+1]_8_[+1]_10_[+1]_30
+yHAB164_Kazachstania_aer          2.6e-06  129_[+1]_51
+yHAB159_Kazachstania_sol          3.2e-06  76_[+1]_16_[+1]_35_[+1]_13
+yHAB143_Kazachstania_sia          3.2e-06  70_[+1]_110
+yHAB159_Kazachstania_sol          3.2e-06  154_[+1]_26
+yHAB143_Kazachstania_sia          3.2e-06  144_[+1]_36
+yHAB160_Kazachstania_kun          4.4e-05  5_[+1]_63_[+1]_34_[+1]_38
+yHAB143_Kazachstania_sia          0.00011  4_[+1]_55_[+1]_32_[+1]_49
+yHAB160_Kazachstania_kun          3.9e-06  165_[+1]_15
+yHAB136_Kazachstania_bro          3.9e-06  143_[+1]_37
+Kazachstania_naganishii@          3.9e-06  111_[+1]_69
+yHAB159_Kazachstania_sol          1.3e-05  82_[+1]_50_[+1]_28
+yHAB154_Kazachstania_tra          4.7e-06  118_[+1]_62
+yHAB132_Kazachstania_mar          6.9e-05  83_[+1]_16_[+1]_27_[+1]_14
+yHAB166_Kazachstania_yak          4.7e-06  79_[+1]_101
+yHAB148_Kazachstania_int          5.6e-06  102_[+1]_78
+yHAB148_Kazachstania_int          5.6e-06  155_[+1]_25
+yHAB159_Kazachstania_sol          9.3e-05  27_[+1]_70_[+1]_63
+yHAB133_Kazachstania_uni          7.7e-05  38_[+1]_51_[+1]_71
+yHAB158_Kazachstania_vit          2.7e-05  120_[+1]_23_[+1]_364_[+1]_133
+Kazachstania_africana@Se          6.9e-05  58_[+1]_8_[+1]_594
+yHAB132_Kazachstania_mar          5.6e-06  164_[+1]_16
+yHAB155_Kazachstania_spe          0.00029  39_[+1]_49_[+1]_29_[+1]_23
+yHAB136_Kazachstania_bro          0.00017  13_[+1]_63_[+1]_31_[+1]_33
+Kazachstania_africana@Se          6.8e-06  161_[+1]_19
+Kazachstania_naganishii@          9.3e-05  80_[+1]_20_[+1]_60
+yHAB147_Kazachstania_tai            8e-06  121_[+1]_359
+yHAB159_Kazachstania_sol          0.00018  37_[+1]_89_[+1]_34
+yHAB147_Kazachstania_tai          3.5e-05  67_[+1]_27_[+1]_18_[+1]_28
+yHAB134_Kazachstania_tur          0.00031  77_[+1]_11_[+1]_21_[+1]_31
+yHAB133_Kazachstania_uni          0.00014  68_[+1]_52_[+1]_13_[+1]_7
+Kazachstania_africana@Se          0.00013  80_[+1]_9_[+1]_24_[+1]_27
+yHAB166_Kazachstania_yak          0.00024  255_[+1]_351_[+1]_3_[+1]_31
+yHAB143_Kazachstania_sia          0.00016  219_[+1]_56_[+1]_26_[+1]_139
+yHAB148_Kazachstania_int          9.5e-06  134_[+1]_46
+yHAB136_Kazachstania_bro          9.5e-06  136_[+1]_44
+Kazachstania_naganishii@          9.5e-06  114_[+1]_66
+yHAB160_Kazachstania_kun          3.9e-05  72_[+1]_14_[+1]_74
+yHAB153_Kazachstania_ros          9.5e-06  158_[+1]_22
+yHAB134_Kazachstania_tur          0.00026  54_[+1]_20_[+1]_13_[+1]_2_[+1]_31
+yHAB155_Kazachstania_spe          1.1e-05  99_[+1]_81
+yHAB133_Kazachstania_uni          1.3e-05  141_[+1]_39
+yHAB164_Kazachstania_aer          1.3e-05  153_[+1]_27
+yHAB133_Kazachstania_uni          1.3e-05  153_[+1]_27
+Kazachstania_africana@Se            2e-05  71_[+1]_44_[+1]_14_[+1]_11
+yHAB153_Kazachstania_ros          1.5e-05  146_[+1]_34
+yHAB164_Kazachstania_aer          0.00049  39_[+1]_30_[+1]_14_[+1]_20_[+1]_17
+yHAB153_Kazachstania_ros          1.8e-05  93_[+1]_87
+yHAB164_Kazachstania_aer          1.8e-05  573_[+1]_107
+yHAB143_Kazachstania_sia          1.8e-05  589_[+1]_91
+yHAB132_Kazachstania_mar          0.00026  71_[+1]_33_[+1]_56
+yHAB133_Kazachstania_uni            2e-05  589_[+1]_91
+yHAB155_Kazachstania_spe          2.4e-05  147_[+1]_10_[+1]_3
+yHAB154_Kazachstania_tra          9.3e-05  119_[+1]_12_[+1]_29
+yHAB154_Kazachstania_tra          9.3e-05  203_[+1]_18_[+1]_344_[+1]_10_[+1]_45
+yHAB155_Kazachstania_spe          2.4e-05  435_[+1]_45
+yHAB153_Kazachstania_ros          2.4e-05  375_[+1]_19_[+1]_66
+yHAB136_Kazachstania_bro          2.4e-05  145_[+1]_335
+yHAB160_Kazachstania_kun          0.00033  135_[+1]_23_[+1]_2
+yHAB154_Kazachstania_tra          2.4e-05  166_[+1]_14
+yHAB147_Kazachstania_tai          2.4e-05  164_[+1]_16
+yHAB133_Kazachstania_uni          5.6e-05  60_[+1]_48_[+1]_21_[+1]_11
+yHAB155_Kazachstania_spe          2.7e-05  34_[+1]_646
+Kazachstania_naganishii@          0.00042  51_[+1]_9_[+1]_39_[+1]_41
+yHAB166_Kazachstania_yak          3.1e-05  93_[+1]_87
+yHAB160_Kazachstania_kun          0.00011  132_[+1]_17_[+1]_11
+yHAB160_Kazachstania_kun          3.1e-05  477_[+1]_203
+yHAB164_Kazachstania_aer          3.1e-05  147_[+1]_33
+yHAB158_Kazachstania_vit          3.1e-05  146_[+1]_34
+yHAB166_Kazachstania_yak          3.5e-05  124_[+1]_10_[+1]_26
+yHAB153_Kazachstania_ros          3.5e-05  83_[+1]_97
+yHAB136_Kazachstania_bro           0.0002  117_[+1]_10_[+1]_33
+yHAB132_Kazachstania_mar          3.5e-05  129_[+1]_51
+yHAB160_Kazachstania_kun          3.5e-05  376_[+1]_104
+yHAB159_Kazachstania_sol          3.5e-05  148_[+1]_32
+yHAB147_Kazachstania_tai          3.5e-05  156_[+1]_24
+yHAB147_Kazachstania_tai          0.00014  123_[+1]_9_[+1]_28
+yHAB166_Kazachstania_yak          3.5e-05  143_[+1]_37
+yHAB147_Kazachstania_tai          3.5e-05  163_[+1]_17
+yHAB147_Kazachstania_tai          7.7e-05  34_[+1]_32_[+1]_12_[+1]_62
+yHAB136_Kazachstania_bro          3.9e-05  150_[+1]_30
+yHAB158_Kazachstania_vit          3.9e-05  175_[+1]_5
+yHAB133_Kazachstania_uni          5.6e-05  106_[+1]_34_[+1]_20
+yHAB148_Kazachstania_int          4.4e-05  109_[+1]_71
+yHAB134_Kazachstania_tur          4.4e-05  125_[+1]_55
+yHAB159_Kazachstania_sol          4.4e-05  550_[+1]_130
+yHAB154_Kazachstania_tra          0.00033  27_[+1]_49_[+1]_84
+yHAB134_Kazachstania_tur          0.00027  105_[+1]_22_[+1]_33
+yHAB133_Kazachstania_uni          0.00012  22_[+1]_80_[+1]_58
+yHAB148_Kazachstania_int          4.4e-05  164_[+1]_16
+yHAB133_Kazachstania_uni            5e-05  151_[+1]_29
+yHAB155_Kazachstania_spe          5.6e-05  177_[+1]_3
+yHAB155_Kazachstania_spe          0.00022  93_[+1]_55_[+1]_12
+Kazachstania_naganishii@          0.00027  67_[+1]_45_[+1]_48
+Kazachstania_naganishii@          6.2e-05  589_[+1]_91
+Kazachstania_africana@Se          6.2e-05  169_[+1]_11
+yHAB143_Kazachstania_sia          8.5e-05  28_[+1]_71_[+1]_15_[+1]_26
+yHAB153_Kazachstania_ros           0.0001  108_[+1]_18_[+1]_34
+yHAB166_Kazachstania_yak          0.00013  116_[+1]_31_[+1]_13
+yHAB134_Kazachstania_tur          7.7e-05  152_[+1]_28
+yHAB158_Kazachstania_vit           0.0002  104_[+1]_31_[+1]_25
+yHAB143_Kazachstania_sia          9.3e-05  154_[+1]_26
+yHAB166_Kazachstania_yak          0.00011  15_[+1]_465
+yHAB134_Kazachstania_tur          0.00011  117_[+1]_63
+yHAB133_Kazachstania_uni          0.00012  364_[+1]_116
+yHAB160_Kazachstania_kun          0.00013  156_[+1]_24
+yHAB154_Kazachstania_tra          0.00014  90_[+1]_90
+yHAB143_Kazachstania_sia          0.00014  92_[+1]_88
+yHAB136_Kazachstania_bro          0.00016  165_[+1]_15
+yHAB158_Kazachstania_vit          0.00018  55_[+1]_425
+Kazachstania_naganishii@           0.0002  157_[+1]_23
+yHAB132_Kazachstania_mar          0.00021  449_[+1]_31
+yHAB164_Kazachstania_aer          0.00022  155_[+1]_25
+yHAB159_Kazachstania_sol          0.00034  233_[+1]_105_[+1]_122
+yHAB132_Kazachstania_mar          0.00024  131_[+1]_49
+yHAB136_Kazachstania_bro          0.00024  144_[+1]_36
+yHAB153_Kazachstania_ros          0.00027  76_[+1]_104
+yHAB164_Kazachstania_aer          0.00033  356_[+1]_124
+yHAB160_Kazachstania_kun          0.00034  155_[+1]_25
+yHAB159_Kazachstania_sol          0.00034  84_[+1]_96
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif HWAHWWHHWTTCATTCCTTT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF HWAHWWHHWTTCATTCCTTT width=20 seqs=260
+yHAB132_Kazachstania_mar (  104) CAACTACTAGTCATTCCTTT  1 
+yHAB147_Kazachstania_tai (  130) CAACTATCAGTCACTCCTTT  1 
+yHAB158_Kazachstania_vit (  169) CAACTTTTATTCATTCCTTT  1 
+yHAB148_Kazachstania_int (  122) TAACCTCCATTCATTCCTTT  1 
+yHAB143_Kazachstania_sia (  148) CAACTATTTGTCATTCCTTT  1 
+yHAB164_Kazachstania_aer (   74) CAAACTCCATTCATTCGTTT  1 
+yHAB132_Kazachstania_mar (  128) CAACTATTTTTCATTCCTTT  1 
+yHAB136_Kazachstania_bro (   79) CAACTAACTGTCACTCCTTT  1 
+yHAB166_Kazachstania_yak (   86) AACCTTTAAGTCATTCCTTT  1 
+yHAB148_Kazachstania_int (  122) CACTATTCAGTCATTCCTTT  1 
+Kazachstania_africana@Se (  128) TAACTATCATTCATTCCTTT  1 
+yHAB159_Kazachstania_sol (   70) AAAACTTCATTCATTCGTTT  1 
+yHAB159_Kazachstania_sol (   77) AACTATCAAGTCATTCCTTT  1 
+yHAB147_Kazachstania_tai (   60) CCAACTTTATTCACTCCTTT  1 
+yHAB154_Kazachstania_tra (   81) AAACTATTTGTCGTTCCTTT  1 
+yHAB154_Kazachstania_tra (   70) AACTTTTAAGTCATTCCTTT  1 
+Kazachstania_africana@Se (  167) CCAACTTTTGTCACTCCTTT  1 
+yHAB166_Kazachstania_yak (    8) CAACTAATTGACATTCCTTT  1 
+yHAB164_Kazachstania_aer (   64) AACTAACAAGTCATTCCTTT  1 
+yHAB143_Kazachstania_sia (  101) AACTATTAAGTCATTCCTTT  1 
+yHAB133_Kazachstania_uni (   87) AACTATTAAGTCATTCCTTT  1 
+yHAB148_Kazachstania_int (  166) CAAACACCTTCCACTCGTTT  1 
+yHAB134_Kazachstania_tur (  349) TAAATTATATTCATTCCTTT  1 
+yHAB158_Kazachstania_vit (  149) TAAAACCCTTCCATTCCTTT  1 
+yHAB134_Kazachstania_tur (  169) CAAATTCCTTTCATTCATTT  1 
+yHAB160_Kazachstania_kun (  125) CAACTAAAAGTCATTCCTTC  1 
+yHAB158_Kazachstania_vit (   23) CAACTATTAGTCGTTCCTTC  1 
+yHAB155_Kazachstania_spe (  175) CAACTTTTATTCATTCTTTT  1 
+yHAB158_Kazachstania_vit (  147) CAACTATAAGTCTTTCCTTT  1 
+yHAB153_Kazachstania_ros (  124) CAACTATAAGTCTTTCCTTT  1 
+yHAB153_Kazachstania_ros (  149) ACAGATCTATTCATTCCTTT  1 
+yHAB153_Kazachstania_ros (   10) ATAACTTTGTCCATTCCTTT  1 
+yHAB136_Kazachstania_bro (  650) CTAACACTTTACACTCCTTT  1 
+Kazachstania_naganishii@ (  157) CTATCTTCAGTCACTCGCTT  1 
+yHAB164_Kazachstania_aer (  156) TAACTTTTAGTCCTTCCTTT  1 
+yHAB155_Kazachstania_spe (  645) CCAACTTTTTACATTCCTTT  1 
+yHAB153_Kazachstania_ros (  669) TAAACTACTTCCACTCCTTT  1 
+yHAB147_Kazachstania_tai (   95) AACTATCAAGTCATTCCTTC  1 
+yHAB143_Kazachstania_sia (  149) ATTCCTTCATTCGTTCCTTT  1 
+yHAB134_Kazachstania_tur (   93) ACACTTCAATTCATTCGTTA  1 
+yHAB164_Kazachstania_aer (  130) CACTATCTGTCCATTCGTTT  1 
+yHAB159_Kazachstania_sol (   77) ATAAAACTTTACACTCCTTT  1 
+yHAB158_Kazachstania_vit (   65) CTCAACCAAGTCGTTCCTTT  1 
+yHAB143_Kazachstania_sia (   71) CAACTACTAGTCCTTCCTTA  1 
+yHAB159_Kazachstania_sol (  155) TTACATCCATCCATTCGTTA  1 
+yHAB143_Kazachstania_sia (  145) AATCTTCTATCCATTCGCTT  1 
+yHAB160_Kazachstania_kun (    6) AAATTAAAAGTCGTTCCTTT  1 
+yHAB143_Kazachstania_sia (  132) CTAACCATAGTCATTCCTTA  1 
+yHAB160_Kazachstania_kun (  166) TAACTACTATTCACTCATTT  1 
+yHAB136_Kazachstania_bro (  144) AACTACTCTGTCGTTCCTTT  1 
+Kazachstania_naganishii@ (  112) AACTATTTGTCCACTCCTTT  1 
+yHAB159_Kazachstania_sol (   83) AATATATCTTTCATTCGTTT  1 
+yHAB154_Kazachstania_tra (  119) CAACTAAAAGTCCTTCCTTT  1 
+yHAB132_Kazachstania_mar (  120) CAACTACAAGTCTTTCCTTA  1 
+yHAB166_Kazachstania_yak (   80) AAACTATTCGTCGTTCCTTT  1 
+yHAB148_Kazachstania_int (  103) CCAACTATTTACATTCCTTT  1 
+yHAB148_Kazachstania_int (  156) AAAACCCCTTCCACTCGTTA  1 
+yHAB159_Kazachstania_sol (   28) CAACTATTAGTCCTTCCTTA  1 
+yHAB133_Kazachstania_uni (   39) CAACTATTAGTCCTTCCTTA  1 
+yHAB158_Kazachstania_vit (  121) CCAACTATTTACATTCCTTT  1 
+Kazachstania_africana@Se (   59) CAACTTTTTTACGTTCCTTA  1 
+yHAB132_Kazachstania_mar (  165) TATCTTCTATTCATTCGCTT  1 
+yHAB159_Kazachstania_sol (  168) TAACTGCTAGTCCCTCCTTT  1 
+yHAB159_Kazachstania_sol (  113) ATCTATACTTCCACTCCTTT  1 
+yHAB158_Kazachstania_vit (  101) GAAAAACCATACATTCCTTT  1 
+yHAB155_Kazachstania_spe (  158) CAACTATCTGTCCTTCCTTA  1 
+yHAB136_Kazachstania_bro (  148) AACTATCAAGTCTTTCCTTT  1 
+yHAB136_Kazachstania_bro (   97) ATTACCATAGTCACTCCTTT  1 
+yHAB153_Kazachstania_ros (  639) CCAACTATTTACACTCCTTT  1 
+Kazachstania_africana@Se (  162) ACATCTTCTGTCATTCGCTT  1 
+Kazachstania_naganishii@ (  121) AACTATCAAGTCCTTCCTTT  1 
+yHAB147_Kazachstania_tai (  122) AATAGATTTTTCATTCCTTT  1 
+yHAB159_Kazachstania_sol (   38) ATTCATTCATTCATTCATTT  1 
+yHAB147_Kazachstania_tai (  153) CAACTATAAGTCCTTCCTTA  1 
+yHAB134_Kazachstania_tur (  150) ATTTTAATTGTCATTCCTTT  1 
+yHAB133_Kazachstania_uni (   69) ATTCTTTCATTCACTCATTT  1 
+Kazachstania_africana@Se (  154) TAACTACAATTCATTCTTTT  1 
+yHAB166_Kazachstania_yak (  256) CCAACTTTTTACGTTCCTTT  1 
+yHAB143_Kazachstania_sia (  296) CAAGTTAGTTTCATTCCTTT  1 
+yHAB148_Kazachstania_int (  135) AACTATCAAGTCATTCTTTT  1 
+yHAB136_Kazachstania_bro (  137) AACTATCAAGTCATTCTTTT  1 
+yHAB133_Kazachstania_uni (  129) TAAATATATTACACTCCTTT  1 
+Kazachstania_naganishii@ (  115) AACTAGTAAGTCGTTCCTTT  1 
+yHAB160_Kazachstania_kun (  107) ACCCTTTAAGTCACTCATTT  1 
+yHAB153_Kazachstania_ros (  159) ATCTCTTCTGTCATTCGCTT  1 
+yHAB134_Kazachstania_tur (   55) AACTAATTAGTCTTTCCTTT  1 
+yHAB155_Kazachstania_spe (  100) ATTTTATTTTCCATTCCTTT  1 
+yHAB158_Kazachstania_vit (  164) TATCTGTCGTCCATTCCTTT  1 
+yHAB133_Kazachstania_uni (  142) CAACTAATTGTCATTCACTT  1 
+yHAB164_Kazachstania_aer (  154) AATCTTCGATCCATTCGCTT  1 
+yHAB159_Kazachstania_sol (  153) AATCTTCGATCCATTCGCTT  1 
+yHAB133_Kazachstania_uni (  154) AATCTTCGATCCATTCGCTT  1 
+Kazachstania_africana@Se (  170) CAACTAAAAGTCTTTCCTTA  1 
+yHAB153_Kazachstania_ros (  147) CAACTTATATTCACTCTTTA  1 
+yHAB147_Kazachstania_tai (  128) ATAGATCTATTCATTCGTTC  1 
+yHAB164_Kazachstania_aer (   59) AATAACACTTACACTCCTTT  1 
+yHAB164_Kazachstania_aer (   40) ACAACACATTTCATTCGTTA  1 
+yHAB134_Kazachstania_tur (   95) AAGAAACTTTACATTCCTTT  1 
+Kazachstania_africana@Se (  110) ATTATTTCCTTCACTCCTTT  1 
+yHAB153_Kazachstania_ros (   94) CAACTAATTTACTTTCCTTT  1 
+yHAB164_Kazachstania_aer (  574) ATTTGTCTGTCCATTCCTTT  1 
+yHAB143_Kazachstania_sia (  590) ATTTGTCTGTCCATTCCTTT  1 
+yHAB132_Kazachstania_mar (   72) AACTTTCGAGTCATTCTTTT  1 
+yHAB134_Kazachstania_tur (  151) TAAATTAATTACATTCGTTT  1 
+Kazachstania_africana@Se (   72) TTAAACCAAGTCACTCATTT  1 
+yHAB133_Kazachstania_uni (  590) TTCTGTCTGTCCATTCCTTT  1 
+yHAB155_Kazachstania_spe (  148) TATCGTTCATTCATTCATTT  1 
+yHAB154_Kazachstania_tra (  152) ACATTTCAAGTCATTCATTA  1 
+yHAB148_Kazachstania_int (  169) AACTGTTTAGTCGCTCCTTC  1 
+yHAB134_Kazachstania_tur (  109) CTAAATTAAGTCATTCATTC  1 
+yHAB132_Kazachstania_mar (  151) GAAACTACTTACACTCCTTT  1 
+yHAB154_Kazachstania_tra (  242) CCAACTGTTTACACTCCTTT  1 
+yHAB154_Kazachstania_tra (  204) CCAACTATTTACACTCCTTA  1 
+yHAB155_Kazachstania_spe (  436) TCAAAGTTTGTCATTCCTTA  1 
+yHAB153_Kazachstania_ros (  376) TTCTGTTCATTCATTCCTTA  1 
+yHAB136_Kazachstania_bro (  146) CTAGTATTATACATTCCCTT  1 
+yHAB160_Kazachstania_kun (  179) ATAATTCCCTACATTCCTTA  1 
+yHAB154_Kazachstania_tra (  167) CAAATAATTTACACTCGCTT  1 
+yHAB147_Kazachstania_tai (  165) TATTCTTCTGTCACTCGCTT  1 
+yHAB133_Kazachstania_uni (  170) TTACTATTAGTCTTTCCTTA  1 
+yHAB158_Kazachstania_vit (  548) CCATCTTCATCCGTTCATTT  1 
+yHAB155_Kazachstania_spe (   35) CCAACTATTTACATTCCTTC  1 
+yHAB134_Kazachstania_tur (   42) ATCAACTTAGTCACTCTTTT  1 
+Kazachstania_naganishii@ (  140) AATCAGTCTTTCGTTCCCTT  1 
+yHAB166_Kazachstania_yak (   94) CAACTGAAAGTCTCTCCTTA  1 
+yHAB160_Kazachstania_kun (  170) AACTATCAAGTCATTCTTTA  1 
+yHAB133_Kazachstania_uni (  141) AATCTAACAGTCTTTCCTTA  1 
+yHAB160_Kazachstania_kun (  478) TAAATCACATTCACTCTTTT  1 
+yHAB136_Kazachstania_bro (  294) CAACTACTACACATTCCTTT  1 
+yHAB164_Kazachstania_aer (   94) CTAACTACTTTCGTTCATTT  1 
+yHAB164_Kazachstania_aer (  148) CAACTAATTTTCATTCTTTA  1 
+yHAB159_Kazachstania_sol (  107) CTAACTACTTTCGTTCATTT  1 
+yHAB158_Kazachstania_vit (  147) AATCTTCTGTCCATTCGCTA  1 
+yHAB166_Kazachstania_yak (  155) CACTTTTAAGTCCTTCCTTC  1 
+yHAB155_Kazachstania_spe (  178) TAACTAAGAGTCACTCCCTA  1 
+yHAB153_Kazachstania_ros (   84) ACCGCTCCATTCCTTCCTTT  1 
+yHAB147_Kazachstania_tai (  115) AAGTACTATTCCATTCCTTT  1 
+yHAB136_Kazachstania_bro (  148) CCACTGTCATTCATTCTTTA  1 
+yHAB132_Kazachstania_mar (  130) TAACTAGTATCCATTCGTTA  1 
+yHAB154_Kazachstania_tra (  606) AACTTAATTTACGCTCCTTT  1 
+yHAB160_Kazachstania_kun (  377) TTATTTTTAGACTCTCCTTT  1 
+yHAB159_Kazachstania_sol (  149) CAACTAATTTTCACTCTTTA  1 
+yHAB147_Kazachstania_tai (  157) ATACTCAATTCCATTCATTT  1 
+yHAB147_Kazachstania_tai (  153) ATACATTCGTTCATTCTTTA  1 
+yHAB166_Kazachstania_yak (  144) ACAAATCCTTACGTTCGTTA  1 
+yHAB147_Kazachstania_tai (  164) ACAAACACTTCCATTCGCTT  1 
+yHAB166_Kazachstania_yak (  125) TTAAACTTGTCCACTCCTTA  1 
+yHAB160_Kazachstania_kun (   89) TATAGTGTATTCATTCCTTT  1 
+yHAB147_Kazachstania_tai (   35) CTCTCTACATTCCTTCGTTT  1 
+yHAB153_Kazachstania_ros (  415) CTTTATTAATACACTCCTTA  1 
+yHAB160_Kazachstania_kun (   73) TTAAAATCGTCCATTCGTTA  1 
+yHAB136_Kazachstania_bro (  151) AAAACTATATCCATTCATTC  1 
+yHAB158_Kazachstania_vit (  176) CTTCCAACGTTCACTCGCTT  1 
+yHAB133_Kazachstania_uni (  107) CTTCTCACTTTCTCTCCTTT  1 
+yHAB160_Kazachstania_kun (  143) AACTACCAAGTCTCTCCTTA  1 
+yHAB155_Kazachstania_spe (  109) TAAGTGTATTACATTCCTTT  1 
+yHAB147_Kazachstania_tai (   68) CTAACTTTATACACTCATTA  1 
+yHAB148_Kazachstania_int (  110) TGAAACTAGTCCATTCCTTT  1 
+yHAB134_Kazachstania_tur (  126) GAAGAGTTATCCATTCCTTT  1 
+yHAB159_Kazachstania_sol (  551) AGTTGTCTGTCCATTCCTTT  1 
+yHAB154_Kazachstania_tra (   28) AGATCGCTATTCATTCATTT  1 
+yHAB134_Kazachstania_tur (  148) ATTTATTCTTCCATTCATTT  1 
+yHAB133_Kazachstania_uni (   23) CTCTTTCAATCCATTCATTA  1 
+yHAB148_Kazachstania_int (  165) ATAGTTCCTGCCACTCGCTC  1 
+yHAB164_Kazachstania_aer (  102) TATAACACTTCCATTCCTTA  1 
+yHAB133_Kazachstania_uni (  152) TGATAGTTATACACTCCTTT  1 
+yHAB143_Kazachstania_sia (   80) GTACTCAATTACATTCCTTT  1 
+yHAB133_Kazachstania_uni (   61) TAAAACTTTTACACTCATTT  1 
+Kazachstania_africana@Se (  136) CTTCGTGTATTCATTCCTTC  1 
+yHAB164_Kazachstania_aer (  161) ATAGTTTTATTCATTCATTA  1 
+yHAB143_Kazachstania_sia (  173) TTATATCTGTCCATTCTTTT  1 
+yHAB143_Kazachstania_sia (   28) TATTACCCTTTCTCTCCTTT  1 
+yHAB155_Kazachstania_spe (  178) TAATATTCTTTCGCTCTTTT  1 
+yHAB155_Kazachstania_spe (  169) AATTTACATTACATTCGCTT  1 
+yHAB133_Kazachstania_uni (  161) ATAATCTTTTTCACTCGCTC  1 
+yHAB132_Kazachstania_mar (   84) AAAAACTACTACGTTCCTTT  1 
+Kazachstania_naganishii@ (   68) TAACCGCCTTTCACTCTTTC  1 
+Kazachstania_naganishii@ (  590) ACAACCTTCTCCATTCCCTT  1 
+Kazachstania_africana@Se (  170) AACTAGTTATTCACTCGCTA  1 
+yHAB143_Kazachstania_sia (  120) ACAATAAGTGTCACTCATTT  1 
+yHAB133_Kazachstania_uni (  129) AGTACTAATTACATTCCTTT  1 
+yHAB132_Kazachstania_mar (  167) CTTTTTTGATCCATTCATTT  1 
+Kazachstania_africana@Se (   87) CCAACTATCTACGTTCCTTT  1 
+yHAB147_Kazachstania_tai (  148) ATTCACTCATTCATTCTTTA  1 
+yHAB153_Kazachstania_ros (  147) TACTATTTATCCATTCATTA  1 
+yHAB147_Kazachstania_tai (  119) AACTTTCAAGTCCCTCTTTT  1 
+yHAB133_Kazachstania_uni (  110) ATACTCAAAGACACTCACTT  1 
+yHAB166_Kazachstania_yak (  168) CAAATTAACTACATTCGCTT  1 
+yHAB134_Kazachstania_tur (  153) ATCAAACAAGTCCTTCGCTT  1 
+yHAB164_Kazachstania_aer (  164) ACTATTATTTCCTTTCCTTT  1 
+yHAB143_Kazachstania_sia (   29) CTTCATTCTTTCTCTCATTT  1 
+yHAB166_Kazachstania_yak (  650) ATTTTCCTTTACATTCATTT  1 
+yHAB158_Kazachstania_vit (  156) TATAAAAACTTCATTCCTTT  1 
+yHAB154_Kazachstania_tra (  120) AAAAACTTGTCCACTCTTTA  1 
+Kazachstania_naganishii@ (   81) TCTTACCAAGTCCTTCCTTT  1 
+yHAB159_Kazachstania_sol (  118) ATCTTTAAAGACACTCCCTC  1 
+yHAB154_Kazachstania_tra (  636) ATTCAAATTTACATTCATTT  1 
+yHAB143_Kazachstania_sia (  136) TCAACTACTTTCGCTCATTT  1 
+yHAB143_Kazachstania_sia (  155) CAAGTCCCCGTCACTCGCTC  1 
+yHAB153_Kazachstania_ros (  109) AGTATCCCTTCCATTCTTTT  1 
+yHAB160_Kazachstania_kun (  133) ATCTGTGTTTCCATTCCTTA  1 
+yHAB153_Kazachstania_ros (   74) TTTTGTGAATTCACTCCTTT  1 
+yHAB143_Kazachstania_sia (    5) TTTTTCCTATCCTTTCGTTT  1 
+yHAB143_Kazachstania_sia (  155) TTTAATTATTTCGTTCCTTC  1 
+yHAB136_Kazachstania_bro (  218) CCAACTATTTACTTTCCTTA  1 
+yHAB166_Kazachstania_yak (   16) TTATTAATTTACATTCATTT  1 
+yHAB134_Kazachstania_tur (  118) TTTCGAATAGTCACTCTTTT  1 
+Kazachstania_naganishii@ (   52) ATATCACACTTCGTTCCTTC  1 
+yHAB133_Kazachstania_uni (  365) TGAATCAGATCCATTCCTTA  1 
+yHAB158_Kazachstania_vit (  123) AACTATTAAGTCATTCTCTC  1 
+yHAB159_Kazachstania_sol (  150) TGATAGCCATACACTCATTT  1 
+yHAB133_Kazachstania_uni (  123) TTCCACTTATACATTCGCTC  1 
+Kazachstania_africana@Se (   81) TTGTACTCATTCATTCATTT  1 
+yHAB166_Kazachstania_yak (  117) TTCCTTTCTTTCTCTCTTTT  1 
+yHAB160_Kazachstania_kun (  157) AAACAAAACTTCATTCGCTC  1 
+yHAB133_Kazachstania_uni (  174) TAACTTTGATCCATTCTCTA  1 
+yHAB134_Kazachstania_tur (  105) CAACTTTTTTACTCTCTTTA  1 
+yHAB154_Kazachstania_tra (   91) TTCTCTCTTTTCGCTCGCTA  1 
+yHAB147_Kazachstania_tai (  124) AATTGTTCATTCATTCACTA  1 
+yHAB143_Kazachstania_sia (   93) AAGCAACTATCCCTTCATTT  1 
+yHAB143_Kazachstania_sia (  220) TTTTTTTTTGTCTCTCCTTC  1 
+yHAB164_Kazachstania_aer (  154) TGATAGTCATACACTCATTT  1 
+yHAB136_Kazachstania_bro (  166) TAAACTTCCTACACTCGCTA  1 
+yHAB136_Kazachstania_bro (   14) TTTATATTTTACATTCTTTT  1 
+yHAB134_Kazachstania_tur (  150) TTAAATTAATTCTCTCTTTT  1 
+yHAB164_Kazachstania_aer (  124) AACTTTTTATTCTCTCTCTT  1 
+yHAB159_Kazachstania_sol (  147) AACTTTTTATTCTCTCTCTT  1 
+yHAB158_Kazachstania_vit (   56) TTATCACTACACATTCCTTT  1 
+yHAB164_Kazachstania_aer (   25) TTTATTTATTTCTTTCCTTC  1 
+yHAB136_Kazachstania_bro (  118) CCAAAACATTACGTTCATTC  1 
+Kazachstania_naganishii@ (  158) ATTATAAAAGTCTTTCATTT  1 
+yHAB143_Kazachstania_sia (  342) AAGAATTGTTACTTTCCTTT  1 
+yHAB158_Kazachstania_vit (  120) GAATAAATATCCATTCATTA  1 
+yHAB164_Kazachstania_aer (   17) ACTATTCTCGTCACTCTCTT  1 
+yHAB158_Kazachstania_vit (  105) TCAAACTTTTCCTTTCGTTA  1 
+yHAB134_Kazachstania_tur (  121) ATCCAAATTTACTTTCGCTT  1 
+yHAB132_Kazachstania_mar (  450) TTGCCACCGTTCTCTCCCTT  1 
+yHAB164_Kazachstania_aer (  156) CTACAACAAACCACTCGCTT  1 
+yHAB155_Kazachstania_spe (   94) AATTATCTTGTCTTTCTTTC  1 
+yHAB147_Kazachstania_tai (   87) CCAATAACTGTCAGTCCCTT  1 
+yHAB166_Kazachstania_yak (  627) AATTTAAATTACGCTCATTT  1 
+yHAB159_Kazachstania_sol (  359) TGAAGCGAATCCATTCCTTA  1 
+yHAB132_Kazachstania_mar (  132) TTAATTCTGTCCTTTCGCTC  1 
+yHAB136_Kazachstania_bro (  145) ACTTTTACTTCCACTCTTTC  1 
+yHAB134_Kazachstania_tur (  128) TAAATTCATTACTCTCATTA  1 
+yHAB132_Kazachstania_mar (  125) AACTGTTTATTCTTTCTCTT  1 
+Kazachstania_naganishii@ (  133) CAGGTGTTATTCATTCTTTA  1 
+yHAB134_Kazachstania_tur (  106) CTACATTTTTTCAATCATTT  1 
+yHAB153_Kazachstania_ros (   77) AGCAATTGATACACTCACTT  1 
+yHAB155_Kazachstania_spe (   40) ATTAACTTTATCACTCCTTT  1 
+yHAB143_Kazachstania_sia (  129) TAAAACCAACCCACTCGTTA  1 
+yHAB134_Kazachstania_tur (   78) GTGCATTAATTCATTCATTA  1 
+yHAB164_Kazachstania_aer (  357) TAAATCGGATCCATTCTTTA  1 
+yHAB160_Kazachstania_kun (  136) TCTCTACTAATCATTCCTTA  1 
+yHAB154_Kazachstania_tra (   97) TTAAATTATTCCGCTCACTA  1 
+yHAB159_Kazachstania_sol (  234) CTCCCACTATCCACTGCTTA  1 
+yHAB160_Kazachstania_kun (  156) ATAAAACAGTCCAATCGTTT  1 
+yHAB159_Kazachstania_sol (   85) CTCAACTAATCCATTCCTCT  1 
+Kazachstania_naganishii@ (   81) CTCCTGCTGTACACTCCCTG  1 
+yHAB164_Kazachstania_aer (   90) GAATATATCTACACTCATTA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif HWAHWWHHWTTCATTCCTTT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 52700 bayes= 8.41075 E= 1.5e-211 
+    31     68   -208    -47 
+    60    -48   -143    -19 
+    74      6   -189    -72 
+     5     77   -143    -32 
+    -3     -2    -89     22 
+   -21    -25    -80     42 
+   -42     71   -189     17 
+   -31     46   -119     21 
+    61   -180    -57     -1 
+  -483   -402    140     88 
+   -56     25  -1467     59 
+ -1467    241  -1467  -1467 
+   109   -161    -13   -150 
+  -542     77   -489     86 
+ -1467  -1467  -1467    144 
+ -1467    241   -489  -1467 
+   -93    146     63   -145 
+ -1467     -9  -1467    116 
+ -1467   -561  -1467    143 
+   -44    -91   -489     83 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif HWAHWWHHWTTCATTCCTTT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 260 E= 1.5e-211 
+ 0.407692  0.300000  0.026923  0.265385 
+ 0.500000  0.134615  0.042308  0.323077 
+ 0.550000  0.196154  0.030769  0.223077 
+ 0.342308  0.319231  0.042308  0.296154 
+ 0.323077  0.184615  0.061538  0.430769 
+ 0.284615  0.157692  0.065385  0.492308 
+ 0.246154  0.307692  0.030769  0.415385 
+ 0.265385  0.257692  0.050000  0.426923 
+ 0.503846  0.053846  0.076923  0.365385 
+ 0.011538  0.011538  0.300000  0.676923 
+ 0.223077  0.223077  0.000000  0.553846 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.703846  0.061538  0.103846  0.130769 
+ 0.007692  0.319231  0.003846  0.669231 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.996154  0.003846  0.000000 
+ 0.173077  0.515385  0.176923  0.134615 
+ 0.000000  0.176923  0.000000  0.823077 
+ 0.000000  0.003846  0.000000  0.996154 
+ 0.242308  0.100000  0.003846  0.653846 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif HWAHWWHHWTTCATTCCTTT MEME-1 regular expression
+--------------------------------------------------------------------------------
+[ACT][AT][AT][ACT][TA][TA][TCA][TAC][AT][TG][TAC]CA[TC]TCCTT[TA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time 199.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TTTTCGCGTCK MEME-2	width =  11  sites =  33  llr = 383  E-value = 3.0e-023
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TTTTCGCGTCK MEME-2 Description
+--------------------------------------------------------------------------------
+Simplified        A  2:::::::11:
+pos.-specific     C  ::::8:9:161
+probability       G  :::12a:a::5
+matrix            T  7aa9::1:834
+
+         bits    3.1      * *   
+                 2.8      * *   
+                 2.5      * *   
+                 2.2      * *   
+Relative         1.9     ****   
+Entropy          1.6  *  ****   
+(16.7 bits)      1.3  *******   
+                 0.9  ******* **
+                 0.6  **********
+                 0.3 ***********
+                 0.0 -----------
+
+Multilevel           TTTTCGCGTCG
+consensus            A        TT
+sequence                        
+                                
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTTCGCGTCK MEME-2 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value               Site  
+-------------             ----- ---------            -----------
+yHAB158_Kazachstania_vit    362  6.73e-08 AAGTTCCACT TTTTCGCGTCG CGGTGCTGGC
+yHAB147_Kazachstania_tai    278  6.73e-08 CTCGACATTT TTTTCGCGTCG CGTTTTTTTT
+yHAB143_Kazachstania_sia    176  6.73e-08 ACAAGGTGTT TTTTCGCGTCG GATGAAAATT
+Kazachstania_naganishii@    205  6.73e-08 GACGTTGAAC TTTTCGCGTCG CTTTGGGTTC
+Kazachstania_naganishii@    128  1.48e-07 TTTTTCTCAC ATTTCGCGTCG CTTTTGCGGT
+yHAB132_Kazachstania_mar     32  1.89e-07 CCTATCCTCG TTTTGGCGTCG TTATTTTTTT
+yHAB164_Kazachstania_aer    103  5.74e-07 CTCTTTTGTA TTTTCGCGTCT TTTCCTCGAA
+yHAB164_Kazachstania_aer     18  5.74e-07 CTCAATAGGA TTTTCGCGTCT GTTTTGTTTC
+yHAB136_Kazachstania_bro    514  5.74e-07 GGGATGTTTT TTTTCGCGTCT TCGCAAAGCC
+Kazachstania_naganishii@    257  5.74e-07 CTTTTTGGAA TTTTCGCGTCT ATTTTTGTCG
+yHAB143_Kazachstania_sia      2  6.53e-07          A TTTTCGCGACG GAGTTTTATT
+yHAB147_Kazachstania_tai    337  8.72e-07 TGGGCAGGAC ATTTCGCGCCG CGGTTTTGTT
+yHAB132_Kazachstania_mar    137  1.22e-06 TCTGTTTAAC ATTTCGCGTTG TGTTGTAGAG
+yHAB148_Kazachstania_int    148  1.36e-06 TTTTTTGCTT TTTTCGCGTAG TTTTACGTTT
+yHAB133_Kazachstania_uni     91  1.54e-06 AGTTTTGAAA TTTTCGCGTCC AAAATATTGT
+yHAB133_Kazachstania_uni     35  1.54e-06 TATTCCCAAC ATTTCGCGACG GAGTTTTCTT
+yHAB132_Kazachstania_mar     58  1.80e-06 TTTTTTCATA TTTTGGCGTTG TACTTTTTCG
+yHAB136_Kazachstania_bro     71  1.80e-06 GTAACGGCTT TTTTGGCGTCT GAAAAGTTTT
+yHAB133_Kazachstania_uni      4  2.15e-06        TTT TTTTCGCGCTG TGGTTTTAAA
+yHAB159_Kazachstania_sol     43  2.58e-06 TTTTTTTGTC TTTTCGCGTTT TTTTCTCGAG
+yHAB133_Kazachstania_uni    157  2.58e-06 GTGGTTAGTT TTTTCGCGTTT ATTCCTCATG
+yHAB153_Kazachstania_ros    143  3.34e-06 GGCCGGCCAC ATTTCGCGTAG TCAATAGCGG
+yHAB155_Kazachstania_spe    316  5.34e-06 GAGTACAAAA ATTTCGCGTTT GTCGCGAAAC
+yHAB136_Kazachstania_bro     19  5.88e-06 CGGCAACAGC TTTTCGCGTAT TTCCGTCGTG
+yHAB147_Kazachstania_tai      6  8.67e-06      TACAC TTTTCGTGTCT TCCTCAAACA
+yHAB154_Kazachstania_tra    381  8.67e-06 ATAGATGCGA TTTTCGTGTCT GACGTGGAAA
+yHAB154_Kazachstania_tra    104  8.67e-06 GCGTTACCCG CTTGGGCGTCG TTTAAACAAT
+yHAB147_Kazachstania_tai    100  8.74e-06 TTCATGGCTG GTTTCGCGTCC AAACCAGCCA
+yHAB147_Kazachstania_tai     66  9.18e-06 TCGAGGCTCG ATTGGGCGACG CTCGATATAT
+yHAB153_Kazachstania_ros     20  9.99e-06 CCCCTTTTGA ATTGCGCGTTT CGGACACGGA
+Kazachstania_africana@Se    311  1.38e-05 TCTCGATATT TTCGCGCGACG CGTAAACACG
+yHAB166_Kazachstania_yak    458  1.56e-05 TTGACGCGAG TTTTCGCGTTA GAGCTCGAAA
+yHAB136_Kazachstania_bro     33  2.03e-05 AACCATGTTT TTTTCGTGCTG GTCAATTTTG
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTTCGCGTCK MEME-2 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+yHAB158_Kazachstania_vit          6.7e-08  361_[+2]_328
+yHAB147_Kazachstania_tai          8.7e-06  99_[+2]_167_[+2]_48_[+2]_353
+yHAB143_Kazachstania_sia          6.7e-08  175_[+2]_514
+Kazachstania_naganishii@          5.7e-07  127_[+2]_66_[+2]_41_[+2]_433
+yHAB132_Kazachstania_mar          1.8e-06  31_[+2]_15_[+2]_68_[+2]_553
+yHAB164_Kazachstania_aer          5.7e-07  17_[+2]_74_[+2]_587
+yHAB136_Kazachstania_bro            2e-05  32_[+2]_470_[+2]_176
+yHAB143_Kazachstania_sia          6.5e-07  1_[+2]_188
+yHAB148_Kazachstania_int          1.4e-06  147_[+2]_542
+yHAB133_Kazachstania_uni          2.6e-06  3_[+2]_76_[+2]_55_[+2]_533
+yHAB133_Kazachstania_uni          1.5e-06  34_[+2]_155
+yHAB136_Kazachstania_bro          5.9e-06  18_[+2]_41_[+2]_119
+yHAB159_Kazachstania_sol          2.6e-06  42_[+2]_647
+yHAB153_Kazachstania_ros            1e-05  19_[+2]_112_[+2]_547
+yHAB155_Kazachstania_spe          5.3e-06  315_[+2]_374
+yHAB147_Kazachstania_tai          8.7e-06  5_[+2]_184
+yHAB154_Kazachstania_tra          8.7e-06  103_[+2]_266_[+2]_309
+yHAB147_Kazachstania_tai          9.2e-06  65_[+2]_124
+Kazachstania_africana@Se          1.4e-05  310_[+2]_379
+yHAB166_Kazachstania_yak          1.6e-05  457_[+2]_232
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTTCGCGTCK MEME-2 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TTTTCGCGTCK width=11 seqs=33
+yHAB158_Kazachstania_vit (  362) TTTTCGCGTCG  1 
+yHAB147_Kazachstania_tai (  278) TTTTCGCGTCG  1 
+yHAB143_Kazachstania_sia (  176) TTTTCGCGTCG  1 
+Kazachstania_naganishii@ (  205) TTTTCGCGTCG  1 
+Kazachstania_naganishii@ (  128) ATTTCGCGTCG  1 
+yHAB132_Kazachstania_mar (   32) TTTTGGCGTCG  1 
+yHAB164_Kazachstania_aer (  103) TTTTCGCGTCT  1 
+yHAB164_Kazachstania_aer (   18) TTTTCGCGTCT  1 
+yHAB136_Kazachstania_bro (  514) TTTTCGCGTCT  1 
+Kazachstania_naganishii@ (  257) TTTTCGCGTCT  1 
+yHAB143_Kazachstania_sia (    2) TTTTCGCGACG  1 
+yHAB147_Kazachstania_tai (  337) ATTTCGCGCCG  1 
+yHAB132_Kazachstania_mar (  137) ATTTCGCGTTG  1 
+yHAB148_Kazachstania_int (  148) TTTTCGCGTAG  1 
+yHAB133_Kazachstania_uni (   91) TTTTCGCGTCC  1 
+yHAB133_Kazachstania_uni (   35) ATTTCGCGACG  1 
+yHAB132_Kazachstania_mar (   58) TTTTGGCGTTG  1 
+yHAB136_Kazachstania_bro (   71) TTTTGGCGTCT  1 
+yHAB133_Kazachstania_uni (    4) TTTTCGCGCTG  1 
+yHAB159_Kazachstania_sol (   43) TTTTCGCGTTT  1 
+yHAB133_Kazachstania_uni (  157) TTTTCGCGTTT  1 
+yHAB153_Kazachstania_ros (  143) ATTTCGCGTAG  1 
+yHAB155_Kazachstania_spe (  316) ATTTCGCGTTT  1 
+yHAB136_Kazachstania_bro (   19) TTTTCGCGTAT  1 
+yHAB147_Kazachstania_tai (    6) TTTTCGTGTCT  1 
+yHAB154_Kazachstania_tra (  381) TTTTCGTGTCT  1 
+yHAB154_Kazachstania_tra (  104) CTTGGGCGTCG  1 
+yHAB147_Kazachstania_tai (  100) GTTTCGCGTCC  1 
+yHAB147_Kazachstania_tai (   66) ATTGGGCGACG  1 
+yHAB153_Kazachstania_ros (   20) ATTGCGCGTTT  1 
+Kazachstania_africana@Se (  311) TTCGCGCGACG  1 
+yHAB166_Kazachstania_yak (  458) TTTTCGCGTTA  1 
+yHAB136_Kazachstania_bro (   33) TTTTCGTGCTG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTTCGCGTCK MEME-2 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 11 n= 54599 bayes= 11.4581 E= 3.0e-023 
+   -44   -263   -191     92 
+ -1169  -1169  -1169    144 
+ -1169   -263  -1169    140 
+ -1169  -1169      9    125 
+ -1169    218     41  -1169 
+ -1169  -1169    313  -1169 
+ -1169    228  -1169   -202 
+ -1169  -1169    313  -1169 
+  -144   -105  -1169    110 
+  -186    176  -1169    -43 
+  -344   -163    226     -2 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTTCGCGTCK MEME-2 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 11 nsites= 33 E= 3.0e-023 
+ 0.242424  0.030303  0.030303  0.696970 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.030303  0.000000  0.969697 
+ 0.000000  0.000000  0.121212  0.878788 
+ 0.000000  0.848485  0.151515  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.909091  0.000000  0.090909 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.121212  0.090909  0.000000  0.787879 
+ 0.090909  0.636364  0.000000  0.272727 
+ 0.030303  0.060606  0.545455  0.363636 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTTCGCGTCK MEME-2 regular expression
+--------------------------------------------------------------------------------
+[TA]TTTCGCGT[CT][GT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time 326.87 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AYATATATAWABRNVDGDM MEME-3	width =  19  sites =  58  llr = 612  E-value = 1.6e-021
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AYATATATAWABRNVDGDM MEME-3 Description
+--------------------------------------------------------------------------------
+Simplified        A  618:a:a3a49:6233234
+pos.-specific     C  14:::::::::3:231112
+probability       G  221:::::::143342532
+matrix            T  23:a:a:7:6:313:3231
+
+         bits    3.1                    
+                 2.8                    
+                 2.5                    
+                 2.2                    
+Relative         1.9                    
+Entropy          1.6     *** *          
+(15.2 bits)      1.3    **** * *        
+                 0.9   ***** * **       
+                 0.6  ************ * *  
+                 0.3 *************** ***
+                 0.0 -------------------
+
+Multilevel           ACATATATATAGAGGAGGA
+consensus             T     A A TGTATAAC
+sequence              G         C CCGTT 
+                                  A     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AYATATATAWABRNVDGDM MEME-3 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site      
+-------------             ----- ---------            -------------------
+yHAB159_Kazachstania_sol     24  1.04e-09 TACAAACTCA ACATATAAATAGAGGTGGA GGTTTTGGGA
+yHAB133_Kazachstania_uni     23  1.10e-08 GTCAAATGAA ACATATAAATATGGGTGGA CATTCTCTTA
+yHAB136_Kazachstania_bro     91  1.37e-08 GCCGGGAACT GGATATATAAAGAGGTGAA TTATTCACTT
+Kazachstania_africana@Se     74  4.50e-08 TGTTTTGTAA ACATATAAATACAGGGTGA GACTCCCAGT
+yHAB136_Kazachstania_bro    128  1.55e-07 AGTGCGAGTC GTATATATATATGAGAGGG CCAAGGGTCT
+yHAB164_Kazachstania_aer     27  1.84e-07 TGGAAATTCA ACATATAAATATAGGTGAG ATTTGTTGGA
+yHAB155_Kazachstania_spe     75  1.84e-07 TCAAATGAAA ACATATAAATAGGACAGAA GATGTTCATA
+yHAB154_Kazachstania_tra     26  2.52e-07 TAGATCTAAA ACATATATATATGGCATGA ATAATTGAGA
+yHAB153_Kazachstania_ros     39  2.94e-07 AATAGCATGT ATATATATATAGATGTGTG TGTGTATGTT
+yHAB159_Kazachstania_sol     25  3.44e-07 CAGTGCAAAC GTATATATAAAGAACTGGC CAACGTGGTG
+yHAB143_Kazachstania_sia     17  4.01e-07 CATTTCCCAA ACATATAAATAGACCAAGC ACTTACCGTC
+yHAB153_Kazachstania_ros     13  4.66e-07 GGCCCTGGCA GCATATATATACACAAGTG TCGCAAATAT
+yHAB147_Kazachstania_tai     79  5.40e-07 GGGCGACGCT CGATATATAAAGGCGTGTC TGTTTTCATG
+yHAB158_Kazachstania_vit     36  8.24e-07 AGAAAATTTT GGGTATATAAACATGAGAA TGGATTGTAA
+yHAB160_Kazachstania_kun     35  1.09e-06 GTTGGGAAAA ACATATAAATAGACCAGTT GAATGGAGGT
+yHAB133_Kazachstania_uni     49  1.24e-06 CGCAAATATT TCATATATAAAGAGAGGTT CTTCCATATT
+yHAB164_Kazachstania_aer     44  1.60e-06 CAATCGTTTC ATATATAAATAGACAAGCA GGGACTAAAA
+yHAB159_Kazachstania_sol     50  1.60e-06 CAAACGTTTC ATATATAAATAGACCCGCA GGGTCCAAAT
+yHAB132_Kazachstania_mar      1  1.82e-06          . AGATATATAAATGAGGTAC TTATTCCATT
+yHAB147_Kazachstania_tai     30  1.82e-06 GCTTGATACA TTATATATAAAGAGGGAAC CTTCCTCCAT
+yHAB166_Kazachstania_yak     75  2.06e-06 TATCTCGAAA ACATATAAATAGTTGAAGA TTTTTAAAAA
+yHAB158_Kazachstania_vit     13  2.33e-06 TATCTCTCTG GGGTATATATACTCGAGTA CATTATGTTA
+yHAB143_Kazachstania_sia     43  2.96e-06 TTTTCAATTG ACATATATAAATGGCTACC TTCATTGAAA
+yHAB143_Kazachstania_sia     66  2.96e-06 GATTTCTGAA ACATATATAAATGGCTTCA AATCTCTACA
+yHAB160_Kazachstania_kun     30  3.73e-06 AAAAAAATAC AGGTATATAAAGGTAGATC GATTTGCAAA
+Kazachstania_naganishii@     18  4.66e-06 AGATAAAAGC TTATATAAATACAGAGGCA ACGTTCGGTT
+yHAB155_Kazachstania_spe     27  4.66e-06 TGGCTGTAGT TTATATAAATGGACGGGTA TTTTGGTATT
+yHAB153_Kazachstania_ros    128  5.21e-06 ATACCTACCA AGATATATATATATCGATA AATATATATA
+yHAB154_Kazachstania_tra     75  5.21e-06 GGCCTCGAAA ACATATAAATACTTGAAGA TTGTAACTAG
+yHAB155_Kazachstania_spe    107  6.43e-06 GTTCTTCTAT ACATATACATACACAGGAA AATCGTACAA
+yHAB164_Kazachstania_aer     29  6.43e-06 CGCAAGTGCC AAATATATAAAGAACAGGT CCAACTTGGA
+yHAB136_Kazachstania_bro     75  6.43e-06 ATTTGGATGA TGATATAAATAGGCAGAAC TTTAATGGGA
+yHAB158_Kazachstania_vit     56  7.12e-06 GTTTTTTCTA TCATATATAAACAACCGTC GGTATCAAGA
+yHAB132_Kazachstania_mar     81  8.71e-06 GTAGGATAGT ATATATATATATACGTTAA GTAGAATTTA
+yHAB158_Kazachstania_vit     17  8.71e-06 GACAATTGAA AGGTATAAAAACTGAGAGA GGTTGAAGGT
+Kazachstania_naganishii@     63  8.71e-06 TTCAAATGCG GAATATATAAACTGGGAGA TTCCAGTTTT
+yHAB132_Kazachstania_mar     33  9.61e-06 ATGGTTTTCA ACCTATATAAAGGTATGTC ACTTAGGATA
+yHAB153_Kazachstania_ros     81  1.06e-05 TAATTTATTT ATATATATATACATGCATA AATACCAATA
+yHAB134_Kazachstania_tur     43  1.16e-05 CTTTCTTGAA ACATATATAAAGGACACTT ATTTGTAACA
+yHAB158_Kazachstania_vit     40  1.40e-05 CACTATATAT ACACATATATACATCTGTA TTAAGAACAA
+yHAB134_Kazachstania_tur     35  1.40e-05 AGAAAAAAAA ACGTATATAAAGAACTCTC TTATTTCAAT
+yHAB134_Kazachstania_tur     91  1.82e-05 AAAGACGCTG CGATATATAAAGAGAGTAT TATAGGAATG
+yHAB155_Kazachstania_spe     84  1.82e-05 TCGAGGCTAT ATATATATATATATGCTCG AGATCAGTTA
+yHAB132_Kazachstania_mar     40  1.98e-05 TACACATTTT TCATATAAAAAGGTAATAG GTAAGTCGAA
+yHAB148_Kazachstania_int     82  1.98e-05 CTTGAATCAA AGCTATATAAGTGACAGGG ATGTATCACT
+yHAB164_Kazachstania_aer     86  1.98e-05 CAAGCATAAC ACATATATATATATATTCA CTCACCAGTA
+yHAB147_Kazachstania_tai     69  1.98e-05 CTTCCAGTTC ACGTATATAAACTGGCCCA ATCACTCGGT
+yHAB136_Kazachstania_bro     64  2.15e-05 TCGATTCTGA TTATATAAATGGGCAAGTA ATCGTTACTT
+yHAB155_Kazachstania_spe     76  2.33e-05 TCAATCATAT ATATATATATATATCATAA TGACATATCT
+yHAB136_Kazachstania_bro     51  2.73e-05 CTGGTCAATT TTGTATATAAACAAAGTGG GGATCTGCGC
+Kazachstania_africana@Se     36  2.73e-05 AAGAAGTGAA CCATATAAATATGAGCGAT ACTGTTACAT
+yHAB136_Kazachstania_bro     38  2.95e-05 TTACCATGCG GTATATATATATTCGAAAC TCCTTTACGG
+Kazachstania_naganishii@     62  2.95e-05 AGTTTTTCTC GAATATATAAACTCACGGC CAGTTCCTGC
+Kazachstania_naganishii@     26  4.24e-05 TGTGTTCTTT GCATATATATACGTTACGG CAGATTGCAT
+yHAB155_Kazachstania_spe     56  4.54e-05 ATCGTTAATT ACATATATAAATAAAATAT TGAATTATCA
+yHAB134_Kazachstania_tur    101  4.86e-05 GTCAAATCAT ATGCATATATATAAGTGAC TTGTCGAAAA
+yHAB148_Kazachstania_int     64  5.20e-05 GGTAAGGATC TGATATATAATGAGCTAGG TTATCCCACT
+Kazachstania_africana@Se    505  1.11e-04 GAAAGCAAGA ATATATATATGTATATTGT TTCGAGGTTC
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AYATATATAWABRNVDGDM MEME-3 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+yHAB159_Kazachstania_sol            1e-09  23_[+3]_158
+yHAB133_Kazachstania_uni          1.1e-08  22_[+3]_159
+yHAB136_Kazachstania_bro          1.4e-08  90_[+3]_91
+Kazachstania_africana@Se          4.5e-08  73_[+3]_108
+yHAB136_Kazachstania_bro          1.6e-07  127_[+3]_54
+yHAB164_Kazachstania_aer          1.8e-07  26_[+3]_155
+yHAB155_Kazachstania_spe          1.8e-07  74_[+3]_107
+yHAB154_Kazachstania_tra          2.5e-07  25_[+3]_156
+yHAB153_Kazachstania_ros          2.9e-07  38_[+3]_143
+yHAB159_Kazachstania_sol          3.4e-07  24_[+3]_157
+yHAB143_Kazachstania_sia            4e-07  16_[+3]_165
+yHAB153_Kazachstania_ros          4.7e-07  12_[+3]_169
+yHAB147_Kazachstania_tai          5.4e-07  78_[+3]_103
+yHAB158_Kazachstania_vit          8.2e-07  35_[+3]_146
+yHAB160_Kazachstania_kun          1.1e-06  34_[+3]_147
+yHAB133_Kazachstania_uni          1.2e-06  48_[+3]_133
+yHAB164_Kazachstania_aer          1.6e-06  43_[+3]_138
+yHAB159_Kazachstania_sol          1.6e-06  49_[+3]_132
+yHAB132_Kazachstania_mar          1.8e-06  [+3]_181
+yHAB147_Kazachstania_tai          1.8e-06  29_[+3]_152
+yHAB166_Kazachstania_yak          2.1e-06  74_[+3]_107
+yHAB158_Kazachstania_vit          2.3e-06  12_[+3]_169
+yHAB143_Kazachstania_sia            3e-06  42_[+3]_139
+yHAB143_Kazachstania_sia            3e-06  65_[+3]_116
+yHAB160_Kazachstania_kun          3.7e-06  29_[+3]_152
+Kazachstania_naganishii@          4.7e-06  17_[+3]_164
+yHAB155_Kazachstania_spe          4.7e-06  26_[+3]_155
+yHAB153_Kazachstania_ros          5.2e-06  127_[+3]_54
+yHAB154_Kazachstania_tra          5.2e-06  74_[+3]_107
+yHAB155_Kazachstania_spe          6.4e-06  106_[+3]_575
+yHAB164_Kazachstania_aer          6.4e-06  28_[+3]_153
+yHAB136_Kazachstania_bro          6.4e-06  74_[+3]_107
+yHAB158_Kazachstania_vit          7.1e-06  55_[+3]_126
+yHAB132_Kazachstania_mar          8.7e-06  80_[+3]_101
+yHAB158_Kazachstania_vit          8.7e-06  16_[+3]_165
+Kazachstania_naganishii@          8.7e-06  62_[+3]_119
+yHAB132_Kazachstania_mar          9.6e-06  32_[+3]_149
+yHAB153_Kazachstania_ros          1.1e-05  80_[+3]_101
+yHAB134_Kazachstania_tur          1.2e-05  42_[+3]_139
+yHAB158_Kazachstania_vit          1.4e-05  39_[+3]_642
+yHAB134_Kazachstania_tur          1.4e-05  34_[+3]_147
+yHAB134_Kazachstania_tur          1.8e-05  90_[+3]_391
+yHAB155_Kazachstania_spe          1.8e-05  83_[+3]_98
+yHAB132_Kazachstania_mar            2e-05  39_[+3]_142
+yHAB148_Kazachstania_int            2e-05  81_[+3]_100
+yHAB164_Kazachstania_aer            2e-05  85_[+3]_96
+yHAB147_Kazachstania_tai            2e-05  68_[+3]_113
+yHAB136_Kazachstania_bro          2.2e-05  63_[+3]_118
+yHAB155_Kazachstania_spe          2.3e-05  75_[+3]_106
+yHAB136_Kazachstania_bro          2.7e-05  50_[+3]_631
+Kazachstania_africana@Se          2.7e-05  35_[+3]_146
+yHAB136_Kazachstania_bro          2.9e-05  37_[+3]_144
+Kazachstania_naganishii@          2.9e-05  61_[+3]_120
+Kazachstania_naganishii@          4.2e-05  25_[+3]_156
+yHAB155_Kazachstania_spe          4.5e-05  55_[+3]_126
+yHAB134_Kazachstania_tur          4.9e-05  100_[+3]_81
+yHAB148_Kazachstania_int          5.2e-05  63_[+3]_118
+Kazachstania_africana@Se          0.00011  504_[+3]_177
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AYATATATAWABRNVDGDM MEME-3 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AYATATATAWABRNVDGDM width=19 seqs=58
+yHAB159_Kazachstania_sol (   24) ACATATAAATAGAGGTGGA  1 
+yHAB133_Kazachstania_uni (   23) ACATATAAATATGGGTGGA  1 
+yHAB136_Kazachstania_bro (   91) GGATATATAAAGAGGTGAA  1 
+Kazachstania_africana@Se (   74) ACATATAAATACAGGGTGA  1 
+yHAB136_Kazachstania_bro (  128) GTATATATATATGAGAGGG  1 
+yHAB164_Kazachstania_aer (   27) ACATATAAATATAGGTGAG  1 
+yHAB155_Kazachstania_spe (   75) ACATATAAATAGGACAGAA  1 
+yHAB154_Kazachstania_tra (   26) ACATATATATATGGCATGA  1 
+yHAB153_Kazachstania_ros (   39) ATATATATATAGATGTGTG  1 
+yHAB159_Kazachstania_sol (   25) GTATATATAAAGAACTGGC  1 
+yHAB143_Kazachstania_sia (   17) ACATATAAATAGACCAAGC  1 
+yHAB153_Kazachstania_ros (   13) GCATATATATACACAAGTG  1 
+yHAB147_Kazachstania_tai (   79) CGATATATAAAGGCGTGTC  1 
+yHAB158_Kazachstania_vit (   36) GGGTATATAAACATGAGAA  1 
+yHAB160_Kazachstania_kun (   35) ACATATAAATAGACCAGTT  1 
+yHAB133_Kazachstania_uni (   49) TCATATATAAAGAGAGGTT  1 
+yHAB164_Kazachstania_aer (   44) ATATATAAATAGACAAGCA  1 
+yHAB159_Kazachstania_sol (   50) ATATATAAATAGACCCGCA  1 
+yHAB132_Kazachstania_mar (    1) AGATATATAAATGAGGTAC  1 
+yHAB147_Kazachstania_tai (   30) TTATATATAAAGAGGGAAC  1 
+yHAB166_Kazachstania_yak (   75) ACATATAAATAGTTGAAGA  1 
+yHAB158_Kazachstania_vit (   13) GGGTATATATACTCGAGTA  1 
+yHAB143_Kazachstania_sia (   43) ACATATATAAATGGCTACC  1 
+yHAB143_Kazachstania_sia (   66) ACATATATAAATGGCTTCA  1 
+yHAB160_Kazachstania_kun (   30) AGGTATATAAAGGTAGATC  1 
+Kazachstania_naganishii@ (   18) TTATATAAATACAGAGGCA  1 
+yHAB155_Kazachstania_spe (   27) TTATATAAATGGACGGGTA  1 
+yHAB153_Kazachstania_ros (  128) AGATATATATATATCGATA  1 
+yHAB154_Kazachstania_tra (   75) ACATATAAATACTTGAAGA  1 
+yHAB155_Kazachstania_spe (  107) ACATATACATACACAGGAA  1 
+yHAB164_Kazachstania_aer (   29) AAATATATAAAGAACAGGT  1 
+yHAB136_Kazachstania_bro (   75) TGATATAAATAGGCAGAAC  1 
+yHAB158_Kazachstania_vit (   56) TCATATATAAACAACCGTC  1 
+yHAB132_Kazachstania_mar (   81) ATATATATATATACGTTAA  1 
+yHAB158_Kazachstania_vit (   17) AGGTATAAAAACTGAGAGA  1 
+Kazachstania_naganishii@ (   63) GAATATATAAACTGGGAGA  1 
+yHAB132_Kazachstania_mar (   33) ACCTATATAAAGGTATGTC  1 
+yHAB153_Kazachstania_ros (   81) ATATATATATACATGCATA  1 
+yHAB134_Kazachstania_tur (   43) ACATATATAAAGGACACTT  1 
+yHAB158_Kazachstania_vit (   40) ACACATATATACATCTGTA  1 
+yHAB134_Kazachstania_tur (   35) ACGTATATAAAGAACTCTC  1 
+yHAB134_Kazachstania_tur (   91) CGATATATAAAGAGAGTAT  1 
+yHAB155_Kazachstania_spe (   84) ATATATATATATATGCTCG  1 
+yHAB132_Kazachstania_mar (   40) TCATATAAAAAGGTAATAG  1 
+yHAB148_Kazachstania_int (   82) AGCTATATAAGTGACAGGG  1 
+yHAB164_Kazachstania_aer (   86) ACATATATATATATATTCA  1 
+yHAB147_Kazachstania_tai (   69) ACGTATATAAACTGGCCCA  1 
+yHAB136_Kazachstania_bro (   64) TTATATAAATGGGCAAGTA  1 
+yHAB155_Kazachstania_spe (   76) ATATATATATATATCATAA  1 
+yHAB136_Kazachstania_bro (   51) TTGTATATAAACAAAGTGG  1 
+Kazachstania_africana@Se (   36) CCATATAAATATGAGCGAT  1 
+yHAB136_Kazachstania_bro (   38) GTATATATATATTCGAAAC  1 
+Kazachstania_naganishii@ (   62) GAATATATAAACTCACGGC  1 
+Kazachstania_naganishii@ (   26) GCATATATATACGTTACGG  1 
+yHAB155_Kazachstania_spe (   56) ACATATATAAATAAAATAT  1 
+yHAB134_Kazachstania_tur (  101) ATGCATATATATAAGTGAC  1 
+yHAB148_Kazachstania_int (   64) TGATATATAATGAGCTAGG  1 
+Kazachstania_africana@Se (  505) ATATATATATGTATATTGT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AYATATATAWABRNVDGDM MEME-3 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 19 n= 52911 bayes= 10.473 E= 1.6e-021 
+    87   -186     60   -110 
+  -267    126     86    -33 
+   133   -244     27  -1250 
+ -1250   -244  -1250    139 
+   160  -1250  -1250  -1250 
+ -1250  -1250  -1250    144 
+   160  -1250  -1250  -1250 
+    -9   -344  -1250     87 
+   160  -1250  -1250  -1250 
+    39  -1250  -1250     63 
+   147  -1250    -73   -441 
+ -1250     56    186    -25 
+    79  -1250    136   -142 
+   -56     36    127    -51 
+   -17     64    180   -441 
+     7    -64    108    -33 
+   -56   -144    208    -72 
+   -26    -44    144    -42 
+    44     36     60   -142 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AYATATATAWABRNVDGDM MEME-3 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 19 nsites= 58 E= 1.6e-021 
+ 0.603448  0.051724  0.172414  0.172414 
+ 0.051724  0.448276  0.206897  0.293103 
+ 0.827586  0.034483  0.137931  0.000000 
+ 0.000000  0.034483  0.000000  0.965517 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.310345  0.017241  0.000000  0.672414 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.431034  0.000000  0.000000  0.568966 
+ 0.913793  0.000000  0.068966  0.017241 
+ 0.000000  0.275862  0.413793  0.310345 
+ 0.568966  0.000000  0.293103  0.137931 
+ 0.224138  0.241379  0.275862  0.258621 
+ 0.293103  0.293103  0.396552  0.017241 
+ 0.344828  0.120690  0.241379  0.293103 
+ 0.224138  0.068966  0.482759  0.224138 
+ 0.275862  0.137931  0.310345  0.275862 
+ 0.448276  0.241379  0.172414  0.137931 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AYATATATAWABRNVDGDM MEME-3 regular expression
+--------------------------------------------------------------------------------
+A[CTG]ATATA[TA]A[TA]A[GTC][AG][GTCA][GAC][ATG][GAT][GAT][AC]
+--------------------------------------------------------------------------------
+
+
+
+
+Time 492.37 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Kazachstania_africana@Se         9.61e-03  161_[+1(6.76e-06)]_19
+Kazachstania_africana@Se         4.92e-03  169_[+1(6.24e-05)]_11
+Kazachstania_naganishii@         1.78e-05  61_[+3(2.95e-05)]_76_[+1(2.09e-06)]_\
+    24
+Kazachstania_naganishii@         4.72e-04  62_[+3(8.71e-06)]_119
+yHAB132_Kazachstania_mar         2.96e-01  200
+yHAB132_Kazachstania_mar         1.39e-03  164_[+1(5.65e-06)]_16
+yHAB133_Kazachstania_uni         5.54e-05  48_[+3(1.24e-06)]_86_[+1(1.31e-05)]_\
+    27
+yHAB133_Kazachstania_uni         6.37e-03  106_[+1(3.95e-05)]_34_\
+    [+1(5.59e-05)]_20
+yHAB134_Kazachstania_tur         2.20e-03  34_[+3(1.40e-05)]_147
+yHAB134_Kazachstania_tur         5.77e-02  152_[+1(7.68e-05)]_28
+yHAB136_Kazachstania_bro         1.25e-02  200
+yHAB136_Kazachstania_bro         2.15e-06  90_[+3(1.37e-08)]_91
+yHAB143_Kazachstania_sia         2.34e-04  45_[+3(9.99e-05)]_80_[+1(3.17e-06)]_\
+    36
+yHAB143_Kazachstania_sia         5.56e-04  65_[+3(2.96e-06)]_70_[+1(9.33e-05)]_\
+    26
+yHAB147_Kazachstania_tai         1.77e-07  65_[+2(9.18e-06)]_2_[+3(5.40e-07)]_\
+    67_[+1(2.35e-05)]_16
+yHAB147_Kazachstania_tai         5.38e-04  68_[+3(1.98e-05)]_76_[+1(3.49e-05)]_\
+    17
+yHAB148_Kazachstania_int         5.08e-02  164_[+1(4.45e-05)]_16
+yHAB153_Kazachstania_ros         2.02e-03  158_[+1(9.51e-06)]_22
+yHAB153_Kazachstania_ros         1.21e-01  200
+yHAB154_Kazachstania_tra         4.67e-05  74_[+3(5.21e-06)]_73_[+1(2.35e-05)]_\
+    14
+yHAB155_Kazachstania_spe         3.16e-03  55_[+3(4.54e-05)]_94_[+1(5.59e-05)]_\
+    12
+yHAB155_Kazachstania_spe         4.36e-02  200
+yHAB158_Kazachstania_vit         3.67e-05  35_[+3(8.24e-07)]_92_[+1(3.07e-05)]_\
+    34
+yHAB159_Kazachstania_sol         2.48e-05  49_[+3(1.60e-06)]_14_[+1(3.87e-06)]_\
+    50_[+1(1.31e-05)]_28
+yHAB159_Kazachstania_sol         1.74e-01  200
+yHAB160_Kazachstania_kun         1.06e-03  29_[+3(3.73e-06)]_152
+yHAB160_Kazachstania_kun         6.92e-04  34_[+3(1.09e-06)]_147
+yHAB164_Kazachstania_aer         1.12e-01  200
+yHAB164_Kazachstania_aer         6.10e-05  43_[+3(1.60e-06)]_91_[+1(1.31e-05)]_\
+    27
+yHAB166_Kazachstania_yak         1.98e-04  74_[+3(2.06e-06)]_74_[+1(7.68e-05)]_\
+    13
+yHAB166_Kazachstania_yak         5.24e-03  143_[+1(3.49e-05)]_37
+Kazachstania_africana@Se         5.07e-02  200
+Kazachstania_naganishii@         2.36e-02  139_[+1(2.69e-05)]_41
+yHAB132_Kazachstania_mar         2.65e-01  200
+yHAB132_Kazachstania_mar         3.52e-01  200
+yHAB133_Kazachstania_uni         5.74e-03  34_[+2(1.54e-06)]_155
+yHAB133_Kazachstania_uni         3.94e-02  22_[+1(4.45e-05)]_158
+yHAB134_Kazachstania_tur         9.49e-02  100_[+3(4.86e-05)]_81
+yHAB134_Kazachstania_tur         1.07e-01  147_[+1(4.45e-05)]_33
+yHAB136_Kazachstania_bro         1.78e-06  18_[+2(5.88e-06)]_41_[+2(1.80e-06)]_\
+    46_[+3(1.55e-07)]_54
+yHAB143_Kazachstania_sia         1.70e-01  200
+yHAB143_Kazachstania_sia         1.92e-03  1_[+2(6.53e-07)]_188
+yHAB147_Kazachstania_tai         3.17e-02  152_[+1(3.49e-05)]_28
+yHAB148_Kazachstania_int         3.77e-01  200
+yHAB153_Kazachstania_ros         8.42e-04  12_[+3(4.66e-07)]_169
+yHAB153_Kazachstania_ros         1.56e-03  80_[+3(1.06e-05)]_47_[+1(6.93e-05)]_\
+    34
+yHAB154_Kazachstania_tra         8.13e-02  27_[+1(4.45e-05)]_153
+yHAB155_Kazachstania_spe         8.48e-03  177_[+1(5.59e-05)]_3
+yHAB158_Kazachstania_vit         4.03e-02  175_[+1(3.95e-05)]_5
+yHAB159_Kazachstania_sol         2.60e-01  200
+yHAB159_Kazachstania_sol         1.61e-02  154_[+1(3.17e-06)]_26
+yHAB160_Kazachstania_kun         8.61e-01  200
+yHAB160_Kazachstania_kun         1.32e-01  200
+yHAB164_Kazachstania_aer         1.11e-04  85_[+3(1.98e-05)]_25_[+1(2.58e-06)]_\
+    51
+yHAB164_Kazachstania_aer         1.69e-01  200
+yHAB166_Kazachstania_yak         6.91e-01  200
+Kazachstania_africana@Se         3.43e-02  35_[+3(2.73e-05)]_146
+Kazachstania_africana@Se         7.01e-01  200
+Kazachstania_naganishii@         1.01e-01  200
+yHAB132_Kazachstania_mar         6.93e-04  32_[+3(9.61e-06)]_149
+yHAB133_Kazachstania_uni         8.92e-03  151_[+1(5.00e-05)]_29
+yHAB134_Kazachstania_tur         4.42e-03  92_[+1(2.58e-06)]_38_[+1(1.77e-05)]_\
+    30
+yHAB136_Kazachstania_bro         2.34e-04  74_[+3(6.43e-06)]_57_[+1(3.95e-05)]_\
+    30
+yHAB143_Kazachstania_sia         2.45e-05  42_[+3(2.96e-06)]_87_[+1(2.58e-06)]_\
+    32
+yHAB147_Kazachstania_tai         4.10e-03  85_[+3(8.46e-05)]_52_[+1(3.49e-05)]_\
+    24
+yHAB148_Kazachstania_int         8.13e-05  63_[+3(5.20e-05)]_83_[+1(4.79e-07)]_\
+    15
+yHAB153_Kazachstania_ros         8.00e-01  200
+yHAB154_Kazachstania_tra         1.66e-01  200
+yHAB155_Kazachstania_spe         1.06e-03  26_[+3(4.66e-06)]_155
+yHAB158_Kazachstania_vit         8.84e-04  16_[+3(8.71e-06)]_120_\
+    [+1(8.48e-05)]_25
+yHAB159_Kazachstania_sol         2.16e-04  69_[+1(1.41e-07)]_111
+yHAB160_Kazachstania_kun         2.37e-02  72_[+1(3.95e-05)]_14_[+1(9.51e-06)]_\
+    74
+yHAB164_Kazachstania_aer         1.25e-04  73_[+1(2.07e-08)]_107
+yHAB166_Kazachstania_yak         5.21e-01  200
+Kazachstania_africana@Se         2.53e-04  73_[+3(4.50e-08)]_108
+Kazachstania_naganishii@         4.95e-03  17_[+3(4.66e-06)]_164
+yHAB132_Kazachstania_mar         3.40e-01  200
+yHAB133_Kazachstania_uni         2.00e-05  22_[+3(1.10e-08)]_159
+yHAB134_Kazachstania_tur         2.90e-02  42_[+3(1.16e-05)]_139
+yHAB143_Kazachstania_sia         2.51e-03  16_[+3(4.01e-07)]_165
+yHAB147_Kazachstania_tai         5.22e-03  29_[+3(1.82e-06)]_152
+yHAB148_Kazachstania_int         1.77e-02  81_[+3(1.98e-05)]_100
+yHAB154_Kazachstania_tra         1.46e-04  25_[+3(2.52e-07)]_156
+yHAB155_Kazachstania_spe         9.46e-04  74_[+3(1.84e-07)]_107
+yHAB158_Kazachstania_vit         1.31e-02  55_[+3(7.12e-06)]_126
+yHAB159_Kazachstania_sol         1.73e-05  23_[+3(1.04e-09)]_158
+yHAB164_Kazachstania_aer         7.80e-04  26_[+3(1.84e-07)]_155
+yHAB166_Kazachstania_yak         5.21e-02  24_[+3(8.46e-05)]_157
+Kazachstania_africana@Se         2.99e-06  55_[+2(3.56e-05)]_100_\
+    [+1(3.61e-07)]_14
+Kazachstania_africana@Se         9.65e-04  127_[+1(1.00e-07)]_53
+Kazachstania_naganishii@         3.18e-03  114_[+1(9.51e-06)]_66
+Kazachstania_naganishii@         3.71e-04  25_[+3(4.24e-05)]_67_[+1(3.87e-06)]_\
+    69
+yHAB132_Kazachstania_mar         1.62e-02  71_[+1(1.77e-05)]_109
+yHAB132_Kazachstania_mar         4.21e-03  80_[+3(8.71e-06)]_101
+yHAB133_Kazachstania_uni         1.75e-02  141_[+1(1.31e-05)]_39
+yHAB133_Kazachstania_uni         3.29e-03  86_[+1(4.79e-07)]_22_[+1(9.51e-06)]_\
+    52
+yHAB134_Kazachstania_tur         7.14e-03  41_[+1(2.69e-05)]_107_\
+    [+1(1.05e-06)]_12
+yHAB134_Kazachstania_tur         1.21e-01  200
+yHAB136_Kazachstania_bro         1.69e-04  37_[+3(2.95e-05)]_87_[+1(3.87e-06)]_\
+    37
+yHAB136_Kazachstania_bro         3.78e-03  136_[+1(9.51e-06)]_44
+yHAB143_Kazachstania_sia         1.01e-05  147_[+1(1.31e-08)]_33
+yHAB143_Kazachstania_sia         1.56e-03  27_[+1(5.59e-05)]_53_[+1(4.79e-07)]_\
+    15_[+1(9.33e-05)]_17_[+1(5.59e-05)]_8
+yHAB147_Kazachstania_tai         7.69e-07  129_[+1(1.55e-09)]_51
+yHAB147_Kazachstania_tai         5.66e-03  94_[+1(2.58e-06)]_13_[+1(1.53e-05)]_\
+    [+1(6.93e-05)]_33
+yHAB148_Kazachstania_int         4.21e-04  121_[+1(4.74e-08)]_59
+yHAB148_Kazachstania_int         3.05e-03  134_[+1(9.51e-06)]_46
+yHAB153_Kazachstania_ros         1.35e-06  38_[+3(2.94e-07)]_91_[+1(1.67e-06)]_\
+    32
+yHAB153_Kazachstania_ros         1.13e-02  146_[+1(1.53e-05)]_34
+yHAB154_Kazachstania_tra         1.55e-03  69_[+1(3.61e-07)]_111
+yHAB154_Kazachstania_tra         6.37e-04  80_[+1(3.61e-07)]_100
+yHAB155_Kazachstania_spe         4.61e-05  83_[+3(1.82e-05)]_72_[+1(1.33e-06)]_\
+    6
+yHAB155_Kazachstania_spe         3.03e-03  75_[+3(2.33e-05)]_106
+yHAB158_Kazachstania_vit         5.31e-06  12_[+3(2.33e-06)]_117_\
+    [+1(1.05e-06)]_32
+yHAB158_Kazachstania_vit         1.01e-05  168_[+1(2.79e-09)]_12
+yHAB159_Kazachstania_sol         6.04e-04  76_[+1(1.96e-07)]_10_[+1(3.07e-05)]_\
+    74
+yHAB159_Kazachstania_sol         3.87e-05  24_[+3(3.44e-07)]_105_\
+    [+1(3.49e-05)]_32
+yHAB160_Kazachstania_kun         7.03e-02  178_[+1(2.35e-05)]_2
+yHAB160_Kazachstania_kun         2.66e-03  165_[+1(3.87e-06)]_15
+yHAB164_Kazachstania_aer         5.29e-04  28_[+3(6.43e-06)]_100_\
+    [+1(3.07e-05)]_33
+yHAB164_Kazachstania_aer         1.32e-03  63_[+1(4.79e-07)]_10_[+1(3.07e-05)]_\
+    47_[+1(5.59e-05)]_20
+yHAB166_Kazachstania_yak         1.50e-02  79_[+1(4.69e-06)]_101
+yHAB166_Kazachstania_yak         3.21e-04  85_[+1(4.74e-08)]_95
+Kazachstania_africana@Se         6.88e-01  500
+Kazachstania_naganishii@         4.60e-01  500
+yHAB132_Kazachstania_mar         1.68e-01  500
+yHAB133_Kazachstania_uni         1.90e-01  500
+yHAB134_Kazachstania_tur         2.35e-02  90_[+3(1.82e-05)]_391
+yHAB136_Kazachstania_bro         8.00e-03  145_[+1(2.35e-05)]_335
+yHAB143_Kazachstania_sia         6.40e-02  295_[+1(9.51e-06)]_185
+yHAB147_Kazachstania_tai         2.71e-02  121_[+1(8.04e-06)]_359
+yHAB148_Kazachstania_int         2.17e-01  500
+yHAB153_Kazachstania_ros         1.00e-01  375_[+1(2.35e-05)]_19_\
+    [+1(3.95e-05)]_66
+yHAB154_Kazachstania_tra         2.62e-01  500
+yHAB155_Kazachstania_spe         1.37e-02  390_[+2(9.68e-05)]_34_\
+    [+1(2.35e-05)]_45
+yHAB158_Kazachstania_vit         4.87e-01  500
+yHAB159_Kazachstania_sol         2.44e-01  500
+yHAB160_Kazachstania_kun         4.16e-02  376_[+1(3.49e-05)]_104
+yHAB164_Kazachstania_aer         1.59e-01  500
+yHAB166_Kazachstania_yak         3.38e-01  500
+Kazachstania_africana@Se         2.55e-04  58_[+1(5.65e-06)]_8_[+1(6.93e-05)]_\
+    204_[+2(1.38e-05)]_379
+Kazachstania_naganishii@         9.97e-05  127_[+2(1.48e-07)]_66_\
+    [+2(6.73e-08)]_41_[+2(5.74e-07)]_322_[+1(6.24e-05)]_91
+yHAB132_Kazachstania_mar         2.44e-03  31_[+2(1.89e-07)]_15_[+2(1.80e-06)]_\
+    68_[+2(1.22e-06)]_553
+yHAB133_Kazachstania_uni         1.00e-03  3_[+2(2.15e-06)]_76_[+2(1.54e-06)]_\
+    55_[+2(2.58e-06)]_188_[+2(7.84e-05)]_223_[+1(2.05e-05)]_91
+yHAB134_Kazachstania_tur         1.28e-02  348_[+1(8.16e-07)]_332
+yHAB136_Kazachstania_bro         1.95e-06  32_[+2(2.03e-05)]_7_[+3(2.73e-05)]_\
+    224_[+1(3.07e-05)]_200_[+2(5.74e-07)]_125_[+1(2.09e-06)]_31
+yHAB143_Kazachstania_sia         6.61e-05  103_[+2(4.93e-05)]_61_\
+    [+2(6.73e-08)]_403_[+1(1.77e-05)]_91
+yHAB147_Kazachstania_tai         2.02e-03  99_[+2(8.74e-06)]_167_\
+    [+2(6.73e-08)]_48_[+2(8.72e-07)]_353
+yHAB148_Kazachstania_int         1.67e-02  147_[+2(1.36e-06)]_78_\
+    [+2(6.07e-05)]_453
+yHAB153_Kazachstania_ros         2.50e-02  638_[+1(6.76e-06)]_10_\
+    [+1(2.58e-06)]_12
+yHAB153_Kazachstania_ros         5.40e-02  19_[+2(9.99e-06)]_112_\
+    [+2(3.34e-06)]_547
+yHAB154_Kazachstania_tra         2.90e-03  103_[+2(8.67e-06)]_89_\
+    [+1(2.35e-05)]_18_[+1(2.35e-05)]_119_[+2(8.67e-06)]_214_[+1(3.49e-05)]_10_\
+    [+1(9.33e-05)]_45
+yHAB155_Kazachstania_spe         1.22e-03  34_[+1(2.69e-05)]_261_\
+    [+2(5.34e-06)]_374
+yHAB155_Kazachstania_spe         4.44e-04  106_[+3(6.43e-06)]_519_\
+    [+1(2.58e-06)]_36
+yHAB158_Kazachstania_vit         3.81e-07  39_[+3(1.40e-05)]_62_[+1(5.65e-06)]_\
+    23_[+1(1.12e-05)]_178_[+2(6.73e-08)]_175_[+1(2.69e-05)]_133
+yHAB159_Kazachstania_sol         3.08e-03  42_[+2(2.58e-06)]_249_\
+    [+2(9.44e-05)]_237_[+1(4.45e-05)]_130
+yHAB160_Kazachstania_kun         2.11e-01  477_[+1(3.07e-05)]_203
+yHAB164_Kazachstania_aer         4.10e-04  17_[+2(5.74e-07)]_74_[+2(5.74e-07)]_\
+    241_[+2(9.44e-05)]_208_[+1(1.77e-05)]_107
+yHAB166_Kazachstania_yak         2.60e-03  255_[+1(9.51e-06)]_182_\
+    [+2(1.56e-05)]_181_[+1(8.48e-05)]_31
+Kazachstania_africana@Se         8.46e-01  200
+Kazachstania_naganishii@         1.01e-01  200
+yHAB132_Kazachstania_mar         4.79e-06  103_[+1(4.10e-10)]_77
+yHAB133_Kazachstania_uni         2.84e-02  38_[+1(5.65e-06)]_51_[+1(7.68e-05)]_\
+    71
+yHAB134_Kazachstania_tur         8.56e-02  125_[+1(4.45e-05)]_55
+yHAB136_Kazachstania_bro         6.25e-05  78_[+1(4.74e-08)]_102
+yHAB143_Kazachstania_sia         1.52e-02  70_[+1(3.17e-06)]_110
+yHAB147_Kazachstania_tai         1.53e-05  5_[+2(8.67e-06)]_43_[+1(3.61e-07)]_\
+    121
+yHAB148_Kazachstania_int         6.58e-02  109_[+1(4.45e-05)]_71
+yHAB153_Kazachstania_ros         2.75e-04  93_[+1(1.77e-05)]_14_[+3(5.21e-06)]_\
+    54
+yHAB154_Kazachstania_tra         5.83e-01  200
+yHAB155_Kazachstania_spe         1.38e-02  99_[+1(1.12e-05)]_81
+yHAB158_Kazachstania_vit         6.40e-03  22_[+1(1.33e-06)]_158
+yHAB159_Kazachstania_sol         1.24e-02  27_[+1(5.65e-06)]_70_[+1(9.33e-05)]_\
+    63
+yHAB160_Kazachstania_kun         4.80e-04  124_[+1(1.33e-06)]_56
+yHAB164_Kazachstania_aer         7.31e-01  200
+yHAB166_Kazachstania_yak         4.45e-03  7_[+1(4.79e-07)]_173
+yHAB132_Kazachstania_mar         1.73e-07  [+3(1.82e-06)]_108_[+1(4.74e-08)]_3_\
+    [+1(2.35e-05)]_30
+yHAB148_Kazachstania_int         2.12e-03  155_[+1(5.65e-06)]_25
+Kazachstania_africana@Se         2.21e-02  71_[+1(2.05e-05)]_44_[+1(5.59e-05)]_\
+    14_[+1(1.53e-05)]_11
+Kazachstania_africana@Se         2.53e-02  109_[+1(1.77e-05)]_24_\
+    [+1(9.51e-06)]_27
+Kazachstania_naganishii@         1.29e-01  67_[+1(6.24e-05)]_113
+Kazachstania_naganishii@         2.12e-02  80_[+1(9.33e-05)]_20_[+1(8.04e-06)]_\
+    60
+yHAB132_Kazachstania_mar         2.46e-02  83_[+1(6.24e-05)]_16_[+1(4.69e-06)]_\
+    27_[+1(6.93e-05)]_14
+yHAB132_Kazachstania_mar         1.45e-03  39_[+3(1.98e-05)]_71_[+1(3.49e-05)]_\
+    51
+yHAB133_Kazachstania_uni         7.64e-02  60_[+1(5.59e-05)]_48_[+1(6.93e-05)]_\
+    21_[+1(2.69e-05)]_11
+yHAB133_Kazachstania_uni         3.85e-02  68_[+1(9.51e-06)]_52_[+1(3.07e-05)]_\
+    40
+yHAB134_Kazachstania_tur         3.44e-02  108_[+1(2.35e-05)]_21_\
+    [+1(9.51e-06)]_31
+yHAB134_Kazachstania_tur         3.89e-02  54_[+1(1.12e-05)]_20_[+1(1.77e-05)]_\
+    86
+yHAB136_Kazachstania_bro         3.06e-02  96_[+1(6.76e-06)]_31_[+1(6.76e-06)]_\
+    33
+yHAB136_Kazachstania_bro         1.20e-03  63_[+3(2.15e-05)]_65_[+1(3.49e-05)]_\
+    33
+yHAB143_Kazachstania_sia         5.51e-02  28_[+1(8.48e-05)]_71_[+1(6.93e-05)]_\
+    61
+yHAB143_Kazachstania_sia         9.36e-03  79_[+1(5.59e-05)]_32_[+1(3.87e-06)]_\
+    49
+yHAB147_Kazachstania_tai         8.87e-02  34_[+1(3.95e-05)]_64_[+1(7.68e-05)]_\
+    62
+yHAB147_Kazachstania_tai         3.54e-02  67_[+1(4.45e-05)]_27_[+1(3.49e-05)]_\
+    18_[+1(9.51e-06)]_28
+yHAB148_Kazachstania_int         2.52e-05  121_[+1(1.31e-08)]_27_\
+    [+1(2.35e-05)]_12
+yHAB148_Kazachstania_int         3.72e-03  102_[+1(5.65e-06)]_78
+yHAB153_Kazachstania_ros         4.65e-02  83_[+1(3.49e-05)]_97
+yHAB153_Kazachstania_ros         4.16e-03  9_[+1(2.09e-06)]_94_[+1(1.67e-06)]_\
+    57
+yHAB154_Kazachstania_tra         7.25e-02  119_[+1(9.33e-05)]_12_\
+    [+1(2.35e-05)]_29
+yHAB154_Kazachstania_tra         7.19e-03  118_[+1(4.69e-06)]_62
+yHAB155_Kazachstania_spe         1.12e-02  147_[+1(2.35e-05)]_10_\
+    [+1(3.49e-05)]_3
+yHAB155_Kazachstania_spe         2.44e-02  108_[+1(4.45e-05)]_29_\
+    [+1(6.76e-06)]_23
+yHAB158_Kazachstania_vit         2.27e-01  200
+yHAB158_Kazachstania_vit         7.21e-03  64_[+1(3.17e-06)]_16_[+1(6.76e-06)]_\
+    26_[+1(1.67e-06)]_34
+yHAB159_Kazachstania_sol         7.26e-03  37_[+1(9.51e-06)]_143
+yHAB159_Kazachstania_sol         1.10e-02  76_[+1(3.17e-06)]_16_[+1(6.76e-06)]_\
+    35_[+1(6.76e-06)]_13
+yHAB160_Kazachstania_kun         4.95e-02  169_[+1(3.07e-05)]_11
+yHAB160_Kazachstania_kun         1.52e-02  5_[+1(3.87e-06)]_63_[+1(3.95e-05)]_\
+    34_[+1(4.45e-05)]_38
+yHAB164_Kazachstania_aer         1.53e-02  39_[+1(1.77e-05)]_104_\
+    [+1(8.48e-05)]_17
+yHAB164_Kazachstania_aer         1.50e-03  58_[+1(1.77e-05)]_23_[+1(5.00e-05)]_\
+    34_[+1(2.58e-06)]_25
+yHAB166_Kazachstania_yak         4.83e-02  93_[+1(3.07e-05)]_87
+yHAB166_Kazachstania_yak         8.84e-02  124_[+1(3.95e-05)]_10_\
+    [+1(3.49e-05)]_26
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (3) found.
+********************************************************************************
+
+CPU: ip-172-31-2-54
+
+********************************************************************************

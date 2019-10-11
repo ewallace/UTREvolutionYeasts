@@ -1,13 +1,27 @@
 ---
-title: "Code for 5'UTRs of Ssd1"
+title: "Collecting 5'UTRs of orthologous genes from budding yeasts"
 author: "Edward Wallace"
-date: "10th August 2019"
+date: "10th August 2019, updated 10th October"
 output: html_document
 ---
 
+# Summary 
+
 This code retrieves 5'UTRs of orthologous genes in budding yeasts, using Ortholog groups in budding yeast from the 332 genomes paper: Tempo and Mode of Genome Evolution in the Budding Yeast Subphylum, https://doi.org/10.1016/j.cell.2018.10.023 
 
-It is focused on 5'UTRs for Saccharomyces, Nakaseomyces, and Kazachstania, for genes that are bound by Ssd1 in **Saccharomyces cerevisiae**.
+It is focused on 5'UTRs for post-WGD yeasts, and for genes that are bound by Ssd1 in **Saccharomyces cerevisiae**.
+
+# Warnings
+
+- These scripts won't run until data from [the figshare repository 5854692](https://figshare.com/articles/Tempo_and_mode_of_genome_evolution_in_the_budding_yeast_subphylum/5854692) is downloaded to the path `../data/figshare_5854692/`.
+- The figshare repository lacks sequence data for some model organisms such as *Saccharomyces cerevisiae*, despite containing identically-formatted and thus commensurate data from almost every other species reported in the paper.
+- The figshare repository does not contain readme files for all of its data so some conjecture has been used by EW.
+- The ortholog groups are computed automatically and so need to be treated sceptically. For example, Ssd1/YDR293C has entirely unrelated membrane proteins in the same ortholog group. By contrast, Tos6/YNL300W's ortholog group extends only to *Saccharomyces*, omitting orthologs shown on [YGOB](http://ygob.ucd.ie/) such as *Candida glabrata* CAGL0M03773g. Hsp150/YJL159W orthologs from *Kazachstania* are likewise missing.
+- Ortho group names were collected together from different files in the repo by EW, using code in `GetSsd1OrthologGroup.Rmd`, results in `../data_processed/allids_genes_343taxa.txt.zip`. this might have included errors, and also the starting data omits standard (e.g. genbank/entrez/uniprot) names for very many of them.
+- UTR lengths used here are approximate; in fact there are no available UTR annotations for almost any fungal species, especially not the newer ones whose genomes may be reported for the first time in this paper.
+- The code overall takes a couple of minutes to run on a laptop, and needs plenty of memory; `seq_ids_index` is a 350MB text file
+
+# Code
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -16,8 +30,14 @@ source("OrthoGroupScripts.R")
 
 ```{r load_seq_ids_index}
 # setwd("~/Repos/UTREvolutionYeasts/src/")
-seq_ids_index <- read_tsv("../data_processed/allids_genes_343taxa.txt",
-                          comment="#")
+seq_ids_index <- read_tsv("../data_processed/allids_genes_343taxa.txt.zip",
+                          comment="#",
+                          col_names = c("species_plus_id",
+                                        "species", 
+                                        "s_id", 
+                                        "gene_id", 
+                                        "ortho_id", 
+                                        "ortho_group"))
 ```
 
 ```{r load_Saccharomyces_gtf_fasta,dependson="load_seq_ids_index"}
@@ -31,6 +51,7 @@ Saccharomyces_spp <- c("Saccharomyces_cerevisiae",
 
 Saccharomyces_noncer <- Saccharomyces_spp[-1]
 
+# Species in the Nakaseomyces genus
 Nakaseomyces <- c("Nakaseomyces_nivariensis",
                        "Nakaseomyces_delphensis",
                        "Nakaseomyces_bracarensis",
@@ -38,29 +59,31 @@ Nakaseomyces <- c("Nakaseomyces_nivariensis",
                        "Nakaseomyces_bacillisporus",
                        "Nakaseomyces_castellii")
 
+# Species in the Kazachstania genus
 Kazachstania <- .species_concordance %>% 
     filter(str_detect(species_id,"Kazachstan")) %>% 
     .$species_id
 
+# Species in the Tetrapisispora genus
 Tetrapisispora <- .species_concordance %>% 
     filter(str_detect(species_id,"Tetrapis") | 
              str_detect(species_id,"Vanderwalt")  |
              str_detect(species_id,"Yueomyces")) %>% 
     .$species_id
 
+# Species in the Naumovozyma genus
 Naumovozyma <- .species_concordance %>% 
     filter(str_detect(species_id,"Naumovozyma")) %>% 
     .$species_id
 
-Pgk1_Sacmore <- get_ortho_group("YAL038W",
-                                species_list = c(Saccharomyces_spp,
-                                                 Nakaseomyces)
-                                )
+
+# These lines assemble lists of gtfs (features) separated by species
 Nakaseomyces_gtf <- get_gtflist(Nakaseomyces)
 Sacc_noncer_gtf  <- get_gtflist(Saccharomyces_noncer)
 Kazachstania_gtf  <- get_gtflist(Kazachstania)
 Tetrapisispora_gtf  <- get_gtflist(Tetrapisispora)
 
+# These lines assemble lists of fastas (sequences) separated by species
 Nakaseomyces_fasta <- get_fastalist(Nakaseomyces)
 Sacc_noncer_fasta  <- get_fastalist(Saccharomyces_noncer)
 Kazachstania_fasta <- get_fastalist(Kazachstania)
@@ -68,10 +91,14 @@ Tetrapisispora_fasta <- get_fastalist(Tetrapisispora)
 
 ```
 
-
+### Tests
 
 ```{r test_get_seqs,dependson=c("load_Sacc_gtf_fasta","get_5UTRish")}
-
+# This line tests that get_ortho_group works, for Pgk1.
+Pgk1_Sacmore <- get_ortho_group("YAL038W",
+                                species_list = c(Saccharomyces_spp,
+                                                 Nakaseomyces)
+                                )
 get_one_upstream_seq(seq_id_line=Pgk1_Sacmore %>% 
                          filter(species=="Candida_glabrata") %>%
                          head(n=1),
@@ -96,6 +123,7 @@ Pgk1_Sacc_seqs <- get_upstream_seqs(Pgk1_Sacmore %>%
 
 ```
 
+# Obtain UTR seqs of ortholog groups
 
 ```{r get_TOS6_5UTRs,dependson=c("load_Sacc_gtf_fasta","get_5UTRish")}
 # Tos6_Sacspp <- get_ortho_group("YNL300W",species_list = Saccharomyces_spp)

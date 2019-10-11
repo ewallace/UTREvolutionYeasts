@@ -1,0 +1,1028 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org/.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= selectSsd1target_5UTRs_Tetrapisispora_collated.fa
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Tetrapisispora_blattae@S 1.0000    200  Tetrapisispora_phaffii@S 1.0000    200  
+Vanderwaltozyma_polyspor 1.0000    200  yHMPu5000034875_Tetrapis 1.0000    200  
+yHMPu5000034876_Tetrapis 1.0000    200  yHMPu5000034877_Tetrapis 1.0000    200  
+yHMPu5000035629_Yueomyce 1.0000    200  Tetrapisispora_blattae@S 1.0000    200  
+Tetrapisispora_blattae@S 1.0000    200  Tetrapisispora_phaffii@S 1.0000    200  
+Vanderwaltozyma_polyspor 1.0000    200  Vanderwaltozyma_polyspor 1.0000    200  
+yHMPu5000034875_Tetrapis 1.0000    200  yHMPu5000034876_Tetrapis 1.0000    200  
+yHMPu5000034877_Tetrapis 1.0000    200  yHMPu5000035629_Yueomyce 1.0000    200  
+yHMPu5000035629_Yueomyce 1.0000    200  Tetrapisispora_blattae@S 1.0000    200  
+Tetrapisispora_phaffii@S 1.0000    200  Vanderwaltozyma_polyspor 1.0000    200  
+yHMPu5000034875_Tetrapis 1.0000    200  yHMPu5000034876_Tetrapis 1.0000    200  
+yHMPu5000034877_Tetrapis 1.0000    200  yHMPu5000035629_Yueomyce 1.0000    200  
+Tetrapisispora_blattae@S 1.0000    200  Tetrapisispora_phaffii@S 1.0000    200  
+Tetrapisispora_phaffii@S 1.0000    200  Vanderwaltozyma_polyspor 1.0000    200  
+Vanderwaltozyma_polyspor 1.0000    200  yHMPu5000034875_Tetrapis 1.0000    200  
+yHMPu5000034875_Tetrapis 1.0000    200  yHMPu5000034876_Tetrapis 1.0000    200  
+yHMPu5000034876_Tetrapis 1.0000    200  yHMPu5000034877_Tetrapis 1.0000    200  
+yHMPu5000034877_Tetrapis 1.0000    200  yHMPu5000035629_Yueomyce 1.0000    200  
+Tetrapisispora_blattae@S 1.0000    500  Tetrapisispora_blattae@S 1.0000    500  
+Tetrapisispora_phaffii@S 1.0000    500  Tetrapisispora_phaffii@S 1.0000    500  
+Vanderwaltozyma_polyspor 1.0000    500  Vanderwaltozyma_polyspor 1.0000    500  
+yHMPu5000034875_Tetrapis 1.0000    500  yHMPu5000034875_Tetrapis 1.0000    500  
+yHMPu5000034876_Tetrapis 1.0000    500  yHMPu5000034876_Tetrapis 1.0000    500  
+yHMPu5000034877_Tetrapis 1.0000    500  yHMPu5000034877_Tetrapis 1.0000    500  
+yHMPu5000035629_Yueomyce 1.0000    500  yHMPu5000035629_Yueomyce 1.0000    500  
+Tetrapisispora_blattae@S 1.0000    700  Tetrapisispora_blattae@S 1.0000    700  
+Tetrapisispora_phaffii@S 1.0000    700  Tetrapisispora_phaffii@S 1.0000    700  
+Vanderwaltozyma_polyspor 1.0000    700  yHMPu5000034875_Tetrapis 1.0000    700  
+yHMPu5000034876_Tetrapis 1.0000    700  yHMPu5000034877_Tetrapis 1.0000    700  
+yHMPu5000034877_Tetrapis 1.0000    700  yHMPu5000035629_Yueomyce 1.0000    700  
+yHMPu5000035629_Yueomyce 1.0000    700  Tetrapisispora_blattae@S 1.0000    200  
+Tetrapisispora_blattae@S 1.0000    200  Tetrapisispora_phaffii@S 1.0000    200  
+Tetrapisispora_phaffii@S 1.0000    200  Vanderwaltozyma_polyspor 1.0000    200  
+Vanderwaltozyma_polyspor 1.0000    200  yHMPu5000034875_Tetrapis 1.0000    200  
+yHMPu5000034875_Tetrapis 1.0000    200  yHMPu5000034876_Tetrapis 1.0000    200  
+yHMPu5000034876_Tetrapis 1.0000    200  yHMPu5000034877_Tetrapis 1.0000    200  
+yHMPu5000034877_Tetrapis 1.0000    200  yHMPu5000035629_Yueomyce 1.0000    200  
+yHMPu5000035629_Yueomyce 1.0000    200  Tetrapisispora_blattae@S 1.0000    200  
+Tetrapisispora_phaffii@S 1.0000    200  Vanderwaltozyma_polyspor 1.0000    200  
+yHMPu5000034875_Tetrapis 1.0000    200  yHMPu5000034876_Tetrapis 1.0000    200  
+yHMPu5000034877_Tetrapis 1.0000    200  yHMPu5000035629_Yueomyce 1.0000    200  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme selectSsd1target_5UTRs_Tetrapisispora_collated.fa -dna -oc . -nostatus -time 18000 -mod anr -nmotifs 3 -minw 8 -maxw 20 -objfun classic -markov_order 1 
+
+model:  mod=           anr    nmotifs=         3    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           20
+nsites: minsites=        2    maxsites=      410    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=           26100    N=              82
+sample: seed=            0    hsfrac=          0
+        searchsize=  26100    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.338 C 0.148 G 0.112 T 0.401 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.338 C 0.148 G 0.113 T 0.401 
+Background model order: 1
+********************************************************************************
+
+
+********************************************************************************
+MOTIF WHWWWTYWWKWCAYTCMTTT MEME-1	width =  20  sites = 112  llr = 981  E-value = 9.1e-060
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif WHWWWTYWWKWCAYTCMTTT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  54543224513:61::4::2
+pos.-specific     C  232122321:2a:3:a32:1
+probability       G  :::::11::3::1:::2:::
+matrix            T  33344554466:26a:28a7
+
+         bits    3.2                     
+                 2.8            *   *    
+                 2.5            *   *    
+                 2.2            *   *    
+Relative         1.9            *   *    
+Entropy          1.6            *   *    
+(12.6 bits)      1.3            *  **  * 
+                 0.9            *  ** ** 
+                 0.6            * *** ** 
+                 0.3  **    *************
+                 0.0 --------------------
+
+Multilevel           AAATTTTTATTCATTCATTT
+consensus            TTTAACCATGA TC  C   
+sequence              C  C A             
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WHWWWTYWWKWCAYTCMTTT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+yHMPu5000034876_Tetrapis    144  8.59e-10 GTATTTTAAT CCAACTTTAGTCACTCCTTT CACAAAAAAC
+yHMPu5000035629_Yueomyce     38  8.59e-10 AAGATAACTA CCAACTTCAGTCACTCCTTT AAAAAAATAT
+yHMPu5000034877_Tetrapis    104  1.58e-08 ATATAGGACA CCAAATCAAGTCATTCGTTT TACCATAAGT
+yHMPu5000034877_Tetrapis    144  2.65e-07 CAAATCCAAT CCAACTTTAGTCACTCATTC TTGTAAAAAA
+yHMPu5000034875_Tetrapis    152  2.65e-07 AAAATTTAAT CCAACTTTAGTCACTCATTC TTTGAAAAAA
+Tetrapisispora_phaffii@S    106  3.56e-07 CTAGAAATAA CCAAACCAAGTCTTTCGTTT ATCTAAGGTC
+yHMPu5000034877_Tetrapis    161  6.17e-07 AGTAAGAAAA AAATCTTCTGCCACTCGCTT TAAATACAAT
+yHMPu5000034875_Tetrapis    161  6.17e-07 AGTAAGAAAA AAATCTTCTGCCACTCGCTT TAAATACAAT
+Tetrapisispora_phaffii@S    161  6.17e-07 CCTAAGAAAA AAATCTTCTGCCACTCGCTT TAAATTCAAT
+yHMPu5000034876_Tetrapis    127  8.00e-07 ATATTCAATT AATATTCAATTCATTCATTT TTAAAATTCA
+Tetrapisispora_phaffii@S    153  1.03e-06 CAAATTTAAT CCAACTTTAGTCATTCATTC TTCTTAAAAA
+yHMPu5000034877_Tetrapis    139  1.03e-06 TAATAAAGAA TTTTTTCAAGTCACTCATTT TCCCTTATAA
+yHMPu5000034876_Tetrapis    161  1.31e-06 CCCAAGAAAA TAATCTTCTGTCACTCGCTT TAAATACAAA
+Vanderwaltozyma_polyspor    156  1.31e-06 CCCAAGAAAA TAATCTTCTGTCACTCGCTT TTACACAAAT
+yHMPu5000034877_Tetrapis     79  1.65e-06 TCTACCGGTT ACAATCGATTACACTCCTTT TTAATTATTC
+Tetrapisispora_blattae@S    164  2.06e-06 GTTCATTTAT TCACCTTTAGTCACTCATTA AAACTCTTTT
+yHMPu5000034876_Tetrapis    556  2.06e-06 ATACTATAGT TTAACCTTTTTCACTCCTTT CATAGTCAGT
+yHMPu5000035629_Yueomyce    129  2.06e-06 TAATCAAAAA AAAACCTTTTACATTCGTTT TAAAACTATC
+yHMPu5000034877_Tetrapis    323  2.56e-06 AATCATAGAC TACACTTAATTCATTCATTT GGTTATAGAA
+Tetrapisispora_blattae@S     23  2.56e-06 CAAATAACCT AACTATCAAGTCATTCTTTT AATACATCAA
+yHMPu5000034875_Tetrapis    125  2.56e-06 GTGTATAGCA GCAAGTCAAGTCATTCGTTT TACTGTGAGT
+yHMPu5000035629_Yueomyce     89  3.15e-06 ACTTCCCCAA AACAACCAATTCATTCGTTA ATCTAAATTT
+yHMPu5000034877_Tetrapis    402  3.15e-06 ACAATAATTC CCTTATTTTTACACTCCTTT ATTTGTTAAA
+yHMPu5000034875_Tetrapis    314  3.15e-06 AAGTTTATAT TATATTCAATTCATTCATTT TGGTTATTGA
+yHMPu5000035629_Yueomyce    571  3.86e-06 CGTTCTGTTC CACAATTTATTCGCTCATTT TTTTAAATTA
+yHMPu5000035629_Yueomyce     58  5.65e-06 ATTGATACCA ACAAACCTTTACTTTCCTTT GATTTTTATC
+yHMPu5000035629_Yueomyce     34  6.77e-06 AGTAAGTAAC ACCAATACTGTCTCTCATTT TTTATTGTTT
+yHMPu5000034875_Tetrapis    144  6.77e-06 AATATTAAAT TTTTTCCAAGTCGTTCATTT TTCTTTATAA
+yHMPu5000035629_Yueomyce    165  6.77e-06 TAAATATAAA AAAATTAATTACACTCCCTT TTTTACAATT
+yHMPu5000034876_Tetrapis     55  8.06e-06 AGTGTCAATT CACTATTAAGCCTTTCCTTT TAAAATTGTA
+yHMPu5000034875_Tetrapis     26  8.06e-06 AGCAAAAAAA ACATACCATTCCTTTCATTT TTTTTATTAA
+Tetrapisispora_phaffii@S    137  8.06e-06 TTTTTTTAGC TTTATACAAGTCACTCACTT ATTATAATTG
+yHMPu5000035629_Yueomyce    165  9.55e-06 TTTTAATTTA AACAATTCTTTCGTTCCTTT ATTTCTTCTA
+yHMPu5000034875_Tetrapis    396  9.55e-06 TATAGTTACA ATTTTTTTTTACACTCCTTT ATTTGTTAAA
+Tetrapisispora_phaffii@S     94  9.55e-06 AAGAATTACT AACTAGTTATTCATTCATTT AAACAATAAT
+Vanderwaltozyma_polyspor     49  1.13e-05 TCATTCAATC CAACTACTAGTCATTCATTA TTTTTTATTT
+Tetrapisispora_phaffii@S    314  1.13e-05 AAAAATACTT TCATTTCATTCCATTCCTTA CAATATAGAA
+yHMPu5000035629_Yueomyce    650  1.32e-05 ACGAAGTACA ATAAATCTATCCATTCCTTA CTTTATTAAT
+Tetrapisispora_blattae@S    652  1.54e-05 TAACTAACTA ACTCACTCACTCACTCATTT TCCTTCCTTT
+yHMPu5000034875_Tetrapis     33  1.54e-05 CATACTTTTT GCATTATAATACACTCATTT AAAACAAATT
+yHMPu5000034876_Tetrapis     88  2.36e-05 CAAATTAACC AACTCGTTATTCATTCTTTT TAAAACAAAT
+Tetrapisispora_blattae@S    164  2.36e-05 CGTTCATTAT TAAAACTTAAACACTCCTTT TTAAAACCTG
+Tetrapisispora_blattae@S     98  2.36e-05 CATAGTATTA TACTATCCTTCCATTCACTT TAATTTACTT
+Tetrapisispora_blattae@S     60  2.36e-05 AAAAAAACTT ACACTCACTTCCACTCTTTT CAATTAAACA
+Tetrapisispora_phaffii@S     79  2.70e-05 TTTATTTCAC TAATTCAATTACATTCATTT TATAAGTTAA
+Vanderwaltozyma_polyspor    205  2.70e-05 GGTGGATTTA ATTATCCTTTTCTTTCATTT TAAATTGTAC
+Vanderwaltozyma_polyspor     62  2.70e-05 TTTGCATTAG ATATCGCTATCCATTCATTA TATCTTCCTT
+Vanderwaltozyma_polyspor    375  3.08e-05 TACACACCAT CATTTCTATTCCTTTCCTTT TGATATTTGT
+yHMPu5000034876_Tetrapis    135  3.08e-05 AAATCTTTTT TTAGTTCAAGTCATTCACTT ATAAGTTTTA
+Tetrapisispora_blattae@S    148  3.08e-05 CCAACTAATA CATATATTATTCACTCTTTT AATTAATATT
+yHMPu5000034877_Tetrapis     25  3.08e-05 CATATCTTTT GCATTATAATACATTCATTT AAAAACAATT
+Tetrapisispora_phaffii@S     52  3.08e-05 CACCTATTTT GCATTATAATACATTCATTT CAAAAACCAG
+Vanderwaltozyma_polyspor     83  3.49e-05 TTTTATTTTA TATTTTTAAGTCAATCCTTT ACTATTCTAT
+yHMPu5000035629_Yueomyce    127  3.49e-05 TTGCTTGTCC AACTTCAATTTCATTCTTTT TAAAATCAAA
+yHMPu5000034877_Tetrapis    106  3.95e-05 CAAATCAACT AACTAGTTATTCATTCATTA CAATAATAAA
+yHMPu5000034875_Tetrapis    113  3.95e-05 ACAACCAACT AACTAGTTATTCATTCATTA CAATATTAAA
+yHMPu5000034876_Tetrapis     79  3.95e-05 ATGAGGTAAC ACAAGTAAAGTCAATCGTTT TATAAGGTAC
+Tetrapisispora_blattae@S    101  4.45e-05 ACTTCATTCT TCTTCCTTTGTCTCTCTCTT CCATCCTAGA
+yHMPu5000034877_Tetrapis     28  4.99e-05 GCAAAGCAAA AAATACCACTCCTTTCATTT TCTTTTTTTT
+Vanderwaltozyma_polyspor     17  4.99e-05 TTGACTAACT CACATCGACGTCTTTCCTTT AACTAATAAC
+Tetrapisispora_phaffii@S     18  4.99e-05 ACAAAGTATA TTATATCAATCCTTTCATTT TTCAAAATCA
+Tetrapisispora_blattae@S      4  4.99e-05        TAA CCTATACTTTCCTTTCCCTT TTACTACTTT
+Tetrapisispora_blattae@S     33  4.99e-05 TGTTAAAAAT CCAACTACTGTCCTTCATTT AAAATCAATC
+yHMPu5000035629_Yueomyce    597  4.99e-05 ATTTTTTTAA ATTATACTATTCTTTCATTT CAGAAATAAT
+Tetrapisispora_phaffii@S    398  5.57e-05 ATCTATTTAG GTTATTTTTTACACTCATTT ACCTGCTGAA
+yHMPu5000035629_Yueomyce    156  6.21e-05 CCAAGAACAA TAATCTTCTAACACTCGCTT AATTAACTTT
+Tetrapisispora_blattae@S    144  6.21e-05 TCAAGAAAAT ACTCTTTCTAACACTCGCTT TATCCGCTTC
+Tetrapisispora_blattae@S    578  6.89e-05 ACCCGCATCG TTTCGCTTTTTCACTCATTT ATTTAACCCA
+yHMPu5000034876_Tetrapis    125  6.89e-05 TTAATAAGTT ATTATTATATTCATTCATTC ACATTAATTT
+Vanderwaltozyma_polyspor    120  8.41e-05 TATTTTTTGT AAACTTCAATTCTATCATTT TACAGAAGTT
+yHMPu5000035629_Yueomyce    177  8.41e-05 TTCTACATAT ATTTATATTTTCACTCTTTT TAAT      
+yHMPu5000034877_Tetrapis    110  9.25e-05 TAATTATTCA ACTAACCTTTACCTTCATTT AATTCATTCT
+yHMPu5000034876_Tetrapis     90  9.25e-05 TTGTAACTAT TAACAAGAAGTCTTTCCTTT CCAAATCCAG
+Tetrapisispora_phaffii@S    127  9.25e-05 ACTTTTTATT TTAATCAATTTCATTCTTTT ACATTATTTT
+yHMPu5000034876_Tetrapis    271  9.25e-05 CAGCATTTTC ATTTATTCTTACTTTCCTTT CAAATTTTTT
+Vanderwaltozyma_polyspor     13  9.25e-05 GAACAACACC AACTGTTTATTCGTTCTTTT ATTTTATTTT
+Tetrapisispora_blattae@S     16  9.25e-05 GAGTTATTAT ACTTAATTATACGTTCCTTC ATTTTTCTTT
+yHMPu5000034876_Tetrapis    120  1.01e-04 CCAAATCCAG TTAATATTATTCATTCTTTT TAAAATTTTC
+yHMPu5000035629_Yueomyce    168  1.01e-04 ATTTATTATT AAAATTACACTCGTTCACTT ACTTTAAAAA
+Tetrapisispora_phaffii@S    235  1.01e-04 TGGCTCAGAA AATCCCGTACTCACTCGTTA ATACTAACTA
+yHMPu5000035629_Yueomyce     36  1.01e-04 CTTCTCTAAT TTCCTCTATTACTTTCCTTT ATCTCTTTTT
+yHMPu5000034875_Tetrapis     75  1.11e-04 TCCGTCATTT ACTGTCGATTACGCTCCCTT TCAATTATCC
+yHMPu5000035629_Yueomyce     59  1.11e-04 ACAATAAACC TAACTTATAGTCATTCTTTA ACTTCCCCAA
+yHMPu5000035629_Yueomyce     69  1.11e-04 TACAATTTCA ATTCATTTATACATTCTTTT TTTTTATTTC
+yHMPu5000034876_Tetrapis     98  1.11e-04 TTTTCATTGC ATTATAAAATTCATTCATTA ATAAGTTATT
+Vanderwaltozyma_polyspor     20  1.21e-04 TTAATTTAAT AACGATAAAGTCAATCCTTT CATTCAATCC
+yHMPu5000034876_Tetrapis      2  1.21e-04          G AATTTTCATTACTTTCGCTA CCAACATTCA
+yHMPu5000035629_Yueomyce    104  1.31e-04 ATTTCATACT CATTTTAAAAACACTCGTTA TTACATCCTT
+Vanderwaltozyma_polyspor    578  1.43e-04 TAAAGCACAT CATTTTACTAACATTCATTT AATATAATAA
+Tetrapisispora_blattae@S    143  1.43e-04 TCATACCCTC CAACTTGTATACGTTCATTA TTAAAACTTA
+yHMPu5000034877_Tetrapis    174  1.43e-04 TCATTAAAGC AAATACCTTCCCGTTCATTA AAAAATT   
+yHMPu5000034876_Tetrapis     66  1.43e-04 TTTTCTCACT ACTACATTAATCATTCTCTT TCTTTTCATT
+Tetrapisispora_blattae@S    134  1.54e-04 TCTATTACAA ATAACAAATTACTCTCCTTA TTAATTAATC
+yHMPu5000034877_Tetrapis    295  1.54e-04 AGGCAAGCAC CAATTGCTAATCTCTCTTTT GTCCATTTGT
+yHMPu5000034875_Tetrapis    262  1.54e-04 TATATATTAA TTTATATATTACGTTCGTTT TTGTTGATAA
+Vanderwaltozyma_polyspor    282  1.54e-04 TTGAGTTCCT ACTTTACTGGTCGTTCTTTT ATCTAAAAGA
+yHMPu5000034876_Tetrapis     78  1.54e-04 TGATATTTAT AAAATAATTTCCTTTCACTT TAGTTTATTC
+Tetrapisispora_blattae@S    172  1.66e-04 TCAACTTTTT AACTCGTTAATCTCTCGTTC TTATTCATT 
+yHMPu5000034877_Tetrapis    153  1.79e-04 TCTTTTCAGG TTAATTAACGACATTCATTA CACTAGGAGA
+Tetrapisispora_blattae@S    577  1.79e-04 GTCCAAACTA TTATTACTATACTTTCCTTA ATTACTCGTA
+Tetrapisispora_blattae@S    425  1.79e-04 GACGGCTATA TATATATAGTTCATTCATTT TAATAACTAT
+yHMPu5000034876_Tetrapis    157  1.79e-04 TTAAAATTCA TTATTTCATACCACTCACTA TAAAAAATAT
+yHMPu5000035629_Yueomyce    623  1.92e-04 TTATTTCATA ATCTATATTTACAATCCTTT TTTTATATCC
+Vanderwaltozyma_polyspor    636  1.92e-04 AAATTAATAA ATTTATTTTATCGTTCCCTT TTTTTTACTA
+Tetrapisispora_phaffii@S    636  1.92e-04 TGTGATTGGC ATTTTTACTAACATTCATTT CAACATTAAT
+Tetrapisispora_blattae@S    215  1.92e-04 ATTTTTCCAA ATCTCTATCTTCTTTCACTT TCGCACTCGA
+yHMPu5000035629_Yueomyce    126  1.92e-04 TATAGTACTG CACTATTAATACAATCATTC TTTTTATTTT
+Tetrapisispora_phaffii@S    124  2.06e-04 TAATATTTTT ATATCATACTTCTCTCATTA AGCAAATACG
+yHMPu5000035629_Yueomyce    445  2.35e-04 CTTGTTTATC ACTTGTAAATTCATTCTCTC TTGTATTTTA
+Vanderwaltozyma_polyspor    110  2.50e-04 CACAATTTTA ATCAAGTTTCACACTCATTA CAATTGCAAT
+yHMPu5000034875_Tetrapis    150  2.81e-04 TCTTTTAAAG TTAATTAACGTCATTCTTTA TATCAGAAGT
+yHMPu5000035629_Yueomyce    167  2.81e-04 TACACACACA TATATATTATTCTATCCTTT CTCAATCTAA
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WHWWWTYWWKWCAYTCMTTT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+yHMPu5000034876_Tetrapis          8.6e-10  143_[+1]_37
+yHMPu5000035629_Yueomyce          2.1e-06  37_[+1]_71_[+1]_52
+yHMPu5000034877_Tetrapis          1.6e-08  103_[+1]_77
+yHMPu5000034877_Tetrapis          2.7e-07  143_[+1]_37
+yHMPu5000034875_Tetrapis          2.7e-07  151_[+1]_29
+Tetrapisispora_phaffii@S          3.6e-07  105_[+1]_75
+yHMPu5000034877_Tetrapis          6.2e-07  160_[+1]_20
+yHMPu5000034875_Tetrapis          6.2e-07  160_[+1]_20
+Tetrapisispora_phaffii@S          6.2e-07  160_[+1]_20
+yHMPu5000034876_Tetrapis          0.00018  78_[+1]_28_[+1]_10_[+1]_24
+Tetrapisispora_phaffii@S            1e-06  152_[+1]_28
+yHMPu5000034877_Tetrapis          3.9e-05  105_[+1]_13_[+1]_42
+yHMPu5000034876_Tetrapis          0.00015  77_[+1]_63_[+1]_20
+Vanderwaltozyma_polyspor          1.3e-06  155_[+1]_25
+yHMPu5000034877_Tetrapis          0.00018  27_[+1]_31_[+1]_11_[+1]_23_[+1]_28
+Tetrapisispora_blattae@S            5e-05  32_[+1]_111_[+1]_17
+yHMPu5000034876_Tetrapis          2.1e-06  555_[+1]_125
+yHMPu5000034877_Tetrapis          3.2e-06  322_[+1]_59_[+1]_79
+Tetrapisispora_blattae@S          0.00014  22_[+1]_100_[+1]_1_[+1]_17
+yHMPu5000034875_Tetrapis          2.6e-06  124_[+1]_56
+yHMPu5000035629_Yueomyce          0.00011  58_[+1]_10_[+1]_59_[+1]_13
+yHMPu5000034875_Tetrapis          0.00015  261_[+1]_32_[+1]_62_[+1]_85
+yHMPu5000035629_Yueomyce          0.00023  444_[+1]_106_[+1]_6_[+1]_33_[+1]_31
+yHMPu5000035629_Yueomyce          0.00019  57_[+1]_48_[+1]_19_[+1]_16
+yHMPu5000035629_Yueomyce          9.6e-06  33_[+1]_111_[+1]_16
+yHMPu5000034875_Tetrapis          6.8e-06  112_[+1]_11_[+1]_37
+yHMPu5000034876_Tetrapis          9.3e-05  54_[+1]_15_[+1]_10_[+1]_61
+yHMPu5000034875_Tetrapis          0.00028  25_[+1]_29_[+1]_55_[+1]_31
+Tetrapisispora_phaffii@S          8.1e-06  93_[+1]_23_[+1]_44
+Vanderwaltozyma_polyspor          0.00012  19_[+1]_9_[+1]_132
+Tetrapisispora_phaffii@S          5.6e-05  313_[+1]_64_[+1]_83
+Tetrapisispora_blattae@S          6.9e-05  577_[+1]_54_[+1]_29
+yHMPu5000034875_Tetrapis          1.5e-05  32_[+1]_148
+yHMPu5000034876_Tetrapis          3.1e-05  87_[+1]_27_[+1]_46
+Tetrapisispora_blattae@S          9.3e-05  15_[+1]_24_[+1]_18_[+1]_30_[+1]_33
+Tetrapisispora_phaffii@S          9.3e-05  17_[+1]_41_[+1]_28_[+1]_54
+Vanderwaltozyma_polyspor          0.00015  204_[+1]_57_[+1]_73_[+1]_106
+Vanderwaltozyma_polyspor          0.00025  61_[+1]_28_[+1]_71
+yHMPu5000034877_Tetrapis          0.00014  24_[+1]_129_[+1]_7
+Tetrapisispora_phaffii@S          0.00021  51_[+1]_52_[+1]_57
+Vanderwaltozyma_polyspor          8.4e-05  16_[+1]_46_[+1]_17_[+1]_61
+yHMPu5000035629_Yueomyce          0.00028  35_[+1]_71_[+1]_20_[+1]_14
+Tetrapisispora_blattae@S          4.4e-05  100_[+1]_23_[+1]_37
+Tetrapisispora_blattae@S          0.00015  3_[+1]_110_[+1]_18_[+1]_9
+yHMPu5000035629_Yueomyce          6.2e-05  155_[+1]_25
+yHMPu5000034876_Tetrapis          0.00011  1_[+1]_44_[+1]_12_[+1]_7_[+1]_56
+yHMPu5000035629_Yueomyce          0.00013  68_[+1]_15_[+1]_53_[+1]_4
+yHMPu5000034876_Tetrapis          9.3e-05  270_[+1]_210
+Vanderwaltozyma_polyspor          9.3e-05  12_[+1]_168
+Tetrapisispora_phaffii@S           0.0001  234_[+1]_446
+Vanderwaltozyma_polyspor          0.00019  577_[+1]_38_[+1]_45
+yHMPu5000034877_Tetrapis          0.00015  294_[+1]_186
+Tetrapisispora_blattae@S          0.00019  214_[+1]_342_[+1]_104
+Tetrapisispora_blattae@S          0.00018  424_[+1]_56
+yHMPu5000035629_Yueomyce          0.00019  622_[+1]_58
+Tetrapisispora_phaffii@S          0.00019  635_[+1]_45
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WHWWWTYWWKWCAYTCMTTT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF WHWWWTYWWKWCAYTCMTTT width=20 seqs=112
+yHMPu5000034876_Tetrapis (  144) CCAACTTTAGTCACTCCTTT  1 
+yHMPu5000035629_Yueomyce (   38) CCAACTTCAGTCACTCCTTT  1 
+yHMPu5000034877_Tetrapis (  104) CCAAATCAAGTCATTCGTTT  1 
+yHMPu5000034877_Tetrapis (  144) CCAACTTTAGTCACTCATTC  1 
+yHMPu5000034875_Tetrapis (  152) CCAACTTTAGTCACTCATTC  1 
+Tetrapisispora_phaffii@S (  106) CCAAACCAAGTCTTTCGTTT  1 
+yHMPu5000034877_Tetrapis (  161) AAATCTTCTGCCACTCGCTT  1 
+yHMPu5000034875_Tetrapis (  161) AAATCTTCTGCCACTCGCTT  1 
+Tetrapisispora_phaffii@S (  161) AAATCTTCTGCCACTCGCTT  1 
+yHMPu5000034876_Tetrapis (  127) AATATTCAATTCATTCATTT  1 
+Tetrapisispora_phaffii@S (  153) CCAACTTTAGTCATTCATTC  1 
+yHMPu5000034877_Tetrapis (  139) TTTTTTCAAGTCACTCATTT  1 
+yHMPu5000034876_Tetrapis (  161) TAATCTTCTGTCACTCGCTT  1 
+Vanderwaltozyma_polyspor (  156) TAATCTTCTGTCACTCGCTT  1 
+yHMPu5000034877_Tetrapis (   79) ACAATCGATTACACTCCTTT  1 
+Tetrapisispora_blattae@S (  164) TCACCTTTAGTCACTCATTA  1 
+yHMPu5000034876_Tetrapis (  556) TTAACCTTTTTCACTCCTTT  1 
+yHMPu5000035629_Yueomyce (  129) AAAACCTTTTACATTCGTTT  1 
+yHMPu5000034877_Tetrapis (  323) TACACTTAATTCATTCATTT  1 
+Tetrapisispora_blattae@S (   23) AACTATCAAGTCATTCTTTT  1 
+yHMPu5000034875_Tetrapis (  125) GCAAGTCAAGTCATTCGTTT  1 
+yHMPu5000035629_Yueomyce (   89) AACAACCAATTCATTCGTTA  1 
+yHMPu5000034877_Tetrapis (  402) CCTTATTTTTACACTCCTTT  1 
+yHMPu5000034875_Tetrapis (  314) TATATTCAATTCATTCATTT  1 
+yHMPu5000035629_Yueomyce (  571) CACAATTTATTCGCTCATTT  1 
+yHMPu5000035629_Yueomyce (   58) ACAAACCTTTACTTTCCTTT  1 
+yHMPu5000035629_Yueomyce (   34) ACCAATACTGTCTCTCATTT  1 
+yHMPu5000034875_Tetrapis (  144) TTTTTCCAAGTCGTTCATTT  1 
+yHMPu5000035629_Yueomyce (  165) AAAATTAATTACACTCCCTT  1 
+yHMPu5000034876_Tetrapis (   55) CACTATTAAGCCTTTCCTTT  1 
+yHMPu5000034875_Tetrapis (   26) ACATACCATTCCTTTCATTT  1 
+Tetrapisispora_phaffii@S (  137) TTTATACAAGTCACTCACTT  1 
+yHMPu5000035629_Yueomyce (  165) AACAATTCTTTCGTTCCTTT  1 
+yHMPu5000034875_Tetrapis (  396) ATTTTTTTTTACACTCCTTT  1 
+Tetrapisispora_phaffii@S (   94) AACTAGTTATTCATTCATTT  1 
+Vanderwaltozyma_polyspor (   49) CAACTACTAGTCATTCATTA  1 
+Tetrapisispora_phaffii@S (  314) TCATTTCATTCCATTCCTTA  1 
+yHMPu5000035629_Yueomyce (  650) ATAAATCTATCCATTCCTTA  1 
+Tetrapisispora_blattae@S (  652) ACTCACTCACTCACTCATTT  1 
+yHMPu5000034875_Tetrapis (   33) GCATTATAATACACTCATTT  1 
+yHMPu5000034876_Tetrapis (   88) AACTCGTTATTCATTCTTTT  1 
+Tetrapisispora_blattae@S (  164) TAAAACTTAAACACTCCTTT  1 
+Tetrapisispora_blattae@S (   98) TACTATCCTTCCATTCACTT  1 
+Tetrapisispora_blattae@S (   60) ACACTCACTTCCACTCTTTT  1 
+Tetrapisispora_phaffii@S (   79) TAATTCAATTACATTCATTT  1 
+Vanderwaltozyma_polyspor (  205) ATTATCCTTTTCTTTCATTT  1 
+Vanderwaltozyma_polyspor (   62) ATATCGCTATCCATTCATTA  1 
+Vanderwaltozyma_polyspor (  375) CATTTCTATTCCTTTCCTTT  1 
+yHMPu5000034876_Tetrapis (  135) TTAGTTCAAGTCATTCACTT  1 
+Tetrapisispora_blattae@S (  148) CATATATTATTCACTCTTTT  1 
+yHMPu5000034877_Tetrapis (   25) GCATTATAATACATTCATTT  1 
+Tetrapisispora_phaffii@S (   52) GCATTATAATACATTCATTT  1 
+Vanderwaltozyma_polyspor (   83) TATTTTTAAGTCAATCCTTT  1 
+yHMPu5000035629_Yueomyce (  127) AACTTCAATTTCATTCTTTT  1 
+yHMPu5000034877_Tetrapis (  106) AACTAGTTATTCATTCATTA  1 
+yHMPu5000034875_Tetrapis (  113) AACTAGTTATTCATTCATTA  1 
+yHMPu5000034876_Tetrapis (   79) ACAAGTAAAGTCAATCGTTT  1 
+Tetrapisispora_blattae@S (  101) TCTTCCTTTGTCTCTCTCTT  1 
+yHMPu5000034877_Tetrapis (   28) AAATACCACTCCTTTCATTT  1 
+Vanderwaltozyma_polyspor (   17) CACATCGACGTCTTTCCTTT  1 
+Tetrapisispora_phaffii@S (   18) TTATATCAATCCTTTCATTT  1 
+Tetrapisispora_blattae@S (    4) CCTATACTTTCCTTTCCCTT  1 
+Tetrapisispora_blattae@S (   33) CCAACTACTGTCCTTCATTT  1 
+yHMPu5000035629_Yueomyce (  597) ATTATACTATTCTTTCATTT  1 
+Tetrapisispora_phaffii@S (  398) GTTATTTTTTACACTCATTT  1 
+yHMPu5000035629_Yueomyce (  156) TAATCTTCTAACACTCGCTT  1 
+Tetrapisispora_blattae@S (  144) ACTCTTTCTAACACTCGCTT  1 
+Tetrapisispora_blattae@S (  578) TTTCGCTTTTTCACTCATTT  1 
+yHMPu5000034876_Tetrapis (  125) ATTATTATATTCATTCATTC  1 
+Vanderwaltozyma_polyspor (  120) AAACTTCAATTCTATCATTT  1 
+yHMPu5000035629_Yueomyce (  177) ATTTATATTTTCACTCTTTT  1 
+yHMPu5000034877_Tetrapis (  110) ACTAACCTTTACCTTCATTT  1 
+yHMPu5000034876_Tetrapis (   90) TAACAAGAAGTCTTTCCTTT  1 
+Tetrapisispora_phaffii@S (  127) TTAATCAATTTCATTCTTTT  1 
+yHMPu5000034876_Tetrapis (  271) ATTTATTCTTACTTTCCTTT  1 
+Vanderwaltozyma_polyspor (   13) AACTGTTTATTCGTTCTTTT  1 
+Tetrapisispora_blattae@S (   16) ACTTAATTATACGTTCCTTC  1 
+yHMPu5000034876_Tetrapis (  120) TTAATATTATTCATTCTTTT  1 
+yHMPu5000035629_Yueomyce (  168) AAAATTACACTCGTTCACTT  1 
+Tetrapisispora_phaffii@S (  235) AATCCCGTACTCACTCGTTA  1 
+yHMPu5000035629_Yueomyce (   36) TTCCTCTATTACTTTCCTTT  1 
+yHMPu5000034875_Tetrapis (   75) ACTGTCGATTACGCTCCCTT  1 
+yHMPu5000035629_Yueomyce (   59) TAACTTATAGTCATTCTTTA  1 
+yHMPu5000035629_Yueomyce (   69) ATTCATTTATACATTCTTTT  1 
+yHMPu5000034876_Tetrapis (   98) ATTATAAAATTCATTCATTA  1 
+Vanderwaltozyma_polyspor (   20) AACGATAAAGTCAATCCTTT  1 
+yHMPu5000034876_Tetrapis (    2) AATTTTCATTACTTTCGCTA  1 
+yHMPu5000035629_Yueomyce (  104) CATTTTAAAAACACTCGTTA  1 
+Vanderwaltozyma_polyspor (  578) CATTTTACTAACATTCATTT  1 
+Tetrapisispora_blattae@S (  143) CAACTTGTATACGTTCATTA  1 
+yHMPu5000034877_Tetrapis (  174) AAATACCTTCCCGTTCATTA  1 
+yHMPu5000034876_Tetrapis (   66) ACTACATTAATCATTCTCTT  1 
+Tetrapisispora_blattae@S (  134) ATAACAAATTACTCTCCTTA  1 
+yHMPu5000034877_Tetrapis (  295) CAATTGCTAATCTCTCTTTT  1 
+yHMPu5000034875_Tetrapis (  262) TTTATATATTACGTTCGTTT  1 
+Vanderwaltozyma_polyspor (  282) ACTTTACTGGTCGTTCTTTT  1 
+yHMPu5000034876_Tetrapis (   78) AAAATAATTTCCTTTCACTT  1 
+Tetrapisispora_blattae@S (  172) AACTCGTTAATCTCTCGTTC  1 
+yHMPu5000034877_Tetrapis (  153) TTAATTAACGACATTCATTA  1 
+Tetrapisispora_blattae@S (  577) TTATTACTATACTTTCCTTA  1 
+Tetrapisispora_blattae@S (  425) TATATATAGTTCATTCATTT  1 
+yHMPu5000034876_Tetrapis (  157) TTATTTCATACCACTCACTA  1 
+yHMPu5000035629_Yueomyce (  623) ATCTATATTTACAATCCTTT  1 
+Vanderwaltozyma_polyspor (  636) ATTTATTTTATCGTTCCCTT  1 
+Tetrapisispora_phaffii@S (  636) ATTTTTACTAACATTCATTT  1 
+Tetrapisispora_blattae@S (  215) ATCTCTATCTTCTTTCACTT  1 
+yHMPu5000035629_Yueomyce (  126) CACTATTAATACAATCATTC  1 
+Tetrapisispora_phaffii@S (  124) ATATCATACTTCTCTCATTA  1 
+yHMPu5000035629_Yueomyce (  445) ACTTGTAAATTCATTCTCTC  1 
+Vanderwaltozyma_polyspor (  110) ATCAAGTTTCACACTCATTA  1 
+yHMPu5000034875_Tetrapis (  150) TTAATTAACGTCATTCTTTA  1 
+yHMPu5000035629_Yueomyce (  167) TATATATTATTCTATCCTTT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WHWWWTYWWKWCAYTCMTTT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 24542 bayes= 8.99518 E= 9.1e-060 
+    54     34   -133    -53 
+    34     90  -1345    -44 
+    46     40  -1345    -24 
+    28    -35   -207     15 
+   -24     59   -133     15 
+   -85     59    -66     37 
+   -66     90   -107     18 
+    28     11  -1345     10 
+    62   -147   -265      3 
+  -178   -173    139     49 
+   -24      3  -1345     49 
+ -1345    275  -1345  -1345 
+    93   -305     -7    -79 
+  -243    123  -1345     56 
+ -1345  -1345  -1345    132 
+ -1345    275  -1345  -1345 
+    37     75     51   -140 
+ -1345     40  -1345    100 
+ -1345  -1345  -1345    132 
+   -78   -105  -1345     87 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WHWWWTYWWKWCAYTCMTTT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 112 E= 9.1e-060 
+ 0.491071  0.187500  0.044643  0.276786 
+ 0.428571  0.276786  0.000000  0.294643 
+ 0.464286  0.196429  0.000000  0.339286 
+ 0.410714  0.116071  0.026786  0.446429 
+ 0.285714  0.223214  0.044643  0.446429 
+ 0.187500  0.223214  0.071429  0.517857 
+ 0.214286  0.276786  0.053571  0.455357 
+ 0.410714  0.160714  0.000000  0.428571 
+ 0.517857  0.053571  0.017857  0.410714 
+ 0.098214  0.044643  0.294643  0.562500 
+ 0.285714  0.151786  0.000000  0.562500 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.642857  0.017857  0.107143  0.232143 
+ 0.062500  0.348214  0.000000  0.589286 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.437500  0.250000  0.160714  0.151786 
+ 0.000000  0.196429  0.000000  0.803571 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.196429  0.071429  0.000000  0.732143 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WHWWWTYWWKWCAYTCMTTT MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AT][ATC][AT][TA][TAC][TC][TCA][TA][AT][TG][TA]C[AT][TC]TC[AC]TTT
+--------------------------------------------------------------------------------
+
+
+
+
+Time 52.18 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF GCRCGYRAWSVDGS MEME-2	width =  14  sites =  17  llr = 207  E-value = 2.2e-005
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif GCRCGYRAWSVDGS MEME-2 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::5221474134:2
+pos.-specific     C  :92624:3154114
+probability       G  91316:6:233394
+matrix            T  1::1:6::41:3::
+
+         bits    3.2               
+                 2.8             * 
+                 2.5 **          * 
+                 2.2 **          * 
+Relative         1.9 **          * 
+Entropy          1.6 **    *     * 
+(17.6 bits)      1.3 **  * *     **
+                 0.9 ***** ** ** **
+                 0.6 ******** ** **
+                 0.3 ******** *****
+                 0.0 --------------
+
+Multilevel           GCACGTGAACCAGC
+consensus              GACCACTGAG G
+sequence                       GT  
+                                   
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCRCGYRAWSVDGS MEME-2 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site   
+-------------             ----- ---------            --------------
+yHMPu5000034877_Tetrapis     39  7.98e-11 CAGCTCTTAC GCGCGTGAACCGGG TTACTATAAT
+yHMPu5000034875_Tetrapis     28  5.55e-09 TAATTTTTAA GCGCGTAAACCGGG TTACTCTCAT
+Tetrapisispora_blattae@S    411  3.23e-07 GGATTTTTAA GCCACTGCGCCTGG CGGCTGCCAA
+yHMPu5000035629_Yueomyce    331  3.59e-07 TTTATTCTTA GCACACAAGCCAGG AGCAAGTAAT
+Tetrapisispora_blattae@S     38  3.96e-07 AAGTGTAGGT GCAGGTGCAGATGC AGGCGTAAGT
+yHMPu5000034876_Tetrapis    263  4.47e-07 ATGGTGCTTG GCACCCGAGCAAGA AATGAATAAA
+yHMPu5000034875_Tetrapis      5  5.42e-07       GATG GCCTGCGATGGAGG TTGTCAATTT
+yHMPu5000035629_Yueomyce    111  6.74e-07 TCGCGTACCT GCGCCCAATAGGGC AAAAAGTCAG
+yHMPu5000034875_Tetrapis    349  8.18e-07 TAGGAACTTA GCACGCAATTGGGC AACTGTTAAT
+Tetrapisispora_blattae@S    282  1.09e-06 TTGATTGATT GGGAGTGATGGAGG AAGGAGAGGG
+Tetrapisispora_blattae@S     21  1.19e-06 TTCCCACCTC GCAAACGCTCCTGC TCCTCTCACT
+Tetrapisispora_blattae@S    113  2.04e-06 TGACCGTGAC GCACGTGATACGCC TTTGCCCTAC
+yHMPu5000035629_Yueomyce    252  2.42e-06 ATGCGAAACC GCAGCAGCAGCAGC GAACACGAAA
+yHMPu5000035629_Yueomyce    232  2.64e-06 CTATCACTGA TCACGTGAAGATGC GAAACCGCAG
+yHMPu5000035629_Yueomyce    174  5.00e-06 CGCGTAGTTA GCGAGTAAACAAGA GAAAGTTTCA
+yHMPu5000034876_Tetrapis    368  5.40e-06 TTAAAGAGAT GCACATACACACGG ATATATATAT
+Tetrapisispora_blattae@S     98  9.65e-06 TATCGCTCTG TCCCGTGACCGTGA CGCACGTGAT
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCRCGYRAWSVDGS MEME-2 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+yHMPu5000034877_Tetrapis            8e-11  38_[+2]_648
+yHMPu5000034875_Tetrapis          5.6e-09  27_[+2]_659
+Tetrapisispora_blattae@S            4e-07  37_[+2]_359_[+2]_276
+yHMPu5000035629_Yueomyce          2.6e-06  231_[+2]_6_[+2]_65_[+2]_356
+yHMPu5000034876_Tetrapis          5.4e-06  262_[+2]_91_[+2]_319
+yHMPu5000034875_Tetrapis          5.4e-07  4_[+2]_182
+yHMPu5000035629_Yueomyce            5e-06  110_[+2]_49_[+2]_513
+yHMPu5000034875_Tetrapis          8.2e-07  348_[+2]_138
+Tetrapisispora_blattae@S          1.1e-06  281_[+2]_205
+Tetrapisispora_blattae@S          1.2e-06  20_[+2]_166
+Tetrapisispora_blattae@S          9.6e-06  97_[+2]_1_[+2]_74
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCRCGYRAWSVDGS MEME-2 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF GCRCGYRAWSVDGS width=14 seqs=17
+yHMPu5000034877_Tetrapis (   39) GCGCGTGAACCGGG  1 
+yHMPu5000034875_Tetrapis (   28) GCGCGTAAACCGGG  1 
+Tetrapisispora_blattae@S (  411) GCCACTGCGCCTGG  1 
+yHMPu5000035629_Yueomyce (  331) GCACACAAGCCAGG  1 
+Tetrapisispora_blattae@S (   38) GCAGGTGCAGATGC  1 
+yHMPu5000034876_Tetrapis (  263) GCACCCGAGCAAGA  1 
+yHMPu5000034875_Tetrapis (    5) GCCTGCGATGGAGG  1 
+yHMPu5000035629_Yueomyce (  111) GCGCCCAATAGGGC  1 
+yHMPu5000034875_Tetrapis (  349) GCACGCAATTGGGC  1 
+Tetrapisispora_blattae@S (  282) GGGAGTGATGGAGG  1 
+Tetrapisispora_blattae@S (   21) GCAAACGCTCCTGC  1 
+Tetrapisispora_blattae@S (  113) GCACGTGATACGCC  1 
+yHMPu5000035629_Yueomyce (  252) GCAGCAGCAGCAGC  1 
+yHMPu5000035629_Yueomyce (  232) TCACGTGAAGATGC  1 
+yHMPu5000035629_Yueomyce (  174) GCGAGTAAACAAGA  1 
+yHMPu5000034876_Tetrapis (  368) GCACATACACACGG  1 
+Tetrapisispora_blattae@S (   98) TCCCGTGACCGTGA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCRCGYRAWSVDGS MEME-2 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 14 n= 25034 bayes= 11.3183 E= 2.2e-005 
+ -1073  -1073    297   -177 
+ -1073    266    -93  -1073 
+    65     25    139  -1073 
+   -52    199      6   -276 
+   -94     66    239  -1073 
+  -252    125  -1073     55 
+     6  -1073    252  -1073 
+   106     99  -1073  -1073 
+    28   -133     65    -18 
+  -152    183    139   -276 
+   -20    147    139  -1073 
+     6   -133    139    -45 
+ -1073   -133    306  -1073 
+   -94    147    187  -1073 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCRCGYRAWSVDGS MEME-2 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 14 nsites= 17 E= 2.2e-005 
+ 0.000000  0.000000  0.882353  0.117647 
+ 0.000000  0.941176  0.058824  0.000000 
+ 0.529412  0.176471  0.294118  0.000000 
+ 0.235294  0.588235  0.117647  0.058824 
+ 0.176471  0.235294  0.588235  0.000000 
+ 0.058824  0.352941  0.000000  0.588235 
+ 0.352941  0.000000  0.647059  0.000000 
+ 0.705882  0.294118  0.000000  0.000000 
+ 0.411765  0.058824  0.176471  0.352941 
+ 0.117647  0.529412  0.294118  0.058824 
+ 0.294118  0.411765  0.294118  0.000000 
+ 0.352941  0.058824  0.294118  0.294118 
+ 0.000000  0.058824  0.941176  0.000000 
+ 0.176471  0.411765  0.411765  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCRCGYRAWSVDGS MEME-2 regular expression
+--------------------------------------------------------------------------------
+GC[AG][CA][GC][TC][GA][AC][AT][CG][CAG][AGT]G[CG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time 98.20 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AAAAAAAAMAAARAA MEME-3	width =  15  sites =  45  llr = 426  E-value = 1.9e-006
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AAAAAAAAMAAARAA MEME-3 Description
+--------------------------------------------------------------------------------
+Simplified        A  88878876487958a
+pos.-specific     C  :1:::2:24111:2:
+probability       G  11132:312:::4::
+matrix            T  1:1::::1111:2::
+
+         bits    3.2                
+                 2.8                
+                 2.5                
+                 2.2                
+Relative         1.9                
+Entropy          1.6               *
+(13.6 bits)      1.3     * *    * **
+                 0.9  * ****  * * **
+                 0.6 ******* *******
+                 0.3 ***************
+                 0.0 ---------------
+
+Multilevel           AAAAAAAAAAAAAAA
+consensus               GG G C   G  
+sequence                            
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAAAAAAAMAAARAA MEME-3 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+yHMPu5000034877_Tetrapis     50  4.01e-07 TAGCTTTCCA AAAGGAGAGAAAAAA GGGTAAAAGT
+yHMPu5000034875_Tetrapis     24  4.01e-07 TAATTTATGG AAAGGAGAGAAAAAA GGGTAAAAGT
+yHMPu5000035629_Yueomyce    290  1.20e-06 GAAAGTGGAT AAAAAAGACACAGCA TATAAATAAA
+Tetrapisispora_phaffii@S    280  1.57e-06 GGAAAAAAAT AAAAAAGAGAGAGAA TTATTGAAAT
+yHMPu5000034877_Tetrapis    168  2.10e-06 TCATTCTTGT AAAAAAAACAACAAA ATACAACCAA
+Tetrapisispora_blattae@S    171  2.42e-06 AAATTAATTA AAAAAAAACAAATAA ATATAACGAC
+Tetrapisispora_blattae@S    214  3.10e-06 GTCGAAAGTC AAAAACAAAAAAAAA AATAAAGTAA
+yHMPu5000034875_Tetrapis      9  3.10e-06   AAATGGGA AAAGGAAACAAATAA TTTGTATATA
+yHMPu5000034877_Tetrapis    501  4.01e-06 TTCGCATATT AGAGAAGGCCAAGAA ACTAAATGAT
+Tetrapisispora_blattae@S    610  4.01e-06 ACTCGTAATT ACAAAAAACAAAAAA AATTTTTAAC
+Tetrapisispora_phaffii@S    264  4.01e-06 AGGAATTTTT GAAAGAGGAAAAAAA TAAAAAAGAG
+yHMPu5000034876_Tetrapis     76  5.14e-06 TGTGTAACAC AAAAACACAAAAAAA AAAATACTAA
+Tetrapisispora_phaffii@S     31  5.14e-06 TTCTTTATTT AAAAGAACCATAGAA AAAAAATTCA
+Vanderwaltozyma_polyspor    111  5.14e-06 TATATAATAT AAAAGCAACAAAACA AACCACAGCA
+Tetrapisispora_blattae@S    353  8.27e-06 GTATTTCTTC AAAAAAGTAAAAAAA TATACAAATA
+yHMPu5000035629_Yueomyce    437  1.04e-05 CTTGAATTTA TAGAAAACCAAAGAA CTTTATATCT
+yHMPu5000034876_Tetrapis    486  1.04e-05 TAATAAATTT AAAAACAAAAAAACA           
+yHMPu5000035629_Yueomyce    447  1.15e-05 AAAATATAAT AAAAAAAACAACTAA ATAAAAACAT
+yHMPu5000034877_Tetrapis      9  1.15e-05   AGTATACT TAAGAAACCACAGAA AAAATATTCA
+yHMPu5000035629_Yueomyce     32  1.27e-05 GAGGGTGCTG AAAAAAGATACAGAA GCTAACTTGA
+Vanderwaltozyma_polyspor    162  1.42e-05 AACTAATCTA GAAAAAAAAAAATAA TAATTCATCC
+yHMPu5000035629_Yueomyce    243  1.42e-05 GCTGGACTTC AAGGAAAATAAAGAA TCATGGTATT
+Vanderwaltozyma_polyspor    106  1.42e-05 ATTATTAATT AAAAAAAATAAAAAA CACATCTAGT
+Tetrapisispora_phaffii@S     74  1.42e-05 TATCTTTATA AAACAAAAAAAAGAA TTACTAACTA
+Tetrapisispora_blattae@S    349  1.73e-05 ACGACGCGAA AATGGCAACAAAAAA ATAGCCTAGT
+yHMPu5000034875_Tetrapis     11  2.09e-05 TAAAGTAAAA GCAAAAGCAAAAAAA ACATACCATT
+yHMPu5000034876_Tetrapis    178  2.09e-05 TTGTACCTTT AATGAAGGGCAAGAA AAGGAAATTT
+Vanderwaltozyma_polyspor    205  2.09e-05 CCATATTATT TAAAAAGTGAAAGAA CATATATCTC
+Vanderwaltozyma_polyspor    348  2.09e-05 TACGTTTTGA AGAAACAGCAAAACA TTTACACACC
+yHMPu5000034876_Tetrapis      7  2.09e-05     TGTGGA AAAGAAGAATAAAAA TAAAAGAAAT
+Tetrapisispora_blattae@S    151  2.29e-05 CATAGTGAAC GAAAAAATAAAAAAA CTAATAAAAA
+Tetrapisispora_phaffii@S     98  3.52e-05 TCACATAATA GGAGAAAGGATAGAA AGTATAGGAG
+yHMPu5000034877_Tetrapis     11  3.83e-05 GTTTTACTAT AGTAAAAGCAAAGCA AAAAATACCA
+yHMPu5000034875_Tetrapis     27  4.16e-05 TTCAGTATTT AAGAACACCATAAAA AAAACAATCA
+yHMPu5000034877_Tetrapis     20  4.16e-05 AACCAAAAAT AAAAAAATAAACAAA TAATTTTGTA
+yHMPu5000034876_Tetrapis    170  4.51e-05 TTTTAGCTTT TAAGAAAAAAACAAA TTCCTACACT
+Tetrapisispora_phaffii@S    655  4.89e-05 TTTTCTATAG AAAAGAACCATCGCA TACTGCTTTC
+Tetrapisispora_blattae@S    125  4.89e-05 TTGTTTTTGC AAGAAAAAAACATAA TTAAAACAAT
+yHMPu5000034875_Tetrapis    144  4.89e-05 CCGTTTATTT ACAGAAAAGTAAGAA AAAAATCTTC
+yHMPu5000034875_Tetrapis    181  5.29e-05 CTTTGAAAAA AATAACAACCAAAAA CAACC     
+Tetrapisispora_blattae@S    107  5.69e-05 AACAATTGAA AATAAAAAAAAATAA ATTCTATTAC
+Tetrapisispora_phaffii@S    177  6.60e-05 TCATTCTTCT TAAAAAAAACAAGCA ATATCAACA 
+Tetrapisispora_blattae@S    152  6.60e-05 TTATTTTCTT GAAAAAGAGTCAAAA TTAAAAACTA
+yHMPu5000034876_Tetrapis     51  6.60e-05 ATTTTATATA AAAAGAGCAATATAA ATTAGTTAAT
+yHMPu5000034877_Tetrapis    146  8.78e-05 TTTTTCTTAT AAGAAAGTAAGAAAA AAATCTTCTG
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAAAAAAAMAAARAA MEME-3 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+yHMPu5000034877_Tetrapis            4e-07  49_[+3]_436
+yHMPu5000034875_Tetrapis            4e-07  23_[+3]_462
+yHMPu5000035629_Yueomyce          1.2e-06  289_[+3]_396
+Tetrapisispora_phaffii@S            4e-06  263_[+3]_1_[+3]_206
+yHMPu5000034877_Tetrapis          2.1e-06  167_[+3]_18
+Tetrapisispora_blattae@S          4.9e-05  124_[+3]_31_[+3]_424_[+3]_76
+Tetrapisispora_blattae@S          2.3e-05  150_[+3]_48_[+3]_124_[+3]_133
+yHMPu5000034875_Tetrapis          4.9e-05  8_[+3]_120_[+3]_42
+yHMPu5000034877_Tetrapis            4e-06  500_[+3]_185
+yHMPu5000034876_Tetrapis          2.1e-05  75_[+3]_87_[+3]_293_[+3]
+Tetrapisispora_phaffii@S          1.4e-05  30_[+3]_28_[+3]_112
+Vanderwaltozyma_polyspor          5.1e-06  110_[+3]_75
+yHMPu5000035629_Yueomyce            1e-05  436_[+3]_249
+yHMPu5000035629_Yueomyce          1.1e-05  31_[+3]_400_[+3]_39
+yHMPu5000034877_Tetrapis          1.1e-05  8_[+3]_177
+Vanderwaltozyma_polyspor          1.4e-05  161_[+3]_24
+yHMPu5000035629_Yueomyce          1.4e-05  242_[+3]_243
+Vanderwaltozyma_polyspor          1.4e-05  105_[+3]_80
+Tetrapisispora_blattae@S          1.7e-05  348_[+3]_337
+yHMPu5000034875_Tetrapis          2.1e-05  10_[+3]_175
+Vanderwaltozyma_polyspor          2.1e-05  204_[+3]_281
+Vanderwaltozyma_polyspor          2.1e-05  347_[+3]_138
+yHMPu5000034876_Tetrapis          2.1e-05  6_[+3]_179
+Tetrapisispora_phaffii@S          3.5e-05  97_[+3]_588
+yHMPu5000034877_Tetrapis          3.8e-05  10_[+3]_175
+yHMPu5000034875_Tetrapis          4.2e-05  26_[+3]_159
+yHMPu5000034877_Tetrapis          8.8e-05  19_[+3]_111_[+3]_40
+yHMPu5000034876_Tetrapis          4.5e-05  169_[+3]_16
+Tetrapisispora_phaffii@S          4.9e-05  654_[+3]_31
+yHMPu5000034875_Tetrapis          5.3e-05  180_[+3]_5
+Tetrapisispora_blattae@S          5.7e-05  106_[+3]_79
+Tetrapisispora_phaffii@S          6.6e-05  176_[+3]_9
+Tetrapisispora_blattae@S          6.6e-05  151_[+3]_34
+yHMPu5000034876_Tetrapis          6.6e-05  50_[+3]_135
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAAAAAAAMAAARAA MEME-3 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AAAAAAAAMAAARAA width=15 seqs=45
+yHMPu5000034877_Tetrapis (   50) AAAGGAGAGAAAAAA  1 
+yHMPu5000034875_Tetrapis (   24) AAAGGAGAGAAAAAA  1 
+yHMPu5000035629_Yueomyce (  290) AAAAAAGACACAGCA  1 
+Tetrapisispora_phaffii@S (  280) AAAAAAGAGAGAGAA  1 
+yHMPu5000034877_Tetrapis (  168) AAAAAAAACAACAAA  1 
+Tetrapisispora_blattae@S (  171) AAAAAAAACAAATAA  1 
+Tetrapisispora_blattae@S (  214) AAAAACAAAAAAAAA  1 
+yHMPu5000034875_Tetrapis (    9) AAAGGAAACAAATAA  1 
+yHMPu5000034877_Tetrapis (  501) AGAGAAGGCCAAGAA  1 
+Tetrapisispora_blattae@S (  610) ACAAAAAACAAAAAA  1 
+Tetrapisispora_phaffii@S (  264) GAAAGAGGAAAAAAA  1 
+yHMPu5000034876_Tetrapis (   76) AAAAACACAAAAAAA  1 
+Tetrapisispora_phaffii@S (   31) AAAAGAACCATAGAA  1 
+Vanderwaltozyma_polyspor (  111) AAAAGCAACAAAACA  1 
+Tetrapisispora_blattae@S (  353) AAAAAAGTAAAAAAA  1 
+yHMPu5000035629_Yueomyce (  437) TAGAAAACCAAAGAA  1 
+yHMPu5000034876_Tetrapis (  486) AAAAACAAAAAAACA  1 
+yHMPu5000035629_Yueomyce (  447) AAAAAAAACAACTAA  1 
+yHMPu5000034877_Tetrapis (    9) TAAGAAACCACAGAA  1 
+yHMPu5000035629_Yueomyce (   32) AAAAAAGATACAGAA  1 
+Vanderwaltozyma_polyspor (  162) GAAAAAAAAAAATAA  1 
+yHMPu5000035629_Yueomyce (  243) AAGGAAAATAAAGAA  1 
+Vanderwaltozyma_polyspor (  106) AAAAAAAATAAAAAA  1 
+Tetrapisispora_phaffii@S (   74) AAACAAAAAAAAGAA  1 
+Tetrapisispora_blattae@S (  349) AATGGCAACAAAAAA  1 
+yHMPu5000034875_Tetrapis (   11) GCAAAAGCAAAAAAA  1 
+yHMPu5000034876_Tetrapis (  178) AATGAAGGGCAAGAA  1 
+Vanderwaltozyma_polyspor (  205) TAAAAAGTGAAAGAA  1 
+Vanderwaltozyma_polyspor (  348) AGAAACAGCAAAACA  1 
+yHMPu5000034876_Tetrapis (    7) AAAGAAGAATAAAAA  1 
+Tetrapisispora_blattae@S (  151) GAAAAAATAAAAAAA  1 
+Tetrapisispora_phaffii@S (   98) GGAGAAAGGATAGAA  1 
+yHMPu5000034877_Tetrapis (   11) AGTAAAAGCAAAGCA  1 
+yHMPu5000034875_Tetrapis (   27) AAGAACACCATAAAA  1 
+yHMPu5000034877_Tetrapis (   20) AAAAAAATAAACAAA  1 
+yHMPu5000034876_Tetrapis (  170) TAAGAAAAAAACAAA  1 
+Tetrapisispora_phaffii@S (  655) AAAAGAACCATCGCA  1 
+Tetrapisispora_blattae@S (  125) AAGAAAAAAACATAA  1 
+yHMPu5000034875_Tetrapis (  144) ACAGAAAAGTAAGAA  1 
+yHMPu5000034875_Tetrapis (  181) AATAACAACCAAAAA  1 
+Tetrapisispora_blattae@S (  107) AATAAAAAAAAATAA  1 
+Tetrapisispora_phaffii@S (  177) TAAAAAAAACAAGCA  1 
+Tetrapisispora_blattae@S (  152) GAAAAAGAGTCAAAA  1 
+yHMPu5000034876_Tetrapis (   51) AAAAGAGCAATATAA  1 
+yHMPu5000034877_Tetrapis (  146) AAGAAAGTAAGAAAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAAAAAAAMAAARAA MEME-3 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 24952 bayes= 10.1594 E= 1.9e-006 
+   116  -1214     25   -185 
+   132   -115    -34  -1214 
+   120  -1214     -2   -185 
+   107   -274    124  -1214 
+   124  -1214     83  -1214 
+   128     26  -1214  -1214 
+    98  -1214    157  -1214 
+    77     26     25   -185 
+    16    135     66   -259 
+   132    -74  -1214   -259 
+   112    -42   -134   -185 
+   139    -42  -1214  -1214 
+    53  -1214    166   -137 
+   132      7  -1214  -1214 
+   156  -1214  -1214  -1214 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAAAAAAAMAAARAA MEME-3 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 45 E= 1.9e-006 
+ 0.755556  0.000000  0.133333  0.111111 
+ 0.844444  0.066667  0.088889  0.000000 
+ 0.777778  0.000000  0.111111  0.111111 
+ 0.711111  0.022222  0.266667  0.000000 
+ 0.800000  0.000000  0.200000  0.000000 
+ 0.822222  0.177778  0.000000  0.000000 
+ 0.666667  0.000000  0.333333  0.000000 
+ 0.577778  0.177778  0.133333  0.111111 
+ 0.377778  0.377778  0.177778  0.066667 
+ 0.844444  0.088889  0.000000  0.066667 
+ 0.733333  0.111111  0.044444  0.111111 
+ 0.888889  0.111111  0.000000  0.000000 
+ 0.488889  0.000000  0.355556  0.155556 
+ 0.844444  0.155556  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAAAAAAAMAAARAA MEME-3 regular expression
+--------------------------------------------------------------------------------
+AAA[AG][AG]A[AG]A[AC]AAA[AG]AA
+--------------------------------------------------------------------------------
+
+
+
+
+Time 143.70 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Tetrapisispora_blattae@S         1.53e-04  20_[+2(1.19e-06)]_66_[+1(4.45e-05)]_\
+    23_[+1(6.21e-05)]_37
+Tetrapisispora_phaffii@S         1.43e-03  160_[+1(6.17e-07)]_20
+Vanderwaltozyma_polyspor         2.43e-03  155_[+1(1.31e-06)]_25
+yHMPu5000034875_Tetrapis         6.58e-06  8_[+3(3.10e-06)]_120_[+3(4.89e-05)]_\
+    2_[+1(6.17e-07)]_20
+yHMPu5000034876_Tetrapis         6.02e-05  6_[+3(2.09e-05)]_139_[+1(1.31e-06)]_\
+    20
+yHMPu5000034877_Tetrapis         6.46e-05  19_[+3(4.16e-05)]_111_\
+    [+3(8.78e-05)]_[+1(6.17e-07)]_20
+yHMPu5000035629_Yueomyce         1.14e-01  155_[+1(6.21e-05)]_25
+Tetrapisispora_blattae@S         1.27e-02  97_[+2(9.65e-06)]_1_[+2(2.04e-06)]_\
+    74
+Tetrapisispora_blattae@S         3.64e-01  200
+Tetrapisispora_phaffii@S         1.32e-02  51_[+1(3.08e-05)]_129
+Vanderwaltozyma_polyspor         8.62e-02  61_[+1(2.70e-05)]_119
+Vanderwaltozyma_polyspor         7.83e-01  200
+yHMPu5000034875_Tetrapis         8.02e-03  32_[+1(1.54e-05)]_148
+yHMPu5000034876_Tetrapis         1.49e-01  124_[+1(6.89e-05)]_56
+yHMPu5000034877_Tetrapis         8.23e-02  24_[+1(3.08e-05)]_156
+yHMPu5000035629_Yueomyce         7.29e-02  176_[+1(8.41e-05)]_4
+yHMPu5000035629_Yueomyce         2.05e-02  126_[+1(3.49e-05)]_54
+Tetrapisispora_blattae@S         4.52e-02  15_[+1(9.25e-05)]_24_[+1(2.36e-05)]_\
+    18_[+1(2.36e-05)]_30_[+1(3.08e-05)]_33
+Tetrapisispora_phaffii@S         1.70e-03  105_[+1(3.56e-07)]_75
+Vanderwaltozyma_polyspor         2.90e-03  110_[+3(5.14e-06)]_75
+yHMPu5000034875_Tetrapis         4.15e-06  4_[+2(5.42e-07)]_106_[+1(2.56e-06)]_\
+    56
+yHMPu5000034876_Tetrapis         3.15e-03  78_[+1(3.95e-05)]_28_[+1(8.00e-07)]_\
+    54
+yHMPu5000034877_Tetrapis         1.73e-06  103_[+1(1.58e-08)]_77
+yHMPu5000035629_Yueomyce         2.64e-02  57_[+1(5.65e-06)]_87_[+1(6.77e-06)]_\
+    16
+Tetrapisispora_blattae@S         1.14e-03  22_[+1(2.56e-06)]_121_\
+    [+1(2.36e-05)]_17
+Tetrapisispora_phaffii@S         1.46e-04  30_[+3(5.14e-06)]_28_[+3(1.42e-05)]_\
+    5_[+1(9.55e-06)]_23_[+1(8.06e-06)]_44
+Tetrapisispora_phaffii@S         5.11e-01  200
+Vanderwaltozyma_polyspor         5.17e-01  200
+Vanderwaltozyma_polyspor         2.65e-03  12_[+1(9.25e-05)]_73_[+3(1.42e-05)]_\
+    80
+yHMPu5000034875_Tetrapis         4.25e-01  200
+yHMPu5000034875_Tetrapis         6.83e-04  26_[+3(4.16e-05)]_71_[+1(3.95e-05)]_\
+    11_[+1(6.77e-06)]_37
+yHMPu5000034876_Tetrapis         2.59e-02  50_[+3(6.60e-05)]_135
+yHMPu5000034876_Tetrapis         1.71e-03  87_[+1(2.36e-05)]_27_[+1(3.08e-05)]_\
+    15_[+3(4.51e-05)]_16
+yHMPu5000034877_Tetrapis         4.00e-05  8_[+3(1.15e-05)]_82_[+1(3.95e-05)]_\
+    13_[+1(1.03e-06)]_42
+yHMPu5000034877_Tetrapis         4.86e-01  200
+yHMPu5000035629_Yueomyce         6.34e-06  37_[+1(8.59e-10)]_71_[+1(2.06e-06)]_\
+    52
+Tetrapisispora_blattae@S         5.57e-04  281_[+2(1.09e-06)]_205
+Tetrapisispora_blattae@S         1.14e-02  150_[+3(2.29e-05)]_48_\
+    [+3(3.10e-06)]_124_[+3(8.27e-06)]_20_[+3(9.97e-05)]_98
+Tetrapisispora_phaffii@S         9.51e-03  263_[+3(4.01e-06)]_1_[+3(1.57e-06)]_\
+    206
+Tetrapisispora_phaffii@S         4.97e-02  313_[+1(1.13e-05)]_64_\
+    [+1(5.57e-05)]_83
+Vanderwaltozyma_polyspor         1.29e-03  204_[+1(2.70e-05)]_123_\
+    [+3(2.09e-05)]_12_[+1(3.08e-05)]_106
+Vanderwaltozyma_polyspor         5.03e-02  204_[+3(2.09e-05)]_281
+yHMPu5000034875_Tetrapis         4.01e-02  313_[+1(3.15e-06)]_62_\
+    [+1(9.55e-06)]_85
+yHMPu5000034875_Tetrapis         7.13e-06  23_[+3(4.01e-07)]_310_\
+    [+2(8.18e-07)]_138
+yHMPu5000034876_Tetrapis         5.73e-03  75_[+3(5.14e-06)]_87_[+3(2.09e-05)]_\
+    293_[+3(1.04e-05)]
+yHMPu5000034876_Tetrapis         3.17e-01  270_[+1(9.25e-05)]_210
+yHMPu5000034877_Tetrapis         4.49e-04  49_[+3(4.01e-07)]_436
+yHMPu5000034877_Tetrapis         7.82e-03  322_[+1(2.56e-06)]_59_\
+    [+1(3.15e-06)]_79
+yHMPu5000035629_Yueomyce         1.73e-02  242_[+3(1.42e-05)]_243
+yHMPu5000035629_Yueomyce         4.70e-02  31_[+3(1.27e-05)]_400_\
+    [+3(1.15e-05)]_39
+Tetrapisispora_blattae@S         4.64e-06  37_[+2(3.96e-07)]_267_\
+    [+2(3.57e-05)]_16_[+3(1.73e-05)]_47_[+2(3.23e-07)]_153_[+1(6.89e-05)]_54_\
+    [+1(1.54e-05)]_29
+Tetrapisispora_blattae@S         2.54e-03  124_[+3(4.89e-05)]_31_\
+    [+3(2.42e-06)]_424_[+3(4.01e-06)]_76
+Tetrapisispora_phaffii@S         3.73e-02  97_[+3(3.52e-05)]_588
+Tetrapisispora_phaffii@S         1.71e-02  654_[+3(4.89e-05)]_31
+Vanderwaltozyma_polyspor         3.55e-01  700
+yHMPu5000034875_Tetrapis         2.93e-04  27_[+2(5.55e-09)]_659
+yHMPu5000034876_Tetrapis         1.12e-05  262_[+2(4.47e-07)]_91_\
+    [+2(5.40e-06)]_174_[+1(2.06e-06)]_125
+yHMPu5000034877_Tetrapis         5.52e-02  500_[+3(4.01e-06)]_185
+yHMPu5000034877_Tetrapis         4.81e-06  38_[+2(7.98e-11)]_648
+yHMPu5000035629_Yueomyce         1.34e-07  154_[+2(2.39e-05)]_63_\
+    [+2(2.64e-06)]_6_[+2(2.42e-06)]_24_[+3(1.20e-06)]_26_[+2(3.59e-07)]_226_\
+    [+1(3.86e-06)]_6_[+1(4.99e-05)]_33_[+1(1.32e-05)]_31
+yHMPu5000035629_Yueomyce         5.01e-05  110_[+2(6.74e-07)]_49_\
+    [+2(5.00e-06)]_249_[+3(1.04e-05)]_249
+Tetrapisispora_blattae@S         4.97e-04  32_[+1(4.99e-05)]_111_\
+    [+1(2.06e-06)]_17
+Tetrapisispora_blattae@S         7.67e-02  151_[+3(6.60e-05)]_34
+Tetrapisispora_phaffii@S         4.62e-05  152_[+1(1.03e-06)]_4_[+3(6.60e-05)]_\
+    9
+Tetrapisispora_phaffii@S         9.26e-01  200
+Vanderwaltozyma_polyspor         3.39e-03  48_[+1(1.13e-05)]_132
+Vanderwaltozyma_polyspor         9.20e-01  200
+yHMPu5000034875_Tetrapis         8.94e-01  200
+yHMPu5000034875_Tetrapis         4.05e-05  151_[+1(2.65e-07)]_9_[+3(5.29e-05)]_\
+    5
+yHMPu5000034876_Tetrapis         1.02e-06  143_[+1(8.59e-10)]_37
+yHMPu5000034876_Tetrapis         3.98e-01  200
+yHMPu5000034877_Tetrapis         1.62e-06  143_[+1(2.65e-07)]_4_[+3(2.10e-06)]_\
+    18
+yHMPu5000034877_Tetrapis         4.29e-01  200
+yHMPu5000035629_Yueomyce         8.21e-01  200
+yHMPu5000035629_Yueomyce         1.31e-03  88_[+1(3.15e-06)]_92
+Tetrapisispora_blattae@S         5.02e-03  3_[+1(4.99e-05)]_83_[+3(5.69e-05)]_\
+    79
+Tetrapisispora_phaffii@S         1.17e-02  17_[+1(4.99e-05)]_41_[+1(2.70e-05)]_\
+    28_[+1(9.25e-05)]_54
+Vanderwaltozyma_polyspor         9.46e-04  16_[+1(4.99e-05)]_46_[+1(3.49e-05)]_\
+    17_[+1(8.41e-05)]_22_[+3(1.42e-05)]_24
+yHMPu5000034875_Tetrapis         1.82e-04  10_[+3(2.09e-05)]_[+1(8.06e-06)]_\
+    155
+yHMPu5000034876_Tetrapis         2.34e-02  54_[+1(8.06e-06)]_15_[+1(9.25e-05)]_\
+    91
+yHMPu5000034877_Tetrapis         1.19e-04  10_[+3(3.83e-05)]_2_[+1(4.99e-05)]_\
+    31_[+1(1.65e-06)]_11_[+1(9.25e-05)]_71
+yHMPu5000035629_Yueomyce         2.94e-02  33_[+1(6.77e-06)]_111_\
+    [+1(9.55e-06)]_16
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (3) found.
+********************************************************************************
+
+CPU: ip-172-31-2-150
+
+********************************************************************************

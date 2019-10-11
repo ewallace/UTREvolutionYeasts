@@ -1,0 +1,1904 @@
+GLAM2: Gapped Local Alignment of Motifs
+Version 1056
+
+/home/meme/meme_5.0.5/bin/glam2 -Q -O . -z 3 -a 2 -b 25 -w 15 -r 10 -n 2000 -D 0.1 -E 2.0 -I 0.02 -J 1.0 n selectSsd1target_5UTRs_collated.fa
+Sequences: 135
+Greatest sequence length: 700
+Residue counts: a=11545 c=7599 g=4324 t=12631 N=1
+
+Score: 2085.34  Columns: 25  Sequences: 135
+
+                 **************...****.............*******
+YLR110C      170 ttctgtcattcgct...taaac............actatat 195 + 26.2
+YDR134C      165 ttctttcgttcgct...tcaaa............ataacta 190 + 19.2
+Saccharomyce 170 ttctgtcattcgct...taaat............actacat 195 + 24.4
+Saccharomyce 165 ttctttcaatcgct...ttact............ataacaa 190 + 17.4
+Saccharomyce 165 atctttcactcgct...tcgca............ataacaa 190 + 16.7
+Saccharomyce 170 ttctgtcattcgct...taaac............actatat 195 + 26.2
+Saccharomyce 167 ttctttctttcgctt..taca.............ataacaa 192 + 20.2
+Saccharomyce 170 ttctgtcattcgct...taaac............aatatat 195 + 26.6
+Saccharomyce 165 ttctttcgttcgct...tcaaa............ataacaa 190 + 19.4
+Saccharomyce 170 ttctgtcattcgct...taaac............actatat 195 + 26.2
+Saccharomyce 170 ttctgtcattcgct...taaac............actatat 195 + 26.2
+Saccharomyce 165 ttctttcgttcgct...tcata............ataacaa 190 + 17.2
+Saccharomyce 165 atctttcattcgct...tcgca............ataacaa 190 + 18.0
+Saccharomyce 170 ttctgtcattcgct...taaac............actatat 195 + 26.2
+YPL256C      113 ccaattcattcgct...taccacatc........ataattt 142 + 17.2
+YMR199W        8 gttcttcgttcgct...ttaa.............tttattt  32 + 14.8
+Saccharomyce 113 ccacttcattcgct...taaccac..........attataa 140 + 20.0
+Saccharomyce 160 attagctatttctt...taag.............aaaataa 184 + 16.3
+Saccharomyce 113 ccaattcattcgct...tatccacgtc.......ataattt 143 + 16.6
+Saccharomyce  14 attctacacttcgt...tacgg............tatattt  39 + 6.66
+Saccharomyce 113 accattcattcgct...taaccacacc.......ataattt 143 + 20.0
+Saccharomyce   1 gttcttcatttgtt...tcga.............tttattt  25 + 13.4
+Saccharomyce   4 gttcttcattcgct...tcaat............taattct  29 + 12.9
+Saccharomyce 113 cccattcattcgct...tatcacatc........ataattt 142 + 18.0
+Saccharomyce 113 ccaattcattcgct...tagcacatc........ataattt 142 + 16.6
+Saccharomyce 161 attagctatttcttctgtacaa............taaataa 189 + 9.17
+Saccharomyce  20 ccacttcgttcccg...tata.............tttatct  44 + 7.94
+Saccharomyce 118 ccaattcattcgct...taaccacatc.......ataattt 148 + 18.4
+YLR286C       26 atctttcactcatt...taagac...........tcaataa  52 + 20.2
+Saccharomyce  34 atctttcactcatt...taagac...........tcaataa  60 + 20.2
+Saccharomyce  29 atctttcactcctt...taagac...........tcaatat  55 + 22.5
+Saccharomyce  19 atctttcactcatt...taagac...........tcaacat  45 + 17.8
+Saccharomyce  70 ccctgtcactcctt...tgaac............attatat  95 + 20.2
+Saccharomyce  70 acctgtcactcctt...tgaac............attatat  95 + 21.1
+Saccharomyce  29 atctttcactcctt...taagac...........tcaatat  55 + 22.5
+YHR143W      170 taaagccactcctt...taacaa...........attacaa 196 + 18.8
+Saccharomyce  47 cccagtcattccttac.tatat............tttatta  74 + 20.2
+Saccharomyce 155 caaagccactcctt...taaattt..........actattt 182 + 19.4
+Saccharomyce  58 tccagtcattccttac.tatat............tctattg  85 + 17.0
+Saccharomyce  62 tccagtcattccttac.tatat............tttattg  89 + 17.4
+YBR072W       98 tcattctactctct...tatact...........aataaaa 124 + 11.5
+Saccharomyce  96 tctattttctccctac.tcatcct..........attagaa 125 + 6.34
+Saccharomyce 149 catatttaatcttt...tcaa.............acaacaa 173 + 12.7
+Saccharomyce 104 cttttccattctct...tttctc...........tctaata 130 + 10.0
+Saccharomyce 116 tcccttgctttctt...ttgatgca.........aataaaa 144 + 6.43
+Saccharomyce  27 actcttc.ctccct...tattc............taaacat  51 + 10.9
+Saccharomyce 148 tatattcaatctct...tcaaacagc........aaaataa 177 + 15.6
+YKL163W      123 acctaagatttctt...tagata...........attatta 149 + 12.0
+YJL159W      111 ttatgtccttcctt...ttacctcaaagctcaaaaaaatat 148 + 13.8
+Saccharomyce 164 atattcctttcctaac.tacaac...........acaacaa 192 + 10.5
+Saccharomyce  60 tctagtc.tacgct...taca.............atttgta  83 + 7.54
+Saccharomyce  53 agatgcgcatccttc..tagta............aatactt  79 + 2.39
+Saccharomyce  64 aattgtc.ttctttt..taca.............ttaatca  88 + 12.9
+Saccharomyce  70 catattcttttgat...tctagg...........tcttttt  96 + 1.07
+Saccharomyce 167 cctctccaaacccaa..taca.............ataataa 192 + 7.02
+Saccharomyce  88 ttgtatc.ttctct...tctac............ataataa 112 + 8.56
+Saccharomyce  90 ctgggtctctcgct...taatttag.........aatagaa 118 + 5.03
+Saccharomyce 166 cctttcctaaccctag.taca.............ataataa 192 + 9.48
+Saccharomyce 167 tccaaacacactct...taaaagt..........acattct 194 + 8.17
+Saccharomyce 117 acataagatatctt...tagaaa...........actatta 143 + 6.49
+Saccharomyce 167 tttttctaatcccaa..taca.............ataataa 192 + 10.6
+Saccharomyce   2 gctaactattcttt...taat.............aaaaaaa  26 + 8.56
+Saccharomyce 166 ccttttcctacactaa.taaa.............acaataa 192 + 14.4
+Saccharomyce  99 cagttaccttcttagt.taaattta.........aatataa 129 + 6.84
+Saccharomyce 167 caaaaactcacctt...tcaa.............aatatat 191 + 10.5
+YDR528W       13 aatcgtcattcatt...tcaa.............aaaaaaa  37 + 17.3
+YCL051W      122 tatttacattcatt...tttatt...........tctaaaa 148 + 13.0
+Saccharomyce  20 taacttcactcact...taaa.............aaaagaa  44 + 17.3
+Saccharomyce 128 ttattatattcctt...tattt............tctatat 153 + 17.2
+Saccharomyce  20 tgcggtcattcatt...tcaga............ataataa  45 + 11.6
+Saccharomyce  26 agccgtcattcatt...taaa.............aaaagaa  50 + 17.3
+Saccharomyce  17 agtcgtcattcatt...tcaaa............aaaataa  42 + 17.7
+Saccharomyce  49 gaccgtcgctcatt...taaaaacctcctcc...attataa  83 + 9.72
+YGR279C      130 ctaagtcattcttt...taca.............tctacaa 154 + 20.4
+YMR305C      118 tcacgtctctcctt...tact.............attactg 142 + 14.2
+Saccharomyce 113 ttgcgtcctttcct...tatc.............aattttt 137 + 11.1
+Saccharomyce 124 ctaagtcgctcttt...tacaagt..........acaatca 151 + 15.0
+Saccharomyce 110 tcacgtccttcctt...tatt.............aatattt 134 + 21.2
+Saccharomyce 126 ctaagtcactcttt...taaac............tctacaa 151 + 20.4
+Saccharomyce 128 ctaagtcattcttt...tacacct..........acaatcg 155 + 15.5
+Saccharomyce  32 ttcttccattcctt...ttgtca...........atcatat  58 + 14.0
+Saccharomyce 129 ctaagtcattcttt...taca.............actacaa 153 + 21.8
+Saccharomyce  32 attttccattcctac..ttca.............tctatta  57 + 14.1
+Saccharomyce 118 tcacgtctttcctt...tagct............aatttct 143 + 15.1
+Saccharomyce 106 tcacgtccttcctt...tattg............atatttg 131 + 14.1
+Saccharomyce 125 ctaagtcactcttt...taaaaa...........tctacta 151 + 19.5
+YDR293C       30 ttctgtcattcctt...ttag.............aatattt  54 + 24.0
+Saccharomyce  36 atctgtc.ctcgttc..taat.............atcacct  60 + 7.99
+Saccharomyce 403 tttcgactttccttc..tacccc...........attatta 430 + 17.7
+Saccharomyce  99 acaagtcgttcctt...tttag............accaact 124 + 8.35
+Saccharomyce  40 ttctatcattcttt...ttag.............aatattt  64 + 18.8
+Saccharomyce  25 tcctgtcattctct...ttaa.............aatattt  49 + 23.2
+Saccharomyce 401 tttcgactttccttc..tatcatc..........attatta 429 + 17.1
+YIL123W       93 tacagtccttcctt...tata.............aaaatta 117 + 24.5
+YNL066W      296 aattttcactcctt...taagc............atttttt 321 + 20.3
+Saccharomyce  60 tacagtccttcctt...taca.............aaaatta  84 + 24.5
+Saccharomyce 309 gttttccactcctt...taaaaatac........actattt 338 + 19.1
+Saccharomyce 154 tacttacattcctt...taca.............aattcca 178 + 18.9
+Saccharomyce 210 actttacactcctt...ttaa.............aaaagta 234 + 19.9
+Saccharomyce  85 tacttacaatccttcc.ttaa.............aaaatta 111 + 16.8
+Saccharomyce 246 attttccactcctt...taga.............aattcta 270 + 18.9
+Saccharomyce  83 tacagtccctcctt...tacaa............attatct 108 + 20.5
+Saccharomyce 245 atttttcactccttt..taaa.............tcaacaa 270 + 23.3
+Saccharomyce 307 atttttcactcctt...taagcc...........ttttttt 333 + 19.8
+Saccharomyce  88 tacagtccttcctt...tata.............aaattaa 112 + 21.9
+Saccharomyce 162 tacttacattcctt...taca.............aatacca 186 + 21.7
+Saccharomyce 251 actttacactccttt..taaacag..........aaaacta 279 + 20.7
+YBR162C       11 tccattcaatttttt..tttat............attataa  37 + 13.4
+Saccharomyce   1 ataattcctttgtt...taat.............ttaatta  25 + 18.5
+Saccharomyce  94 tctagtcactcctt...caaatagaacgcct...tttatct 128 + 11.1
+Saccharomyce  95 tttagtcactccttcaatagaacc..........actttta 125 + 14.6
+Saccharomyce  98 tctagtcactccttcaatagaacacct.......tttatta 131 + 14.0
+Saccharomyce  93 tctagtcactccttcaataga.............acatctt 120 + 13.9
+Saccharomyce  96 tctagtcactcctt...caaatagaacg......tctttta 127 + 12.1
+YNL300W      166 tttttaccttcctt...taata............tcaatat 191 + 22.1
+Saccharomyce 161 tttttaccttcctt...taata............tcaatca 186 + 20.7
+Saccharomyce 167 ttattacattctttaa.tacc.............aatatca 193 + 16.4
+Saccharomyce 167 tttttaccttcctt...taac.............acaatat 191 + 24.4
+Saccharomyce 166 taattaccttcctt...taatacc..........aatatca 193 + 18.8
+Saccharomyce 166 tttttaccttcctt...taaca............ttaatat 191 + 22.8
+Saccharomyce 167 tttttactttccttaa.tatc.............aatacca 193 + 15.3
+YKR042W      143 actagtccttcctt...taaaca...........aaaattt 169 + 25.2
+YJL116C      130 accttactttcctt...taat.............attataa 154 + 24.0
+Saccharomyce 148 attagtccttcctt...taaac............taaatta 173 + 25.4
+Saccharomyce 126 accttactttcctt...taacatc..........aaaagtt 153 + 17.6
+Saccharomyce 149 attagtccttcctt...taaac............taaatta 174 + 25.4
+Saccharomyce 142 accttactttcctt...taaattcag........attttta 171 + 19.7
+Saccharomyce 143 attagtccttcctt...taaac............taaatta 168 + 25.4
+Saccharomyce 127 gcctcactctcctt...taacgtc..........aaaatat 154 + 12.1
+Saccharomyce 129 acctcactttcctt...taatatt..........aaaatat 156 + 15.8
+Saccharomyce 143 actagtccttcctt...taaag............taaatta 168 + 25.0
+Saccharomyce 143 actagtccttcctt...taaac............taaattt 168 + 24.5
+Saccharomyce 130 accttactttcctt...taat.............attaaaa 154 + 20.3
+Saccharomyce 149 attagtccttcctt...taaact...........aaaatta 175 + 26.1
+Saccharomyce 128 accttactttcctt...taaattcag........attttta 157 + 19.7
+
+                 ttctttcattcctt   taaa             attataa
+                 actaga  c  gc                     taa ctt
+                   a                                c     
+
+ a  c  g  t Del Ins Score
+44 25  7 59   0      26.6
+                  0 -0.158
+21 48  4 62   0      41.1
+                  0 -0.158
+30 52  4 49   0      30.3
+                  0 -0.158
+46 21  2 66   0      50.9
+                  0 -0.158
+ 7  2 59 67   0      79.0
+                  0 -0.158
+29 16  0 90   0      92.8
+                  0 -0.158
+ 0 123  4  8   0      190.
+                  0 -0.158
+78 25  8 19   5      13.4
+                  0 -0.158
+ 9 38  0 88   0      100.
+                  0 -0.158
+ 7  0  0 128   0      220.
+                  0 -0.158
+ 0 124  0 11   0      204.
+                  0 -0.158
+11 76 29 19   0      38.0
+                  0 -0.158
+ 1 40  1 93   0      125.
+                  0 -0.158
+ 5  0  1 129   0      220.
+                 46 -155.
+ 0  2  0 133   0      245.
+                  0 -0.158
+102 16  2 15   0      109.
+                  0 -0.158
+77 22 14 22   0      35.6
+                  0 -0.158
+81 23 12 19   0      44.8
+                230 -356.
+97  0  0 38   0      143.
+                  0 -0.158
+47 38  0 50   0      46.3
+                  0 -0.158
+65  3  0 67   0      106.
+                  0 -0.158
+118  0  0 17   0      186.
+                  0 -0.158
+ 8 27  7 93   0      83.9
+                  0 -0.158
+63 17  0 55   0      67.7
+                  0 -0.158
+76  0  5 54   0      101.
+
+Score: 2040.52  Columns: 25  Sequences: 135
+
+                 *************************
+YLR110C      173 tgtc.attcgc.ttaaacactatat 195 + 23.3
+YDR134C      168 tttc.gttcgc.ttcaaaataacta 190 + 20.0
+Saccharomyce 173 tgtc.attcgc.ttaaatactacat 195 + 21.8
+Saccharomyce 168 tttc.aatcgc.tttactataacaa 190 + 18.5
+Saccharomyce 168 tttc.actcgc.ttcgcaataacaa 190 + 17.3
+Saccharomyce 173 tgtc.attcgc.ttaaacactatat 195 + 23.3
+Saccharomyce 170 tttc.tttcgc.tttacaataacaa 192 + 21.3
+Saccharomyce 173 tgtc.attcgc.ttaaacaatatat 195 + 23.6
+Saccharomyce 168 tttc.gttcgc.ttcaaaataacaa 190 + 21.1
+Saccharomyce 173 tgtc.attcgc.ttaaacactatat 195 + 23.3
+Saccharomyce 173 tgtc.attcgc.ttaaacactatat 195 + 23.3
+Saccharomyce 168 tttc.gttcgc.ttcataataacaa 190 + 19.4
+Saccharomyce 168 tttc.attcgc.ttcgcaataacaa 190 + 19.2
+Saccharomyce 173 tgtc.attcgc.ttaaacactatat 195 + 23.3
+YPL256C      116 attc.attcgc.ttaccacatcata 138 + 15.3
+YMR199W       11 cttc.gttcgc.tttaatttatttc  33 + 14.9
+Saccharomyce 116 cttc.attcgc.ttaaccacattat 138 + 21.2
+Saccharomyce 162 tagctatttct.ttaagaaaataag 185 + 10.8
+Saccharomyce 116 attc.attcgc.ttatccacgtcat 138 + 15.1
+Saccharomyce  17 ctacacttcgt.tacggtatattta  40 + 4.46
+Saccharomyce 116 attc.attcgc.ttaaccacaccat 138 + 19.3
+Saccharomyce   4 cttc.atttgt.ttcgatttatttt  26 + 13.6
+Saccharomyce   7 cttc.attcgc.ttcaattaattct  29 + 16.9
+Saccharomyce 116 attc.attcgc.ttatcacatcata 138 + 16.4
+Saccharomyce 116 attc.attcgc.ttagcacatcata 138 + 14.8
+Saccharomyce   2 cttc.attcgc.ttcagttcatttt  24 + 16.4
+Saccharomyce  23 cttc.gttccc.gtatatttatcta  45 + 11.1
+Saccharomyce 121 attc.attcgc.ttaaccacatcat 143 + 20.8
+YLR286C       70 tgtc.attcct.ttgaaccttttta  92 + 19.7
+Saccharomyce  37 tttc.actcat.ttaagactcaata  59 + 17.7
+Saccharomyce  32 tttc.actcct.ttaagactcaata  54 + 19.8
+Saccharomyce  22 tttc.actcat.ttaagactcaaca  44 + 15.8
+Saccharomyce  73 tgtc.actcct.ttgaacattatat  95 + 20.7
+Saccharomyce  73 tgtc.actcct.ttgaacattatat  95 + 20.7
+Saccharomyce  32 tttc.actcct.ttaagactcaata  54 + 19.8
+YHR143W      121 agtc.attcct.taatattttttaa 143 + 17.9
+Saccharomyce  50 agtc.attcct.tactatattttat  72 + 16.7
+Saccharomyce 158 agcc.actcct.ttaaatttactat 180 + 17.6
+Saccharomyce  61 agtc.attcct.tactatattctat  83 + 15.3
+Saccharomyce  65 agtc.attcct.tactatattttat  87 + 16.7
+YBR072W      100 attctactctc.ttatactaataaa 123 + 17.5
+Saccharomyce 108 ctactcatcctattagaatcatcaa 132 + 8.74
+Saccharomyce 152 attt.aatctt.ttcaaacaacaaa 174 + 12.4
+Saccharomyce 107 ttcc.attctc.ttttctctctaat 129 + 11.9
+Saccharomyce 120 ttgc.tttctt.ttgatgcaaataa 142 + 10.5
+Saccharomyce  29 tctt.cctccc.ttattctaaacat  51 + 8.92
+Saccharomyce 151 attc.aatctc.ttcaaacagcaaa 173 + 11.8
+YKL163W      147 ttac.atttac.atcaataagaaat 169 + 7.26
+YJL159W      114 tgtc.cttcct.tttacctcaaagc 136 + 13.5
+Saccharomyce 162 tcat.attcct.ttcctaactacaa 184 + 9.26
+Saccharomyce 140 tatctgttagt.tctactacaataa 163 + 3.71
+Saccharomyce 142 taactattctcagtacaatagtaaa 166 + 2.32
+Saccharomyce  66 ttgt.cttctt.tttacattaatca  88 + 11.2
+Saccharomyce  54 atactcatcat.tttagcatattct  77 + 10.4
+Saccharomyce 114 tttc.catc.t.tcttacctaattg 135 + 3.31
+Saccharomyce  89 tgtatcttctc.ttctacataataa 112 + 10.8
+Saccharomyce  93 ggtc.tctcgc.ttaatttagaata 115 + 7.56
+Saccharomyce 113 tatc.tttcct.tttaacacctatc 135 + 13.8
+Saccharomyce  65 tatc.gatcac.ttaactcacaatt  87 + 8.24
+Saccharomyce  85 tatc.tcttgt.ttcacctaaaact 107 + 9.03
+Saccharomyce 169 tttctaatccc.aatacaataataa 192 + 10.5
+Saccharomyce   4 taactattctt.ttaataaaaaaag  27 + 17.0
+Saccharomyce 159 tcat.attcct.tttcctacactaa 181 + 10.0
+Saccharomyce 102 ttac.cttcttagttaaatttaaat 125 + 11.8
+Saccharomyce  91 tatctacttct.ttatctctaatat 114 + 14.3
+YDR528W       16 cgtc.attcat.ttcaaaaaaaaaa  38 + 21.8
+YCL051W      125 ttac.attcat.ttttatttctaaa 147 + 17.1
+Saccharomyce  23 cttc.actcac.ttaaaaaaagaaa  45 + 17.1
+Saccharomyce  65 tgtc.gctcat.ttaaaaaaaaaac  87 + 18.6
+Saccharomyce  23 ggtc.attcat.ttcagaataataa  45 + 16.9
+Saccharomyce  29 cgtc.attcat.ttaaaaaaagaaa  51 + 19.7
+Saccharomyce  20 cgtc.attcat.ttcaaaaaaataa  42 + 22.1
+Saccharomyce  52 cgtc.gctcat.ttaaaaacctcct  74 + 11.2
+YGR279C      133 agtc.attctt.ttacatctacaat 155 + 18.6
+YMR305C      137 ttactgttctt.tttttcaaattgt 160 + 9.87
+Saccharomyce 116 cgtc.ctttcc.ttatcaatttttg 138 + 12.0
+Saccharomyce 127 agtc.gctctt.ttacaagtacaat 149 + 8.94
+Saccharomyce 113 cgtc.cttcct.ttattaatatttg 135 + 17.6
+Saccharomyce 129 agtc.actctt.ttaaactctacaa 151 + 19.1
+Saccharomyce 131 agtc.attctt.ttacacctacaat 153 + 18.7
+Saccharomyce  35 ttcc.attcct.tttgtcaatcata  57 + 12.5
+Saccharomyce 132 agtc.attctt.ttacaactacaat 154 + 19.5
+Saccharomyce 121 cgtc.tttcct.ttatcaatcttag 143 + 16.0
+Saccharomyce 121 cgtc.tttcct.ttagctaatttct 143 + 13.9
+Saccharomyce 109 cgtc.cttcct.ttattgatatttg 131 + 14.1
+Saccharomyce 128 agtc.actctt.ttaaaaatctact 150 + 17.4
+YDR293C       33 tgtc.attcct.tttagaatatttg  55 + 21.2
+Saccharomyce 187 atactattctt.tttaggattattc 210 + 12.3
+Saccharomyce 406 cgac.tttcct.tctaccccattat 428 + 12.1
+Saccharomyce 102 agtc.gttcct.ttttagaccaact 124 + 11.3
+Saccharomyce  43 tatc.attctt.tttagaatatttg  65 + 17.1
+Saccharomyce  28 tgtc.attctc.tttaaaatatttg  50 + 20.5
+Saccharomyce 101 agcc.attcct.ttttttttttttt 123 + 13.8
+YIL123W       96 agtc.cttcct.ttataaaaattaa 118 + 23.3
+YNL066W      299 tttc.actcct.ttaagcatttttt 321 + 21.5
+Saccharomyce  63 agtc.cttcct.ttacaaaaattaa  85 + 22.1
+Saccharomyce 312 ttcc.actcct.ttaaaaatacact 334 + 17.5
+Saccharomyce 157 ttac.attcct.ttacaaattccaa 179 + 20.3
+Saccharomyce 213 ttac.actcct.tttaaaaaagtaa 235 + 20.2
+Saccharomyce 155 ttac.attcct.ttccgacttacaa 177 + 17.2
+Saccharomyce 207 atac.gctcct.tttaaaccaaaaa 229 + 18.6
+Saccharomyce 148 ttac.attcct.ttgaatattacta 170 + 19.1
+Saccharomyce 248 tttc.actcct.tttaaatcaacaa 270 + 23.0
+Saccharomyce 310 tttc.actcct.ttaagcctttttt 332 + 20.2
+Saccharomyce  91 agtc.cttcct.ttataaaattaac 113 + 19.1
+Saccharomyce 165 ttac.attcct.ttacaaataccaa 187 + 21.5
+Saccharomyce 254 ttac.actcct.tttaaacagaaaa 276 + 18.6
+YBR162C       14 attcaattttt.ttttatattataa  37 + 13.5
+Saccharomyce   4 attc.ctttgt.ttaatttaattac  26 + 14.7
+Saccharomyce 137 ttgcttttcat.attactatattaa 160 + 10.2
+Saccharomyce  25 tttc.tttttt.tcttgtcataaaa  47 + 7.61
+Saccharomyce  30 tttc.tttttc.ttagttcataaaa  52 + 11.6
+Saccharomyce 122 tttt.tctcct.ttttccctttcaa 144 + 11.6
+Saccharomyce 139 ttgcttttcat.tttactatttcaa 162 + 13.4
+YNL300W      169 ttac.cttcct.ttaatatcaatat 191 + 22.8
+Saccharomyce 164 ttac.cttcct.ttaatatcaatca 186 + 19.9
+Saccharomyce 170 ttac.attc.t.ttaataccaatat 191 + 16.9
+Saccharomyce 170 ttac.cttcct.ttaacacaatatc 192 + 18.8
+Saccharomyce 169 ttac.cttcct.ttaataccaatat 191 + 22.4
+Saccharomyce 169 ttac.cttcct.ttaacattaatat 191 + 24.3
+Saccharomyce 170 ttac.tttc.c.ttaatatcaatac 191 + 11.7
+YKR042W      146 agtc.cttcct.ttaaacaaaaatt 168 + 23.3
+YJL116C      133 ttac.tttcct.ttaatattataat 155 + 22.4
+Saccharomyce 151 agtc.cttcct.ttaaactaaatta 173 + 22.9
+Saccharomyce 129 ttac.tttcct.ttaacatcaaaag 151 + 20.2
+Saccharomyce 152 agtc.cttcct.ttaaactaaatta 174 + 22.9
+Saccharomyce 145 ttac.tttcct.ttaaattcagatt 167 + 17.8
+Saccharomyce 146 agtc.cttcct.ttaaactaaatta 168 + 22.9
+Saccharomyce 130 tcac.tctcct.ttaacgtcaaaat 152 + 13.2
+Saccharomyce 132 tcac.tttcct.ttaatattaaaat 154 + 19.0
+Saccharomyce 146 agtc.cttcct.ttaaagtaaatta 168 + 20.3
+Saccharomyce 146 agtc.cttcct.ttaaactaaattt 168 + 22.8
+Saccharomyce 133 ttac.tttcct.ttaatattaaaac 155 + 20.5
+Saccharomyce 152 agtc.cttcct.ttaaactaaaatt 174 + 22.4
+Saccharomyce 131 ttac.tttcct.ttaaattcagatt 153 + 17.8
+
+                 tttctattcctattaaaaataataa
+                 aga  cc  gc   t cctattatt
+                                  tcc     
+
+ a  c  g  t Del Ins Score
+37 19  2 77   0      61.7
+                  0 -0.158
+ 9  5 50 71   0      62.6
+                  0 -0.158
+34  5  5 91   0      92.2
+                  0 -0.158
+ 1 128  0  6   0      216.
+                  0 -0.158
+ 2  0  0 14 119     -63.5
+                  0 -0.158
+73 28 13 21   0      30.3
+                  0 -0.158
+ 8 28  0 99   0      119.
+                  0 -0.158
+ 0  0  0 135   0      260.
+                  0 -0.158
+ 1 124  0 10   0      200.
+                  0 -0.158
+15 64 30 23   3     -6.48
+                  0 -0.158
+ 0 40  0 95   0      141.
+                  0 -0.158
+ 3  0  0  0 132     -31.4
+                  0 -0.158
+ 3  0  3 129   0      218.
+                  0 -0.158
+ 6  4  0 125   0      198.
+                  0 -0.158
+76 22  5 32   0      48.2
+                  0 -0.158
+88 12  9 26   0      65.8
+                  0 -0.158
+67 31 16 21   0      19.7
+                  0 -0.158
+61 35  6 33   0      26.8
+                  0 -0.158
+67 29  1 38   0      50.5
+                  0 -0.158
+41 32  0 62   0      52.4
+                  0 -0.158
+81 12  6 36   0      61.8
+                  0 -0.158
+68 17  5 45   0      45.8
+                  0 -0.158
+49 24  0 62   0      57.9
+                  0 -0.158
+83 11  2 39   0      79.1
+                  0 -0.158
+60 10 11 54   0      40.0
+
+Score: 2019.72  Columns: 25  Sequences: 134
+
+                 ******...************........*******
+YLR110C      168 tcttct...gtcattcgcttaaac.....actatat 195 + 22.0
+YDR134C      163 tcttct...ttcgttcgcttc........aaaataa 187 + 19.7
+Saccharomyce 168 tcttct...gtcattcgctta........aatacta 192 + 20.6
+Saccharomyce 163 tcttct...ttcaatcgcttt........actataa 187 + 21.6
+Saccharomyce 163 ttatct...ttcactcgcttcgca.....ataacaa 190 + 16.0
+Saccharomyce 168 tcttct...gtcattcgcttaaac.....actatat 195 + 22.0
+Saccharomyce 165 ccttct...ttctttcgcttt........acaataa 189 + 22.1
+Saccharomyce 168 tcttct...gtcattcgcttaa.......acaatat 193 + 24.6
+Saccharomyce 163 tcttct...ttcgttcgcttc........aaaataa 187 + 19.7
+Saccharomyce 168 tcttct...gtcattcgcttaaac.....actatat 195 + 22.0
+Saccharomyce 168 tcttct...gtcattcgcttaaac.....actatat 195 + 22.0
+Saccharomyce 163 tcttct...ttcgttcgcttc........ataataa 187 + 20.3
+Saccharomyce 163 ttatct...ttcattcgcttcgca.....ataacaa 190 + 18.0
+Saccharomyce 168 tcttct...gtcattcgcttaaac.....actatat 195 + 22.0
+YPL256C      164 cttttt...tccattcattcat.......taaattt 189 + 18.6
+YMR199W      166 tcgtta...gctatttctgtaaaa.....taaataa 193 + 8.76
+Saccharomyce 167 tttccta..ttcattccttacat......tcaacta 194 + 17.8
+Saccharomyce 158 gtatta...gctatttctttaag......aaaataa 184 + 15.2
+Saccharomyce  30 ttttca...ttctattctatt........atatttt  54 + 21.7
+Saccharomyce  45 gttttt...gtcaattgattat.......catatct  70 + 8.51
+Saccharomyce  66 tcatca...gccttttctttt........tatatac  90 + 16.1
+Saccharomyce  24 ttttctg..gttatttgtaaac.......ttattca  50 + 14.2
+Saccharomyce  35 ttatta...cccatttgttaat.......ctaatct  60 + 11.3
+Saccharomyce 164 cttttt...cccattcattcac.......taaactt 189 + 13.4
+Saccharomyce 164 cttttt...cccattcattcat.......taaattt 189 + 16.0
+Saccharomyce 159 tcatta...gctatttcttctgt......acaataa 185 + 14.0
+Saccharomyce  17 tctccac..ttcgttcccgta........tatttat  42 + 12.8
+Saccharomyce  35 ttttta...tttcattctatt........atatttt  59 + 18.3
+YLR286C       65 aaacct...gtcattcctttgaacc....tttttat  93 + 14.0
+Saccharomyce 102 aaaaca...ttcactcatttt........ataactt 126 + 15.8
+Saccharomyce  27 aaatct...ttcactcctttaagac....tcaatat  55 + 19.5
+Saccharomyce 104 atacct...gtcgctcctttt........ataacct 128 + 15.3
+Saccharomyce 134 tctccaag.ttcattcttttt........tcatcac 160 + 12.2
+Saccharomyce  68 aaacct...gtcactcctttga.......acattat  93 + 15.4
+Saccharomyce  27 aaatct...ttcactcctttaagac....tcaatat  55 + 19.5
+YHR143W       67 actcta...gtcattccttact.......acatttt  92 + 18.4
+Saccharomyce  97 actcca...gtcattccttactac.....cttttat 124 + 15.5
+Saccharomyce  47 actcca...gtcattccttact.......atatttt  72 + 20.1
+Saccharomyce  56 actcca...gtcattccttact.......atattct  81 + 17.9
+Saccharomyce  60 actcca...gtcattccttact.......atatttt  85 + 20.1
+YBR072W       25 ttttcacc.cttattcctaaa........catataa  51 + 13.2
+Saccharomyce  93 tcttcta..ttttctccctac........tcatcct 118 + 11.3
+Saccharomyce  86 cttccaag.gtctcttctattt.......ccttttt 113 + 10.1
+Saccharomyce  94 tcgccaag.ttcttttccattc.......tcttttc 121 + 6.81
+Saccharomyce 105 tttcca...atctctcccttg........ctttctt 129 + 10.0
+Saccharomyce  24 actact...cttcctcccttattc.....taaacat  51 + 11.5
+Saccharomyce  83 cttccaag.ttctcttctattc.......ccttttt 110 + 10.8
+YKL163W      121 taacct...aagatttctttag.......ataatta 146 + 11.6
+YJL159W      169 ttttct...aaccctagtaca........ataataa 193 + 10.8
+Saccharomyce 157 gaaact...catattcctttc........ctaacta 181 + 8.55
+Saccharomyce 139 gtatct...gttagttctact........acaataa 163 + 10.9
+Saccharomyce 144 actatt...ctcagtacaatagta.....aaaatct 171 + 0.489
+Saccharomyce  59 ctgtcaa..ttgtcttcttttt.......acattaa  85 + 10.7
+Saccharomyce  72 tattct...tttgattctagg........tcttttt  96 + 5.86
+Saccharomyce 164 attcctc..tccaaacccaat........acaataa 189 + 8.13
+Saccharomyce  93 tcttct...cttctacataataaga....aaaatat 121 + 8.43
+Saccharomyce 168 tttcct...aaccctagtaca........ataataa 192 + 9.47
+Saccharomyce  75 ttaact...cacaattattgta.......tcatcta 100 + 7.08
+Saccharomyce 124 atatctt..tagaaaactatt........atattta 149 + 2.70
+Saccharomyce 165 tctttt...tctaatcccaat........acaataa 189 + 14.0
+Saccharomyce 168 acttcaa..aactctcctaatag......tatattc 195 + 6.01
+Saccharomyce  99 gtttca...ttccttcattgttttcgt..attttat 129 + 13.2
+Saccharomyce  95 tttccagt.taccttcttagt........taaattt 121 + 9.63
+Saccharomyce  85 taatcata.tctacttctttatct.....ctaatat 114 + 9.70
+YDR528W      126 tttcctg..tattatactttaa.......ttattct 152 + 12.7
+YCL051W      120 actatt...tacattcatttt........tatttct 144 + 16.8
+Saccharomyce 151 ttttctt..ttctcttcttct........tctatta 176 + 18.9
+Saccharomyce 130 attata...ttcctttattttct......atattat 156 + 18.2
+Saccharomyce 131 tatact...tttagtccttttgttg....tcttttt 159 + 13.9
+Saccharomyce 159 tctttt...tttcttcatattagc.....ccattaa 186 + 14.6
+Saccharomyce 145 attatt...tttgcttctttt........ttttttt 169 + 15.6
+Saccharomyce 123 attcctg..tatttttctgta........ttatttt 148 + 14.0
+YGR279C      142 tttacatc.tacaatcgttta........tatacta 168 + 13.8
+YMR305C      115 ctgtcac..gtctctccttta........ctattac 140 + 13.4
+Saccharomyce  16 tcttca...atttttccatct........tcaattt  40 + 14.7
+Saccharomyce  30 ttgttt...gttctttcttaaga......tttattt  56 + 15.9
+Saccharomyce 107 ctgtcac..gtccttccttta........ttaatat 132 + 21.0
+Saccharomyce 140 taaactc..tacaatcgtttt........tatatac 165 + 11.5
+Saccharomyce 140 tttacacc.tacaatcgtttta.......tctacta 167 + 12.8
+Saccharomyce  30 ttttct...tccattccttttg.......tcaatca  55 + 23.8
+Saccharomyce 141 tttacaac.tacaatcgtttt........atattct 167 + 15.8
+Saccharomyce 115 ctgtcac..gtctttccttta........tcaatct 140 + 18.8
+Saccharomyce 115 ctgtcac..gtctttcctttag.......ctaattt 141 + 18.5
+Saccharomyce 103 ctgtcac..gtccttccttta........ttgatat 128 + 13.3
+Saccharomyce  16 attctt...ttcttttcttgtaacgg...atatttt  45 + 14.6
+YDR293C       28 ttttct...gtcattccttttag......aatattt  54 + 26.6
+Saccharomyce 405 ttatctgt.ttctttcattacgg......ttaatct 433 + 14.2
+Saccharomyce 101 cctacaa..gccattcctttt........ttttttt 126 + 18.4
+Saccharomyce 405 ttttct...gttcttccattacgc.....ccaatat 432 + 17.5
+Saccharomyce  38 ttttct...atcattctttttag......aatattt  64 + 19.9
+Saccharomyce  23 tttcct...gtcattctcttt........aaaatat  47 + 21.7
+Saccharomyce  95 cttacaa..gccattcctttt........ttttttt 120 + 19.4
+YIL123W       91 tttaca...gtccttcctttata......aaaatta 117 + 23.5
+YNL066W      294 ctaatt...ttcactcctttaagc.....atttttt 321 + 18.5
+Saccharomyce  58 tttaca...gtccttcctttaca......aaaatta  84 + 23.5
+Saccharomyce 666 ttttctg..tttttttctttccaag....taattta 695 + 17.3
+Saccharomyce  88 tttaca...gtccttcctttac.......aaaataa 113 + 24.5
+Saccharomyce 653 ctaact...tttattcattta........atttttt 677 + 20.7
+Saccharomyce  87 cttaca...atccttccttaa........aaaatta 111 + 18.5
+Saccharomyce  41 tttttt...tttttttgttta........aatacat  65 + 19.6
+Saccharomyce  81 tttaca...gtccctcctttac.......aaattat 106 + 22.8
+Saccharomyce 243 ctattt...ttcactcctttt........aaatcaa 267 + 19.3
+Saccharomyce 305 ctattt...ttcactcctttaagcc....ttttttt 333 + 19.0
+Saccharomyce  86 tttaca...gtccttcctttat.......aaaatta 111 + 24.3
+Saccharomyce  96 tttaca...gtccttcctttac.......aaaataa 121 + 24.5
+Saccharomyce 656 ttttttc..tctttttctttt........ttttttt 681 + 18.7
+YBR162C        9 tctcca...ttcaattttttttt......atattat  35 + 17.1
+Saccharomyce 134 ttttct...gcttttcccatttac.....tctttta 161 + 15.1
+Saccharomyce  21 attttt...tttcatcgttat........tcaataa  45 + 17.3
+Saccharomyce 126 tctttag..tttttttgcttt........tcaattt 151 + 16.9
+Saccharomyce   6 ttttct...gttttacattattg......ttaattt  32 + 15.9
+Saccharomyce 123 ttttctc..ctttttccctttc.......aaattta 149 + 18.7
+Saccharomyce 135 tttttt...gcttttcatttt........actattt 159 + 20.2
+YNL300W      164 actttt...taccttcctttaata.....tcaatat 191 + 21.1
+Saccharomyce 159 actttt...taccttccttta........atatcaa 183 + 20.3
+Saccharomyce  72 ctttct...ttcaattgtaatttttgccataaataa 104 + 10.2
+Saccharomyce 165 actttt...taccttcctttaac......acaatat 191 + 22.3
+Saccharomyce 161 acaactaattaccttcctttaata.....ccaatat 191 + 11.5
+Saccharomyce 164 actttt...taccttccttta........acattaa 188 + 22.6
+Saccharomyce 165 actttt...tactttccttaata......tcaatac 191 + 16.6
+YKR042W      102 ttttta...ttcattcattca........tttttat 126 + 22.4
+YJL116C      128 gtacct...tactttccttta........atattat 152 + 22.3
+Saccharomyce 100 ttgttt...ttcattcattta........tttattt 124 + 23.1
+Saccharomyce 124 gtacct...tactttccttta........acatcaa 148 + 18.7
+Saccharomyce 110 tattca...ttcattcatttc........tttattt 134 + 22.1
+Saccharomyce 140 gtacct...tactttcctttaaattcag.attttta 171 + 14.8
+Saccharomyce 103 ttttta...ttcattcattcat.......ttaattt 128 + 22.9
+Saccharomyce 125 gtgcct...cactctcctttaacgtc...aaaatat 154 + 12.1
+Saccharomyce 127 gtacct...cactttccttta........atattaa 151 + 19.0
+Saccharomyce 102 ttttta...ttcattcattca........tttttat 126 + 22.4
+Saccharomyce 103 ttttta...ttcattcattcat.......tttattt 128 + 22.0
+Saccharomyce 128 gtacct...tactttccttta........atattaa 152 + 21.6
+Saccharomyce 103 ttttcta..tttattcattcat.......tcatttt 129 + 20.7
+Saccharomyce 126 gtacct...tactttcctttaaattcag.attttta 157 + 14.8
+
+                 ttttct   ttcattccttta        ataatat
+                 acacta   gatt  tg   t        tctt ta
+                                               a     
+
+ a  c  g  t Del Ins Score
+28 20 12 74   0      33.6
+                  0 -0.158
+12 41  0 81   0      86.4
+                  0 -0.158
+31  0 11 92   0      102.
+                  0 -0.158
+25 31  0 78   0      70.1
+                  0 -0.158
+ 0 98  0 36   0      145.
+                  0 -0.158
+51  0  0 83   0      129.
+                 49 -161.
+ 8 12 43 71   0      47.1
+                  0 -0.158
+28 17  0 89   0      90.7
+                  0 -0.158
+ 0 98  3 33   0      130.
+                  0 -0.158
+66 26  7 35   0      30.4
+                  0 -0.158
+17 24  3 90   0      78.8
+                  0 -0.158
+ 4  0  0 130   0      232.
+                  0 -0.158
+ 5 99  0 30   0      125.
+                  0 -0.158
+21 81 27  5   0      55.9
+                  0 -0.158
+ 4 25  0 105   0      140.
+                  0 -0.158
+21  0  3 110   0      153.
+                  0 -0.158
+21 14  5 94   0      83.5
+                  0 -0.158
+65 16  4 49   0      48.7
+                180 -318.
+66 14  0 54   0      73.2
+                  0 -0.158
+36 44  0 54   0      47.2
+                  0 -0.158
+87  0  1 46   0      125.
+                  0 -0.158
+79  0  0 55   0      126.
+                  0 -0.158
+ 0 19  0 115   0      178.
+                  0 -0.158
+64 13  0 57   0      74.8
+                  0 -0.158
+48  7  0 79   0      96.0
+
+Score: 2018.87  Columns: 25  Sequences: 135
+
+                 ****.*********************
+YLR110C      168 tctt.ctgtcattcgcttaaacacta 192 + 22.9
+YDR134C      163 tctt.ctttcgttcgcttcaaaataa 187 + 21.2
+Saccharomyce 168 tctt.ctgtcattcgcttaaatacta 192 + 24.0
+Saccharomyce 163 tctt.ctttcaatcgctttactataa 187 + 20.3
+Saccharomyce 163 ttat.ctttcactcgcttcgcaataa 187 + 18.2
+Saccharomyce 168 tctt.ctgtcattcgcttaaacacta 192 + 22.9
+Saccharomyce 165 cctt.ctttctttcgctttacaataa 189 + 19.4
+Saccharomyce 168 tctt.ctgtcattcgcttaaacaata 192 + 23.1
+Saccharomyce 163 tctt.ctttcgttcgcttcaaaataa 187 + 21.2
+Saccharomyce 168 tctt.ctgtcattcgcttaaacacta 192 + 22.9
+Saccharomyce 168 tctt.ctgtcattcgcttaaacacta 192 + 22.9
+Saccharomyce 163 tctt.ctttcgttcgcttcataataa 187 + 20.7
+Saccharomyce 163 ttat.ctttcattcgcttcgcaataa 187 + 20.0
+Saccharomyce 168 tctt.ctgtcattcgcttaaacacta 192 + 22.9
+YPL256C      168 tttc.cattcattcattaaatttaac 192 + 19.2
+YMR199W        6 gagt.tcttcgttcgctttaatttat  30 + 10.7
+Saccharomyce 168 ttcc.tattcattccttacattcaac 192 + 15.9
+Saccharomyce 158 gtat.tagctatttctttaagaaaat 182 + 14.6
+Saccharomyce  30 tttt.cattctattctattatatttt  54 + 14.5
+Saccharomyce  45 gttt.ttgtcaattgattatcatatc  69 + 10.2
+Saccharomyce  66 tcat.cagccttttctttttatatac  90 + 17.3
+Saccharomyce   3 tctt.catttgtttcgatttattttt  27 + 8.09
+Saccharomyce   2 gagt.tcttcattcgcttcaattaat  26 + 13.2
+Saccharomyce 168 ttcc.cattcattcactaaactttac 192 + 16.3
+Saccharomyce 168 ttcc.cattcattcattaaattttac 192 + 17.9
+Saccharomyce 163 tagc.tatttcttctgtacaataaat 187 + 7.28
+Saccharomyce  46 gttt.ttgtcaattgattatcatatc  70 + 10.2
+Saccharomyce  36 tttt.atttcattctattatattttc  60 + 19.3
+YLR286C       65 aaac.ctgtcattcctttgaaccttt  89 + 18.6
+Saccharomyce  62 aaat.ctgtcactcttttgaaacttc  86 + 16.1
+Saccharomyce  27 aaat.ctttcactcctttaagactca  51 + 18.9
+Saccharomyce  17 agat.ctttcactcatttaagactca  41 + 15.0
+Saccharomyce  68 aacc.ctgtcactcctttgaacatta  92 + 17.3
+Saccharomyce  68 aaac.ctgtcactcctttgaacatta  92 + 18.1
+Saccharomyce  27 aaat.ctttcactcctttaagactca  51 + 18.9
+YHR143W       67 actc.tagtcattccttactacattt  91 + 19.1
+Saccharomyce  97 actc.cagtcattccttactaccttt 121 + 19.0
+Saccharomyce  47 actc.cagtcattccttactatattt  71 + 21.2
+Saccharomyce  56 actc.cagtcattccttactatattc  80 + 19.4
+Saccharomyce  60 actc.cagtcattccttactatattt  84 + 21.2
+YBR072W       96 tttc.attctactctcttatactaat 120 + 14.4
+Saccharomyce  93 tcttctattttctccctactcatcct 118 + 8.00
+Saccharomyce  94 gtct.cttctatttcctttttactgt 118 + 12.4
+Saccharomyce 102 ttct.tttccattctcttttctctct 126 + 14.2
+Saccharomyce 105 tttc.caatctctcccttgctttctt 129 + 10.8
+Saccharomyce  88 aatcattttcctttcctactttcctc 113 + 9.44
+Saccharomyce  91 ttct.cttctattccctttttgctgt 115 + 11.5
+YKL163W      142 aatt.attacatttacatcaataaga 166 + 9.76
+YJL159W      109 gatt.atgtccttccttttacctcaa 133 + 18.4
+Saccharomyce 160 actcatattcctttcctaactacaac 185 + 9.68
+Saccharomyce  81 gtat.ttgcttcttgcttgcttccta 105 + 4.25
+Saccharomyce  98 agtt.attttctttgttaagggctta 122 + 5.76
+Saccharomyce  84 aatcatatctacttcttaatttctaa 109 + 10.5
+Saccharomyce  87 aggt.ctttttcttgcttgcttcaat 111 + 6.16
+Saccharomyce 109 tcttgtttccatcttcttacctaatt 134 + 7.18
+Saccharomyce  85 tcgt.tgtatcttctcttctacataa 109 + 9.19
+Saccharomyce  88 acct.gggtctctcgcttaatttaga 112 + 7.44
+Saccharomyce 108 agct.gtatctttccttttaacacct 132 + 8.65
+Saccharomyce  87 tatt.gtatcatctaatttacaatat 111 + 5.73
+Saccharomyce  80 attt.gtatctcttgtttcacctaaa 104 + 11.0
+Saccharomyce 109 attt.tatcctttctcttaagtcaaa 133 + 17.0
+Saccharomyce   4 taac.tattcttttaataaaaaaaga  28 + 9.57
+Saccharomyce 159 tcat.attccttttcctacactaata 183 + 13.1
+Saccharomyce  95 tttc.cagttaccttcttagttaaat 119 + 8.43
+Saccharomyce  86 aatcatatctacttctttatctctaa 111 + 12.2
+YDR528W       15 tcgt.cattcatttcaaaaaaaaaaa  39 + 11.7
+YCL051W      123 atttacattcatttttatttctaaaa 148 + 14.3
+Saccharomyce 152 tttc.ttttctcttcttcttctatta 176 + 11.8
+Saccharomyce 126 attt.attatattcctttattttcta 150 + 20.6
+Saccharomyce  17 acttgcggtcattcatttcagaataa  42 + 15.1
+Saccharomyce 151 gttt.ttgatctttttttcttcatat 175 + 14.2
+Saccharomyce 148 attt.ttgcttctttttttttttcaa 172 + 13.8
+Saccharomyce 114 attt.attatattcctgtatttttct 138 + 12.7
+YGR279C      128 aact.aagtcattcttttacatctac 152 + 16.5
+YMR305C      135 tattactgttctttttttcaaattgt 160 + 13.7
+Saccharomyce 111 tgtt.gcgtcctttccttatcaattt 135 + 12.6
+Saccharomyce  30 ttgt.ttgttctttcttaagatttat  54 + 13.8
+Saccharomyce 108 tgtc.acgtccttcctttattaatat 132 + 17.4
+Saccharomyce 124 aact.aagtcactcttttaaactcta 148 + 16.4
+Saccharomyce 126 aact.aagtcattcttttacacctac 150 + 15.4
+Saccharomyce  30 tttt.cttccattccttttgtcaatc  54 + 17.3
+Saccharomyce 127 aact.aagtcattcttttacaactac 151 + 16.6
+Saccharomyce 116 tgtc.acgtctttcctttatcaatct 140 + 14.1
+Saccharomyce 116 tgtc.acgtctttcctttagctaatt 140 + 12.4
+Saccharomyce 104 tgtc.acgtccttcctttattgatat 128 + 13.4
+Saccharomyce 123 aact.aagtcactcttttaaaaatct 147 + 16.8
+YDR293C       28 tttt.ctgtcattccttttagaatat  52 + 25.5
+Saccharomyce 107 actt.cttttttttgttttattttga 131 + 18.2
+Saccharomyce 102 ctac.aagccattccttttttttttt 126 + 13.7
+Saccharomyce 405 tttt.ctgttcttccattacgcccaa 429 + 14.0
+Saccharomyce  38 tttt.ctatcattctttttagaatat  62 + 20.8
+Saccharomyce  23 tttc.ctgtcattctctttaaaatat  47 + 23.8
+Saccharomyce  96 ttac.aagccattccttttttttttt 120 + 17.7
+YIL123W       90 atttacagtccttcctttataaaaat 115 + 22.0
+YNL066W      315 attt.tttttttttacttttttacaa 339 + 17.7
+Saccharomyce  57 atttacagtccttcctttacaaaaat  82 + 20.2
+Saccharomyce 233 gtat.aattcatttccttaccaatat 257 + 18.3
+Saccharomyce  87 atttacagtccttcctttacaaaata 112 + 19.8
+Saccharomyce 179 aaat.agttcattcctttattactat 203 + 19.4
+Saccharomyce  86 acttacaatccttccttaaaaaatta 111 + 17.0
+Saccharomyce  41 tttt.tttttttttgtttaaatacat  65 + 21.5
+Saccharomyce  80 atttacagtccctcctttacaaatta 105 + 19.0
+Saccharomyce 243 ctat.ttttcactccttttaaatcaa 267 + 18.4
+Saccharomyce 305 ctat.ttttcactcctttaagccttt 329 + 15.9
+Saccharomyce  85 atttacagtccttcctttataaaatt 110 + 21.4
+Saccharomyce  95 atttacagtccttcctttacaaaata 120 + 19.8
+Saccharomyce 220 aaat.agttcattcctttattactat 244 + 19.4
+YBR162C        9 tctc.cattcaatttttttttatatt  33 + 15.3
+Saccharomyce 144 ttcc.catttactcttttaactacaa 168 + 17.9
+Saccharomyce  21 attt.tttttcatcgttattcaataa  45 + 15.3
+Saccharomyce  24 attt.ctttttttcttgtcataaaaa  48 + 15.7
+Saccharomyce  29 attt.ctttttcttagttcataaaaa  53 + 13.2
+Saccharomyce 117 tctt.ttttttctcctttttcccttt 141 + 17.7
+Saccharomyce  22 gttt.ttttttttcgttattcaataa  46 + 18.1
+YNL300W      164 actt.tttaccttcctttaatatcaa 188 + 22.1
+Saccharomyce 159 actt.tttaccttcctttaatatcaa 183 + 22.1
+Saccharomyce 165 actt.attacattctttaataccaat 189 + 17.4
+Saccharomyce 165 actt.tttaccttcctttaacacaat 189 + 21.1
+Saccharomyce 163 aactaattaccttcctttaataccaa 188 + 15.0
+Saccharomyce 164 actt.tttaccttcctttaacattaa 188 + 23.0
+Saccharomyce 165 actt.tttactttccttaatatcaat 189 + 19.5
+YKR042W      106 tatt.cattcattcatttttatttga 130 + 20.9
+YJL116C      128 gtac.cttactttcctttaatattat 152 + 20.5
+Saccharomyce 104 tttt.cattcatttatttattttcat 128 + 22.5
+Saccharomyce 124 gtac.cttactttcctttaacatcaa 148 + 18.9
+Saccharomyce 110 tatt.cattcattcatttctttattt 134 + 22.6
+Saccharomyce 140 gtac.cttactttcctttaaattcag 164 + 14.3
+Saccharomyce  89 ttat.ctttcatttatttttattcat 113 + 21.0
+Saccharomyce 125 gtgc.ctcactctcctttaacgtcaa 149 + 5.46
+Saccharomyce 127 gtac.ctcactttcctttaatattaa 151 + 15.0
+Saccharomyce 106 tatt.cattcattcatttttatttga 130 + 20.9
+Saccharomyce 163 aaat.tttaccctcccttaattttta 187 + 17.8
+Saccharomyce 128 gtac.cttactttcctttaatattaa 152 + 20.7
+Saccharomyce 112 tatt.cattcattcatttttatttga 136 + 20.9
+Saccharomyce 126 gtac.cttactttcctttaaattcag 150 + 14.3
+
+                 tttt ctttcattcctttaaaaataa
+                 acac tag ttc tgc  tttttatt
+                  a        c         c cc  
+
+ a  c  g  t Del Ins Score
+55  4 18 58   0      44.4
+                  0 -0.158
+30 37  9 59   0      19.0
+                  0 -0.158
+28 16  8 83   0      55.3
+                  0 -0.158
+ 0 38  0 97   0      143.
+                 17 -83.3
+24 70  5 36   0      40.4
+                  0 -0.158
+46  7  5 77   0      71.6
+                  0 -0.158
+ 6  2 50 77   0      86.1
+                  0 -0.158
+20 16  0 99   0      110.
+                  0 -0.158
+ 0 105  0 30   0      156.
+                  0 -0.158
+71 27  5 32   0      40.2
+                  0 -0.158
+ 6 29  0 100   0      125.
+                  0 -0.158
+ 0  3  0 132   0      239.
+                  0 -0.158
+ 0 98  0 37   0      145.
+                  0 -0.158
+16 68 27 24   0      19.8
+                  0 -0.158
+ 7 39  3 86   0      87.0
+                  0 -0.158
+ 5  0  2 128   0      214.
+                  0 -0.158
+24  1  0 110   0      160.
+                  0 -0.158
+71 25  7 32   0      35.9
+                  0 -0.158
+66 14  7 48   0      43.5
+                  0 -0.158
+55 29 11 40   0      13.2
+                  0 -0.158
+55 24  4 52   0      36.0
+                  0 -0.158
+62 30  0 43   0      53.3
+                  0 -0.158
+34 29  0 72   0      61.7
+                  0 -0.158
+71  9 10 45   0      49.1
+                  0 -0.158
+63 16  2 54   0      57.0
+
+Score: 2006.99  Columns: 25  Sequences: 134
+
+                 *****...........********************
+YLR110C      169 cttct...........gtcattcgcttaaacactat 193 + 21.0
+YDR134C      164 cttct...........ttcgttcgcttcaaaataac 188 + 19.4
+Saccharomyce 169 cttct...........gtcattcgcttaaatactac 193 + 21.7
+Saccharomyce 164 cttct...........ttcaatcgctttactataac 188 + 20.6
+Saccharomyce 164 tatct...........ttcactcgcttcgcaataac 188 + 8.42
+Saccharomyce 169 cttct...........gtcattcgcttaaacactat 193 + 21.0
+Saccharomyce 166 cttct...........ttctttcgctttacaataac 190 + 21.4
+Saccharomyce 169 cttct...........gtcattcgcttaaacaatat 193 + 21.7
+Saccharomyce 164 cttct...........ttcgttcgcttcaaaataac 188 + 19.4
+Saccharomyce 169 cttct...........gtcattcgcttaaacactat 193 + 21.0
+Saccharomyce 169 cttct...........gtcattcgcttaaacactat 193 + 21.0
+Saccharomyce 164 cttct...........ttcgttcgcttcataataac 188 + 17.8
+Saccharomyce 164 tatct...........ttcattcgcttcgcaataac 188 + 12.5
+Saccharomyce 169 cttct...........gtcattcgcttaaacactat 193 + 21.0
+YPL256C      164 cttttttcca......ttca.ttcattaaatttaac 192 + 18.3
+YMR199W        6 gagttc..........ttcgttcgctttaatttatt  31 + 10.3
+Saccharomyce 165 cttttccta.......ttca.ttccttacattcaac 192 + 17.3
+Saccharomyce 158 gtatta..........gcta.tttctttaagaaaat 182 + 9.82
+Saccharomyce  43 ctatta..........tatt.ttcttttactttaaa  67 + 13.3
+Saccharomyce  46 ttttt...........gtcaattgattatcatatct  70 + 11.7
+Saccharomyce  67 catca...........gccttttctttttatataca  91 + 10.4
+Saccharomyce   7 cattt...........gt.t.tcgatttatttttct  29 + 5.85
+Saccharomyce   2 gagttc..........ttcattcgcttcaattaatt  27 + 11.2
+Saccharomyce 164 ctttttccca......ttca.ttcactaaactttac 192 + 12.9
+Saccharomyce 164 ctttttccca......ttca.ttcattaaattttac 192 + 18.4
+Saccharomyce  30 ctact...........gtcaacttattcattccatc  54 + 11.9
+Saccharomyce  47 ttttt...........gtcaattgattatcatatct  71 + 11.7
+Saccharomyce 167 tttctt..........ttccactccttacattttac 192 + 15.8
+YLR286C       25 gatct...........ttca.ctcatttaagactca  48 + 17.8
+Saccharomyce  33 gatct...........ttca.ctcatttaagactca  56 + 17.8
+Saccharomyce  28 aatct...........ttca.ctcctttaagactca  51 + 18.1
+Saccharomyce  18 gatct...........ttca.ctcatttaagactca  41 + 17.8
+Saccharomyce  29 gatct...........ttca.ctcattcaagactca  52 + 15.6
+Saccharomyce  29 gatct...........ttca.ctcatttaagactca  52 + 17.8
+Saccharomyce  28 aatct...........ttca.ctcctttaagactca  51 + 18.1
+YHR143W       65 taactcta........gtca.ttccttactacattt  91 + 15.5
+Saccharomyce  95 taactcca........gtca.ttccttactaccttt 121 + 14.8
+Saccharomyce  45 taactcca........gtca.ttccttactatattt  71 + 16.3
+Saccharomyce  54 taactcca........gtca.ttccttactatattc  80 + 15.7
+Saccharomyce  58 taactcca........gtca.ttccttactatattt  84 + 16.3
+YBR072W       92 cacctttca.......ttctactctcttatactaat 120 + 8.82
+Saccharomyce  94 cttcta..........tttt.ctccctactcatcct 118 + 5.09
+Saccharomyce  98 cttct...........attt.cctttttactgtaaa 121 + 5.04
+Saccharomyce  14 catctgagaatcagaactcgtttcctttattgaaaa  49 + 7.77
+Saccharomyce 120 ttgct...........ttcttttgatgcaaataaaa 144 + 8.20
+Saccharomyce  25 ctactc..........ttcc.tcccttattctaaac  49 + 15.8
+Saccharomyce  90 gttctc..........ttctattccctttttgctgt 115 + 5.18
+YKL163W      141 taattat.........tacatttacatcaataagaa 167 + 5.24
+YJL159W      102 caatttcgattat...gtcc.ttccttttacctcaa 133 + 12.7
+Saccharomyce 158 aaactcata.......ttcc.tttcctaactacaac 185 + 7.41
+Saccharomyce  85 ttgcttc.........ttgc.ttgcttcctaatagt 110 + 3.91
+Saccharomyce  63 caatt...........gtct.tctttttacattaat  86 + 15.5
+Saccharomyce  91 ctttttc.........ttgc.ttgcttcaatgttag 116 + 8.98
+Saccharomyce 111 ttgtt...........tccatcttcttacctaattg 135 + 3.24
+Saccharomyce  60 cagtt...........atcaactgctttacccataa  84 + 11.8
+Saccharomyce  87 gacctgg.........gtctctcgcttaatttagaa 113 + 3.60
+Saccharomyce 107 cagctgt.........atct.ttccttttaacacct 132 + 11.8
+Saccharomyce  86 ttattgt.........atcatctaatttacaatata 112 + 9.85
+Saccharomyce 176 caacaa..........gt.a.ctgcttttaaataaa 199 + 9.33
+Saccharomyce 108 gatttt..........atcctttctcttaagtcaaa 133 + 8.54
+Saccharomyce   4 taacta..........ttct.tttaataaaaaaaga  28 + 8.67
+Saccharomyce  90 caatatggagt.....ttca.ttccttcattgtttt 119 + 9.17
+Saccharomyce 106 cttct...........tagt.taaatttaaatataa 129 + 3.62
+Saccharomyce  65 cagtt...........gtct.tctttttacagtaat  88 + 10.7
+YDR528W        8 caactaatc.......gtca.ttcatttcaaaaaaa  35 + 21.7
+YCL051W      121 ctatt...........taca.ttcatttttatttct 144 + 16.6
+Saccharomyce  16 caactaac........ttca.ctcacttaaaaaaag  42 + 16.9
+Saccharomyce  57 caactgact.......gtcg.ctcatttaaaaaaaa  84 + 20.2
+Saccharomyce  15 caacttgcg.......gtca.ttcatttcagaataa  42 + 19.6
+Saccharomyce  21 caactagcc.......gtca.ttcatttaaaaaaag  48 + 21.8
+Saccharomyce  12 caactagtc.......gtca.ttcatttcaaaaaaa  39 + 21.7
+Saccharomyce  44 caactgacc.......gtcg.ctcatttaaaaacct  71 + 16.0
+YGR279C      127 caactaa.........gtca.ttcttttacatctac 152 + 21.1
+YMR305C      112 caactgtcac......gtct.ctcctttactattac 140 + 20.1
+Saccharomyce 110 ttgttgc.........gtcctttccttatcaatttt 136 + 13.5
+Saccharomyce 121 caactaa.........gtcg.ctcttttacaagtac 146 + 15.6
+Saccharomyce 104 caactgtcac......gtcc.ttcctttattaatat 132 + 22.2
+Saccharomyce 123 caactaa.........gtca.ctcttttaaactcta 148 + 18.4
+Saccharomyce 125 caactaa.........gtca.ttcttttacacctac 150 + 20.3
+Saccharomyce 113 caactgttac......gtcc.ttcatttattaactg 141 + 13.9
+Saccharomyce 126 caactaa.........gtca.ttcttttacaactac 151 + 22.3
+Saccharomyce 112 caactgtcac......gtct.ttcctttatcaatct 140 + 18.6
+Saccharomyce 112 caactgtcac......gtct.ttcctttagctaatt 140 + 11.5
+Saccharomyce 100 caactgtcac......gtcc.ttcctttattgatat 128 + 18.8
+Saccharomyce 122 caactaa.........gtca.ctcttttaaaaatct 147 + 21.7
+YDR293C       29 tttct...........gtca.ttccttttagaatat  52 + 23.0
+Saccharomyce 108 cttct...........tttttttgttttattttgac 132 + 11.2
+Saccharomyce 102 ctacaa..........gcca.ttccttttttttttt 126 + 11.6
+Saccharomyce 406 tttct...........gttc.ttccattacgcccaa 429 + 7.88
+Saccharomyce  39 tttct...........atca.ttctttttagaatat  62 + 17.1
+Saccharomyce  24 ttcct...........gtcattctctttaaaatatt  48 + 17.5
+Saccharomyce  96 ttacaa..........gcca.ttccttttttttttt 120 + 9.87
+YIL123W      156 ctact...........taca.ttcctttaaaaacca 179 + 23.3
+YNL066W      291 caactaatt.......ttca.ctcctttaagcattt 318 + 19.0
+Saccharomyce  55 ctatttaca.......gtcc.ttcctttacaaaaat  82 + 22.3
+Saccharomyce 307 ctgtt...........ttccactcctttaaaaatac 331 + 20.8
+Saccharomyce 153 ctact...........taca.ttcctttacaaattc 176 + 23.2
+Saccharomyce 208 ctactt..........taca.ctccttttaaaaaag 232 + 20.1
+Saccharomyce  84 ctacttaca.......atcc.ttccttaaaaaatta 111 + 18.8
+Saccharomyce 202 ctacta..........tacg.ctccttttaaaccaa 226 + 17.3
+Saccharomyce  78 ctatttaca.......gtcc.ctcctttacaaatta 105 + 19.4
+Saccharomyce 243 ctattt..........ttca.ctccttttaaatcaa 267 + 21.9
+Saccharomyce 305 ctattt..........ttca.ctcctttaagccttt 329 + 19.5
+Saccharomyce  83 ctatttaca.......gtcc.ttcctttataaaatt 110 + 20.6
+Saccharomyce 161 ctact...........taca.ttcctttacaaatac 184 + 25.1
+Saccharomyce 249 ctactt..........taca.ctccttttaaacaga 273 + 17.9
+YBR162C       99 cttcta..........gtca.ctccttcaatagaac 123 + 20.7
+Saccharomyce  91 cttcta..........gtca.ctccttcaatagagc 115 + 16.4
+Saccharomyce  92 cttcta..........gtca.ctccttcaaatagaa 116 + 20.4
+Saccharomyce  93 ctttta..........gtca.ctccttcaatagaac 117 + 19.4
+Saccharomyce  96 cttcta..........gtca.ctccttcaatagaac 120 + 20.7
+Saccharomyce  91 cttcta..........gtca.ctccttcaatagaac 115 + 20.7
+Saccharomyce  94 cttcta..........gtca.ctccttcaaatagaa 118 + 20.4
+YNL300W      165 ctttt...........tacc.ttcctttaatatcaa 188 + 22.1
+Saccharomyce 160 ctttt...........tacc.ttcctttaatatcaa 183 + 22.1
+Saccharomyce 163 caacttat........taca.ttctttaataccaat 189 + 16.4
+Saccharomyce 166 ctttt...........tacc.ttcctttaacacaat 189 + 21.8
+Saccharomyce 162 caactaat........tacc.ttcctttaataccaa 188 + 20.5
+Saccharomyce 165 ctttt...........tacc.ttcctttaacattaa 188 + 22.8
+Saccharomyce 166 ctttt...........tact.ttccttaatatcaat 189 + 19.3
+YKR042W      141 ctacta..........gtcc.ttcctttaaacaaaa 165 + 25.6
+YJL116C      129 tacct...........tact.ttcctttaatattat 152 + 20.4
+Saccharomyce 146 ctatta..........gtcc.ttcctttaaactaaa 170 + 24.4
+Saccharomyce 125 tacct...........tact.ttcctttaacatcaa 148 + 17.5
+Saccharomyce 147 ctatta..........gtcc.ttcctttaaactaaa 171 + 24.4
+Saccharomyce 141 tacct...........tact.ttcctttaaattcag 164 + 15.4
+Saccharomyce 141 ctatta..........gtcc.ttcctttaaactaaa 165 + 24.4
+Saccharomyce 172 aaact...........cacttcttctttctctaaca 196 + 1.96
+Saccharomyce 128 tacct...........cact.ttcctttaatattaa 151 + 16.0
+Saccharomyce 141 ctacta..........gtcc.ttcctttaaagtaaa 165 + 24.4
+Saccharomyce 141 ctacta..........gtcc.ttcctttaaactaaa 165 + 25.7
+Saccharomyce 129 tacct...........tact.ttcctttaatattaa 152 + 20.6
+Saccharomyce 147 ctatta..........gtcc.ttcctttaaactaaa 171 + 24.4
+Saccharomyce 127 tacct...........tact.ttcctttaaattcag 150 + 15.4
+
+                 ctact           gtcatttcctttaaaattaa
+                 tatt            t  cac     a tttaa t
+                                    t            c  c
+
+ a  c  g  t Del Ins Score
+ 4 91 11 28   0      83.1
+                  0 -0.158
+61  0  0 73   0      124.
+                  0 -0.158
+62  9 10 53   0      44.6
+                  0 -0.158
+ 0 95  0 39   0      141.
+                  0 -0.158
+ 5  0  0 129   0      227.
+                208 -339.
+ 7  3 64 60   0      73.1
+                  0 -0.158
+24  5  0 105   0      137.
+                  0 -0.158
+ 0 123  3  6   2      181.
+                  0 -0.158
+69 29  9 27   0      29.3
+                  0 -0.158
+ 9  2  0 25  98     -95.6
+                  0 -0.158
+ 0 39  0 95   0      141.
+                  0 -0.158
+ 1 23  0 110   0      161.
+                  0 -0.158
+ 3 95 26 10   0      94.6
+                  0 -0.158
+25 93  0 16   0      98.5
+                  0 -0.158
+ 3  7  0 124   0      197.
+                  0 -0.158
+ 0  0  1 133   0      249.
+                  0 -0.158
+29 20  0 85   0      82.3
+                  0 -0.158
+100 14  2 18   0      105.
+                  0 -0.158
+80 25  1 28   0      66.8
+                  0 -0.158
+63 17 15 39   0      20.8
+                  0 -0.158
+75 19  8 32   0      42.0
+                  0 -0.158
+48 30  6 50   0      23.0
+                  0 -0.158
+55 16  5 58   0      43.5
+                  0 -0.158
+86 19  5 24   0      65.2
+                  0 -0.158
+50 31  8 45   0      16.9
+
+Score: 2002.74  Columns: 25  Sequences: 135
+
+                 ******.....*******************
+YLR110C      168 tcttct.....gtcattcgcttaaacacta 192 + 19.8
+YDR134C      163 tcttct.....ttcgttcgcttcaaaataa 187 + 22.2
+Saccharomyce 168 tcttct.....gtcattcgcttaaatacta 192 + 21.4
+Saccharomyce 163 tcttct.....ttcaatcgctttactataa 187 + 23.4
+Saccharomyce 163 ttatct.....ttcactcgcttcgcaataa 187 + 16.5
+Saccharomyce 168 tcttct.....gtcattcgcttaaacacta 192 + 19.8
+Saccharomyce 165 ccttct.....ttctttcgctttacaataa 189 + 19.8
+Saccharomyce 168 tcttct.....gtcattcgcttaaacaata 192 + 18.9
+Saccharomyce 163 tcttct.....ttcgttcgcttcaaaataa 187 + 22.2
+Saccharomyce 168 tcttct.....gtcattcgcttaaacacta 192 + 19.8
+Saccharomyce 168 tcttct.....gtcattcgcttaaacacta 192 + 19.8
+Saccharomyce 163 tcttct.....ttcgttcgcttcataataa 187 + 22.5
+Saccharomyce 163 ttatct.....ttcattcgcttcgcaataa 187 + 18.0
+Saccharomyce 129 tattct.....tatttttatttaataaaaa 153 + 21.7
+YPL256C      160 ttttct.....tttttccattcattcatta 184 + 20.5
+YMR199W        7 agttct.....t.cgttcgctttaatttat  30 + 9.41
+Saccharomyce 167 tttccta....ttcattcc.ttacattcaa 191 + 16.9
+Saccharomyce 157 tgtatta....gctatttctttaagaaaat 182 + 6.32
+Saccharomyce  42 tctatta....tattttcttttactttaaa  67 + 17.3
+Saccharomyce 107 acaactac...aataataattaaataatac 133 + 8.81
+Saccharomyce  31 acaaat.....tctcttcattttaaaatct  55 + 11.7
+Saccharomyce  18 atttat.....ttttctgg.ttatttgtaa  41 + 8.12
+Saccharomyce   3 agttct.....t.cattcgcttcaattaat  26 + 10.0
+Saccharomyce 160 ttttct.....ttttcccattcattcacta 184 + 17.5
+Saccharomyce 160 ttttct.....ttttcccattcattcatta 184 + 18.9
+Saccharomyce 171 tcttctg....tacaataa.ataaaaaaaa 195 + 15.1
+Saccharomyce 108 acaactac...aataataattaaataatac 134 + 8.81
+Saccharomyce  47 tctatta....tattttcttttactttcat  72 + 16.7
+YLR286C       24 agatct.....ttcactcatttaagactca  48 + 18.0
+Saccharomyce  32 agatct.....ttcactcatttaagactca  56 + 18.0
+Saccharomyce  27 aaatct.....ttcactcctttaagactca  51 + 17.6
+Saccharomyce  17 agatct.....ttcactcatttaagactca  41 + 18.0
+Saccharomyce  28 agatct.....ttcactcattcaagactca  52 + 15.9
+Saccharomyce  28 agatct.....ttcactcatttaagactca  52 + 18.0
+Saccharomyce  27 aaatct.....ttcactcctttaagactca  51 + 17.6
+YHR143W       76 attcct.....tactacat.tttattgtaa  99 + 13.1
+Saccharomyce 106 attcct.....tactaccttttattcatat 130 + 19.4
+Saccharomyce  56 attcct.....tactatattttgttataaa  80 + 16.4
+Saccharomyce  65 attcct.....tactatat.tctattgtaa  88 + 13.5
+Saccharomyce  69 attcct.....tactatat.tttattgtaa  92 + 15.6
+YBR072W       96 tttcattc...tactctcttatactaataa 122 + 14.9
+Saccharomyce  93 tcttcta....ttttctccctactcatcct 118 + 9.34
+Saccharomyce  95 tctcttc....tatttcctttttactgtaa 120 + 15.4
+Saccharomyce 103 tcttttc....cattctcttttctctctaa 128 + 11.2
+Saccharomyce  18 gcttct.....aacttctg.ataataaaca  41 + 6.81
+Saccharomyce  24 actactc....ttcctccc.ttattctaaa  48 + 11.0
+Saccharomyce  92 tctcttc....tattccctttttgctgtaa 117 + 9.22
+YKL163W      142 aattat.....tacatttacatcaataaga 166 + 6.93
+YJL159W      169 ttttct.....aaccctagtacaataataa 193 + 17.5
+Saccharomyce 171 tttcct.....aactacaacacaacaataa 195 + 12.1
+Saccharomyce 135 ttttgta....tctgttagttctactacaa 160 + 6.91
+Saccharomyce 146 tattctcag..tacaatagtaaaaatctca 173 + 7.13
+Saccharomyce  72 tctttt.....tacattaa.tcatatctac  95 + 13.3
+Saccharomyce  56 actcat.....cattttagcatattctttt  80 + 6.18
+Saccharomyce 109 tcttgt.....ttccatct.tcttacctaa 132 + 7.03
+Saccharomyce  93 tcttctc....ttctacataataagaaaaa 118 + 7.27
+Saccharomyce  86 tgacctgg...gtctctcgcttaatttaga 112 + 5.99
+Saccharomyce 168 tttcct.....aaccctagtacaataataa 192 + 16.2
+Saccharomyce  94 tcatcta....atttacaatataagaacaa 119 + 11.2
+Saccharomyce  80 atttgt.....atctcttgtttcacctaaa 104 + 9.44
+Saccharomyce 168 ttttct.....aatcccaatacaataataa 192 + 14.2
+Saccharomyce  97 tcttctc....tattacagtgtaagtataa 122 + 15.2
+Saccharomyce 168 ttttcc.....tacactaataaaacaataa 192 + 13.3
+Saccharomyce 105 ccttct.....tagttaaatttaaatataa 129 + 8.76
+Saccharomyce  96 acttcttt...atctctaatatcaaaataa 122 + 15.4
+YDR528W      126 tttcctg....tattatactttaattattc 151 + 18.8
+YCL051W      120 actatt.....tacattcatttttatttct 144 + 18.9
+Saccharomyce 151 ttttctt....ttctcttcttcttctatta 176 + 16.7
+Saccharomyce 126 atttat.....tatattcctttattttcta 150 + 21.3
+Saccharomyce 121 tttcctg....tattatacttttagtcctt 146 + 14.1
+Saccharomyce 129 tttcctg....tattatacttttattgttt 154 + 16.2
+Saccharomyce 126 ttttctg....tattatacttcaattattt 151 + 19.6
+Saccharomyce 114 atttat.....tatattcctgtatttttct 138 + 15.7
+YGR279C      143 ttacatc....tacaatcgtttatatacta 168 + 16.4
+YMR305C       23 tcatat.....ttttcccattttaaattca  47 + 16.2
+Saccharomyce   9 acttcc.....atcttcaatttttccatct  33 + 8.51
+Saccharomyce 133 tcttttacaagtacaatcatttccatatac 162 + 9.82
+Saccharomyce 122 tttatt.....aatatttgttcatattcca 146 + 12.3
+Saccharomyce 140 taaactc....tacaatcgtttttatatac 165 + 13.8
+Saccharomyce  46 tctcat.....ttcaatcgtttactcttgc  70 + 11.6
+Saccharomyce  30 ttttct.....tccattccttttgtcaatc  54 + 12.0
+Saccharomyce 138 tcttttacaactacaatcgttttatattct 167 + 12.7
+Saccharomyce  33 ttttcc.....attcctacttcatctatta  57 + 9.86
+Saccharomyce  24 tcatat.....ttttcccattttaatttcg  48 + 10.8
+Saccharomyce 118 tttatt.....gatatttgttcatatccca 142 + 10.8
+Saccharomyce 140 aaaaatc....tactatcgtttttatatac 165 + 10.9
+YDR293C       28 ttttct.....gtcattccttttagaatat  52 + 22.6
+Saccharomyce 107 acttct.....tttttttgttttattttga 131 + 19.5
+Saccharomyce 111 attcct.....ttttttttttgacaaataa 135 + 13.4
+Saccharomyce 405 ttttctg....ttcttcca.ttacgcccaa 429 + 11.8
+Saccharomyce  38 ttttct.....atcattctttttagaatat  62 + 22.3
+Saccharomyce  23 tttcct.....gtcattctctttaaaatat  47 + 19.8
+Saccharomyce 105 attcct.....tttttttttttttgaccat 129 + 15.5
+YIL123W      155 actact.....tacattcctttaaaaacca 179 + 24.5
+YNL066W      315 attttt.....tttttttacttttttacaa 339 + 18.5
+Saccharomyce 123 actact.....tacattcctttgcaaatat 147 + 19.5
+Saccharomyce 666 ttttctg....tttttttctttccaagtaa 691 + 17.3
+Saccharomyce 152 actact.....tacattcctttacaaattc 176 + 20.5
+Saccharomyce 649 tttactaact.tttattcatttaatttttt 677 + 17.0
+Saccharomyce  83 actact.....tacaatccttccttaaaaa 107 + 18.9
+Saccharomyce  41 tttttt.....tttttttgtttaaatacat  65 + 21.8
+Saccharomyce 143 actact.....tacattcctttgaatatta 167 + 22.0
+Saccharomyce 242 actattt....ttcactccttttaaatcaa 267 + 19.2
+Saccharomyce 423 attactg....tactttcttttttttgttt 448 + 17.3
+Saccharomyce 148 actact.....tacattcctttgaaaacta 172 + 20.9
+Saccharomyce 160 actact.....tacattcctttacaaatac 184 + 22.1
+Saccharomyce 669 tctttt.....tttttttgtttcttagtaa 693 + 18.9
+YBR162C        1 acttct.....tatctccattcaatttttt  25 + 18.5
+Saccharomyce   4 attcct.....ttgtttaatttaattacat  28 + 18.4
+Saccharomyce  21 attttt.....tttcatcgttattcaataa  45 + 15.4
+Saccharomyce  24 atttct.....ttttttcttgtcataaaaa  48 + 19.0
+Saccharomyce  29 atttctt....tttcttag.ttcataaaaa  53 + 14.8
+Saccharomyce 123 ttttctcc...tttttccctttcaaattta 149 + 19.0
+Saccharomyce 144 tttcat.....tttactatttcaagaataa 168 + 17.9
+YNL300W      164 actttt.....taccttcctttaatatcaa 188 + 24.0
+Saccharomyce 159 actttt.....taccttcctttaatatcaa 183 + 24.0
+Saccharomyce 165 acttat.....tacattct.ttaataccaa 188 + 18.4
+Saccharomyce 165 actttt.....taccttcctttaacacaat 189 + 19.2
+Saccharomyce 164 actaat.....taccttcctttaataccaa 188 + 20.5
+Saccharomyce 164 actttt.....taccttcctttaacattaa 188 + 23.9
+Saccharomyce 165 actttt.....tactttcc.ttaatatcaa 188 + 21.2
+YKR042W      101 tttttta....ttcattcattcatttttat 126 + 21.1
+YJL116C      128 gtacct.....tactttcctttaatattat 152 + 21.5
+Saccharomyce 114 tttatt.....tattttcatttgaatataa 138 + 21.5
+Saccharomyce 124 gtacct.....tactttcctttaacatcaa 148 + 20.0
+Saccharomyce 105 ttttcta....ttcattcattcatttcttt 130 + 20.4
+Saccharomyce 140 gtacct.....tactttcctttaaattcag 164 + 15.8
+Saccharomyce  84 attcctt....atctttcatttatttttat 109 + 20.7
+Saccharomyce 130 tcactc.....tcctttaacgtcaaaatat 154 + 3.64
+Saccharomyce 127 gtacct.....cactttcctttaatattaa 151 + 17.5
+Saccharomyce 101 tttttta....ttcattcattcatttttat 126 + 21.1
+Saccharomyce  83 attcctt....aactttcatttatttttta 108 + 20.7
+Saccharomyce 128 gtacct.....tactttcctttaatattaa 152 + 23.0
+Saccharomyce 103 ttttcta....tttattcattcattcattt 128 + 19.8
+Saccharomyce 126 gtacct.....tactttcctttaaattcag 150 + 15.8
+
+                 ttttct     tactttcatttaataataa
+                 ac c        ttac ac   ttattctt
+                                a  g           
+
+ a  c  g  t Del Ins Score
+55  2  7 71   0      80.1
+                  0 -0.158
+ 7 57  9 62   0      53.4
+                  0 -0.158
+26  0  0 109   0      164.
+                  0 -0.158
+24 32  0 79   0      71.7
+                  0 -0.158
+15 91  3 26   0      81.5
+                  0 -0.158
+ 0  4  0 131   0      234.
+                 62 -185.
+16  3 11 105   0      116.
+                  0 -0.158
+65  5  0 63   2      79.1
+                  0 -0.158
+ 0 86  2 47   0      120.
+                  0 -0.158
+55 15  5 60   0      46.2
+                  0 -0.158
+27 28  0 80   0      72.4
+                  0 -0.158
+ 1 20  0 114   0      169.
+                  0 -0.158
+31 88  1 15   0      84.4
+                  0 -0.158
+39 38 37 21   0     -6.07
+                  0 -0.158
+ 1 23  0 97  14      70.1
+                  0 -0.158
+14  0  4 117   0      169.
+                  0 -0.158
+ 6 24  1 104   0      126.
+                  0 -0.158
+80 19  5 31   0      55.3
+                  0 -0.158
+84 12  4 35   0      71.2
+                  0 -0.158
+44 19 17 55   0      11.8
+                  0 -0.158
+64 18  0 53   0      66.3
+                  0 -0.158
+68 19 10 38   0      30.8
+                  0 -0.158
+18 32  0 85   0      83.5
+                  0 -0.158
+82 20  4 29   0      60.3
+                  0 -0.158
+88 11  3 33   0      81.4
+
+Score: 1997.73  Columns: 25  Sequences: 135
+
+                 *********..........................................................****************
+YLR110C      131 ttctccttta.........................................................ttctttcctaacatac 156 + 19.4
+YDR134C      112 ctctcttttttaaaa....................................................ttttttcatagaataa 142 + 17.6
+Saccharomyce 121 tattttttttatagtat..................................................ttcttttgttataaaa 153 + 18.3
+Saccharomyce 160 atatcttct..........................................................ttcaatcgctttacta 184 + 11.9
+Saccharomyce  87 tactcatttg.........................................................ttctttccgattcata 112 + 14.5
+Saccharomyce 116 ctttctatt..........................................................tacattataattattt 140 + 19.5
+Saccharomyce 168 tctttctttcgctt.....................................................tacaataacaataata 197 + 16.1
+Saccharomyce  97 ttttcttttcttctac...................................................tacatttctatttctc 128 + 17.1
+Saccharomyce 111 tatttctctttgaatg...................................................ttttcttgttaaaaaa 142 + 11.0
+Saccharomyce 100 ctctcttctgtattgtttctataatac........................................ttttatcttctaatta 142 + 15.5
+Saccharomyce  98 ctttctattctacattgtctctatacttcttctcctc..............................ttctatcttttcctaa 150 + 17.3
+Saccharomyce 127 tttttttttagagcaaaaaaccaaggataacaaacatcttct.........................ttcgttcgcttcataa 184 + 9.72
+Saccharomyce  86 tacttatttgttctttccgattcatggt.......................................tagtttcttttccgtt 129 + 7.48
+Saccharomyce 115 ctctctatt..........................................................tacattattcttattt 139 + 21.0
+YPL256C      160 ttttcttttttcca.....................................................ttcattcattaaattt 189 + 25.1
+YMR199W       23 taatttatttcctggt...................................................tattgtcaatttattc  54 + 10.7
+Saccharomyce 161 ttttcttttccta......................................................ttcattccttacattc 189 + 22.9
+Saccharomyce 131 ttcacaattataataagacttctttgtgtattagctat.............................ttctttaagaaaataa 184 + 6.94
+Saccharomyce  39 tattctatta.........................................................tattttcttttacttt  64 + 21.4
+Saccharomyce  95 tacacttcaacgacaac..................................................tacaataataattaaa 127 + 10.7
+Saccharomyce 161 tcttcttttccta......................................................ttcgttcataacatta 189 + 18.9
+Saccharomyce 148 cccacttttccg.......................................................ttcattagctggtttt 175 + 8.09
+Saccharomyce 152 cacttctttg.........................................................ttctttcgctgttatc 177 + 10.8
+Saccharomyce 160 ttttctttttccca.....................................................ttcattcactaaactt 189 + 20.2
+Saccharomyce 160 ttttctttttccca.....................................................ttcattcattaaattt 189 + 25.1
+Saccharomyce 168 atttcttctg.........................................................tacaataaataaaaaa 193 + 13.5
+Saccharomyce 153 ttctccattgcagtgg...................................................ttttatatatacagaa 184 + 10.5
+Saccharomyce  44 cattctatta.........................................................tattttcttttacttt  69 + 22.0
+YLR286C       73 cattcctttgaaccttt..................................................ttatatccaaaaataa 105 + 15.4
+Saccharomyce  70 cactcttttgaaacttcatacttcgaaaaataaaaaca.............................ttcactcattttataa 123 + 19.6
+Saccharomyce  75 cactcctttaaggccttatacctccaaaaaaatcagcct............................ttcactcattttataa 129 + 18.6
+Saccharomyce   6 tataccattgaagatct..................................................ttcactcatttaagac  38 + 16.2
+Saccharomyce  76 cactcctttgaaca.....................................................ttatatctaaaaataa 105 + 14.5
+Saccharomyce  76 cactcctttgaaca.....................................................ttatatacttaaaaat 105 + 18.5
+Saccharomyce  11 tattctataatattgaaaatct.............................................ttcactcctttaagac  48 + 14.8
+YHR143W       87 cattttattgtaactcttcagtagagctaaccacagtca............................ttccttaatatttttt 141 + 12.3
+Saccharomyce 105 cattccttactacct....................................................tttattcatataaatc 135 + 18.8
+Saccharomyce 161 cactcctttaaa.......................................................tttactattttaacaa 188 + 18.2
+Saccharomyce 171 cactcctttaa........................................................tttattactcaaaaaa 197 + 19.0
+Saccharomyce  80 tattttattg.........................................................taaactctcttcaata 105 + 14.5
+YBR072W       94 cctttcattc.........................................................tactctcttatactaa 119 + 16.4
+Saccharomyce  93 tcttctattttctccctactcatcctat.......................................tagaatcatcaattaa 136 + 12.3
+Saccharomyce  97 tcttctatttcctttttactgtaaagaagtcatcgatctagatatattagaacata...........tttaatcttttcaaac 168 + 12.3
+Saccharomyce 105 ttttccatt..........................................................ctcttttctctctaat 129 + 11.0
+Saccharomyce 123 ctttcttttgatgcaaataaaaccattgat.....................................taagatattttaaatc 168 + 14.7
+Saccharomyce  86 caaatcatt..........................................................ttcctttcctactttc 110 + 6.44
+Saccharomyce  94 tcttctattccctttttgctgtaagcaaatcatcggttaagatatataatagaatata.........ttcaatctcttcaaac 167 + 10.6
+YKL163W      130 atttctttagataattat.................................................tacatttacatcaata 163 + 10.6
+YJL159W      163 tattccttttctaaccctag...............................................tacaataataataata 198 + 21.3
+Saccharomyce 165 tattcctttcctaactacaa...............................................cacaacaataataata 200 + 8.33
+Saccharomyce  71 cttacaatttgtatttgcttcttgc..........................................ttgcttcctaatagta 111 + 8.66
+Saccharomyce 145 ctattctcag.........................................................tacaatagtaaaaatc 170 + 10.2
+Saccharomyce  69 tcttctttt..........................................................tacattaatcatatct  93 + 17.1
+Saccharomyce  58 tcatcattttag.......................................................catattcttttgattc  85 + 11.9
+Saccharomyce 163 tattcctctccaaacccaa................................................tacaataataataact 197 + 13.6
+Saccharomyce  95 ttctcttcta.........................................................cataataagaaaaata 120 + 7.90
+Saccharomyce 131 cgcactattagatagc...................................................taccattattacagta 162 + 7.33
+Saccharomyce 162 tattcctttcctaaccctag...............................................tacaataataataata 197 + 21.3
+Saccharomyce  79 ctcacaatta.........................................................ttgtatcatctaattt 104 + 13.2
+Saccharomyce 124 atatctttagaaaac....................................................tattatatttacaata 154 + 11.5
+Saccharomyce 162 tattctttttctaatcccaa...............................................tacaataataataata 197 + 22.1
+Saccharomyce  99 ttctctattacagtgtaagta..............................................taatatcatcaaaaaa 135 + 15.8
+Saccharomyce 162 tattccttttcc.......................................................tacactaataaaacaa 189 + 18.6
+Saccharomyce 145 ctattctcag.........................................................tacaatagtaaaaatc 170 + 10.2
+Saccharomyce  71 tcttctttt..........................................................tacagtaatcatatct  95 + 13.5
+YDR528W      119 cattcattttcctg.....................................................tattatactttaatta 148 + 21.5
+YCL051W      117 ccaactatt..........................................................tacattcatttttatt 141 + 20.1
+Saccharomyce 167 tcttctattagctcg....................................................ttgtatcattatagtt 197 + 16.1
+Saccharomyce 134 tattcctttatt.......................................................ttctatattatttttt 161 + 20.0
+Saccharomyce 112 ctaactatttttcctg...................................................tattatacttttagtc 143 + 14.8
+Saccharomyce 139 tatacttttattgtttttgatct............................................ttttttcttcatatta 177 + 17.2
+Saccharomyce 119 cattcattt..........................................................ttctgtattatacttc 143 + 15.5
+Saccharomyce  71 tcctccattataatcag..................................................tactttaccctcacta 103 + 12.2
+YGR279C      136 cattcttttacatc.....................................................tacaatcgtttatata 165 + 23.4
+YMR305C      124 ctctcctttactat.....................................................tactgttctttttttc 153 + 15.3
+Saccharomyce  16 tcttcaattt.........................................................ttccatcttcaatttt  41 + 13.5
+Saccharomyce 130 cgctcttttacaag.....................................................tacaatcatttccata 159 + 16.9
+Saccharomyce 116 ccttcctttattaata...................................................tttgttcatattccaa 147 + 14.2
+Saccharomyce 132 cactcttttaaactc....................................................tacaatcgtttttata 162 + 22.0
+Saccharomyce 134 cattcttttacacc.....................................................tacaatcgttttatct 163 + 20.3
+Saccharomyce  38 cattccttttgtcaatcatataggccaaatcaaagag..............................ttaaatactttactac  90 + 14.1
+Saccharomyce 135 cattcttttacaac.....................................................tacaatcgttttatat 164 + 23.9
+Saccharomyce 124 ctttcctttatcaatc...................................................ttagttcattttttaa 155 + 17.1
+Saccharomyce  25 catatttttcccattttaatttcgagtattatataggcccaatcaaagag.................ttaaatactatacttt  90 + 8.24
+Saccharomyce 112 ccttcctttattgata...................................................tttgttcatatcccaa 143 + 12.8
+Saccharomyce 131 cactcttttaaaaatc...................................................tactatcgtttttata 162 + 21.5
+YDR293C      407 ccatcttttt.........................................................ctttgtcactttaata 432 + 12.3
+Saccharomyce 111 cttttttttgttttattttgaccag..........................................ttcaatctttttttat 151 + 19.0
+Saccharomyce 110 cattcctttt.........................................................tttttttgacaaataa 135 + 13.0
+Saccharomyce 234 taaactttt..........................................................tagtcttattttagaa 258 + 12.0
+Saccharomyce 129 catttctttgtc.......................................................ttctgtcttttgataa 156 + 17.4
+Saccharomyce 408 ccatccattta........................................................ttttatcacattaata 434 + 16.9
+Saccharomyce 104 cattccttt..........................................................tttttttttttgacca 128 + 14.1
+YIL123W      152 ccaactact..........................................................tacattcctttaaaaa 176 + 19.3
+YNL066W      302 cactcctttaagca.....................................................ttttttttttttactt 331 + 17.9
+Saccharomyce 120 ccaactact..........................................................tacattcctttgcaaa 144 + 14.6
+Saccharomyce 315 cactcctttaaaaa.....................................................tacactatttaacaat 344 + 17.6
+Saccharomyce 149 ccaactact..........................................................tacattcctttacaaa 173 + 17.1
+Saccharomyce 187 cattcctttattactatccaactactt........................................tacactccttttaaaa 229 + 21.6
+Saccharomyce 147 ccaactatt..........................................................tacattcctttccgac 171 + 14.7
+Saccharomyce   4 ctttcctttttctcgcacccctctcgtcagcatcgcatttttt........................tttttttgtttaaata  62 + 15.8
+Saccharomyce 140 ccaactact..........................................................tacattcctttgaata 164 + 17.3
+Saccharomyce 222 cattcttttaccgttatccaactattt........................................ttcactccttttaaat 264 + 21.6
+Saccharomyce 313 cactcctttaagcct....................................................ttttttacttttacaa 343 + 19.7
+Saccharomyce 145 ccaactact..........................................................tacattcctttgaaaa 169 + 16.8
+Saccharomyce 157 ccaactact..........................................................tacattcctttacaaa 181 + 17.1
+Saccharomyce 228 cattcctttattactatccaactactt........................................tacactccttttaaac 270 + 20.1
+YBR162C       13 cattcaattttt.......................................................ttttatattataatta  40 + 19.4
+Saccharomyce 121 ttatcttttttgtttttctgcttttccca......................................tttactcttttaacta 165 + 16.6
+Saccharomyce 140 cttttcatat.........................................................tactatattaagaatc 165 + 12.3
+Saccharomyce  18 tattcaatttc........................................................tttttttcttgtcata  44 + 12.8
+Saccharomyce  16 tacattattgt........................................................taatttctttttctta  42 + 15.1
+Saccharomyce   1 tatttttctg.........................................................ttctatattaatatta  26 + 17.7
+Saccharomyce 143 ttttcattt..........................................................tactatttcaagaata 167 + 13.8
+YNL300W      161 ccaactttt..........................................................taccttcctttaatat 185 + 19.5
+Saccharomyce 156 ccaactttt..........................................................taccttcctttaatat 180 + 19.5
+Saccharomyce  76 ctttcaattgtaatttttgccataaataaagctaataaaaatccaactgca................ttctttccttaacatt 142 + 13.8
+Saccharomyce 162 ccaactttt..........................................................taccttcctttaacac 186 + 16.9
+Saccharomyce 128 ctttctttactgctatcttcggctgattttaaaacaactaat.........................taccttcctttaatac 185 + 14.5
+Saccharomyce 161 ccaactttt..........................................................taccttcctttaacat 185 + 17.6
+Saccharomyce 162 ccaactttt..........................................................tactttccttaatatc 186 + 19.0
+YKR042W      101 ttttttattca........................................................ttcattcatttttatt 127 + 21.4
+YJL116C       67 cattcatttcgagctttttcgtctcattactgatatccaactaacagtctcctcatagacggtaccttactttcctttaatat 149 + 14.7
+Saccharomyce  93 ttttcatttgttt......................................................ttcattcatttattta 121 + 22.7
+Saccharomyce 111 ctctttatagacggtacct................................................tactttcctttaacat 145 + 15.5
+Saccharomyce 105 ttttctattca........................................................ttcattcatttcttta 131 + 23.0
+Saccharomyce 127 ctctctatagacggtacct................................................tactttcctttaaatt 161 + 20.1
+Saccharomyce  93 ctttcatttatttttattca...............................................ttcattcatttaattt 128 + 23.3
+Saccharomyce 133 ctctcctttaacgt.....................................................caaaatatttatagta 162 + 12.5
+Saccharomyce 135 ctttcctttaatat.....................................................taaaatatttagtata 164 + 16.3
+Saccharomyce 101 ttttttattca........................................................ttcattcatttttatt 127 + 21.4
+Saccharomyce 102 ttttttattca........................................................ttcattcattttattt 128 + 23.3
+Saccharomyce 115 ctcttcatagacggtacct................................................tactttcctttaatat 149 + 16.6
+Saccharomyce 103 ttttctatttattca....................................................ttcattcatttttatt 133 + 23.0
+Saccharomyce 113 ttctctatagacggtacct................................................tactttcctttaaatt 147 + 19.6
+
+                 cattctttt                                                          tacattcatttaaata
+                 ttc  ca                                                             ttta ac aat tat
+                  c                                                                        t        
+
+ a  c  g  t Del Ins Score
+ 4 77  0 54   0      105.
+                  0 -0.158
+54 30  2 49   0      38.7
+                  0 -0.158
+25 35  0 75   0      66.4
+                  0 -0.158
+26  0  0 109   0      164.
+                  0 -0.158
+ 0 111  0 24   0      168.
+                  0 -0.158
+16 44  0 75   0      75.0
+                  0 -0.158
+49  0  0 86   0      132.
+                  0 -0.158
+ 0 16  0 119   0      188.
+                  0 -0.158
+13  0  0 122   0      198.
+                1145 -633.
+ 0  6  0 129   0      224.
+                  0 -0.158
+68  0  0 67   0      124.
+                  0 -0.158
+12 88  6 29   0      71.5
+                  0 -0.158
+66 10  6 53   0      54.9
+                  0 -0.158
+47 15  6 67   0      45.2
+                  0 -0.158
+ 0  1  0 134   0      251.
+                  0 -0.158
+39 81  0 15   0      81.9
+                  0 -0.158
+45 41 15 34   0      1.79
+                  0 -0.158
+ 7 14  3 111   0      136.
+                  0 -0.158
+35 13  0 87   0      91.9
+                  0 -0.158
+46  0  4 85   0      111.
+                  0 -0.158
+55 20 10 50   0      23.3
+                  0 -0.158
+91 20  0 24   0      92.4
+                  0 -0.158
+55 15 11 54   0      28.9
+                  0 -0.158
+54  5  0 76   0      101.
+                  0 -0.158
+69 25  0 41   0      60.9
+
+Score: 1867.11  Columns: 25  Sequences: 135
+
+                 *************************
+YLR110C      140 attctttcctaacat.accaagaaa 163 + 12.9
+YDR134C      173 ttcgcttcaaaataactacaaatta 197 + 18.7
+Saccharomyce 142 tttgttataaaataccaagaaatta 166 + 18.4
+Saccharomyce 173 atcgctttactataacaacaaatca 197 + 19.6
+Saccharomyce 122 tttatgtttcacatataagaagaaa 146 + 13.4
+Saccharomyce 143 cttcctaaaaacccc.aagaaatta 166 + 13.2
+Saccharomyce 175 ttcgctttacaataacaataataat 199 + 20.5
+Saccharomyce 143 ttccctgaaaaaccc.aagaaaata 166 + 14.6
+Saccharomyce 173 ttcgcttcaaaataacaacaaatta 197 + 21.0
+Saccharomyce 133 cttctaattattttctgaaaaaacc 157 + 9.27
+Saccharomyce 143 tttcctaaaaatacc.aagaaatta 166 + 13.9
+Saccharomyce 173 ttcgcttcataataacaacaaatta 197 + 20.9
+Saccharomyce 173 ttcgcttcgcaataacaacaaatta 197 + 13.5
+Saccharomyce 130 attcttatttttatttaataaaaac 154 + 15.6
+YPL256C      136 ataatttgcatacaa.aagaaaatc 159 + 17.2
+YMR199W      176 tttctgtaaaataaataaaaagatc 200 + 14.6
+Saccharomyce 137 ataatttgcatacaa.agaaatatt 160 + 13.3
+Saccharomyce 126 gtaacttcacaattataataagact 150 + 10.7
+Saccharomyce 137 ataatttgcatacaa.aagaaaaac 160 + 16.3
+Saccharomyce 111 ctacaataataatta.aataatact 134 + 14.9
+Saccharomyce 137 ataatttgcatttaa.gagaaattc 160 + 12.4
+Saccharomyce  94 tacaattcaataagacaacaatagt 118 + 8.52
+Saccharomyce 175 atccctataccataa.ataaaaaga 198 + 15.1
+Saccharomyce 136 ataatttgcatacaa.aagaaaata 159 + 19.8
+Saccharomyce 136 ataatttgcatacaa.aagaaaatc 159 + 17.2
+Saccharomyce 172 cttctgtacaataaataaaaaaaaa 196 + 17.4
+Saccharomyce 112 ctacaataataatta.aataatact 135 + 14.9
+Saccharomyce 167 tttcttttccactccttacatttta 191 + 13.3
+YLR286C      170 ctaatttaaatataa.aataattaa 193 + 19.4
+Saccharomyce 166 attctataaaaaaca.agcaaacta 189 + 10.6
+Saccharomyce 159 acacattgatattaa.aataaaaaa 182 + 17.0
+Saccharomyce 170 ttaaatagaaaacaatactaaaaat 194 + 16.0
+Saccharomyce  78 ctcctttgaacattatatctaaaaa 102 + 12.6
+Saccharomyce  86 aacattatatactta.aaaataata 109 + 12.6
+Saccharomyce 161 acacattgatattaa.aataaaaaa 184 + 17.0
+YHR143W      169 ataaagccactcctttaacaaatta 193 + 11.3
+Saccharomyce 107 ttccttactaccttttattcatata 131 + 10.8
+Saccharomyce 168 ttaaatttactattttaacaagaaa 192 + 20.3
+Saccharomyce 177 tttaatttattactc.aaaaaaaaa 200 + 19.5
+Saccharomyce  83 tttattgtaaactctcttcaataga 107 + 11.6
+YBR072W      102 tctactctcttatactaataaaacc 126 + 12.5
+Saccharomyce 143 ctaaatatctataagcaaaaaaaaa 167 + 12.5
+Saccharomyce 153 tttaatcttttcaaacaacaaaaca 177 + 15.8
+Saccharomyce 175 acaacaaacaaacaa.aataaatta 198 + 12.2
+Saccharomyce 175 caaactaacaaacaa.aacaaacta 198 + 11.3
+Saccharomyce  30 cttcctcccttattctaaacatata  54 + 12.5
+Saccharomyce 152 ttcaatctcttcaaacagcaaaata 176 + 15.1
+YKL163W      147 ttacatttacatcaataagaaatct 171 + 20.0
+YJL159W      176 accctagtacaataataataatata 200 + 17.4
+Saccharomyce 175 ctaactacaacacaacaataataat 199 + 15.3
+Saccharomyce 146 ttagttctactacaataaaaaatct 170 + 14.8
+Saccharomyce 176 aaacaagcacattcacaacataaaa 200 + 8.49
+Saccharomyce 103 tttctaatatacaaa.ataaaaaca 126 + 15.8
+Saccharomyce 176 aacaagtacactttataacataaaa 200 + 7.79
+Saccharomyce 170 ctccaaacccaatac.aataataat 193 + 12.9
+Saccharomyce  96 tctcttctacataat.aagaaaaat 119 + 12.2
+Saccharomyce 146 ctaccattattacagtactaagaga 170 + 8.80
+Saccharomyce 175 accctagtacaataataataataat 199 + 14.9
+Saccharomyce  88 attgtatcatctaatttacaatata 112 + 12.9
+Saccharomyce 116 aacataagatatctttagaaaacta 140 + 5.93
+Saccharomyce 175 atcccaatacaataataataataat 199 + 19.7
+Saccharomyce   4 taactattcttttaataaaaaaaga  28 + 17.6
+Saccharomyce 164 ttccttttcctacactaataaaaca 188 + 22.2
+Saccharomyce 110 ttagttaaatttaaa.tataaaaga 133 + 13.1
+Saccharomyce  97 cttctttatctctaatatcaaaata 121 + 21.8
+YDR528W       20 attcatttcaaaaaa.aaaaaaaaa  43 + 20.0
+YCL051W      125 ttacattcattttta.tttctaaaa 148 + 10.9
+Saccharomyce  19 ctaacttcactcacttaaaaaaaga  43 + 15.2
+Saccharomyce  70 ctcatttaaaaaaaa.aacaaactc  93 + 14.8
+Saccharomyce  68 tatacttgctattta.agaaatatt  91 + 10.0
+Saccharomyce  33 attcatttaaaaaaa.gaaaaatta  56 + 16.6
+Saccharomyce  20 cgtcattcatttcaa.aaaaataaa  43 + 11.7
+Saccharomyce  61 tttaaaaacctcctccattataatc  85 + 9.07
+YGR279C      137 attcttttacatctacaatcgttta 161 + 12.1
+YMR305C       22 atcatatttttcccattttaaattc  46 + 11.5
+Saccharomyce  17 cttcaatttttccatcttcaatttt  41 + 11.0
+Saccharomyce 172 ttactaaaactaaactaaaaataaa 196 + 16.6
+Saccharomyce 136 ttcatattccaaaattgttaaaaaa 160 + 16.3
+Saccharomyce 151 atcgtttttatatactagcaaaacc 175 + 11.7
+Saccharomyce  15 attccttgtcttcttcaagcaattt  39 + 11.0
+Saccharomyce  35 ttccattccttttgtcaatcatata  59 + 12.2
+Saccharomyce 136 attcttttacaactacaatcgtttt 160 + 10.5
+Saccharomyce  34 tttccattcctacttcatctattat  58 + 8.38
+Saccharomyce  23 atcatatttttcccattttaatttc  47 + 10.5
+Saccharomyce 132 ttcatatcccaaaattgttaaaaaa 156 + 15.2
+Saccharomyce 175 caaataaaaactcca.aataaaata 198 + 10.3
+YDR293C       29 tttctgtcattccttttagaatatt  53 + 13.2
+Saccharomyce 296 tttcatagccactat.tcgaaaaga 319 + 8.65
+Saccharomyce 111 attcctttttttttttgacaaataa 135 + 15.7
+Saccharomyce 295 tttcatagcctctat.tcgaaaaga 318 + 8.86
+Saccharomyce  39 tttctatcattctttttagaatatt  63 + 16.4
+Saccharomyce  23 tttcctgtcattctc.tttaaaata  46 + 13.9
+Saccharomyce 408 tttccttctatcatc.attattata 431 + 10.8
+YIL123W      165 ttcctttaaaaaccacaatatttaa 189 + 15.7
+YNL066W      191 tcaatttcaactttatagcaagaaa 215 + 11.0
+Saccharomyce 616 caaacaatactccaa.aaaaaaata 639 + 14.6
+Saccharomyce 272 ctcctttcaacccaa.aagaaaatt 295 + 16.9
+Saccharomyce  88 tttacagtccttcctttacaaaata 112 + 14.9
+Saccharomyce  79 ttaaatacatattaccaagaatata 103 + 18.5
+Saccharomyce  87 cttacaatccttccttaaaaaatta 111 + 15.6
+Saccharomyce 212 ctccttttaaaccaa.aaaaataat 235 + 18.7
+Saccharomyce 157 tttgaatattactaattataagtta 181 + 12.1
+Saccharomyce 253 ctccttttaaatcaacaaaaagaat 277 + 18.9
+Saccharomyce 658 tttaatttactaacactctaattta 682 + 14.2
+Saccharomyce 633 ttcaaagaaaaataa.aagaaaaga 656 + 14.9
+Saccharomyce  96 tttacagtccttcctttacaaaata 120 + 14.9
+Saccharomyce 121 ttaaatacatattaccaagaatata 145 + 18.5
+YBR162C       15 ttcaatttttttttatattataatt  39 + 17.2
+Saccharomyce  23 ttacatttacttttt.gttcataaa  46 + 11.9
+Saccharomyce 143 ttcatattactatattaagaatcag 167 + 10.4
+Saccharomyce 144 ttcaatttactcttc.atcatatca 167 + 12.3
+Saccharomyce   9 tctgttttacattattgttaatttc  33 + 10.6
+Saccharomyce 140 ttcaaatttatccttcataaaaata 164 + 16.2
+Saccharomyce 145 ttcattttactatttcaagaataaa 169 + 21.6
+YNL300W      174 ttcctttaatatcaatatcaaaata 198 + 24.5
+Saccharomyce 168 cttcctttaatatca.atcaatacc 191 + 15.5
+Saccharomyce 174 attctttaataccaatatcacaata 198 + 15.0
+Saccharomyce 174 cttcctttaacacaatatcaaaaca 198 + 20.3
+Saccharomyce 174 ttcctttaataccaatatcaaaaca 198 + 21.6
+Saccharomyce 174 ttcctttaacattaatatcaaaaaa 198 + 24.4
+Saccharomyce 174 tttccttaatatcaataccaaaata 198 + 21.9
+YKR042W      111 attcattcatttttatttgaatata 135 + 19.3
+YJL116C      132 cttactttcctttaatattataata 156 + 21.2
+Saccharomyce 124 ttcatttgaatataataaccaacta 148 + 18.1
+Saccharomyce 128 cttactttcctttaacatcaaaagt 152 + 19.2
+Saccharomyce 156 cttcctttaaactaa.attaaacta 179 + 18.6
+Saccharomyce 144 cttactttcctttaa.attcagatt 167 + 14.2
+Saccharomyce 172 tctcctttaatttttttacaaaaaa 196 + 18.4
+Saccharomyce 129 ctcactctcctttaacgtcaaaata 153 + 15.9
+Saccharomyce 131 ctcactttcctttaatattaaaata 155 + 24.3
+Saccharomyce 111 attcattcatttttatttgaatata 135 + 19.3
+Saccharomyce 173 ctcccttaattttta.aataaatta 196 + 20.2
+Saccharomyce 132 cttactttcctttaatattaaaact 156 + 21.0
+Saccharomyce 117 attcattcatttttatttgaatata 141 + 19.3
+Saccharomyce 130 cttactttcctttaa.attcagatt 153 + 14.2
+
+                 tttcttttactataataataaaata
+                 a cacaaccaatcttc tc  ttat
+                 c a a  a t c             
+
+ a  c  g  t Del Ins Score
+36 35  1 63   0      45.9
+                  0 -0.158
+10 10  1 114   0      149.
+                  0 -0.158
+34 44  0 57   0      49.3
+                  0 -0.158
+56 66 13  0   0      75.9
+                  0 -0.158
+37 42  0 56   0      48.0
+                  0 -0.158
+33  0  6 96   0      118.
+                  0 -0.158
+27  8  9 91   0      76.8
+                  0 -0.158
+27 29 16 63   0      13.3
+                  0 -0.158
+79 39  1 16   0      71.9
+                  0 -0.158
+45 48  0 42   0      45.3
+                  0 -0.158
+58 10  0 67   0      83.1
+                  0 -0.158
+54 30  0 51   0      50.9
+                  0 -0.158
+23 45  0 67   0      61.2
+                  0 -0.158
+78 17  2 38   0      64.9
+                  0 -0.158
+84 19  2 30   0      70.6
+                  0 -0.158
+ 0 30  0 58  47     -46.4
+                  0 -0.158
+104  0  9 22   0      127.
+                  0 -0.158
+83  7  7 38   0      71.5
+                  0 -0.158
+24 40 26 45   0     -4.34
+                  0 -0.158
+122 11  0  2   0      190.
+                  0 -0.158
+121  1  2 11   0      181.
+                  0 -0.158
+83  0 11 41   0      90.6
+                  0 -0.158
+97  7  0 31   0      117.
+                  0 -0.158
+38 17 11 69   0      32.0
+                  0 -0.158
+90 15  1 29   0      87.6
+
+Score: 1226.78  Columns: 15  Sequences: 134
+
+                 ******.********.*
+YLR110C      184 taaaca.ctatatca.a 198 + 8.79
+YDR134C      131 ttcata.gaat.aaa.a 144 + 8.73
+Saccharomyce  34 aaaaaa.attt.gca.t  47 + 7.57
+Saccharomyce 184 ataaca.acaaatca.a 198 + 9.47
+Saccharomyce 178 ttcgca.ataa.caa.c 191 + 8.03
+Saccharomyce 186 aacact.atat.caa.a 199 + 15.1
+Saccharomyce 186 ataaca.ataa.taa.t 199 + 14.8
+Saccharomyce 184 taaaca.atatatca.a 198 + 12.3
+Saccharomyce 181 aaaata.acaacaaa.t 195 + 12.9
+Saccharomyce 186 aacact.atat.caa.t 199 + 14.4
+Saccharomyce 186 aacact.atat.caa.t 199 + 14.4
+Saccharomyce 181 ataata.acaacaaa.t 195 + 11.8
+Saccharomyce 178 ttcgca.ataa.caa.c 191 + 8.03
+Saccharomyce 186 aacact.atat.caa.a 199 + 15.1
+YPL256C       15 tagata.atatcaagga  30 + 6.51
+YMR199W      182 taaaat.aaat.aaa.a 195 + 13.4
+Saccharomyce 186 attcaa.ctat.caa.t 199 + 7.21
+Saccharomyce 131 ttcaca.atta.taa.t 144 + 9.11
+Saccharomyce 119 ataatt.aaat.aat.a 132 + 8.17
+Saccharomyce 186 attaca.ctat.caa.t 199 + 9.35
+Saccharomyce 134 atagca.atta.taa.t 147 + 8.28
+Saccharomyce 130 tgaata.ataa.tag.c 143 + 4.33
+Saccharomyce 133 atcata.attt.gca.t 146 + 5.79
+Saccharomyce 133 atcata.attt.gca.t 146 + 5.79
+Saccharomyce 178 tacaat.aaataaaaaa 193 + 7.10
+Saccharomyce 120 ataatt.aaat.aat.a 133 + 8.17
+Saccharomyce 139 atcata.attt.gcata 153 + 2.66
+YLR286C       51 aacata.aaaa.aaa.t  64 + 14.7
+Saccharomyce  95 aaaaat.aaaa.aca.t 108 + 12.4
+Saccharomyce 172 aaaata.aaaa.aaa.t 185 + 15.5
+Saccharomyce  49 aacata.atat.aca.a  62 + 14.5
+Saccharomyce  86 aacatt.atatctaa.a 100 + 13.8
+Saccharomyce 101 aaaata.ataa.ctg.t 114 + 8.88
+Saccharomyce 174 aaaata.aaaa.aaa.a 187 + 16.2
+YHR143W      183 ttaaca.aattacaa.a 197 + 9.33
+Saccharomyce 148 ttaaaa.caaa.ccgct 162 + 2.54
+Saccharomyce 182 ttaaca.agaaacaa.a 196 + 8.53
+Saccharomyce 187 tactca.aaaa.aaa.a 200 + 10.2
+Saccharomyce 155 agagta.gaaa.caaaa 169 + 0.327
+YBR072W      181 aacaaa.ctaa.aca.a 194 + 10.8
+Saccharomyce 161 aaaaaa.acaa.caa.a 174 + 14.1
+Saccharomyce 161 tttcaa.acaa.caa.a 174 + 7.28
+Saccharomyce 173 aaacaa.caaa.caa.a 186 + 11.3
+Saccharomyce 181 aacaaacaaaa.caa.a 195 + 2.97
+Saccharomyce 164 ataaaa.aaaagcaa.a 178 + 11.3
+Saccharomyce 143 tagaat.atattcaa.t 157 + 8.93
+YKL163W       48 aagcct.atat.aag.a  61 + 8.78
+YJL159W      184 acaata.ataa.taa.t 197 + 10.9
+Saccharomyce 183 aacaca.acaa.taa.t 196 + 12.1
+Saccharomyce  36 aaccct.atat.aag.a  49 + 10.7
+Saccharomyce  42 aaacct.atat.aag.a  55 + 11.5
+Saccharomyce 132 aaaaca.aact.caa.t 145 + 11.8
+Saccharomyce  41 aaagct.atat.aag.a  54 + 10.4
+Saccharomyce 183 acaata.ataa.taa.c 196 + 8.22
+Saccharomyce 103 tacata.ataagaaa.a 117 + 10.6
+Saccharomyce  47 aaagct.atat.aag.a  60 + 10.4
+Saccharomyce 186 ataata.ataa.taa.t 199 + 14.5
+Saccharomyce 130 aaaaca.aatt.taa.t 143 + 11.8
+Saccharomyce  39 aaacct.atat.aag.a  52 + 11.5
+Saccharomyce 180 aataca.ataa.taa.t 193 + 13.1
+Saccharomyce 127 atcaaa.aaaa.caa.a 140 + 14.6
+Saccharomyce 183 aaaaca.ataa.taa.t 196 + 15.8
+Saccharomyce  43 aaacct.atat.aag.a  56 + 11.5
+Saccharomyce 133 aaaaca.aact.caa.t 146 + 11.8
+YDR528W       29 aaaaaa.aaaa.aaa.a  42 + 16.1
+YCL051W      106 aaagat.acattcca.a 120 + 6.43
+Saccharomyce  48 aaggaa.atat.taa.a  61 + 10.6
+Saccharomyce  77 aaaaaa.aaaa.caa.a  90 + 16.5
+Saccharomyce  33 ttcaga.ataa.taa.a  46 + 8.29
+Saccharomyce  38 tttaaa.aaaa.gaa.a  51 + 7.82
+Saccharomyce  30 ttcaaa.aaaa.taa.a  43 + 12.6
+Saccharomyce  33 cagatt.ataaccaa.c  47 + 3.95
+YGR279C      116 ctaact.aaat.cca.a 129 + 7.64
+YMR305C      175 aacgca.aaaa.aag.t 188 + 9.95
+Saccharomyce 182 aagaaa.aaat.caa.t 195 + 13.1
+Saccharomyce 183 aaacta.aaaa.taa.a 196 + 14.1
+Saccharomyce 157 aaaaaa.atat.tag.t 170 + 13.3
+Saccharomyce 181 aaaact.caaaataa.a 195 + 9.41
+Saccharomyce 186 cacact.agaa.taa.a 199 + 4.13
+Saccharomyce 166 aaagta.atat.taa.a 179 + 13.5
+Saccharomyce 177 tactaa.aaat.cca.a 190 + 8.75
+Saccharomyce 164 aaagca.gtat.caa.t 177 + 9.41
+Saccharomyce 176 aacaca.agaa.aaa.t 189 + 10.6
+Saccharomyce 146 ttgtta.aaaa.aaa.a 159 + 6.83
+Saccharomyce 177 aataaa.aactccaa.a 191 + 9.12
+YDR293C      155 aaccta.aaaaccgg.a 169 + 5.59
+Saccharomyce   6 aacatt.atatctcagc  21 + 5.10
+Saccharomyce 300 tagcca.ctattcga.a 314 + 0.254
+Saccharomyce 152 aaccta.aaatccag.a 166 + 11.7
+Saccharomyce 438 aaaaca.aaatctca.a 452 + 14.5
+Saccharomyce 444 aaggca.aaaa.aaa.c 457 + 7.50
+Saccharomyce 159 aaccta.aaat.ccaga 173 + 8.80
+YIL123W      667 taacta.atat.cca.a 680 + 12.7
+YNL066W      181 ttcact.atattcaa.t 195 + 10.2
+Saccharomyce 661 taacta.atatccaa.t 675 + 13.2
+Saccharomyce 248 ttacca.atat.cca.a 261 + 11.9
+Saccharomyce 665 taacta.atat.ccg.a 678 + 10.5
+Saccharomyce  98 aatata.ataa.cca.a 111 + 12.9
+Saccharomyce 664 taacta.atatccaa.t 678 + 13.2
+Saccharomyce 222 accaaa.aaaa.taa.t 235 + 9.53
+Saccharomyce 544 aacaca.acat.aag.a 557 + 11.1
+Saccharomyce 200 ttaaaa.aaaa.aaa.a 213 + 13.8
+Saccharomyce 167 taaaaa.ataa.tca.c 180 + 10.1
+Saccharomyce 665 taacta.atat.ccaat 679 + 8.16
+Saccharomyce 665 taacta.atat.ccg.a 678 + 10.5
+Saccharomyce 140 aatata.ataa.aca.a 153 + 12.5
+YBR162C      163 taaaat.atct.aaa.a 176 + 9.43
+Saccharomyce  59 aacaaa.aact.caa.a  72 + 11.3
+Saccharomyce  56 aaaaca.aaaactcg.a  70 + 12.2
+Saccharomyce   6 tatatt.atatttta.t  20 + 2.96
+Saccharomyce  69 aaaact.caaa.cca.a  82 + 10.4
+Saccharomyce  51 aaccca.gaatcaaa.a  65 + 9.34
+Saccharomyce  58 aaacaa.aaaactca.a  72 + 12.3
+YNL300W      182 atatca.atat.caa.a 195 + 12.0
+Saccharomyce   7 aaaata.aact.cag.t  20 + 9.30
+Saccharomyce 182 atacca.atatcaca.a 196 + 12.5
+Saccharomyce 182 aacaca.atatcaaa.a 196 + 16.0
+Saccharomyce 182 atacca.atatcaaa.a 196 + 14.0
+Saccharomyce 181 aacatt.aatatcaa.a 195 + 8.75
+Saccharomyce   5 atatat.atat.ata.t  18 + 3.68
+YKR042W       42 aaaaaa.aaaa.aag.t  55 + 13.2
+YJL116C      101 atccaa.ctaa.cag.t 114 + 6.94
+Saccharomyce 132 aatata.ataa.cca.a 145 + 12.9
+Saccharomyce  29 tcaaca.gtta.cat.a  42 + -2.06
+Saccharomyce  44 taagaa.aaaacaaa.a  58 + 11.8
+Saccharomyce  57 ataata.gcaacacg.a  71 + 4.43
+Saccharomyce 186 tttaca.aaaa.acact 200 + 5.45
+Saccharomyce  53 ataaat.atat.cca.t  66 + 12.2
+Saccharomyce  56 aagaat.atat.cca.t  69 + 10.6
+Saccharomyce  40 agaaga.aaaaaaaagt  55 + -0.0661
+Saccharomyce 127 ttgaat.ataaccaact 142 + 5.63
+Saccharomyce 101 atccaa.ctaa.cag.t 114 + 6.94
+Saccharomyce 163 taaact.aaaattaa.a 177 + 11.5
+Saccharomyce  58 atacat.acat.tca.t  71 + 6.82
+
+                 aaaaca atatccaa a
+                 ttcctt  a aaac  t
+                     a       t    
+
+ a  c  g  t Del Ins Score
+91  3  0 40   0      120.
+                  0 -0.158
+86  4  3 41   0      95.4
+                  0 -0.158
+71 41 11 11   0      42.5
+                  0 -0.158
+89 27 13  5   0      74.6
+                  0 -0.158
+39 51  2 42   0      34.1
+                  0 -0.158
+99  0  0 35   0      146.
+                  1 -12.9
+117 11  6  0   0      168.
+                  0 -0.158
+51 10  3 70   0      66.6
+                  0 -0.158
+118  6  0 10   0      171.
+                  0 -0.158
+66  0  0 68   0      123.
+                  0 -0.158
+ 8 21  2  7  96     -116.
+                  0 -0.158
+42 55  5 32   0      26.1
+                  0 -0.158
+94 35  2  3   0      113.
+                  0 -0.158
+107  0 24  3   0      147.
+                 11 -62.3
+78  8  0 48   0      92.6
+
+Score: 1015.38  Columns: 15  Sequences: 135
+
+                 *******.*****..***
+YLR110C      183 t.taaac.actat..atc 196 + 14.3
+YDR134C      178 t.tcaaa.ataact.aca 192 + 7.46
+Saccharomyce 148 ataaaat.accaa..gaa 162 + -6.35
+Saccharomyce 183 t.ataac.aacaa..atc 196 + 11.1
+Saccharomyce 154 t.aacaa.acatt..atc 167 + 7.51
+Saccharomyce 183 t.taaac.actat..atc 196 + 14.3
+Saccharomyce  51 tcttaca.agtat..ata  65 + 11.1
+Saccharomyce 183 t.taaac.aatat..atc 196 + 14.0
+Saccharomyce 136 t.aaaaa.aataag.caa 150 + 9.56
+Saccharomyce 183 t.taaac.actat..atc 196 + 14.3
+Saccharomyce 183 t.taaac.actat..atc 196 + 14.3
+Saccharomyce 102 t.tgaac.a.aat..ata 114 + 2.24
+Saccharomyce 137 t.agaaa.gaaac..c.a 149 + 0.733
+Saccharomyce 183 t.taaac.actat..atc 196 + 14.3
+YPL256C      146 t.acaaa.agaaa..atc 159 + 11.7
+YMR199W      178 tctgtaa.aataa..ata 192 + 10.7
+Saccharomyce 147 t.acaaa.gaaat..at. 159 + 6.98
+Saccharomyce 131 t.tcaca.attat..a.a 143 + 4.11
+Saccharomyce 147 t.acaaa.agaaa..aac 160 + 10.1
+Saccharomyce 116 a.taata.attaa..ata 129 + 10.5
+Saccharomyce  81 t.tt.ta.tatac..atc  93 + 3.36
+Saccharomyce 176 t.ttaac.gcaat..aaa 189 + 10.5
+Saccharomyce 129 t.tg.aa.taata..ata 141 + 4.62
+Saccharomyce 146 t.acaaa.agaaa..ata 159 + 13.1
+Saccharomyce 146 t.acaaa.agaaa..atc 159 + 11.7
+Saccharomyce 182 ataaata.aaaaa..aaa 196 + 8.75
+Saccharomyce 117 a.taata.attaa..ata 130 + 10.5
+Saccharomyce 131 t.taacc.acatc..ata 144 + 8.13
+YLR286C       89 t.ttata.tccaa..aaa 102 + 10.4
+Saccharomyce  92 tcgaaaa.ataaa..aac 106 + 8.75
+Saccharomyce 169 attaaaa.taaaa..aaa 183 + 10.5
+Saccharomyce  78 t.gaaac.tttat..atc  91 + 7.74
+Saccharomyce  95 t.ctaaa.aataat.aac 109 + 5.46
+Saccharomyce  83 t.tgaac.attat..ata  96 + 11.9
+Saccharomyce 172 t.taaaa.taaaa..aaa 185 + 14.5
+YHR143W      130 t.taata.tttttt.aac 144 + 4.53
+Saccharomyce 130 t.aaatc.tctttc.a.a 143 + 1.24
+Saccharomyce 180 ttttaac.aagaa..aca 194 + 8.79
+Saccharomyce  46 t.taaaa.gctaa..ctc  59 + 10.8
+Saccharomyce  50 t.tgtaa.gctaa..ctc  63 + 4.01
+YBR072W      142 tcagatc.tctat..taa 156 + 3.09
+Saccharomyce 163 a.aaaac.aacaa..aca 176 + 8.19
+Saccharomyce 163 tcaaaca.acaaa..aca 177 + 11.5
+Saccharomyce  43 ttgaaaa.tgtat..aaa  57 + 7.86
+Saccharomyce  51 t.tcatc.tcgaa..aca  64 + 7.19
+Saccharomyce  45 t.aaaca.tataa..ata  58 + 12.5
+Saccharomyce 162 tcaaaca.gcaaa..ata 176 + 11.8
+YKL163W      154 t.acatc.aataag.aaa 168 + 8.23
+YJL159W      137 tcaaaaa.aatatcaata 153 + 12.0
+Saccharomyce 180 t.acaac.acaaca.ata 194 + 9.84
+Saccharomyce 161 t.aaaaa.atctc..ata 174 + 8.78
+Saccharomyce  41 t.aaacc.tatat..aa.  53 + 4.17
+Saccharomyce 105 tctaata.tacaaa.ata 120 + 11.4
+Saccharomyce  38 t.gtaaa.gctat..ata  51 + 9.32
+Saccharomyce 169 tctccaa.accca..ata 183 + 2.63
+Saccharomyce  27 tcgtaac.tctat..atc  41 + 8.75
+Saccharomyce  95 tctc.tc.gctta..at. 107 + -2.96
+Saccharomyce  81 tctgaaa.gccaa..ata  95 + 12.3
+Saccharomyce 178 tcttaaa.agtac..at. 191 + 7.70
+Saccharomyce 131 t.agaaa.actatt.ata 145 + 11.9
+Saccharomyce 184 c.aataa.taata..ata 197 + 1.48
+Saccharomyce 134 a.aacaa.actta..ata 147 + 6.42
+Saccharomyce 180 a.ataaa.acaata.ata 194 + 9.14
+Saccharomyce 121 t.aaata.taaaag.atc 135 + 10.0
+Saccharomyce 107 tctaata.tcaaa..ata 121 + 15.2
+YDR528W       27 tcaaaaa.aaaaa..aaa  41 + 15.1
+YCL051W      102 acttaaa.gatac..at. 115 + 3.92
+Saccharomyce   8 a.ttaca.accaa..cta  21 + 5.08
+Saccharomyce  75 t.taaaa.aaaaa..aca  88 + 14.4
+Saccharomyce  33 t.tcaga.ataat..aaa  46 + 6.99
+Saccharomyce  40 t.aaaaa.aagaa..aaa  53 + 12.0
+Saccharomyce  29 tttcaaa.aaaat..aaa  43 + 12.5
+Saccharomyce  20 tctgaaa.tcctt..aca  34 + 7.97
+YGR279C      109 t.agata.tctaa..cta 122 + 9.07
+YMR305C       38 t.ttaaa.ttcat..cta  51 + 8.55
+Saccharomyce 145 tctgaaa.agtatt.aca 160 + 8.91
+Saccharomyce 187 t.aaaaa.taaaa..aaa 200 + 13.8
+Saccharomyce 153 t.ta.aa.aaaaa..ata 165 + 10.2
+Saccharomyce 139 t.taaac.tctaca.atc 153 + 10.1
+Saccharomyce 107 t.agata.tctaa..cta 120 + 9.07
+Saccharomyce 162 t.agaaa.agtaat.at. 175 + 5.40
+Saccharomyce 141 t.ttaca.actaca.atc 155 + 7.35
+Saccharomyce   1 t.taaaa.tgtat..cta  14 + 11.3
+Saccharomyce 175 t.aacac.aagaa..aaa 188 + 6.74
+Saccharomyce 171 t.taaac.gctaa..aaa 184 + 12.6
+Saccharomyce 180 a.aaaac.tccaa..ata 193 + 10.2
+YDR293C      314 tctaaaa.gaaac..aac 328 + 10.4
+Saccharomyce 377 t.tcata.agcatata.a 391 + -0.510
+Saccharomyce   5 tctcaaa.aagata.ata  20 + 10.7
+Saccharomyce 436 t.aa.ac.acaat..ata 448 + 8.32
+Saccharomyce 447 tctcaaa.acctcc.ac. 461 + 0.619
+Saccharomyce 334 tctcaaa.gggaa..atc 348 + 8.41
+Saccharomyce 378 a.taaac.gcata..aca 391 + 5.51
+YIL123W      169 tttaaaa.accaca.ata 184 + 11.1
+YNL066W      585 t.aaaac.aatat..tga 598 + 0.686
+Saccharomyce  50 t.ccaac.tattt..aca  63 + 3.11
+Saccharomyce 321 t.ttaaa.aataca.cta 335 + 8.59
+Saccharomyce 660 tctacta.act.a..ata 673 + -0.267
+Saccharomyce 223 tttaaaa.aagta..aac 237 + 7.72
+Saccharomyce 503 t.tcaga.tctac..at. 515 + 3.40
+Saccharomyce 217 tttaaaccaaaaaa.ata 233 + 0.0585
+Saccharomyce 660 t.tacta.actaat.atc 674 + 7.72
+Saccharomyce 258 t.ttaaa.tcaaca.a.a 271 + 4.64
+Saccharomyce 142 t.aaaaa.accact.atc 156 + 9.74
+Saccharomyce 163 t.tgaaa.actacc.ata 177 + 11.1
+Saccharomyce 501 tctcaga.tctac..atc 515 + 7.71
+Saccharomyce 193 tcacagc.atcat..cta 207 + 3.23
+YBR162C        4 tcttatc.tccatt.caa  19 + 4.20
+Saccharomyce  40 tcataaa.aagaa..aac  54 + 9.85
+Saccharomyce 164 tcag.aa.actaa..aca 177 + 6.30
+Saccharomyce  40 tcataaa.aagaa..at.  53 + 7.72
+Saccharomyce 166 tcaaaaa.gctaa..aca 180 + 12.9
+Saccharomyce 153 t.tcata.aaaat..atc 166 + 11.6
+Saccharomyce 166 t.aaaaa.actaa..aca 179 + 14.3
+YNL300W      179 t.taata.tcaat..at. 191 + 8.91
+Saccharomyce 174 t.taata.tcaat..caa 187 + 9.44
+Saccharomyce 111 t.aaaaa.tccaa..ct. 123 + 6.37
+Saccharomyce 179 t.ttaac.acaat..atc 192 + 12.7
+Saccharomyce 185 c.caata.tcaaa..aca 198 + 0.820
+Saccharomyce 185 t.taata.tcaaa..aaa 198 + 13.0
+Saccharomyce   2 t.atata.tatat..ata  15 + 12.0
+YKR042W      157 t.aaaca.aaaatttacc 172 + 4.29
+YJL116C       19 ttttaac.attaa..ata  33 + 12.4
+Saccharomyce 161 t.taaac.taaatt.ata 175 + 12.3
+Saccharomyce  27 tttcaac.agttac.ata  42 + 7.24
+Saccharomyce  32 t.tcccc.tgcaa..cta  45 + 0.429
+Saccharomyce 101 tcaatac.tgatt..atc 115 + 3.93
+Saccharomyce 156 t.taaac.taaatt.ata 170 + 12.3
+Saccharomyce 139 t.ttaac.gtcaaa.ata 153 + 7.45
+Saccharomyce 141 tttaata.ttaaa..ata 155 + 12.1
+Saccharomyce 185 ttataaa.gataac.ata 200 + 10.1
+Saccharomyce 183 ttttaaa.taaatt.aca 198 + 9.00
+Saccharomyce  18 t.ttaac.gttaa..ata  31 + 11.1
+Saccharomyce 166 actaaaa.ttaaactata 182 + 7.54
+Saccharomyce  87 tcaatac.tgatt..atc 101 + 3.93
+
+                 tctaaaa actaa  ata
+                  tat tc taa t   ac
+
+ a  c  g  t Del Ins Score
+13  2  0 120   0      183.
+                  0 -0.158
+ 0 33  0 14  88     -88.7
+                  0 -0.158
+50  3  5 77   0      84.9
+                  0 -0.158
+67 25 16 27   0      18.4
+                  0 -0.158
+117  7  0  5   6      140.
+                  0 -0.158
+93 11  4 27   0      86.3
+                  0 -0.158
+91 43  0  1   0      130.
+                  1 -12.9
+72  0 18 45   0      70.1
+                  0 -0.158
+45 56 16 17   1      5.41
+                  0 -0.158
+48 21  9 57   0      24.8
+                  0 -0.158
+116  1  0 17   1      165.
+                  0 -0.158
+68 19  0 48   0      66.4
+                 39 -141.
+117 15  1  2   0      169.
+                  0 -0.158
+28 17  1 84   5      43.6
+                  0 -0.158
+90 34  0  0  11      73.8
+
